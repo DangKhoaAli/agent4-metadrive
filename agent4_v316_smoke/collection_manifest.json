@@ -1,0 +1,57 @@
+{
+  "version": "AGENT4_V316_SHADOW_IDM_LONGITUDINAL",
+  "config": {
+    "maps": [
+      "C"
+    ],
+    "speeds_mps": [
+      3.0
+    ],
+    "train_seeds": [
+      170
+    ],
+    "val_seeds": [
+      186
+    ],
+    "steps": 800,
+    "original_manifest_sha256": "be451360c86f62ab2aa55998e4c1945bf5443d9b2052e38c8a21c1a8d7f20a0c",
+    "baseline_sha256": "48b3402a127148ea2567523a213f5f896b78c320268c8e19f09f1bf24b931a1f",
+    "schedule": "cruise 65, slow 55, cruise 60 ticks",
+    "traffic_density": 0.0
+  },
+  "episodes": [
+    {
+      "split": "train",
+      "map": "C",
+      "seed": 170,
+      "speed_mps": 3.0,
+      "status": "arrive_dest",
+      "steps": 499,
+      "verified_learner_steps": 499,
+      "valid_labels": 466,
+      "teacher_brake_labels": 12,
+      "speed_transitions": 6,
+      "shadow_queries": 499,
+      "teacher_driving_calls": 0,
+      "errors": [],
+      "csv": "episodes/train/C_seed170_speed3p0.csv"
+    },
+    {
+      "split": "val",
+      "map": "C",
+      "seed": 186,
+      "speed_mps": 3.0,
+      "status": "arrive_dest",
+      "steps": 440,
+      "verified_learner_steps": 440,
+      "valid_labels": 383,
+      "teacher_brake_labels": 14,
+      "speed_transitions": 5,
+      "shadow_queries": 440,
+      "teacher_driving_calls": 0,
+      "errors": [],
+      "csv": "episodes/val/C_seed186_speed3p0.csv"
+    }
+  ],
+  "note": "Shadow IDM supplies labels only. Student V3.13 + RULE governor drive the data-collection vehicle."
+}

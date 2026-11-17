@@ -1,0 +1,69 @@
+{
+  "version": "AGENT4_V316_SHADOW_IDM_LONGITUDINAL",
+  "train_shadow_rows": 32307,
+  "train_anchor_rows": 10997,
+  "val_shadow_rows": 18254,
+  "train_brake_labels": 1033,
+  "val_brake_labels": 501,
+  "metrics": {
+    "train": {
+      "n": 32307,
+      "mae": 0.002040561060628649,
+      "rmse": 0.0059806374231184106,
+      "brake_n": 1033,
+      "brake_mae": 0.016268187474957094,
+      "brake_recall": 0.9767666989351403,
+      "throttle_n": 18580,
+      "throttle_mae": 0.0024566289368507725,
+      "predicted_brake_ratio": 0.03126257467421921
+    },
+    "val": {
+      "n": 18254,
+      "mae": 0.002317545861484497,
+      "rmse": 0.011782285321215091,
+      "brake_n": 501,
+      "brake_mae": 0.029728388649741387,
+      "brake_recall": 1.0,
+      "throttle_n": 9909,
+      "throttle_mae": 0.002536131173778584,
+      "predicted_brake_ratio": 0.027500821737701325
+    },
+    "val_by_map": {
+      "S": {
+        "n": 4873,
+        "mae": 0.0023654415936719964,
+        "rmse": 0.012180199623468222,
+        "brake_n": 137,
+        "brake_mae": 0.030230497591020703,
+        "brake_recall": 1.0,
+        "throttle_n": 2626,
+        "throttle_mae": 0.002614287136685521,
+        "predicted_brake_ratio": 0.02811409809152473
+      },
+      "C": {
+        "n": 7723,
+        "mae": 0.002258349321776905,
+        "rmse": 0.011681610582686809,
+        "brake_n": 204,
+        "brake_mae": 0.030059822443351886,
+        "brake_recall": 1.0,
+        "throttle_n": 4070,
+        "throttle_mae": 0.0024980714941955314,
+        "predicted_brake_ratio": 0.026544089084552636
+      },
+      "X": {
+        "n": 5658,
+        "mae": 0.00235709675812855,
+        "rmse": 0.011568686042543887,
+        "brake_n": 160,
+        "brake_mae": 0.028875879781917586,
+        "brake_recall": 1.0,
+        "throttle_n": 3213,
+        "throttle_mae": 0.0025204652345658255,
+        "predicted_brake_ratio": 0.028278543655001768
+      }
+    }
+  },
+  "original_manifest_sha256": "be451360c86f62ab2aa55998e4c1945bf5443d9b2052e38c8a21c1a8d7f20a0c",
+  "note": "Offline imitation is NOT closed-loop approval; no previous holdout seed was read."
+}
