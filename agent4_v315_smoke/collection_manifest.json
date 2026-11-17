@@ -1,0 +1,41 @@
+{
+  "version": "AGENT4_V315_RECOVERY_DAGGER",
+  "config": {
+    "maps": [
+      "C"
+    ],
+    "seeds": [
+      170
+    ],
+    "speeds_mps": [
+      3.0
+    ],
+    "steps": 2500,
+    "noise": 0.08,
+    "baseline_sha256": "48b3402a127148ea2567523a213f5f896b78c320268c8e19f09f1bf24b931a1f",
+    "original_manifest_sha256": "be451360c86f62ab2aa55998e4c1945bf5443d9b2052e38c8a21c1a8d7f20a0c",
+    "traffic_density": 0.0
+  },
+  "episodes": [
+    {
+      "map": "C",
+      "seed": 170,
+      "speed_mps": 3.0,
+      "status": "arrive_dest",
+      "steps": 410,
+      "valid_teacher_rows": 393,
+      "invalid_teacher_rows": 17,
+      "perturbed_steps": 24,
+      "learner_steps_verified": 410,
+      "shadow_teacher_queries": 410,
+      "teacher_driving_calls": 0,
+      "learner_policy": "EnvInputPolicy",
+      "max_abs_lateral_m": 0.10097247111037078,
+      "min_edge_clearance_proxy_m": 0.6558964494013335,
+      "near_edge_steps": 0,
+      "errors": [],
+      "csv": "episodes/C_seed170_speed3p0.csv"
+    }
+  ],
+  "warning": "Dataset for TRAIN seeds only. Shadow IDM labels are queried but NOT actuated."
+}

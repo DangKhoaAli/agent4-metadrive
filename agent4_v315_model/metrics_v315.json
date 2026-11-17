@@ -1,0 +1,34 @@
+{
+  "version": "AGENT4_V315_RECOVERY_DAGGER",
+  "baseline_sha256": "48b3402a127148ea2567523a213f5f896b78c320268c8e19f09f1bf24b931a1f",
+  "original_manifest_sha256": "be451360c86f62ab2aa55998e4c1945bf5443d9b2052e38c8a21c1a8d7f20a0c",
+  "train": {
+    "considered": 46327,
+    "selected": 41680,
+    "episode_count": 96
+  },
+  "anchors": 13968,
+  "trees": 80,
+  "alpha": 0.6,
+  "offline_validation": {
+    "n": 15367,
+    "baseline_mae": 0.0018733690782521155,
+    "candidate_mae": 0.0024404943001249155,
+    "by_map": {
+      "C": {
+        "baseline_mae": 0.003205572581847157,
+        "candidate_mae": 0.0036606397917311804
+      },
+      "S": {
+        "baseline_mae": 0.0008251713264777486,
+        "candidate_mae": 0.000824990788668777
+      },
+      "X": {
+        "baseline_mae": 0.0009258189047858524,
+        "candidate_mae": 0.0021379506738403472
+      }
+    },
+    "note": "Offline imitation MAE is NOT the go/no-go criterion; use closed-loop validation"
+  },
+  "note": "Proposed model only: baseline remains authoritative until closed-loop validation passes. No test-set use."
+}
