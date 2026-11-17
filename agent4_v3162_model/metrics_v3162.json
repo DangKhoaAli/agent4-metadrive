@@ -1,0 +1,86 @@
+{
+  "version": "AGENT4_V3162_ON_POLICY_LONGITUDINAL_DAGGER",
+  "old_train_rows": 32307,
+  "dagger_train_rows": 37273,
+  "anchor_train_rows": 10997,
+  "val_rows": 18254,
+  "dagger_train_brakes": 6019,
+  "dagger_episodes": 72,
+  "dagger_status": {
+    "arrive_dest": 72
+  },
+  "metrics": {
+    "original_shadow_train": {
+      "n": 32307,
+      "mae": 0.0024539557364036575,
+      "rmse": 0.009724701562890202,
+      "brake_n": 1033,
+      "brake_mae": 0.021850068869813537,
+      "brake_recall": 0.9757986447241046,
+      "throttle_n": 18580,
+      "throttle_mae": 0.0028920049042131875,
+      "predicted_brake_ratio": 0.03144829293961061
+    },
+    "on_policy_train": {
+      "n": 37273,
+      "mae": 0.0024550253293105753,
+      "rmse": 0.005365375558250183,
+      "brake_n": 6019,
+      "brake_mae": 0.00505879142843086,
+      "brake_recall": 0.9991692972254528,
+      "throttle_n": 17103,
+      "throttle_mae": 0.0032831507409515296,
+      "predicted_brake_ratio": 0.16226222734955598
+    },
+    "validation_not_used_for_fit": {
+      "n": 18254,
+      "mae": 0.0023786151449502156,
+      "rmse": 0.010877169172679757,
+      "brake_n": 501,
+      "brake_mae": 0.02577300885515067,
+      "brake_recall": 1.0,
+      "throttle_n": 9909,
+      "throttle_mae": 0.0028963725332461295,
+      "predicted_brake_ratio": 0.027993864358496767
+    },
+    "val_by_map": {
+      "S": {
+        "n": 4873,
+        "mae": 0.002420864396048991,
+        "rmse": 0.011224238283125534,
+        "brake_n": 137,
+        "brake_mae": 0.026655415500898314,
+        "brake_recall": 1.0,
+        "throttle_n": 2626,
+        "throttle_mae": 0.002942809412238609,
+        "predicted_brake_ratio": 0.028524522881182023
+      },
+      "C": {
+        "n": 7723,
+        "mae": 0.002279311703476011,
+        "rmse": 0.010398078236552886,
+        "brake_n": 204,
+        "brake_mae": 0.025126685500121235,
+        "brake_recall": 1.0,
+        "throttle_n": 4070,
+        "throttle_mae": 0.002860097540889998,
+        "predicted_brake_ratio": 0.02706202253010488
+      },
+      "X": {
+        "n": 5658,
+        "mae": 0.0024777738366965844,
+        "rmse": 0.011207996109807076,
+        "brake_n": 160,
+        "brake_mae": 0.025841510442391767,
+        "brake_recall": 1.0,
+        "throttle_n": 3213,
+        "throttle_mae": 0.002904370035473083,
+        "predicted_brake_ratio": 0.02880876634853305
+      }
+    }
+  },
+  "baseline_sha256": "48b3402a127148ea2567523a213f5f896b78c320268c8e19f09f1bf24b931a1f",
+  "actor_sha256": "4e5b7efb84a1d55077f7c36e5655886b21a5490015a26f20ff47426c7417b09c",
+  "original_manifest_sha256": "be451360c86f62ab2aa55998e4c1945bf5443d9b2052e38c8a21c1a8d7f20a0c",
+  "note": "Training used only TRAIN rows. Offline metrics do not approve closed-loop use."
+}

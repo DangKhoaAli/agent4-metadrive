@@ -1,0 +1,2179 @@
+{
+  "version": "AGENT4_V3162_ON_POLICY_LONGITUDINAL_DAGGER",
+  "config": {
+    "maps": [
+      "C"
+    ],
+    "seeds": [
+      186,
+      189
+    ],
+    "speeds_mps": [
+      2.0
+    ],
+    "steps": 2500,
+    "mode": "validation",
+    "actor_sha256": "4e5b7efb84a1d55077f7c36e5655886b21a5490015a26f20ff47426c7417b09c",
+    "candidate_sha256": "2f0cb1d93960dccd01ba8aa60be2951994840df9ca56b60093e1845283b35549",
+    "baseline_sha256": "48b3402a127148ea2567523a213f5f896b78c320268c8e19f09f1bf24b931a1f",
+    "speed_schedule": "cruise 65, slow 55, cruise 60 ticks",
+    "traffic_density": 0.0,
+    "reference_sha256": "2686265251e151dbf21d136f4d38c5515da99e36f758411646406d07f03b9b0a"
+  },
+  "episodes": [
+    {
+      "profile": "rule_governor_v313",
+      "map": "C",
+      "seed": 186,
+      "speed_mps": 2.0,
+      "status": "arrive_dest",
+      "confirmed_success": true,
+      "quality_pass": true,
+      "steps": 667,
+      "verified_steps": 667,
+      "speed_mae_mps": 0.13349682820321077,
+      "overspeed_steps": 8,
+      "model_brake_steps": 20,
+      "max_abs_lateral_m": 0.41279331350473136,
+      "max_abs_heading_error_rad": 0.05245647174856238,
+      "min_edge_clearance_proxy_m": 0.355468376074894,
+      "near_edge_warning_steps": 0,
+      "road_marked_steps": 0,
+      "teacher_calls": 0,
+      "idm_policy_used": false,
+      "learned_longitudinal": false,
+      "errors": [],
+      "trace": [
+        {
+          "step": 0,
+          "speed_mps": 0.0,
+          "desired_mps": 2.0,
+          "steering": -3.807574773252713e-12,
+          "signed_longitudinal": 0.4,
+          "lateral_m": 0.0,
+          "edge_clearance_proxy_m": 0.824
+        },
+        {
+          "step": 30,
+          "speed_mps": 1.7166057825093755,
+          "desired_mps": 2.0,
+          "steering": 5.8969377925958946e-06,
+          "signed_longitudinal": 0.06518067002284365,
+          "lateral_m": 0.0,
+          "edge_clearance_proxy_m": 0.8239933867091955
+        },
+        {
+          "step": 60,
+          "speed_mps": 1.9604698419575084,
+          "desired_mps": 2.0,
+          "steering": 4.943465415093111e-06,
+          "signed_longitudinal": 0.00909193634977307,
+          "lateral_m": 0.0,
+          "edge_clearance_proxy_m": 0.8239939879171233
+        },
+        {
+          "step": 90,
+          "speed_mps": 1.1000037438164534,
+          "desired_mps": 1.1,
+          "steering": 0.0009586061226452227,
+          "signed_longitudinal": -8.610777842577022e-07,
+          "lateral_m": 0.01767587661743164,
+          "edge_clearance_proxy_m": 0.8296849925307411
+        },
+        {
+          "step": 120,
+          "speed_mps": 1.099982496753581,
+          "desired_mps": 2.0,
+          "steering": -6.608277163414377e-05,
+          "signed_longitudinal": 0.2070040257466764,
+          "lateral_m": 0.03450822830200195,
+          "edge_clearance_proxy_m": 0.8469234841798611
+        },
+        {
+          "step": 150,
+          "speed_mps": 1.8744551849558144,
+          "desired_mps": 2.0,
+          "steering": 0.0005841624585270163,
+          "signed_longitudinal": 0.028875307460162685,
+          "lateral_m": 0.05053281784057617,
+          "edge_clearance_proxy_m": 0.8689231024631232
+        },
+        {
+          "step": 180,
+          "speed_mps": 1.9824838390336528,
+          "desired_mps": 2.0,
+          "steering": 0.00039115817018931176,
+          "signed_longitudinal": 0.004028717022259863,
+          "lateral_m": 0.0610651969909668,
+          "edge_clearance_proxy_m": 0.8815931121102099
+        },
+        {
+          "step": 210,
+          "speed_mps": 1.9975539079481295,
+          "desired_mps": 2.0,
+          "steering": 3.368401935238319e-05,
+          "signed_longitudinal": 0.0005626011719302193,
+          "lateral_m": 0.06883573532104492,
+          "edge_clearance_proxy_m": 0.8898230030861112
+        },
+        {
+          "step": 240,
+          "speed_mps": 1.9996600379228502,
+          "desired_mps": 2.0,
+          "steering": 0.0009576966044038517,
+          "signed_longitudinal": 7.819127774445711e-05,
+          "lateral_m": 0.0736684799194336,
+          "edge_clearance_proxy_m": 0.8969305458350995
+        },
+        {
+          "step": 270,
+          "speed_mps": 1.100005315120906,
+          "desired_mps": 1.1,
+          "steering": 0.00019540298626043436,
+          "signed_longitudinal": -1.2224778083447241e-06,
+          "lateral_m": 0.07014942169189453,
+          "edge_clearance_proxy_m": 0.8914710887553045
+        },
+        {
+          "step": 300,
+          "speed_mps": 1.092785866594526,
+          "desired_mps": 2.0,
+          "steering": 0.19847464342416674,
+          "signed_longitudinal": 0.20865925068325902,
+          "lateral_m": 0.011261447147116854,
+          "edge_clearance_proxy_m": 0.8318347528075852
+        },
+        {
+          "step": 330,
+          "speed_mps": 1.8722255861724904,
+          "desired_mps": 2.0,
+          "steering": 0.14151371353291006,
+          "signed_longitudinal": 0.02938811518032722,
+          "lateral_m": 0.1764997209164214,
+          "edge_clearance_proxy_m": 0.5737909437691127
+        },
+        {
+          "step": 360,
+          "speed_mps": 1.9805306974808925,
+          "desired_mps": 2.0,
+          "steering": 0.1586516054391812,
+          "signed_longitudinal": 0.004477939579394725,
+          "lateral_m": 0.25921680929343793,
+          "edge_clearance_proxy_m": 0.4562395614705348
+        },
+        {
+          "step": 390,
+          "speed_mps": 1.995887117182642,
+          "desired_mps": 2.0,
+          "steering": 0.15982915776530646,
+          "signed_longitudinal": 0.0009459630479923398,
+          "lateral_m": 0.3186900103844543,
+          "edge_clearance_proxy_m": 0.388945933855922
+        },
+        {
+          "step": 420,
+          "speed_mps": 1.990756103838237,
+          "desired_mps": 2.0,
+          "steering": -0.05243744091358735,
+          "signed_longitudinal": 0.0021260961172054694,
+          "lateral_m": 0.41180638580341467,
+          "edge_clearance_proxy_m": 0.3864368816151109
+        },
+        {
+          "step": 450,
+          "speed_mps": 1.1000119016395116,
+          "desired_mps": 1.1,
+          "steering": -0.007427208072866745,
+          "signed_longitudinal": -2.737377087640436e-06,
+          "lateral_m": 0.32771317474404205,
+          "edge_clearance_proxy_m": 0.44493445982780544
+        },
+        {
+          "step": 480,
+          "speed_mps": 1.0999975363485157,
+          "desired_mps": 2.0,
+          "steering": 0.002944452372066945,
+          "signed_longitudinal": 0.2070005666398414,
+          "lateral_m": 0.25069966700326773,
+          "edge_clearance_proxy_m": 0.5221465424721222
+        },
+        {
+          "step": 510,
+          "speed_mps": 1.8744541229107698,
+          "desired_mps": 2.0,
+          "steering": 0.005001051732590187,
+          "signed_longitudinal": 0.028875551730522937,
+          "lateral_m": 0.1734728315263716,
+          "edge_clearance_proxy_m": 0.618479697057309
+        },
+        {
+          "step": 540,
+          "speed_mps": 1.982485460474491,
+          "desired_mps": 2.0,
+          "steering": 0.003699351328042884,
+          "signed_longitudinal": 0.004028344090867062,
+          "lateral_m": 0.11964765826358992,
+          "edge_clearance_proxy_m": 0.6868376608035323
+        },
+        {
+          "step": 570,
+          "speed_mps": 1.9975561750257569,
+          "desired_mps": 2.0,
+          "steering": 0.000717649494603013,
+          "signed_longitudinal": 0.0005620797440759163,
+          "lateral_m": 0.08674213360601257,
+          "edge_clearance_proxy_m": 0.7261482907206169
+        },
+        {
+          "step": 600,
+          "speed_mps": 1.9996607504403794,
+          "desired_mps": 2.0,
+          "steering": 0.0004263615447277673,
+          "signed_longitudinal": 7.802739871274112e-05,
+          "lateral_m": 0.061971128767282835,
+          "edge_clearance_proxy_m": 0.7531883191641322
+        },
+        {
+          "step": 630,
+          "speed_mps": 1.1000068839273718,
+          "desired_mps": 1.1,
+          "steering": -0.0022035387291754168,
+          "signed_longitudinal": -1.58330329548928e-06,
+          "lateral_m": 0.04209710429954683,
+          "edge_clearance_proxy_m": 0.7691620526431588
+        },
+        {
+          "step": 660,
+          "speed_mps": 1.0999898470671043,
+          "desired_mps": 2.0,
+          "steering": -0.0006974630958145332,
+          "signed_longitudinal": 0.207002335174566,
+          "lateral_m": 0.021903294244182803,
+          "edge_clearance_proxy_m": 0.7886839722649631
+        },
+        {
+          "step": 666,
+          "speed_mps": 1.3930436550064473,
+          "desired_mps": 2.0,
+          "steering": 0.006886990284145734,
+          "signed_longitudinal": 0.13959995934851713,
+          "lateral_m": 0.017267637508719957,
+          "edge_clearance_proxy_m": 0.7930858889098152
+        }
+      ]
+    },
+    {
+      "profile": "learned_longitudinal_v316",
+      "map": "C",
+      "seed": 186,
+      "speed_mps": 2.0,
+      "status": "arrive_dest",
+      "confirmed_success": true,
+      "quality_pass": false,
+      "steps": 667,
+      "verified_steps": 667,
+      "speed_mae_mps": 0.1282532851869142,
+      "overspeed_steps": 4,
+      "model_brake_steps": 280,
+      "max_abs_lateral_m": 0.4473951942919746,
+      "max_abs_heading_error_rad": 0.052660168905962146,
+      "min_edge_clearance_proxy_m": 0.3084744265689452,
+      "near_edge_warning_steps": 26,
+      "road_marked_steps": 0,
+      "teacher_calls": 0,
+      "idm_policy_used": false,
+      "learned_longitudinal": true,
+      "errors": [],
+      "trace": [
+        {
+          "step": 0,
+          "speed_mps": 0.0,
+          "desired_mps": 2.0,
+          "steering": -3.807574773252713e-12,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.0,
+          "edge_clearance_proxy_m": 0.824
+        },
+        {
+          "step": 30,
+          "speed_mps": 2.0133631229401665,
+          "desired_mps": 2.0,
+          "steering": 3.904977970498908e-06,
+          "signed_longitudinal": -0.07027960352968038,
+          "lateral_m": 0.0,
+          "edge_clearance_proxy_m": 0.8239969939577396
+        },
+        {
+          "step": 60,
+          "speed_mps": 2.0098936557775837,
+          "desired_mps": 2.0,
+          "steering": -6.8586540765929e-07,
+          "signed_longitudinal": -0.05364030983366082,
+          "lateral_m": 0.0,
+          "edge_clearance_proxy_m": 0.8239996993957005
+        },
+        {
+          "step": 90,
+          "speed_mps": 1.1047819703748345,
+          "desired_mps": 1.1,
+          "steering": -0.003682717284001319,
+          "signed_longitudinal": -0.039582505505188534,
+          "lateral_m": 0.011876583099365234,
+          "edge_clearance_proxy_m": 0.8254201320818289
+        },
+        {
+          "step": 120,
+          "speed_mps": 1.1203954981552053,
+          "desired_mps": 2.0,
+          "steering": 0.0020422685199902144,
+          "signed_longitudinal": 0.995798824161341,
+          "lateral_m": 0.026282787322998047,
+          "edge_clearance_proxy_m": 0.8385126668209834
+        },
+        {
+          "step": 150,
+          "speed_mps": 2.0114779836988808,
+          "desired_mps": 2.0,
+          "steering": -0.0003412749191167258,
+          "signed_longitudinal": -0.05632566655287996,
+          "lateral_m": 0.04254961013793945,
+          "edge_clearance_proxy_m": 0.8599345936163222
+        },
+        {
+          "step": 180,
+          "speed_mps": 2.0120496899349836,
+          "desired_mps": 2.0,
+          "steering": 0.0003668428218194602,
+          "signed_longitudinal": -0.06103463927291921,
+          "lateral_m": 0.0564723014831543,
+          "edge_clearance_proxy_m": 0.8757329156348993
+        },
+        {
+          "step": 210,
+          "speed_mps": 2.011602361834689,
+          "desired_mps": 2.0,
+          "steering": -0.0006121139896272515,
+          "signed_longitudinal": -0.06064858802881957,
+          "lateral_m": 0.06659317016601562,
+          "edge_clearance_proxy_m": 0.8867762205902472
+        },
+        {
+          "step": 240,
+          "speed_mps": 2.0127332394721695,
+          "desired_mps": 2.0,
+          "steering": 0.0009624607590034204,
+          "signed_longitudinal": -0.06143523885012156,
+          "lateral_m": 0.07163190841674805,
+          "edge_clearance_proxy_m": 0.8948585078967727
+        },
+        {
+          "step": 270,
+          "speed_mps": 0.8088700132050508,
+          "desired_mps": 1.1,
+          "steering": 0.0002030884600848785,
+          "signed_longitudinal": 0.7958860686591017,
+          "lateral_m": 0.06890439987182617,
+          "edge_clearance_proxy_m": 0.8904613304168632
+        },
+        {
+          "step": 300,
+          "speed_mps": 0.437679751556814,
+          "desired_mps": 2.0,
+          "steering": 0.13273542275019992,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.0438894151585103,
+          "edge_clearance_proxy_m": 0.7788314230892824
+        },
+        {
+          "step": 330,
+          "speed_mps": 1.9129425074050883,
+          "desired_mps": 2.0,
+          "steering": 0.143940558216827,
+          "signed_longitudinal": 0.3583205968509298,
+          "lateral_m": 0.24343731695331172,
+          "edge_clearance_proxy_m": 0.5022319172143375
+        },
+        {
+          "step": 360,
+          "speed_mps": 1.9229888455841873,
+          "desired_mps": 2.0,
+          "steering": 0.16034109825215956,
+          "signed_longitudinal": 0.32094413153752405,
+          "lateral_m": 0.32352362104505517,
+          "edge_clearance_proxy_m": 0.3904948418650762
+        },
+        {
+          "step": 390,
+          "speed_mps": 1.943788898450833,
+          "desired_mps": 2.0,
+          "steering": 0.16127797618977682,
+          "signed_longitudinal": 0.2498811837184148,
+          "lateral_m": 0.3782008360953064,
+          "edge_clearance_proxy_m": 0.32837211811158307
+        },
+        {
+          "step": 420,
+          "speed_mps": 1.9299104346182296,
+          "desired_mps": 2.0,
+          "steering": -0.023866301229982487,
+          "signed_longitudinal": 0.2975666414138033,
+          "lateral_m": 0.41342793942935185,
+          "edge_clearance_proxy_m": 0.38220657036880223
+        },
+        {
+          "step": 450,
+          "speed_mps": 0.9442348558753162,
+          "desired_mps": 1.1,
+          "steering": 0.0019935104185891703,
+          "signed_longitudinal": 0.7222463936479848,
+          "lateral_m": 0.32450747729082163,
+          "edge_clearance_proxy_m": 0.4395530242550332
+        },
+        {
+          "step": 480,
+          "speed_mps": 0.6396747835608138,
+          "desired_mps": 2.0,
+          "steering": 0.011065497026005804,
+          "signed_longitudinal": 0.9997501735248148,
+          "lateral_m": 0.2576626063518157,
+          "edge_clearance_proxy_m": 0.5094695519022957
+        },
+        {
+          "step": 510,
+          "speed_mps": 2.0116272809164704,
+          "desired_mps": 2.0,
+          "steering": 0.0047107732933504825,
+          "signed_longitudinal": -0.0603072284137968,
+          "lateral_m": 0.1750395281843211,
+          "edge_clearance_proxy_m": 0.6196275679653415
+        },
+        {
+          "step": 540,
+          "speed_mps": 2.012094689833237,
+          "desired_mps": 2.0,
+          "steering": 0.0019820328774196993,
+          "signed_longitudinal": -0.06102368896406772,
+          "lateral_m": 0.12512003398300742,
+          "edge_clearance_proxy_m": 0.6824757050009247
+        },
+        {
+          "step": 570,
+          "speed_mps": 2.0128576828538787,
+          "desired_mps": 2.0,
+          "steering": 0.000696867416982654,
+          "signed_longitudinal": -0.07017784499733856,
+          "lateral_m": 0.09362402029525008,
+          "edge_clearance_proxy_m": 0.7195572552888905
+        },
+        {
+          "step": 600,
+          "speed_mps": 2.0122819774346534,
+          "desired_mps": 2.0,
+          "steering": 0.0004214919998438897,
+          "signed_longitudinal": -0.06077699854453623,
+          "lateral_m": 0.0703565296873716,
+          "edge_clearance_proxy_m": 0.7451507669964936
+        },
+        {
+          "step": 630,
+          "speed_mps": 1.0270378269405245,
+          "desired_mps": 1.1,
+          "steering": -0.002607251892928701,
+          "signed_longitudinal": 0.36013394908368895,
+          "lateral_m": 0.05326636909780902,
+          "edge_clearance_proxy_m": 0.7585017468571416
+        },
+        {
+          "step": 660,
+          "speed_mps": 0.8709459526845216,
+          "desired_mps": 2.0,
+          "steering": 0.0031126103831812476,
+          "signed_longitudinal": 0.9990547606582932,
+          "lateral_m": 0.03542998171765532,
+          "edge_clearance_proxy_m": 0.7748398864998839
+        },
+        {
+          "step": 666,
+          "speed_mps": 1.919759864613963,
+          "desired_mps": 2.0,
+          "steering": 0.002601686173551702,
+          "signed_longitudinal": 0.3338030313502547,
+          "lateral_m": 0.03063242538905797,
+          "edge_clearance_proxy_m": 0.7806285309706741
+        }
+      ]
+    },
+    {
+      "profile": "rule_governor_v313",
+      "map": "C",
+      "seed": 189,
+      "speed_mps": 2.0,
+      "status": "arrive_dest",
+      "confirmed_success": true,
+      "quality_pass": true,
+      "steps": 1273,
+      "verified_steps": 1273,
+      "speed_mae_mps": 0.09911568926304454,
+      "overspeed_steps": 7,
+      "model_brake_steps": 14,
+      "max_abs_lateral_m": 0.24385202515413373,
+      "max_abs_heading_error_rad": 0.02510324497354466,
+      "min_edge_clearance_proxy_m": 4.0441145867409425,
+      "near_edge_warning_steps": 0,
+      "road_marked_steps": 0,
+      "teacher_calls": 0,
+      "idm_policy_used": false,
+      "learned_longitudinal": false,
+      "errors": [],
+      "trace": [
+        {
+          "step": 0,
+          "speed_mps": 0.0,
+          "desired_mps": 2.0,
+          "steering": -3.807574773252713e-12,
+          "signed_longitudinal": 0.4,
+          "lateral_m": 0.0,
+          "edge_clearance_proxy_m": 4.324
+        },
+        {
+          "step": 30,
+          "speed_mps": 1.7753642797470173,
+          "desired_mps": 2.0,
+          "steering": -1.350026661555856e-07,
+          "signed_longitudinal": 0.05166621565818603,
+          "lateral_m": 0.0,
+          "edge_clearance_proxy_m": 4.324
+        },
+        {
+          "step": 60,
+          "speed_mps": 1.9751685857863097,
+          "desired_mps": 2.0,
+          "steering": 5.982715692679375e-06,
+          "signed_longitudinal": 0.005711225269148765,
+          "lateral_m": 1.8596649169921875e-05,
+          "edge_clearance_proxy_m": 4.323968777984374
+        },
+        {
+          "step": 90,
+          "speed_mps": 1.0999994922441176,
+          "desired_mps": 1.1,
+          "steering": 0.0009522886146997368,
+          "signed_longitudinal": 1.1678385296365334e-07,
+          "lateral_m": 0.01695728302001953,
+          "edge_clearance_proxy_m": 4.295061131177766
+        },
+        {
+          "step": 120,
+          "speed_mps": 1.0999847475560856,
+          "desired_mps": 2.0,
+          "steering": -6.630126480601127e-05,
+          "signed_longitudinal": 0.20700350806210033,
+          "lateral_m": 0.03375887870788574,
+          "edge_clearance_proxy_m": 4.2787589668277795
+        },
+        {
+          "step": 150,
+          "speed_mps": 1.9005212484087637,
+          "desired_mps": 2.0,
+          "steering": 0.0006035071096192453,
+          "signed_longitudinal": 0.022880112865984355,
+          "lateral_m": 0.0497739315032959,
+          "edge_clearance_proxy_m": 4.268602839779042
+        },
+        {
+          "step": 180,
+          "speed_mps": 1.988999168768323,
+          "desired_mps": 2.0,
+          "steering": 0.0005131431766082533,
+          "signed_longitudinal": 0.002530191183285697,
+          "lateral_m": 0.06014442443847656,
+          "edge_clearance_proxy_m": 4.260544815507821
+        },
+        {
+          "step": 210,
+          "speed_mps": 1.9987859527790108,
+          "desired_mps": 2.0,
+          "steering": -3.5238175366083726e-05,
+          "signed_longitudinal": 0.0002792308608275085,
+          "lateral_m": 0.0668172836303711,
+          "edge_clearance_proxy_m": 4.254647403197184
+        },
+        {
+          "step": 240,
+          "speed_mps": 1.9998625171600928,
+          "desired_mps": 2.0,
+          "steering": -7.641718021387762e-05,
+          "signed_longitudinal": 3.162105317866093e-05,
+          "lateral_m": 0.07611989974975586,
+          "edge_clearance_proxy_m": 4.244136147225061
+        },
+        {
+          "step": 270,
+          "speed_mps": 1.1000003321142395,
+          "desired_mps": 1.1,
+          "steering": 7.705671102178932e-06,
+          "signed_longitudinal": -7.638627507189355e-08,
+          "lateral_m": 0.08249998092651367,
+          "edge_clearance_proxy_m": 4.237764176836235
+        },
+        {
+          "step": 300,
+          "speed_mps": 1.0995419338175239,
+          "desired_mps": 2.0,
+          "steering": -0.0539497169549936,
+          "signed_longitudinal": 0.20710535522196952,
+          "lateral_m": 0.10227985844502996,
+          "edge_clearance_proxy_m": 4.206591855185642
+        },
+        {
+          "step": 330,
+          "speed_mps": 1.900237780842919,
+          "desired_mps": 2.0,
+          "steering": -0.06231771799526417,
+          "signed_longitudinal": 0.022945310406128645,
+          "lateral_m": 0.14174118041215422,
+          "edge_clearance_proxy_m": 4.138217940404909
+        },
+        {
+          "step": 360,
+          "speed_mps": 1.9887700938661386,
+          "desired_mps": 2.0,
+          "steering": -0.0663472338057237,
+          "signed_longitudinal": 0.00258287841078813,
+          "lateral_m": 0.15357288477333242,
+          "edge_clearance_proxy_m": 4.116793377121592
+        },
+        {
+          "step": 390,
+          "speed_mps": 1.9985934267755585,
+          "desired_mps": 2.0,
+          "steering": -0.06622809063590225,
+          "signed_longitudinal": 0.0003235118416215421,
+          "lateral_m": 0.15740422658466713,
+          "edge_clearance_proxy_m": 4.110669645547648
+        },
+        {
+          "step": 420,
+          "speed_mps": 1.9996572626419375,
+          "desired_mps": 2.0,
+          "steering": -0.06863929188379707,
+          "signed_longitudinal": 7.88295923543636e-05,
+          "lateral_m": 0.15870805621189987,
+          "edge_clearance_proxy_m": 4.109098968703186
+        },
+        {
+          "step": 450,
+          "speed_mps": 1.0999762007925196,
+          "desired_mps": 1.1,
+          "steering": -0.06615340545648368,
+          "signed_longitudinal": 5.473817720520469e-06,
+          "lateral_m": 0.1618230531773861,
+          "edge_clearance_proxy_m": 4.10637883440505
+        },
+        {
+          "step": 480,
+          "speed_mps": 1.099969291596299,
+          "desired_mps": 2.0,
+          "steering": -0.0661546378221989,
+          "signed_longitudinal": 0.20700706293285123,
+          "lateral_m": 0.16491672320759676,
+          "edge_clearance_proxy_m": 4.1031276901020695
+        },
+        {
+          "step": 510,
+          "speed_mps": 1.9002681196576912,
+          "desired_mps": 2.0,
+          "steering": -0.06777835572521458,
+          "signed_longitudinal": 0.022938332478731036,
+          "lateral_m": 0.16790403180313973,
+          "edge_clearance_proxy_m": 4.09982852199129
+        },
+        {
+          "step": 540,
+          "speed_mps": 1.9888161897941854,
+          "desired_mps": 2.0,
+          "steering": -0.06616721494500588,
+          "signed_longitudinal": 0.002572276347337359,
+          "lateral_m": 0.16977714296222501,
+          "edge_clearance_proxy_m": 4.098174954110676
+        },
+        {
+          "step": 570,
+          "speed_mps": 1.9986032564195733,
+          "desired_mps": 2.0,
+          "steering": -0.06619445269439997,
+          "signed_longitudinal": 0.0003212510234981503,
+          "lateral_m": 0.17122112092493325,
+          "edge_clearance_proxy_m": 4.096694273956807
+        },
+        {
+          "step": 600,
+          "speed_mps": 1.9996851377186695,
+          "desired_mps": 2.0,
+          "steering": -0.06621832108442591,
+          "signed_longitudinal": 7.241832470601174e-05,
+          "lateral_m": 0.17272364783793392,
+          "edge_clearance_proxy_m": 4.09524797472761
+        },
+        {
+          "step": 630,
+          "speed_mps": 1.0999762685733208,
+          "desired_mps": 1.1,
+          "steering": -0.06628695517599173,
+          "signed_longitudinal": 5.458228136245857e-06,
+          "lateral_m": 0.175965542943338,
+          "edge_clearance_proxy_m": 4.092381378094863
+        },
+        {
+          "step": 660,
+          "speed_mps": 1.099971742827175,
+          "desired_mps": 2.0,
+          "steering": -0.06626289813263182,
+          "signed_longitudinal": 0.20700649914974978,
+          "lateral_m": 0.17900699602314063,
+          "edge_clearance_proxy_m": 4.088921395793095
+        },
+        {
+          "step": 690,
+          "speed_mps": 1.9002957444948245,
+          "desired_mps": 2.0,
+          "steering": -0.06787837288358224,
+          "signed_longitudinal": 0.02293197876619036,
+          "lateral_m": 0.18212037336724052,
+          "edge_clearance_proxy_m": 4.0856708533497335
+        },
+        {
+          "step": 720,
+          "speed_mps": 1.988811873491353,
+          "desired_mps": 2.0,
+          "steering": -0.06629706870426838,
+          "signed_longitudinal": 0.0025732690969888306,
+          "lateral_m": 0.18411067430416495,
+          "edge_clearance_proxy_m": 4.083992112408622
+        },
+        {
+          "step": 750,
+          "speed_mps": 1.9985991861414445,
+          "desired_mps": 2.0,
+          "steering": -0.0662946051849516,
+          "signed_longitudinal": 0.00032218718746776623,
+          "lateral_m": 0.18568750122918232,
+          "edge_clearance_proxy_m": 4.082362706638271
+        },
+        {
+          "step": 780,
+          "speed_mps": 1.9996391974624004,
+          "desired_mps": 2.0,
+          "steering": -0.06868141527568211,
+          "signed_longitudinal": 8.298458364791372e-05,
+          "lateral_m": 0.1871362307185862,
+          "edge_clearance_proxy_m": 4.080672421507858
+        },
+        {
+          "step": 810,
+          "speed_mps": 1.0999816048205662,
+          "desired_mps": 1.1,
+          "steering": -0.06621036407351404,
+          "signed_longitudinal": 4.230891269800807e-06,
+          "lateral_m": 0.19005698267860538,
+          "edge_clearance_proxy_m": 4.077976986108495
+        },
+        {
+          "step": 840,
+          "speed_mps": 1.0999732664875144,
+          "desired_mps": 2.0,
+          "steering": -0.06993921570412519,
+          "signed_longitudinal": 0.2070061487078717,
+          "lateral_m": 0.1931092939386545,
+          "edge_clearance_proxy_m": 4.074735540235495
+        },
+        {
+          "step": 870,
+          "speed_mps": 1.9002611286573106,
+          "desired_mps": 2.0,
+          "steering": -0.06613131444063404,
+          "signed_longitudinal": 0.02293994040881857,
+          "lateral_m": 0.1965162248445793,
+          "edge_clearance_proxy_m": 4.071411018311674
+        },
+        {
+          "step": 900,
+          "speed_mps": 1.9888198688555065,
+          "desired_mps": 2.0,
+          "steering": -0.06501719805998614,
+          "signed_longitudinal": 0.002571430163233495,
+          "lateral_m": 0.19624347792043295,
+          "edge_clearance_proxy_m": 4.117089780043667
+        },
+        {
+          "step": 930,
+          "speed_mps": 1.996263421404093,
+          "desired_mps": 2.0,
+          "steering": 0.0004895046821191522,
+          "signed_longitudinal": 0.0008594130770585929,
+          "lateral_m": 0.17576000201723785,
+          "edge_clearance_proxy_m": 4.124496044268865
+        },
+        {
+          "step": 960,
+          "speed_mps": 1.999587187210742,
+          "desired_mps": 2.0,
+          "steering": -0.002366529335656802,
+          "signed_longitudinal": 9.49469415293347e-05,
+          "lateral_m": 0.11967526349676305,
+          "edge_clearance_proxy_m": 4.18580292016249
+        },
+        {
+          "step": 990,
+          "speed_mps": 1.0999719560056391,
+          "desired_mps": 1.1,
+          "steering": 0.0009292830906967738,
+          "signed_longitudinal": 6.450118703020813e-06,
+          "lateral_m": 0.1313027446832873,
+          "edge_clearance_proxy_m": 4.184704604813992
+        },
+        {
+          "step": 1020,
+          "speed_mps": 1.0999518428458481,
+          "desired_mps": 2.0,
+          "steering": 0.0010916432655451995,
+          "signed_longitudinal": 0.20701107614545494,
+          "lateral_m": 0.139078772117041,
+          "edge_clearance_proxy_m": 4.179050560805874
+        },
+        {
+          "step": 1050,
+          "speed_mps": 1.9004743867852747,
+          "desired_mps": 2.0,
+          "steering": -0.0002278542451542177,
+          "signed_longitudinal": 0.02289089103938682,
+          "lateral_m": 0.13668463659221786,
+          "edge_clearance_proxy_m": 4.182561861378332
+        },
+        {
+          "step": 1080,
+          "speed_mps": 1.9889989556754208,
+          "desired_mps": 2.0,
+          "steering": 0.00016586747366223619,
+          "signed_longitudinal": 0.0025302401946532063,
+          "lateral_m": 0.12822671571321287,
+          "edge_clearance_proxy_m": 4.192986787619847
+        },
+        {
+          "step": 1110,
+          "speed_mps": 1.9987834693557,
+          "desired_mps": 2.0,
+          "steering": 0.0009230695325637907,
+          "signed_longitudinal": 0.0002798020481889863,
+          "lateral_m": 0.11889020536037265,
+          "edge_clearance_proxy_m": 4.200999667080446
+        },
+        {
+          "step": 1140,
+          "speed_mps": 1.9998631879669615,
+          "desired_mps": 2.0,
+          "steering": -4.896809736722744e-06,
+          "signed_longitudinal": 3.1466767598855585e-05,
+          "lateral_m": 0.10819549163018571,
+          "edge_clearance_proxy_m": 4.212033819869489
+        },
+        {
+          "step": 1170,
+          "speed_mps": 1.0999959489904767,
+          "desired_mps": 1.1,
+          "steering": -0.0015952527792417982,
+          "signed_longitudinal": 9.317321903790088e-07,
+          "lateral_m": 0.10956633288436457,
+          "edge_clearance_proxy_m": 4.212547398054557
+        },
+        {
+          "step": 1200,
+          "speed_mps": 1.0999860842245963,
+          "desired_mps": 2.0,
+          "steering": -0.001147867978195615,
+          "signed_longitudinal": 0.20700320062834285,
+          "lateral_m": 0.11435269049806251,
+          "edge_clearance_proxy_m": 4.206641487378542
+        },
+        {
+          "step": 1230,
+          "speed_mps": 1.9005200300537857,
+          "desired_mps": 2.0,
+          "steering": 0.0007339384095366555,
+          "signed_longitudinal": 0.0228803930876293,
+          "lateral_m": 0.11517369103390962,
+          "edge_clearance_proxy_m": 4.20815780560034
+        },
+        {
+          "step": 1260,
+          "speed_mps": 1.9890065261688261,
+          "desired_mps": 2.0,
+          "steering": -0.00018548345748097317,
+          "signed_longitudinal": 0.0025284989811699935,
+          "lateral_m": 0.11249128481913573,
+          "edge_clearance_proxy_m": 4.210552275423379
+        },
+        {
+          "step": 1272,
+          "speed_mps": 1.9954430775731575,
+          "desired_mps": 2.0,
+          "steering": -0.00022392104232297225,
+          "signed_longitudinal": 0.001048092158173768,
+          "lateral_m": 0.1115533563107185,
+          "edge_clearance_proxy_m": 4.211558129111509
+        }
+      ]
+    },
+    {
+      "profile": "learned_longitudinal_v316",
+      "map": "C",
+      "seed": 189,
+      "speed_mps": 2.0,
+      "status": "arrive_dest",
+      "confirmed_success": true,
+      "quality_pass": false,
+      "steps": 1398,
+      "verified_steps": 1398,
+      "speed_mae_mps": 0.23687962167445542,
+      "overspeed_steps": 8,
+      "model_brake_steps": 416,
+      "max_abs_lateral_m": 0.6146780232021913,
+      "max_abs_heading_error_rad": 0.03549688601930345,
+      "min_edge_clearance_proxy_m": 3.6346240604506406,
+      "near_edge_warning_steps": 0,
+      "road_marked_steps": 0,
+      "teacher_calls": 0,
+      "idm_policy_used": false,
+      "learned_longitudinal": true,
+      "errors": [],
+      "trace": [
+        {
+          "step": 0,
+          "speed_mps": 0.0,
+          "desired_mps": 2.0,
+          "steering": -3.807574773252713e-12,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.0,
+          "edge_clearance_proxy_m": 4.324
+        },
+        {
+          "step": 30,
+          "speed_mps": 1.9781761169433598,
+          "desired_mps": 2.0,
+          "steering": 3.6430461175253383e-06,
+          "signed_longitudinal": 0.1047406398697492,
+          "lateral_m": 0.0,
+          "edge_clearance_proxy_m": 4.323998196374447
+        },
+        {
+          "step": 60,
+          "speed_mps": 2.0172541292231103,
+          "desired_mps": 2.0,
+          "steering": -0.00214359644321847,
+          "signed_longitudinal": -0.08719732280470711,
+          "lateral_m": 0.008055686950683594,
+          "edge_clearance_proxy_m": 4.310430693500221
+        },
+        {
+          "step": 90,
+          "speed_mps": 0.5625094193773743,
+          "desired_mps": 1.1,
+          "steering": -0.0024344416067311374,
+          "signed_longitudinal": 0.9619962438683812,
+          "lateral_m": 0.021843910217285156,
+          "edge_clearance_proxy_m": 4.290744129362382
+        },
+        {
+          "step": 120,
+          "speed_mps": 0.593215114477871,
+          "desired_mps": 2.0,
+          "steering": -6.967808204188649e-05,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.03349137306213379,
+          "edge_clearance_proxy_m": 4.2789469803176186
+        },
+        {
+          "step": 150,
+          "speed_mps": 2.0242256564192975,
+          "desired_mps": 2.0,
+          "steering": 0.0006215981662453572,
+          "signed_longitudinal": -0.1537747049494123,
+          "lateral_m": 0.04870009422302246,
+          "edge_clearance_proxy_m": 4.269570973863467
+        },
+        {
+          "step": 180,
+          "speed_mps": 2.01125431128578,
+          "desired_mps": 2.0,
+          "steering": 0.0007640408945637165,
+          "signed_longitudinal": -0.05794595910959705,
+          "lateral_m": 0.06137371063232422,
+          "edge_clearance_proxy_m": 4.258179747414781
+        },
+        {
+          "step": 210,
+          "speed_mps": 1.9753487262553422,
+          "desired_mps": 2.0,
+          "steering": 0.0010367102845718413,
+          "signed_longitudinal": 0.11531607947971742,
+          "lateral_m": 0.0707554817199707,
+          "edge_clearance_proxy_m": 4.249326336416149
+        },
+        {
+          "step": 240,
+          "speed_mps": 1.9607176635952739,
+          "desired_mps": 2.0,
+          "steering": 0.0010390290821914846,
+          "signed_longitudinal": 0.18074271000083986,
+          "lateral_m": 0.08009171485900879,
+          "edge_clearance_proxy_m": 4.240000616929096
+        },
+        {
+          "step": 270,
+          "speed_mps": 0.7678331542052,
+          "desired_mps": 1.1,
+          "steering": 0.0002624646195856642,
+          "signed_longitudinal": 0.8482154327796563,
+          "lateral_m": 0.0847160816192627,
+          "edge_clearance_proxy_m": 4.2355114274935435
+        },
+        {
+          "step": 300,
+          "speed_mps": 0.76724103887691,
+          "desired_mps": 2.0,
+          "steering": -2.791124345404829e-05,
+          "signed_longitudinal": 0.9993617312614568,
+          "lateral_m": 0.08786273002624512,
+          "edge_clearance_proxy_m": 4.232425760172409
+        },
+        {
+          "step": 330,
+          "speed_mps": 2.0240122857530283,
+          "desired_mps": 2.0,
+          "steering": -0.05859439810377703,
+          "signed_longitudinal": -0.1399429420537573,
+          "lateral_m": 0.12753214033207172,
+          "edge_clearance_proxy_m": 4.163313472694314
+        },
+        {
+          "step": 360,
+          "speed_mps": 1.9747646721506844,
+          "desired_mps": 2.0,
+          "steering": -0.06496323451335224,
+          "signed_longitudinal": 0.12287321210036678,
+          "lateral_m": 0.14865505684788616,
+          "edge_clearance_proxy_m": 4.123980532787286
+        },
+        {
+          "step": 390,
+          "speed_mps": 1.9955778691107697,
+          "desired_mps": 2.0,
+          "steering": -0.06675315697203438,
+          "signed_longitudinal": 0.02110020826749484,
+          "lateral_m": 0.15524090208324992,
+          "edge_clearance_proxy_m": 4.114349674603501
+        },
+        {
+          "step": 420,
+          "speed_mps": 2.0111604190080934,
+          "desired_mps": 2.0,
+          "steering": -0.06866104151080601,
+          "signed_longitudinal": -0.05654393861617854,
+          "lateral_m": 0.15772080437608338,
+          "edge_clearance_proxy_m": 4.110076075572732
+        },
+        {
+          "step": 450,
+          "speed_mps": 0.6796447120515711,
+          "desired_mps": 1.1,
+          "steering": -0.06620172857594422,
+          "signed_longitudinal": 0.9261963895797986,
+          "lateral_m": 0.15811274823149546,
+          "edge_clearance_proxy_m": 4.112085668310731
+        },
+        {
+          "step": 480,
+          "speed_mps": 1.155159249553312,
+          "desired_mps": 2.0,
+          "steering": -0.06618034406688199,
+          "signed_longitudinal": 0.9958059008434543,
+          "lateral_m": 0.15892535944041697,
+          "edge_clearance_proxy_m": 4.110882194919363
+        },
+        {
+          "step": 510,
+          "speed_mps": 1.977675266163203,
+          "desired_mps": 2.0,
+          "steering": -0.06611841839493944,
+          "signed_longitudinal": 0.10476257432865901,
+          "lateral_m": 0.1609785853493264,
+          "edge_clearance_proxy_m": 4.106960292056013
+        },
+        {
+          "step": 540,
+          "speed_mps": 1.7403855969576179,
+          "desired_mps": 2.0,
+          "steering": -0.0696234111111657,
+          "signed_longitudinal": 0.7517904637723516,
+          "lateral_m": 0.16265194730707577,
+          "edge_clearance_proxy_m": 4.105192920267545
+        },
+        {
+          "step": 570,
+          "speed_mps": 1.8301832204288668,
+          "desired_mps": 2.0,
+          "steering": -0.06770913758468634,
+          "signed_longitudinal": 0.5899880844262672,
+          "lateral_m": 0.16447635642879987,
+          "edge_clearance_proxy_m": 4.103383431766789
+        },
+        {
+          "step": 600,
+          "speed_mps": 1.9957210346321532,
+          "desired_mps": 2.0,
+          "steering": -0.06771521281236856,
+          "signed_longitudinal": 0.02110020826749484,
+          "lateral_m": 0.16631509992934213,
+          "edge_clearance_proxy_m": 4.101539589802254
+        },
+        {
+          "step": 630,
+          "speed_mps": 0.6211280186125613,
+          "desired_mps": 1.1,
+          "steering": -0.06609596337214377,
+          "signed_longitudinal": 0.9376583851415543,
+          "lateral_m": 0.16710499230545395,
+          "edge_clearance_proxy_m": 4.106567569513116
+        },
+        {
+          "step": 660,
+          "speed_mps": 0.6204657852496064,
+          "desired_mps": 2.0,
+          "steering": -0.06594861606523396,
+          "signed_longitudinal": 0.9995759709731713,
+          "lateral_m": 0.17089138458987208,
+          "edge_clearance_proxy_m": 4.106534551011896
+        },
+        {
+          "step": 690,
+          "speed_mps": 2.0212360953479336,
+          "desired_mps": 2.0,
+          "steering": -0.06613445445060162,
+          "signed_longitudinal": -0.14430553650022232,
+          "lateral_m": 0.18658907372565636,
+          "edge_clearance_proxy_m": 4.0860392577629705
+        },
+        {
+          "step": 720,
+          "speed_mps": 1.7597971712575091,
+          "desired_mps": 2.0,
+          "steering": -0.06627498455760557,
+          "signed_longitudinal": 0.7237009496718856,
+          "lateral_m": 0.1953226792343301,
+          "edge_clearance_proxy_m": 4.074593130005408
+        },
+        {
+          "step": 750,
+          "speed_mps": 2.0210977677318014,
+          "desired_mps": 2.0,
+          "steering": -0.06630184040769703,
+          "signed_longitudinal": -0.14359623111315756,
+          "lateral_m": 0.19817789426407728,
+          "edge_clearance_proxy_m": 4.069873436642746
+        },
+        {
+          "step": 780,
+          "speed_mps": 1.7644112653973312,
+          "desired_mps": 2.0,
+          "steering": -0.06977957171962644,
+          "signed_longitudinal": 0.708591136891311,
+          "lateral_m": 0.19997922876554242,
+          "edge_clearance_proxy_m": 4.067825352810141
+        },
+        {
+          "step": 810,
+          "speed_mps": 0.3135892752747908,
+          "desired_mps": 1.1,
+          "steering": -0.06603000835233508,
+          "signed_longitudinal": 0.9959794665063185,
+          "lateral_m": 0.20150289964011847,
+          "edge_clearance_proxy_m": 4.0722854379371665
+        },
+        {
+          "step": 840,
+          "speed_mps": 0.6868184560987353,
+          "desired_mps": 2.0,
+          "steering": -0.06601216111842244,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.2055927138479845,
+          "edge_clearance_proxy_m": 4.068987461282994
+        },
+        {
+          "step": 870,
+          "speed_mps": 1.9209647120246627,
+          "desired_mps": 2.0,
+          "steering": -0.06756808365180926,
+          "signed_longitudinal": 0.33379472639335206,
+          "lateral_m": 0.21793057404732252,
+          "edge_clearance_proxy_m": 4.054612434337932
+        },
+        {
+          "step": 900,
+          "speed_mps": 2.0059115294465117,
+          "desired_mps": 2.0,
+          "steering": -0.07100374315849751,
+          "signed_longitudinal": -0.03373240506626411,
+          "lateral_m": 0.24966618713930444,
+          "edge_clearance_proxy_m": 4.033687094957406
+        },
+        {
+          "step": 930,
+          "speed_mps": 1.964068657258485,
+          "desired_mps": 2.0,
+          "steering": -0.08531131094997123,
+          "signed_longitudinal": 0.1633547939063419,
+          "lateral_m": 0.3527339400945877,
+          "edge_clearance_proxy_m": 3.9675913883812433
+        },
+        {
+          "step": 960,
+          "speed_mps": 1.9849366507980695,
+          "desired_mps": 2.0,
+          "steering": -0.0013281260291105941,
+          "signed_longitudinal": 0.07427480407981549,
+          "lateral_m": 0.5735677966190735,
+          "edge_clearance_proxy_m": 3.670898142838067
+        },
+        {
+          "step": 990,
+          "speed_mps": 1.1528683289667574,
+          "desired_mps": 1.1,
+          "steering": 0.0012963926845027604,
+          "signed_longitudinal": -0.5316343733868726,
+          "lateral_m": 0.5336305580429115,
+          "edge_clearance_proxy_m": 3.75437845396531
+        },
+        {
+          "step": 1020,
+          "speed_mps": 0.2991911754800049,
+          "desired_mps": 2.0,
+          "steering": -0.0011847268818614622,
+          "signed_longitudinal": 0.9995606417287839,
+          "lateral_m": 0.501652091485256,
+          "edge_clearance_proxy_m": 3.786373641788873
+        },
+        {
+          "step": 1050,
+          "speed_mps": 1.9539588564825787,
+          "desired_mps": 2.0,
+          "steering": 0.006522699829768784,
+          "signed_longitudinal": 0.20505873142574077,
+          "lateral_m": 0.40730429958197156,
+          "edge_clearance_proxy_m": 3.877662930587088
+        },
+        {
+          "step": 1080,
+          "speed_mps": 1.687775078049777,
+          "desired_mps": 2.0,
+          "steering": -0.0032318299011324125,
+          "signed_longitudinal": 0.8192974685477032,
+          "lateral_m": 0.3095993272841788,
+          "edge_clearance_proxy_m": 3.976513362785991
+        },
+        {
+          "step": 1110,
+          "speed_mps": 1.7429287158078184,
+          "desired_mps": 2.0,
+          "steering": -0.0034218394209826254,
+          "signed_longitudinal": 0.7419580217383648,
+          "lateral_m": 0.2227826505315864,
+          "edge_clearance_proxy_m": 4.072319169307481
+        },
+        {
+          "step": 1140,
+          "speed_mps": 1.5569034666798933,
+          "desired_mps": 2.0,
+          "steering": -0.07035074625377921,
+          "signed_longitudinal": 0.9244667407783934,
+          "lateral_m": 0.18308828998732807,
+          "edge_clearance_proxy_m": 4.132358379169018
+        },
+        {
+          "step": 1170,
+          "speed_mps": 0.3185007753624793,
+          "desired_mps": 1.1,
+          "steering": 0.003000467977620552,
+          "signed_longitudinal": 0.9945318087098981,
+          "lateral_m": 0.1895751075829235,
+          "edge_clearance_proxy_m": 4.131637794846509
+        },
+        {
+          "step": 1200,
+          "speed_mps": 0.3201533338194913,
+          "desired_mps": 2.0,
+          "steering": -0.0008496838488942443,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.19097714542958677,
+          "edge_clearance_proxy_m": 4.130929844606971
+        },
+        {
+          "step": 1230,
+          "speed_mps": 2.006571708693368,
+          "desired_mps": 2.0,
+          "steering": 0.0019087845885052501,
+          "signed_longitudinal": -0.02802532551599117,
+          "lateral_m": 0.17162329875774773,
+          "edge_clearance_proxy_m": 4.143835976066406
+        },
+        {
+          "step": 1260,
+          "speed_mps": 2.0201784802511265,
+          "desired_mps": 2.0,
+          "steering": -0.000760952337221736,
+          "signed_longitudinal": -0.10056621262309795,
+          "lateral_m": 0.16025173838336748,
+          "edge_clearance_proxy_m": 4.160190258935142
+        },
+        {
+          "step": 1290,
+          "speed_mps": 2.0194552235071663,
+          "desired_mps": 2.0,
+          "steering": 0.0014618224088418959,
+          "signed_longitudinal": -0.09978543669216418,
+          "lateral_m": 0.15707562097210825,
+          "edge_clearance_proxy_m": 4.165598272700802
+        },
+        {
+          "step": 1320,
+          "speed_mps": 2.002155287856104,
+          "desired_mps": 2.0,
+          "steering": 0.0008995102332930099,
+          "signed_longitudinal": -0.008365024414681812,
+          "lateral_m": 0.15244876675893337,
+          "edge_clearance_proxy_m": 4.169814014777823
+        },
+        {
+          "step": 1350,
+          "speed_mps": 0.15971576032666882,
+          "desired_mps": 1.1,
+          "steering": -0.00030215569318825785,
+          "signed_longitudinal": 0.9972235378505695,
+          "lateral_m": 0.15190008490739615,
+          "edge_clearance_proxy_m": 4.171928573304355
+        },
+        {
+          "step": 1380,
+          "speed_mps": 0.3020089967685972,
+          "desired_mps": 2.0,
+          "steering": 0.0008587147724052681,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.1518376725237971,
+          "edge_clearance_proxy_m": 4.171993991638334
+        },
+        {
+          "step": 1397,
+          "speed_mps": 2.022317159837412,
+          "desired_mps": 2.0,
+          "steering": 0.0008999553886654839,
+          "signed_longitudinal": -0.15041368138093408,
+          "lateral_m": 0.14955312818893063,
+          "edge_clearance_proxy_m": 4.172615895241399
+        }
+      ]
+    },
+    {
+      "profile": "learned_longitudinal_v3162",
+      "map": "C",
+      "seed": 186,
+      "speed_mps": 2.0,
+      "status": "arrive_dest",
+      "confirmed_success": true,
+      "quality_pass": false,
+      "steps": 694,
+      "verified_steps": 694,
+      "speed_mae_mps": 0.20356361529792527,
+      "overspeed_steps": 4,
+      "model_brake_steps": 270,
+      "max_abs_lateral_m": 0.5408704360664204,
+      "max_abs_heading_error_rad": 0.05292857736748591,
+      "min_edge_clearance_proxy_m": 0.2217268705805,
+      "near_edge_warning_steps": 125,
+      "road_marked_steps": 0,
+      "teacher_calls": 0,
+      "idm_policy_used": false,
+      "learned_longitudinal": true,
+      "errors": [],
+      "action_total_variation": 348.97007051619687,
+      "action_sign_reversals": 528,
+      "trace": [
+        {
+          "step": 0,
+          "speed_mps": 0.0,
+          "desired_mps": 2.0,
+          "steering": -3.807574773252713e-12,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.0,
+          "edge_clearance_proxy_m": 0.824
+        },
+        {
+          "step": 30,
+          "speed_mps": 2.0122592449190204,
+          "desired_mps": 2.0,
+          "steering": 7.840021866599278e-07,
+          "signed_longitudinal": -0.06294657877605797,
+          "lateral_m": 0.0,
+          "edge_clearance_proxy_m": 0.8239990981871488
+        },
+        {
+          "step": 60,
+          "speed_mps": 2.012264490128134,
+          "desired_mps": 2.0,
+          "steering": -1.165344201830412e-06,
+          "signed_longitudinal": -0.06294657877605797,
+          "lateral_m": 0.0,
+          "edge_clearance_proxy_m": 0.8239987975828984
+        },
+        {
+          "step": 90,
+          "speed_mps": 0.14427337582858377,
+          "desired_mps": 1.1,
+          "steering": -0.005287446040043133,
+          "signed_longitudinal": 0.9994835697278119,
+          "lateral_m": 0.009372234344482422,
+          "edge_clearance_proxy_m": 0.8239023697291619
+        },
+        {
+          "step": 120,
+          "speed_mps": 0.14132483931984433,
+          "desired_mps": 2.0,
+          "steering": -0.0022475019183378995,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.020772457122802734,
+          "edge_clearance_proxy_m": 0.8331016231801707
+        },
+        {
+          "step": 150,
+          "speed_mps": 2.0126963654295538,
+          "desired_mps": 2.0,
+          "steering": -0.0005992670650939556,
+          "signed_longitudinal": -0.06608456231494064,
+          "lateral_m": 0.036437034606933594,
+          "edge_clearance_proxy_m": 0.8538337275158943
+        },
+        {
+          "step": 180,
+          "speed_mps": 2.0127054615880855,
+          "desired_mps": 2.0,
+          "steering": 0.00044856664484769484,
+          "signed_longitudinal": -0.06608456231494064,
+          "lateral_m": 0.05209064483642578,
+          "edge_clearance_proxy_m": 0.8708244798297256
+        },
+        {
+          "step": 210,
+          "speed_mps": 2.010008666949425,
+          "desired_mps": 2.0,
+          "steering": -0.00040102029927363385,
+          "signed_longitudinal": -0.052032057115941256,
+          "lateral_m": 0.06295013427734375,
+          "edge_clearance_proxy_m": 0.8831683310673752
+        },
+        {
+          "step": 240,
+          "speed_mps": 2.0127027279262104,
+          "desired_mps": 2.0,
+          "steering": 0.000978622698844689,
+          "signed_longitudinal": -0.06608456231494064,
+          "lateral_m": 0.07075023651123047,
+          "edge_clearance_proxy_m": 0.8927149208998412
+        },
+        {
+          "step": 270,
+          "speed_mps": 0.7164045214257245,
+          "desired_mps": 1.1,
+          "steering": 0.0007408685010293566,
+          "signed_longitudinal": 0.9876453227708949,
+          "lateral_m": 0.0709681510925293,
+          "edge_clearance_proxy_m": 0.8948881909274767
+        },
+        {
+          "step": 300,
+          "speed_mps": 0.6803699142213446,
+          "desired_mps": 2.0,
+          "steering": 0.0037530390592855783,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.06950569152832031,
+          "edge_clearance_proxy_m": 0.8918261711572244
+        },
+        {
+          "step": 330,
+          "speed_mps": 2.013173857297126,
+          "desired_mps": 2.0,
+          "steering": 0.14957114508502667,
+          "signed_longitudinal": -0.06608456231494064,
+          "lateral_m": 0.18374736264242486,
+          "edge_clearance_proxy_m": 0.6320193117988386
+        },
+        {
+          "step": 360,
+          "speed_mps": 2.0123713684408977,
+          "desired_mps": 2.0,
+          "steering": 0.14983778673362427,
+          "signed_longitudinal": -0.06294657877605797,
+          "lateral_m": 0.37024730689999075,
+          "edge_clearance_proxy_m": 0.3642133340938216
+        },
+        {
+          "step": 390,
+          "speed_mps": 2.0130224610042546,
+          "desired_mps": 2.0,
+          "steering": 0.1594127997841502,
+          "signed_longitudinal": -0.06608456231494064,
+          "lateral_m": 0.4388982751384951,
+          "edge_clearance_proxy_m": 0.27022991673889685
+        },
+        {
+          "step": 420,
+          "speed_mps": 2.0123433710068457,
+          "desired_mps": 2.0,
+          "steering": 0.1477433339076657,
+          "signed_longitudinal": -0.06294657877605797,
+          "lateral_m": 0.4879151761621685,
+          "edge_clearance_proxy_m": 0.2647641259883944
+        },
+        {
+          "step": 450,
+          "speed_mps": 0.520212243318934,
+          "desired_mps": 1.1,
+          "steering": -0.03176745603306826,
+          "signed_longitudinal": 0.9990236546483702,
+          "lateral_m": 0.5065811330407777,
+          "edge_clearance_proxy_m": 0.29115610483576226
+        },
+        {
+          "step": 480,
+          "speed_mps": 0.6845547671697262,
+          "desired_mps": 2.0,
+          "steering": -0.01388437762471983,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.44906027837158247,
+          "edge_clearance_proxy_m": 0.31816347546926427
+        },
+        {
+          "step": 510,
+          "speed_mps": 2.012944679631293,
+          "desired_mps": 2.0,
+          "steering": 0.004819959034789473,
+          "signed_longitudinal": -0.06608456231494064,
+          "lateral_m": 0.30686775532968635,
+          "edge_clearance_proxy_m": 0.4655935176054361
+        },
+        {
+          "step": 540,
+          "speed_mps": 2.0129693066965286,
+          "desired_mps": 2.0,
+          "steering": 0.004678087128027987,
+          "signed_longitudinal": -0.06608456231494064,
+          "lateral_m": 0.21248412618497436,
+          "edge_clearance_proxy_m": 0.5799208327461011
+        },
+        {
+          "step": 570,
+          "speed_mps": 2.0130156333349585,
+          "desired_mps": 2.0,
+          "steering": 0.0023917659702623116,
+          "signed_longitudinal": -0.06608456231494064,
+          "lateral_m": 0.1582145171387559,
+          "edge_clearance_proxy_m": 0.6480477267776531
+        },
+        {
+          "step": 600,
+          "speed_mps": 2.0130620125374823,
+          "desired_mps": 2.0,
+          "steering": 0.0009374131884617521,
+          "signed_longitudinal": -0.06608456231494064,
+          "lateral_m": 0.12425678127264739,
+          "edge_clearance_proxy_m": 0.6878259714927021
+        },
+        {
+          "step": 630,
+          "speed_mps": 0.36450595384081513,
+          "desired_mps": 1.1,
+          "steering": -0.0009752221860535329,
+          "signed_longitudinal": 0.9994411768182884,
+          "lateral_m": 0.10683942463910157,
+          "edge_clearance_proxy_m": 0.7036995637416366
+        },
+        {
+          "step": 660,
+          "speed_mps": 0.6798149094145173,
+          "desired_mps": 2.0,
+          "steering": -0.00221016567263267,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.09177804098571585,
+          "edge_clearance_proxy_m": 0.7160770937492011
+        },
+        {
+          "step": 690,
+          "speed_mps": 2.012253383940139,
+          "desired_mps": 2.0,
+          "steering": 0.000883860738429872,
+          "signed_longitudinal": -0.06294657877605797,
+          "lateral_m": 0.056120114747887584,
+          "edge_clearance_proxy_m": 0.7547494825043078
+        },
+        {
+          "step": 693,
+          "speed_mps": 1.905174858273631,
+          "desired_mps": 2.0,
+          "steering": 0.0008249325397306846,
+          "signed_longitudinal": 0.389125997085077,
+          "lateral_m": 0.052981692401807834,
+          "edge_clearance_proxy_m": 0.7583161521403724
+        }
+      ]
+    },
+    {
+      "profile": "learned_longitudinal_v3162",
+      "map": "C",
+      "seed": 189,
+      "speed_mps": 2.0,
+      "status": "arrive_dest",
+      "confirmed_success": true,
+      "quality_pass": true,
+      "steps": 1418,
+      "verified_steps": 1418,
+      "speed_mae_mps": 0.26078414853247167,
+      "overspeed_steps": 8,
+      "model_brake_steps": 396,
+      "max_abs_lateral_m": 0.22958733048770397,
+      "max_abs_heading_error_rad": 0.025133264634612736,
+      "min_edge_clearance_proxy_m": 4.060772140616422,
+      "near_edge_warning_steps": 0,
+      "road_marked_steps": 0,
+      "teacher_calls": 0,
+      "idm_policy_used": false,
+      "learned_longitudinal": true,
+      "errors": [],
+      "action_total_variation": 847.0719778248682,
+      "action_sign_reversals": 782,
+      "trace": [
+        {
+          "step": 0,
+          "speed_mps": 0.0,
+          "desired_mps": 2.0,
+          "steering": -3.807574773252713e-12,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.0,
+          "edge_clearance_proxy_m": 4.324
+        },
+        {
+          "step": 30,
+          "speed_mps": 2.019433021545478,
+          "desired_mps": 2.0,
+          "steering": -2.0649047331954647e-06,
+          "signed_longitudinal": -0.10397657602078526,
+          "lateral_m": 0.0,
+          "edge_clearance_proxy_m": 4.323998797582899
+        },
+        {
+          "step": 60,
+          "speed_mps": 2.021382777773286,
+          "desired_mps": 2.0,
+          "steering": -0.00026273285615462555,
+          "signed_longitudinal": -0.11997176184329696,
+          "lateral_m": 0.021663665771484375,
+          "edge_clearance_proxy_m": 4.294466752991613
+        },
+        {
+          "step": 90,
+          "speed_mps": 0.3097223260516468,
+          "desired_mps": 1.1,
+          "steering": -0.0012187839354846303,
+          "signed_longitudinal": 0.9994835697278119,
+          "lateral_m": 0.03372502326965332,
+          "edge_clearance_proxy_m": 4.280033351021679
+        },
+        {
+          "step": 120,
+          "speed_mps": 0.4162426029786132,
+          "desired_mps": 2.0,
+          "steering": -0.000552572112572807,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.04377174377441406,
+          "edge_clearance_proxy_m": 4.268976485621553
+        },
+        {
+          "step": 150,
+          "speed_mps": 2.0216611181651936,
+          "desired_mps": 2.0,
+          "steering": 0.0003599468765681287,
+          "signed_longitudinal": -0.11997176184329696,
+          "lateral_m": 0.05741691589355469,
+          "edge_clearance_proxy_m": 4.260748451044048
+        },
+        {
+          "step": 180,
+          "speed_mps": 2.021586794661522,
+          "desired_mps": 2.0,
+          "steering": 0.001719515273589894,
+          "signed_longitudinal": -0.11997176184329696,
+          "lateral_m": 0.07047033309936523,
+          "edge_clearance_proxy_m": 4.248739222697152
+        },
+        {
+          "step": 210,
+          "speed_mps": 2.021510036817986,
+          "desired_mps": 2.0,
+          "steering": 0.000346705995387737,
+          "signed_longitudinal": -0.11997176184329696,
+          "lateral_m": 0.0777750015258789,
+          "edge_clearance_proxy_m": 4.243551172405943
+        },
+        {
+          "step": 240,
+          "speed_mps": 2.0214296160977856,
+          "desired_mps": 2.0,
+          "steering": 2.5219304911821134e-05,
+          "signed_longitudinal": -0.11997176184329696,
+          "lateral_m": 0.08575606346130371,
+          "edge_clearance_proxy_m": 4.234515604300988
+        },
+        {
+          "step": 270,
+          "speed_mps": 0.31152028900762524,
+          "desired_mps": 1.1,
+          "steering": 0.002472112764858613,
+          "signed_longitudinal": 0.9994835697278119,
+          "lateral_m": 0.09193658828735352,
+          "edge_clearance_proxy_m": 4.226816767262261
+        },
+        {
+          "step": 300,
+          "speed_mps": 0.4158711370598925,
+          "desired_mps": 2.0,
+          "steering": 0.0008516592405699107,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.09463381767272949,
+          "edge_clearance_proxy_m": 4.225683511108534
+        },
+        {
+          "step": 330,
+          "speed_mps": 2.0178048524365013,
+          "desired_mps": 2.0,
+          "steering": -0.056520198587717084,
+          "signed_longitudinal": -0.0973840351926752,
+          "lateral_m": 0.12657961103275284,
+          "edge_clearance_proxy_m": 4.17122304959669
+        },
+        {
+          "step": 360,
+          "speed_mps": 2.0130478332893778,
+          "desired_mps": 2.0,
+          "steering": -0.06387971623405764,
+          "signed_longitudinal": -0.06608456231494064,
+          "lateral_m": 0.1546629905400465,
+          "edge_clearance_proxy_m": 4.120051107468112
+        },
+        {
+          "step": 390,
+          "speed_mps": 2.023489459796402,
+          "desired_mps": 2.0,
+          "steering": -0.06608326800045898,
+          "signed_longitudinal": -0.1366396311590434,
+          "lateral_m": 0.16125374357460487,
+          "edge_clearance_proxy_m": 4.107684482376856
+        },
+        {
+          "step": 420,
+          "speed_mps": 2.0000942807714877,
+          "desired_mps": 2.0,
+          "steering": -0.06871720644463704,
+          "signed_longitudinal": -0.0017354440890724558,
+          "lateral_m": 0.16312846055470942,
+          "edge_clearance_proxy_m": 4.1047135229515455
+        },
+        {
+          "step": 450,
+          "speed_mps": 0.15669946659531683,
+          "desired_mps": 1.1,
+          "steering": -0.0662031046445238,
+          "signed_longitudinal": 0.9994835697278119,
+          "lateral_m": 0.16239237269844864,
+          "edge_clearance_proxy_m": 4.109369062086822
+        },
+        {
+          "step": 480,
+          "speed_mps": 0.1620427761877862,
+          "desired_mps": 2.0,
+          "steering": -0.06610409326161082,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.16323602494473022,
+          "edge_clearance_proxy_m": 4.109832674878236
+        },
+        {
+          "step": 510,
+          "speed_mps": 1.911149517210743,
+          "desired_mps": 2.0,
+          "steering": -0.06617022552821102,
+          "signed_longitudinal": 0.362486219810728,
+          "lateral_m": 0.16807070859297824,
+          "edge_clearance_proxy_m": 4.100773189052328
+        },
+        {
+          "step": 540,
+          "speed_mps": 1.9113692384630072,
+          "desired_mps": 2.0,
+          "steering": -0.06618394963649123,
+          "signed_longitudinal": 0.362486219810728,
+          "lateral_m": 0.16988133666510663,
+          "edge_clearance_proxy_m": 4.098086990315814
+        },
+        {
+          "step": 570,
+          "speed_mps": 1.8613635351474143,
+          "desired_mps": 2.0,
+          "steering": -0.0661949964269597,
+          "signed_longitudinal": 0.5078626823224366,
+          "lateral_m": 0.17201669187333124,
+          "edge_clearance_proxy_m": 4.096143395250821
+        },
+        {
+          "step": 600,
+          "speed_mps": 1.9109630858473046,
+          "desired_mps": 2.0,
+          "steering": -0.06623922026319885,
+          "signed_longitudinal": 0.3666948201856097,
+          "lateral_m": 0.17386376489258026,
+          "edge_clearance_proxy_m": 4.094187494934046
+        },
+        {
+          "step": 630,
+          "speed_mps": 0.15671801302795677,
+          "desired_mps": 1.1,
+          "steering": -0.06618466298129937,
+          "signed_longitudinal": 0.9994835697278119,
+          "lateral_m": 0.173226176955815,
+          "edge_clearance_proxy_m": 4.0983807039810864
+        },
+        {
+          "step": 660,
+          "speed_mps": 0.16204280414436478,
+          "desired_mps": 2.0,
+          "steering": -0.0661152727538854,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.1739333143034969,
+          "edge_clearance_proxy_m": 4.098963662770235
+        },
+        {
+          "step": 690,
+          "speed_mps": 1.9111472287719127,
+          "desired_mps": 2.0,
+          "steering": -0.06625084848628904,
+          "signed_longitudinal": 0.362486219810728,
+          "lateral_m": 0.17861346544468404,
+          "edge_clearance_proxy_m": 4.090197517480716
+        },
+        {
+          "step": 720,
+          "speed_mps": 1.9113666434136396,
+          "desired_mps": 2.0,
+          "steering": -0.0662735371341444,
+          "signed_longitudinal": 0.362486219810728,
+          "lateral_m": 0.18050426540009568,
+          "edge_clearance_proxy_m": 4.087449064229599
+        },
+        {
+          "step": 750,
+          "speed_mps": 1.8613492821867894,
+          "desired_mps": 2.0,
+          "steering": -0.06627999891090174,
+          "signed_longitudinal": 0.5078626823224366,
+          "lateral_m": 0.1825397018015451,
+          "edge_clearance_proxy_m": 4.085515024274133
+        },
+        {
+          "step": 780,
+          "speed_mps": 1.9110261571192764,
+          "desired_mps": 2.0,
+          "steering": -0.06630619360306694,
+          "signed_longitudinal": 0.362486219810728,
+          "lateral_m": 0.18448571452682927,
+          "edge_clearance_proxy_m": 4.083644195048537
+        },
+        {
+          "step": 810,
+          "speed_mps": 0.004320910300629037,
+          "desired_mps": 1.1,
+          "steering": -0.06629956547128489,
+          "signed_longitudinal": 0.9998550650693556,
+          "lateral_m": 0.1829806638443756,
+          "edge_clearance_proxy_m": 4.085553615041496
+        },
+        {
+          "step": 840,
+          "speed_mps": 0.10912394559730787,
+          "desired_mps": 2.0,
+          "steering": -0.06625260188640562,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.181728080517793,
+          "edge_clearance_proxy_m": 4.088017915148636
+        },
+        {
+          "step": 870,
+          "speed_mps": 1.8652472045617121,
+          "desired_mps": 2.0,
+          "steering": -0.0662678687440383,
+          "signed_longitudinal": 0.5027796746419404,
+          "lateral_m": 0.18416980416679962,
+          "edge_clearance_proxy_m": 4.083888815690099
+        },
+        {
+          "step": 900,
+          "speed_mps": 2.0025378788601715,
+          "desired_mps": 2.0,
+          "steering": -0.06868608665487928,
+          "signed_longitudinal": -0.011088188429718926,
+          "lateral_m": 0.1860500362328139,
+          "edge_clearance_proxy_m": 4.081735411532049
+        },
+        {
+          "step": 930,
+          "speed_mps": 1.936092249043454,
+          "desired_mps": 2.0,
+          "steering": -0.06619758702190183,
+          "signed_longitudinal": 0.2744060555567212,
+          "lateral_m": 0.18804472551155982,
+          "edge_clearance_proxy_m": 4.079832255973006
+        },
+        {
+          "step": 960,
+          "speed_mps": 1.9028876625699598,
+          "desired_mps": 2.0,
+          "steering": -0.06667746032169662,
+          "signed_longitudinal": 0.389125997085077,
+          "lateral_m": 0.18977403536538873,
+          "edge_clearance_proxy_m": 4.078022031157287
+        },
+        {
+          "step": 990,
+          "speed_mps": 0.16280516330305067,
+          "desired_mps": 1.1,
+          "steering": -0.0647809457183841,
+          "signed_longitudinal": 0.9994835697278119,
+          "lateral_m": 0.1889271965170849,
+          "edge_clearance_proxy_m": 4.13284545065329
+        },
+        {
+          "step": 1020,
+          "speed_mps": 0.1618948836794031,
+          "desired_mps": 2.0,
+          "steering": 0.001495364959705063,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.216566587856306,
+          "edge_clearance_proxy_m": 4.106387408609266
+        },
+        {
+          "step": 1050,
+          "speed_mps": 1.935491806384919,
+          "desired_mps": 2.0,
+          "steering": 0.006424124837077144,
+          "signed_longitudinal": 0.2744060555567212,
+          "lateral_m": 0.20642523494085108,
+          "edge_clearance_proxy_m": 4.114557526234453
+        },
+        {
+          "step": 1080,
+          "speed_mps": 1.9030880478475445,
+          "desired_mps": 2.0,
+          "steering": 0.005371259708102589,
+          "signed_longitudinal": 0.389125997085077,
+          "lateral_m": 0.19763211830548144,
+          "edge_clearance_proxy_m": 4.122257754135339
+        },
+        {
+          "step": 1110,
+          "speed_mps": 1.9528587951830692,
+          "desired_mps": 2.0,
+          "steering": 0.004431758677388416,
+          "signed_longitudinal": 0.2114033447616993,
+          "lateral_m": 0.18938652003757106,
+          "edge_clearance_proxy_m": 4.1315295440428095
+        },
+        {
+          "step": 1140,
+          "speed_mps": 2.001298614599043,
+          "desired_mps": 2.0,
+          "steering": -0.0002078777667366905,
+          "signed_longitudinal": -0.0062857785655354775,
+          "lateral_m": 0.18172499022579292,
+          "edge_clearance_proxy_m": 4.137213964251558
+        },
+        {
+          "step": 1170,
+          "speed_mps": 0.41585996634459865,
+          "desired_mps": 1.1,
+          "steering": -0.010268134866683019,
+          "signed_longitudinal": 0.9994970964322987,
+          "lateral_m": 0.186560888744971,
+          "edge_clearance_proxy_m": 4.133184202822365
+        },
+        {
+          "step": 1200,
+          "speed_mps": 0.31459889292209325,
+          "desired_mps": 2.0,
+          "steering": -0.003782479165312609,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.19195424262689542,
+          "edge_clearance_proxy_m": 4.126674182567879
+        },
+        {
+          "step": 1230,
+          "speed_mps": 2.020484030257706,
+          "desired_mps": 2.0,
+          "steering": 0.0007340468845264081,
+          "signed_longitudinal": -0.10397657602078526,
+          "lateral_m": 0.18065861741879985,
+          "edge_clearance_proxy_m": 4.138843178822179
+        },
+        {
+          "step": 1260,
+          "speed_mps": 2.0179045666296624,
+          "desired_mps": 2.0,
+          "steering": 0.0011881103371974404,
+          "signed_longitudinal": -0.0973840351926752,
+          "lateral_m": 0.17330439246414997,
+          "edge_clearance_proxy_m": 4.148124839536298
+        },
+        {
+          "step": 1290,
+          "speed_mps": 2.019557080001998,
+          "desired_mps": 2.0,
+          "steering": -0.00016712122056089857,
+          "signed_longitudinal": -0.10397657602078526,
+          "lateral_m": 0.16862308957456662,
+          "edge_clearance_proxy_m": 4.153528504640744
+        },
+        {
+          "step": 1320,
+          "speed_mps": 2.0173665447694753,
+          "desired_mps": 2.0,
+          "steering": 0.0006755311918901125,
+          "signed_longitudinal": -0.08793734266657724,
+          "lateral_m": 0.16448817619369294,
+          "edge_clearance_proxy_m": 4.157958520125682
+        },
+        {
+          "step": 1350,
+          "speed_mps": 0.31150531329722,
+          "desired_mps": 1.1,
+          "steering": 2.1991290947542022e-05,
+          "signed_longitudinal": 0.9994835697278119,
+          "lateral_m": 0.16384654612856053,
+          "edge_clearance_proxy_m": 4.1599586657272525
+        },
+        {
+          "step": 1380,
+          "speed_mps": 0.41638514975141444,
+          "desired_mps": 2.0,
+          "steering": 0.0002945648564228703,
+          "signed_longitudinal": 1.0,
+          "lateral_m": 0.1636237479297833,
+          "edge_clearance_proxy_m": 4.160246392541337
+        },
+        {
+          "step": 1410,
+          "speed_mps": 2.0001091210365485,
+          "desired_mps": 2.0,
+          "steering": 0.00040223713975466737,
+          "signed_longitudinal": -0.00032115077034358,
+          "lateral_m": 0.15932665980549743,
+          "edge_clearance_proxy_m": 4.162850777748483
+        },
+        {
+          "step": 1417,
+          "speed_mps": 1.6872401389039222,
+          "desired_mps": 2.0,
+          "steering": -0.000542673436773383,
+          "signed_longitudinal": 0.8113166954949581,
+          "lateral_m": 0.1581477244320446,
+          "edge_clearance_proxy_m": 4.163972617536329
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "rule_governor_v313": {
+      "total": 2,
+      "arrived": 2,
+      "quality": 2,
+      "speed_mae_mps": 0.11093642105329757,
+      "brake_steps": 34,
+      "overspeed_steps": 15,
+      "action_total_variation": null,
+      "action_sign_reversals": null,
+      "failed": []
+    },
+    "learned_longitudinal_v316": {
+      "total": 2,
+      "arrived": 2,
+      "quality": 0,
+      "speed_mae_mps": 0.20179305197121572,
+      "brake_steps": 696,
+      "overspeed_steps": 12,
+      "action_total_variation": null,
+      "action_sign_reversals": null,
+      "failed": [
+        {
+          "map": "C",
+          "seed": 186,
+          "speed": 2.0,
+          "status": "arrive_dest"
+        },
+        {
+          "map": "C",
+          "seed": 189,
+          "speed": 2.0,
+          "status": "arrive_dest"
+        }
+      ]
+    },
+    "learned_longitudinal_v3162": {
+      "total": 2,
+      "arrived": 2,
+      "quality": 1,
+      "speed_mae_mps": 0.24198156800937737,
+      "brake_steps": 666,
+      "overspeed_steps": 12,
+      "action_total_variation": 1196.042048341065,
+      "action_sign_reversals": 1310,
+      "failed": [
+        {
+          "map": "C",
+          "seed": 186,
+          "speed": 2.0,
+          "status": "arrive_dest"
+        }
+      ]
+    }
+  },
+  "decision": {
+    "accepted": false,
+    "complete": true,
+    "full_validation_suite": false,
+    "regressions": [
+      "quality_vs_rule_governor_v313:('C', 186, 2.0)"
+    ],
+    "speed_tracking_within_tolerance": false,
+    "braking_observed": true,
+    "brake_steps_below_v316": true,
+    "criterion": "No per-case arrival/quality regression vs RULE or V3.16; MAE <= both refs + max(.05m/s,5%); learned braking >=10; full suite required; final cannot promote"
+  },
+  "caveats": [
+    "V3.16.2 is trained only from original and DAgger TRAIN data",
+    "V3.13 steering frozen; no rule governor/IDM fallback for AI profiles",
+    "No traffic, privileged MetaDrive geometry; no real-world safety claim",
+    "Previously examined val seeds 186..189 cannot be final holdout",
+    "Final seeds >=202 must remain untouched until candidate is frozen"
+  ]
+}
