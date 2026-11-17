@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 19,
+    "gender": "Female",
+    "occupation": "Automotive technology student"
+  },
+  "driving_experience": "2 years",
+  "driving_frequency_per_week": "8 to 12 h",
+  "driving_purposes": [
+    "Commuting to campus",
+    "Part-time work at an auto shop"
+  ],
+  "driving_habits_preferences": [
+    "Checks traffic updates before departure to avoid slow routes",
+    "Keeps a moderate following gap rather than an overly conservative one",
+    "Maintains brisk but controlled acceleration when traffic opens"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "None",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Assertive",
+  "international_driving_experience": "None"
+}

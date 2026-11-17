@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 34,
+    "gender": "Male",
+    "occupation": "Rideshare driver"
+  },
+  "driving_experience": "12 years",
+  "driving_frequency_per_week": "40 to 50 h",
+  "driving_purposes": [
+    "Professional ridesharing",
+    "Airport transfers with schedule pressure"
+  ],
+  "driving_habits_preferences": [
+    "Checks traffic frequently to choose the fastest moving route",
+    "Accelerates strongly to merge and clear intersections",
+    "Accepts relatively short following gaps when traffic is flowing"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "None",
+    "accidents_last_5_years": "Two minor fender-benders"
+  },
+  "driving_style": "Aggressive",
+  "international_driving_experience": "None"
+}

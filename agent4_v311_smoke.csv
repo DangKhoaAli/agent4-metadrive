@@ -1,0 +1,4 @@
+﻿map,seed,speed_mps,profile,target_offset_m,steering_kick_sign,status,target_reached,recovery_outcome,recovered,recovery_time_s,peak_abs_offset_m,peak_after_release_offset_m,kick_steps,kick_release_reason,max_abs_planned_lateral_right_m,max_speed_mps,error_count,student_predictions_aligned,measured_steps_aligned,teacher_fallback_calls
+S,150,4.0,pdd_only,0.2,1,out_of_road,True,failed_before_recovery,False,,0.6619982719421387,0.6619982719421387,7,target_reached,0.6385498046875,3.9786849868919045,0,,True,0
+S,150,4.0,rule_lateral,0.2,1,arrive_dest,True,recovered,True,8.8,0.39669322967529297,0.39669322967529297,9,target_reached,0.39669322967529297,3.999978899847732,0,,True,0
+S,150,4.0,learned_v310,0.2,1,arrive_dest,True,recovered,True,8.8,0.39666748046875,0.39666748046875,9,target_reached,0.39666748046875,3.9999786502391403,0,True,True,0

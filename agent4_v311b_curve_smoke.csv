@@ -1,0 +1,7 @@
+﻿map,seed,speed_mps,profile,status,arrive_dest,n_applied_steps,time_to_goal_s,max_speed_mps,max_abs_planned_lateral_right_m,min_estimated_edge_clearance_m,near_edge_warning_steps,error_count,student_predictions_aligned,model_predictions_valid,out_of_v310_training_speed
+C,158,2.0,pdd_only,out_of_road,0,186,,1.9999457136468515,0.6274805068969727,0.045979637339593094,20,0,,True,True
+C,158,2.0,rule_lateral,out_of_road,0,262,,1.9999838619286336,0.7891077285712598,-0.029902879168022478,43,0,,True,True
+C,158,2.0,learned_v310,out_of_road,0,262,,1.9999839417537593,0.7888469628920767,-0.029702085295976066,43,0,True,False,True
+X,158,2.0,pdd_only,lane_departure_guard,0,219,,1.9999062587532899,1.4984822273254395,0.5351956058052234,0,0,,True,True
+X,158,2.0,rule_lateral,lane_departure_guard,0,302,,2.0000123535467,1.4999261031838138,-1.333362810123748,34,0,,True,True
+X,158,2.0,learned_v310,lane_departure_guard,0,301,,2.0000114405344895,1.4504695075057654,-1.2818522433462713,33,0,True,False,True

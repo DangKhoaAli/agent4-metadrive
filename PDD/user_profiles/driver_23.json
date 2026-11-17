@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 32,
+    "gender": "Female",
+    "occupation": "Marketing consultant"
+  },
+  "driving_experience": "9 years (car) + 3 years (scooter)",
+  "driving_frequency_per_week": "15 to 20 h",
+  "driving_purposes": [
+    "Client meetings around the city",
+    "Short weekend drives"
+  ],
+  "driving_habits_preferences": [
+    "Comfortable with dense traffic and quick lane changes",
+    "Maintains brisk urban pace to stay on schedule",
+    "Uses confident acceleration and timely passing maneuvers"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "None",
+    "accidents_last_5_years": "One side scrape during monsoon"
+  },
+  "driving_style": "Assertive",
+  "international_driving_experience": "Short rental driving in Singapore"
+}

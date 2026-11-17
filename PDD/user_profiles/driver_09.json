@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 58,
+    "gender": "Male",
+    "occupation": "Office administrator"
+  },
+  "driving_experience": "35 years",
+  "driving_frequency_per_week": "6 to 10 h",
+  "driving_purposes": [
+    "Commuting to work",
+    "Grocery and family errands"
+  ],
+  "driving_habits_preferences": [
+    "Always follows traffic rules and signals closely",
+    "Prefers low-speed city driving to faster highway travel",
+    "Maintains both a careful speed and a conservative following distance"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "Mild nearsightedness (corrected with glasses)",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Cautious",
+  "international_driving_experience": "Occasional driving in South Korea and Japan"
+}

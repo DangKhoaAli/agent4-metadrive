@@ -1,0 +1,3859 @@
+{
+  "status": "V36_NATIVE_IDM_LONGITUDINAL_TEACHER_DATA",
+  "data_contract": "teacher_longitudinal == applied_longitudinal (clipped IDM.act output)",
+  "maps": [
+    "S",
+    "C",
+    "X"
+  ],
+  "speeds_mps": [
+    2.0,
+    3.0,
+    4.0
+  ],
+  "splits": {
+    "train": [
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71
+    ],
+    "val": [
+      72,
+      73,
+      74,
+      75
+    ],
+    "eval": [
+      76,
+      77,
+      78,
+      79
+    ]
+  },
+  "speed_schedule_enabled": true,
+  "traffic_density": 0.0,
+  "data_fields": [
+    "map",
+    "seed",
+    "step",
+    "base_speed_mps",
+    "lane_class",
+    "teacher_steer_md",
+    "teacher_longitudinal",
+    "native_idm_longitudinal",
+    "applied_longitudinal",
+    "longitudinal_clipped",
+    "speed_mps",
+    "wp1_forward_m",
+    "wp1_right_m",
+    "wp2_forward_m",
+    "wp2_right_m",
+    "lane_width_m",
+    "front_vehicle_dist_m",
+    "front_vehicle_closing_speed_mps",
+    "left_vehicle_dist_m",
+    "right_vehicle_dist_m",
+    "front_pedestrian_dist_m",
+    "has_front_vehicle",
+    "has_left_vehicle",
+    "has_right_vehicle",
+    "has_front_pedestrian",
+    "planned_lateral_right_m",
+    "heading_error_rad",
+    "adaptive_lookahead",
+    "target_speed_mps",
+    "remaining_route_m",
+    "speed_error_mps"
+  ],
+  "only_successful_teacher_episodes_retained": true,
+  "rows_by_split": {
+    "train": 63791,
+    "val": 25789
+  },
+  "rows_by_speed_map": {
+    "train:2:S": 7858,
+    "val:2:S": 3040,
+    "train:3:S": 5252,
+    "val:3:S": 2040,
+    "train:4:S": 4320,
+    "val:4:S": 1585,
+    "train:2:C": 12306,
+    "val:2:C": 6039,
+    "train:3:C": 8055,
+    "val:3:C": 3876,
+    "train:4:C": 6346,
+    "val:4:C": 3004,
+    "train:2:X": 8946,
+    "val:2:X": 2834,
+    "train:3:X": 5999,
+    "val:3:X": 1872,
+    "train:4:X": 4709,
+    "val:4:X": 1499
+  },
+  "episodes": [
+    {
+      "map": "S",
+      "seed": 60,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 704,
+      "stats": {
+        "actions": 704,
+        "brake_actions": 273,
+        "positive_actions": 424,
+        "zero_actions": 7,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 274
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.013061285018925,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9564020186942573
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 704,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 61,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 682,
+      "stats": {
+        "actions": 682,
+        "brake_actions": 190,
+        "positive_actions": 422,
+        "zero_actions": 70,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 252
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0172540149606872,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9542989298640752
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 682,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 62,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 565,
+      "stats": {
+        "actions": 565,
+        "brake_actions": 221,
+        "positive_actions": 344,
+        "zero_actions": 0,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 218
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0148674280725736,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9471489573828132
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 565,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 63,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 610,
+      "stats": {
+        "actions": 610,
+        "brake_actions": 175,
+        "positive_actions": 423,
+        "zero_actions": 12,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 227
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0220823847595244,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9497400404322618
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 610,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 64,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 577,
+      "stats": {
+        "actions": 577,
+        "brake_actions": 163,
+        "positive_actions": 411,
+        "zero_actions": 3,
+        "longitudinal_clipped": 11,
+        "target_reduced_steps": 227
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0238485336305576,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9451994392266564
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 577,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 65,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 684,
+      "stats": {
+        "actions": 684,
+        "brake_actions": 181,
+        "positive_actions": 417,
+        "zero_actions": 86,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 254
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.017032661765959,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9544773943582097
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 684,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 66,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 597,
+      "stats": {
+        "actions": 597,
+        "brake_actions": 236,
+        "positive_actions": 356,
+        "zero_actions": 5,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 214
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0120403766653094,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9514069473133396
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 597,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 67,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 622,
+      "stats": {
+        "actions": 622,
+        "brake_actions": 189,
+        "positive_actions": 378,
+        "zero_actions": 55,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 221
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.015907764442656,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9518908314747712
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 622,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 68,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 772,
+      "stats": {
+        "actions": 772,
+        "brake_actions": 231,
+        "positive_actions": 521,
+        "zero_actions": 20,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 293
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0207328796403528,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9594178096671959
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 772,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 69,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 586,
+      "stats": {
+        "actions": 586,
+        "brake_actions": 169,
+        "positive_actions": 399,
+        "zero_actions": 18,
+        "longitudinal_clipped": 9,
+        "target_reduced_steps": 225
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0219166691364276,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9474500017528648
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 586,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 70,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 798,
+      "stats": {
+        "actions": 798,
+        "brake_actions": 214,
+        "positive_actions": 489,
+        "zero_actions": 95,
+        "longitudinal_clipped": 9,
+        "target_reduced_steps": 294
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0173795481058012,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9612466097368435
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 798,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 71,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 661,
+      "stats": {
+        "actions": 661,
+        "brake_actions": 261,
+        "positive_actions": 397,
+        "zero_actions": 3,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 236
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0134136676788628,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9546548368667088
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 661,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 72,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 780,
+      "stats": {
+        "actions": 780,
+        "brake_actions": 210,
+        "positive_actions": 461,
+        "zero_actions": 109,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 289
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.016494989395325,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9605136980706961
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 780,
+      "split": "val"
+    },
+    {
+      "map": "S",
+      "seed": 73,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 749,
+      "stats": {
+        "actions": 749,
+        "brake_actions": 295,
+        "positive_actions": 450,
+        "zero_actions": 4,
+        "longitudinal_clipped": 5,
+        "target_reduced_steps": 285
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0132522583009314,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9594457069231572
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 749,
+      "split": "val"
+    },
+    {
+      "map": "S",
+      "seed": 74,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 786,
+      "stats": {
+        "actions": 786,
+        "brake_actions": 224,
+        "positive_actions": 554,
+        "zero_actions": 8,
+        "longitudinal_clipped": 23,
+        "target_reduced_steps": 294
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0240268707278495,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9590632219147541
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 786,
+      "split": "val"
+    },
+    {
+      "map": "S",
+      "seed": 75,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 725,
+      "stats": {
+        "actions": 725,
+        "brake_actions": 192,
+        "positive_actions": 469,
+        "zero_actions": 64,
+        "longitudinal_clipped": 9,
+        "target_reduced_steps": 295
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.020241260528736,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.95617335922307
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 725,
+      "split": "val"
+    },
+    {
+      "map": "S",
+      "seed": 60,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 473,
+      "stats": {
+        "actions": 473,
+        "brake_actions": 77,
+        "positive_actions": 162,
+        "zero_actions": 234,
+        "longitudinal_clipped": 5,
+        "target_reduced_steps": 213
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0000021454154457,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.956803357636081
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 473,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 61,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 451,
+      "stats": {
+        "actions": 451,
+        "brake_actions": 58,
+        "positive_actions": 156,
+        "zero_actions": 237,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 193
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.00000248344738,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9544127581290868
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 451,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 62,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 381,
+      "stats": {
+        "actions": 381,
+        "brake_actions": 55,
+        "positive_actions": 146,
+        "zero_actions": 180,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 174
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0000024766009084,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9471125078548529
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 381,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 63,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 405,
+      "stats": {
+        "actions": 405,
+        "brake_actions": 53,
+        "positive_actions": 153,
+        "zero_actions": 199,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 180
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0000077138501,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9497890525193161
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 405,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 64,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 379,
+      "stats": {
+        "actions": 379,
+        "brake_actions": 51,
+        "positive_actions": 150,
+        "zero_actions": 178,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 183
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.000129938125627,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9445939502469155
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 379,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 65,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 449,
+      "stats": {
+        "actions": 449,
+        "brake_actions": 63,
+        "positive_actions": 151,
+        "zero_actions": 235,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 189
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0000067405811324,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9544736367830425
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 449,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 66,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 402,
+      "stats": {
+        "actions": 402,
+        "brake_actions": 63,
+        "positive_actions": 125,
+        "zero_actions": 214,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 170
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.000000238419098,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9510014215871366
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 402,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 67,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 419,
+      "stats": {
+        "actions": 419,
+        "brake_actions": 54,
+        "positive_actions": 146,
+        "zero_actions": 219,
+        "longitudinal_clipped": 4,
+        "target_reduced_steps": 179
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.000001668930802,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.952438141740331
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 419,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 68,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 525,
+      "stats": {
+        "actions": 525,
+        "brake_actions": 67,
+        "positive_actions": 214,
+        "zero_actions": 244,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 252
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0000002384196525,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9589578428476976
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 525,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 69,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 395,
+      "stats": {
+        "actions": 395,
+        "brake_actions": 52,
+        "positive_actions": 156,
+        "zero_actions": 187,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 183
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.000005165799596,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9473712440024964
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 395,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 70,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 534,
+      "stats": {
+        "actions": 534,
+        "brake_actions": 77,
+        "positive_actions": 198,
+        "zero_actions": 259,
+        "longitudinal_clipped": 5,
+        "target_reduced_steps": 247
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0000051506618153,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9611510241748639
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 534,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 71,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 439,
+      "stats": {
+        "actions": 439,
+        "brake_actions": 60,
+        "positive_actions": 135,
+        "zero_actions": 244,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 182
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0000021457702992,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.954354872787041
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 439,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 72,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 527,
+      "stats": {
+        "actions": 527,
+        "brake_actions": 81,
+        "positive_actions": 194,
+        "zero_actions": 252,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 250
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0000016689347824,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9603655839029109
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 527,
+      "split": "val"
+    },
+    {
+      "map": "S",
+      "seed": 73,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 507,
+      "stats": {
+        "actions": 507,
+        "brake_actions": 83,
+        "positive_actions": 180,
+        "zero_actions": 244,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 242
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0000002384310336,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9592284505567786
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 507,
+      "split": "val"
+    },
+    {
+      "map": "S",
+      "seed": 74,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 521,
+      "stats": {
+        "actions": 521,
+        "brake_actions": 70,
+        "positive_actions": 201,
+        "zero_actions": 250,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 251
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.000136137008901,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9589262590895363
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 521,
+      "split": "val"
+    },
+    {
+      "map": "S",
+      "seed": 75,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 485,
+      "stats": {
+        "actions": 485,
+        "brake_actions": 59,
+        "positive_actions": 178,
+        "zero_actions": 248,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 225
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.999998331076387,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9563332719861294
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 485,
+      "split": "val"
+    },
+    {
+      "map": "S",
+      "seed": 60,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 377,
+      "stats": {
+        "actions": 377,
+        "brake_actions": 66,
+        "positive_actions": 156,
+        "zero_actions": 155,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 193
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.0000037013047915,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9563660600036012
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 377,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 61,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 369,
+      "stats": {
+        "actions": 369,
+        "brake_actions": 67,
+        "positive_actions": 162,
+        "zero_actions": 140,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 198
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000002750658828,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9543486118139973
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 369,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 62,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 328,
+      "stats": {
+        "actions": 328,
+        "brake_actions": 69,
+        "positive_actions": 159,
+        "zero_actions": 100,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 196
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.0000027455067695,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.94691317449882
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 328,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 63,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 345,
+      "stats": {
+        "actions": 345,
+        "brake_actions": 60,
+        "positive_actions": 158,
+        "zero_actions": 127,
+        "longitudinal_clipped": 5,
+        "target_reduced_steps": 201
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.0000057351878535,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9499360113522214
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 345,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 64,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 325,
+      "stats": {
+        "actions": 325,
+        "brake_actions": 65,
+        "positive_actions": 162,
+        "zero_actions": 98,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 202
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.00000000000243,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9447563448453953
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 325,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 65,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 367,
+      "stats": {
+        "actions": 367,
+        "brake_actions": 68,
+        "positive_actions": 151,
+        "zero_actions": 148,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 195
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000002137895812,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9547707635601493
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 367,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 66,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 341,
+      "stats": {
+        "actions": 341,
+        "brake_actions": 75,
+        "positive_actions": 138,
+        "zero_actions": 128,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 189
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.0000000000003215,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9514175835625308
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 341,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 67,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 354,
+      "stats": {
+        "actions": 354,
+        "brake_actions": 69,
+        "positive_actions": 158,
+        "zero_actions": 127,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 197
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000000000000336,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9522405918811645
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 354,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 68,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 403,
+      "stats": {
+        "actions": 403,
+        "brake_actions": 52,
+        "positive_actions": 144,
+        "zero_actions": 207,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 201
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.999999284745485,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9590752931795183
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 403,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 69,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 338,
+      "stats": {
+        "actions": 338,
+        "brake_actions": 56,
+        "positive_actions": 162,
+        "zero_actions": 120,
+        "longitudinal_clipped": 4,
+        "target_reduced_steps": 204
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.0000057349076235,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.94720734710455
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 338,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 70,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 411,
+      "stats": {
+        "actions": 411,
+        "brake_actions": 67,
+        "positive_actions": 154,
+        "zero_actions": 190,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 193
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.00000213402866,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9611764699572612
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 411,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 71,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 362,
+      "stats": {
+        "actions": 362,
+        "brake_actions": 72,
+        "positive_actions": 147,
+        "zero_actions": 143,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 191
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.9999992847496557,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9545883409914068
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 362,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 72,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 405,
+      "stats": {
+        "actions": 405,
+        "brake_actions": 69,
+        "positive_actions": 150,
+        "zero_actions": 186,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 193
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.0000000000021645,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9605459443286272
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 405,
+      "split": "val"
+    },
+    {
+      "map": "S",
+      "seed": 73,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 394,
+      "stats": {
+        "actions": 394,
+        "brake_actions": 74,
+        "positive_actions": 142,
+        "zero_actions": 178,
+        "longitudinal_clipped": 4,
+        "target_reduced_steps": 191
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.9999995231633085,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9593690061967951
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 394,
+      "split": "val"
+    },
+    {
+      "map": "S",
+      "seed": 74,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 406,
+      "stats": {
+        "actions": 406,
+        "brake_actions": 63,
+        "positive_actions": 173,
+        "zero_actions": 170,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 204
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000000000001122,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9589856827775485
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 406,
+      "split": "val"
+    },
+    {
+      "map": "S",
+      "seed": 75,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 380,
+      "stats": {
+        "actions": 380,
+        "brake_actions": 59,
+        "positive_actions": 165,
+        "zero_actions": 156,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 200
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.0000000000012585,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9561096915042188
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 380,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 60,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 1216,
+      "stats": {
+        "actions": 1216,
+        "brake_actions": 482,
+        "positive_actions": 730,
+        "zero_actions": 4,
+        "longitudinal_clipped": 9,
+        "target_reduced_steps": 426
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.013061285018925,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9772212199469578
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 1216,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 61,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 1077,
+      "stats": {
+        "actions": 1077,
+        "brake_actions": 304,
+        "positive_actions": 657,
+        "zero_actions": 116,
+        "longitudinal_clipped": 10,
+        "target_reduced_steps": 362
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.017259855026048,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9678142723687877
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 1077,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 62,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 752,
+      "stats": {
+        "actions": 752,
+        "brake_actions": 284,
+        "positive_actions": 467,
+        "zero_actions": 1,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 289
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0148664743436737,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.95303205500767
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 752,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 63,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 822,
+      "stats": {
+        "actions": 822,
+        "brake_actions": 238,
+        "positive_actions": 556,
+        "zero_actions": 28,
+        "longitudinal_clipped": 10,
+        "target_reduced_steps": 295
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.02207969524709,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9597594379255983
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 822,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 64,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 676,
+      "stats": {
+        "actions": 676,
+        "brake_actions": 192,
+        "positive_actions": 482,
+        "zero_actions": 2,
+        "longitudinal_clipped": 14,
+        "target_reduced_steps": 249
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0238485336305576,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9527189254676437
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 676,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 65,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 1055,
+      "stats": {
+        "actions": 1055,
+        "brake_actions": 279,
+        "positive_actions": 647,
+        "zero_actions": 129,
+        "longitudinal_clipped": 10,
+        "target_reduced_steps": 363
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.017034542002037,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9688357963818315
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 1055,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 66,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 817,
+      "stats": {
+        "actions": 817,
+        "brake_actions": 318,
+        "positive_actions": 480,
+        "zero_actions": 19,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 285
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0120403766653094,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9642539801368947
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 817,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 67,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 878,
+      "stats": {
+        "actions": 878,
+        "brake_actions": 274,
+        "positive_actions": 530,
+        "zero_actions": 74,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 298
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0159118061126904,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9652500075972144
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 878,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 68,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 1547,
+      "stats": {
+        "actions": 1547,
+        "brake_actions": 469,
+        "positive_actions": 1027,
+        "zero_actions": 51,
+        "longitudinal_clipped": 13,
+        "target_reduced_steps": 504
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.020745692361247,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9797895645506155
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 1547,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 69,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 756,
+      "stats": {
+        "actions": 756,
+        "brake_actions": 206,
+        "positive_actions": 496,
+        "zero_actions": 54,
+        "longitudinal_clipped": 15,
+        "target_reduced_steps": 293
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0219166691512855,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9551000370722382
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 756,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 70,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 1705,
+      "stats": {
+        "actions": 1705,
+        "brake_actions": 458,
+        "positive_actions": 1028,
+        "zero_actions": 219,
+        "longitudinal_clipped": 17,
+        "target_reduced_steps": 574
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.017641166397784,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9822351230962894
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 1705,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 71,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 1005,
+      "stats": {
+        "actions": 1005,
+        "brake_actions": 399,
+        "positive_actions": 603,
+        "zero_actions": 3,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 357
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0134136676788628,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.969620368518322
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 1005,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 72,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 1659,
+      "stats": {
+        "actions": 1659,
+        "brake_actions": 395,
+        "positive_actions": 866,
+        "zero_actions": 398,
+        "longitudinal_clipped": 11,
+        "target_reduced_steps": 549
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.016494989395325,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9811629181697696
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 1659,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 73,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 1517,
+      "stats": {
+        "actions": 1517,
+        "brake_actions": 620,
+        "positive_actions": 897,
+        "zero_actions": 0,
+        "longitudinal_clipped": 10,
+        "target_reduced_steps": 498
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0133808015829535,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9797184813861429
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 1517,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 74,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 1590,
+      "stats": {
+        "actions": 1590,
+        "brake_actions": 458,
+        "positive_actions": 1127,
+        "zero_actions": 5,
+        "longitudinal_clipped": 40,
+        "target_reduced_steps": 511
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0240268707278495,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9796377680485209
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 1590,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 75,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 1273,
+      "stats": {
+        "actions": 1273,
+        "brake_actions": 362,
+        "positive_actions": 815,
+        "zero_actions": 96,
+        "longitudinal_clipped": 13,
+        "target_reduced_steps": 437
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.02022484260347,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9753213256558155
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 1273,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 60,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 786,
+      "stats": {
+        "actions": 786,
+        "brake_actions": 113,
+        "positive_actions": 241,
+        "zero_actions": 432,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 311
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.00013814288222,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9773243145045294
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 786,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 61,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 707,
+      "stats": {
+        "actions": 707,
+        "brake_actions": 90,
+        "positive_actions": 216,
+        "zero_actions": 401,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 277
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.000363828710312,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9676957298358051
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 707,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 62,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 507,
+      "stats": {
+        "actions": 507,
+        "brake_actions": 78,
+        "positive_actions": 200,
+        "zero_actions": 229,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 247
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0006410162767763,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9529375067851278
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 507,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 63,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 555,
+      "stats": {
+        "actions": 555,
+        "brake_actions": 71,
+        "positive_actions": 217,
+        "zero_actions": 267,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 253
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.000429715086198,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9592728642600165
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 555,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 64,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 433,
+      "stats": {
+        "actions": 433,
+        "brake_actions": 50,
+        "positive_actions": 160,
+        "zero_actions": 223,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 190
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0025670889118063,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9526050436071982
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 433,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 65,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 684,
+      "stats": {
+        "actions": 684,
+        "brake_actions": 86,
+        "positive_actions": 207,
+        "zero_actions": 391,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 258
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0002927870133456,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9686938323601875
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 684,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 66,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 556,
+      "stats": {
+        "actions": 556,
+        "brake_actions": 88,
+        "positive_actions": 183,
+        "zero_actions": 285,
+        "longitudinal_clipped": 9,
+        "target_reduced_steps": 241
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.000682669161736,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9638028320822282
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 556,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 67,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 585,
+      "stats": {
+        "actions": 585,
+        "brake_actions": 78,
+        "positive_actions": 198,
+        "zero_actions": 309,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 248
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0006762041383523,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9652464737489911
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 585,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 68,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 1011,
+      "stats": {
+        "actions": 1011,
+        "brake_actions": 106,
+        "positive_actions": 332,
+        "zero_actions": 573,
+        "longitudinal_clipped": 9,
+        "target_reduced_steps": 394
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0003215206012537,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9797678123870986
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 1011,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 69,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 513,
+      "stats": {
+        "actions": 513,
+        "brake_actions": 70,
+        "positive_actions": 209,
+        "zero_actions": 234,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 253
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.00075734805743,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9551487450001774
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 513,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 70,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 1074,
+      "stats": {
+        "actions": 1074,
+        "brake_actions": 120,
+        "positive_actions": 302,
+        "zero_actions": 652,
+        "longitudinal_clipped": 9,
+        "target_reduced_steps": 388
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.000461440173141,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9822790156709628
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 1074,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 71,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 644,
+      "stats": {
+        "actions": 644,
+        "brake_actions": 82,
+        "positive_actions": 183,
+        "zero_actions": 379,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 244
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0005451404512833,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.969588042197961
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 644,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 72,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 1058,
+      "stats": {
+        "actions": 1058,
+        "brake_actions": 137,
+        "positive_actions": 295,
+        "zero_actions": 626,
+        "longitudinal_clipped": 10,
+        "target_reduced_steps": 389
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0000339143016044,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9811775767591152
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 1058,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 73,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 991,
+      "stats": {
+        "actions": 991,
+        "brake_actions": 138,
+        "positive_actions": 272,
+        "zero_actions": 581,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 384
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0001776574800667,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9798886811223363
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 991,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 74,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 1005,
+      "stats": {
+        "actions": 1005,
+        "brake_actions": 114,
+        "positive_actions": 315,
+        "zero_actions": 576,
+        "longitudinal_clipped": 9,
+        "target_reduced_steps": 393
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.000461155563196,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9797500964983742
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 1005,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 75,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 822,
+      "stats": {
+        "actions": 822,
+        "brake_actions": 90,
+        "positive_actions": 262,
+        "zero_actions": 470,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 321
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0003100601545416,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9752171440490826
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 822,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 60,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 615,
+      "stats": {
+        "actions": 615,
+        "brake_actions": 99,
+        "positive_actions": 199,
+        "zero_actions": 317,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 265
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.0000037012820036,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9773088302036232
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 615,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 61,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 564,
+      "stats": {
+        "actions": 564,
+        "brake_actions": 98,
+        "positive_actions": 214,
+        "zero_actions": 252,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 269
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000060802080349,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9676214366563723
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 564,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 62,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 393,
+      "stats": {
+        "actions": 393,
+        "brake_actions": 66,
+        "positive_actions": 164,
+        "zero_actions": 163,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 195
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000088135559474,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9528366252902586
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 393,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 63,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 426,
+      "stats": {
+        "actions": 426,
+        "brake_actions": 59,
+        "positive_actions": 162,
+        "zero_actions": 205,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 201
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.00015306647865,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9593043326701325
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 426,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 64,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 362,
+      "stats": {
+        "actions": 362,
+        "brake_actions": 64,
+        "positive_actions": 167,
+        "zero_actions": 131,
+        "longitudinal_clipped": 10,
+        "target_reduced_steps": 203
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000124996131654,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9524751250452348
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 362,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 65,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 554,
+      "stats": {
+        "actions": 554,
+        "brake_actions": 97,
+        "positive_actions": 207,
+        "zero_actions": 250,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 268
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000110009509543,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9687546389757035
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 554,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 66,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 432,
+      "stats": {
+        "actions": 432,
+        "brake_actions": 77,
+        "positive_actions": 146,
+        "zero_actions": 209,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 192
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.0000042135214136,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9639216598993197
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 432,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 67,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 462,
+      "stats": {
+        "actions": 462,
+        "brake_actions": 80,
+        "positive_actions": 159,
+        "zero_actions": 223,
+        "longitudinal_clipped": 9,
+        "target_reduced_steps": 207
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000000613492138,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9655340994802958
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 462,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 68,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 776,
+      "stats": {
+        "actions": 776,
+        "brake_actions": 82,
+        "positive_actions": 214,
+        "zero_actions": 480,
+        "longitudinal_clipped": 10,
+        "target_reduced_steps": 344
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000001869572662,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9797446342857576
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 776,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 69,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 394,
+      "stats": {
+        "actions": 394,
+        "brake_actions": 57,
+        "positive_actions": 165,
+        "zero_actions": 172,
+        "longitudinal_clipped": 5,
+        "target_reduced_steps": 199
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000205604344387,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9553156965869123
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 394,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 70,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 835,
+      "stats": {
+        "actions": 835,
+        "brake_actions": 132,
+        "positive_actions": 258,
+        "zero_actions": 445,
+        "longitudinal_clipped": 11,
+        "target_reduced_steps": 338
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000002133901882,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9823018522053792
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 835,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 71,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 533,
+      "stats": {
+        "actions": 533,
+        "brake_actions": 102,
+        "positive_actions": 198,
+        "zero_actions": 233,
+        "longitudinal_clipped": 9,
+        "target_reduced_steps": 265
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000001641897552,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9694503908613155
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 533,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 72,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 821,
+      "stats": {
+        "actions": 821,
+        "brake_actions": 137,
+        "positive_actions": 247,
+        "zero_actions": 437,
+        "longitudinal_clipped": 12,
+        "target_reduced_steps": 337
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000000586943983,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9811110356200653
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 821,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 73,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 774,
+      "stats": {
+        "actions": 774,
+        "brake_actions": 143,
+        "positive_actions": 235,
+        "zero_actions": 396,
+        "longitudinal_clipped": 11,
+        "target_reduced_steps": 335
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000002522280833,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9797715406226831
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 774,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 74,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 776,
+      "stats": {
+        "actions": 776,
+        "brake_actions": 113,
+        "positive_actions": 269,
+        "zero_actions": 394,
+        "longitudinal_clipped": 10,
+        "target_reduced_steps": 342
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000001802451201,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9795943029073403
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 776,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 75,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 633,
+      "stats": {
+        "actions": 633,
+        "brake_actions": 86,
+        "positive_actions": 213,
+        "zero_actions": 334,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 270
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000001506142639,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9751265353009448
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 633,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 60,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 782,
+      "stats": {
+        "actions": 782,
+        "brake_actions": 303,
+        "positive_actions": 474,
+        "zero_actions": 5,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 289
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.013153357520044,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9543398880586513
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 782,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 61,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 796,
+      "stats": {
+        "actions": 796,
+        "brake_actions": 185,
+        "positive_actions": 439,
+        "zero_actions": 172,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 293
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0172534844497254,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9535611063556392
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 796,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 62,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 784,
+      "stats": {
+        "actions": 784,
+        "brake_actions": 307,
+        "positive_actions": 473,
+        "zero_actions": 4,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 286
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.014883480136314,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9539323781169693
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 784,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 63,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 782,
+      "stats": {
+        "actions": 782,
+        "brake_actions": 226,
+        "positive_actions": 537,
+        "zero_actions": 19,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 296
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.022069920217843,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9595794054926658
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 782,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 64,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 736,
+      "stats": {
+        "actions": 736,
+        "brake_actions": 205,
+        "positive_actions": 528,
+        "zero_actions": 3,
+        "longitudinal_clipped": 16,
+        "target_reduced_steps": 295
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0238485336305576,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9560410583502942
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 736,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 65,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 762,
+      "stats": {
+        "actions": 762,
+        "brake_actions": 203,
+        "positive_actions": 462,
+        "zero_actions": 97,
+        "longitudinal_clipped": 5,
+        "target_reduced_steps": 288
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0170335793297527,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9593583087531887
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 762,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 66,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 664,
+      "stats": {
+        "actions": 664,
+        "brake_actions": 263,
+        "positive_actions": 399,
+        "zero_actions": 2,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 236
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0120403766653094,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9561973950662623
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 664,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 67,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 696,
+      "stats": {
+        "actions": 696,
+        "brake_actions": 217,
+        "positive_actions": 431,
+        "zero_actions": 48,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 266
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0159121347258964,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9561186295823875
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 696,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 68,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 715,
+      "stats": {
+        "actions": 715,
+        "brake_actions": 200,
+        "positive_actions": 468,
+        "zero_actions": 47,
+        "longitudinal_clipped": 9,
+        "target_reduced_steps": 285
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.020739743242888,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9559015552907181
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 715,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 69,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 779,
+      "stats": {
+        "actions": 779,
+        "brake_actions": 226,
+        "positive_actions": 534,
+        "zero_actions": 19,
+        "longitudinal_clipped": 13,
+        "target_reduced_steps": 294
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0219184381794295,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.95931396484375
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 779,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 70,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 766,
+      "stats": {
+        "actions": 766,
+        "brake_actions": 204,
+        "positive_actions": 466,
+        "zero_actions": 96,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 289
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0173787831183856,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9592727349728954
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 766,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 71,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 684,
+      "stats": {
+        "actions": 684,
+        "brake_actions": 268,
+        "positive_actions": 414,
+        "zero_actions": 2,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 254
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0134136676788628,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9556519908224554
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 684,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 72,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 703,
+      "stats": {
+        "actions": 703,
+        "brake_actions": 161,
+        "positive_actions": 390,
+        "zero_actions": 152,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 273
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0169592745495155,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9562329507938526
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 703,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 73,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 683,
+      "stats": {
+        "actions": 683,
+        "brake_actions": 267,
+        "positive_actions": 408,
+        "zero_actions": 8,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 253
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.013061523437801,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9560588667688235
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 683,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 74,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 735,
+      "stats": {
+        "actions": 735,
+        "brake_actions": 205,
+        "positive_actions": 528,
+        "zero_actions": 2,
+        "longitudinal_clipped": 27,
+        "target_reduced_steps": 297
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0240268707278495,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9557598860964565
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 735,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 75,
+      "base_speed_mps": 2.0,
+      "status": "arrive_dest",
+      "n_steps": 713,
+      "stats": {
+        "actions": 713,
+        "brake_actions": 195,
+        "positive_actions": 463,
+        "zero_actions": 55,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 283
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 2.0211410466913224,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9561194339843923
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 713,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 60,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 528,
+      "stats": {
+        "actions": 528,
+        "brake_actions": 85,
+        "positive_actions": 191,
+        "zero_actions": 252,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 244
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0004799602587804,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9537987774834011
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 528,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 61,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 535,
+      "stats": {
+        "actions": 535,
+        "brake_actions": 78,
+        "positive_actions": 200,
+        "zero_actions": 257,
+        "longitudinal_clipped": 4,
+        "target_reduced_steps": 249
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.000790602023063,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9540645945336892
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 535,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 62,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 529,
+      "stats": {
+        "actions": 529,
+        "brake_actions": 83,
+        "positive_actions": 197,
+        "zero_actions": 249,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 243
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0006717255688526,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9539435715101737
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 529,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 63,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 526,
+      "stats": {
+        "actions": 526,
+        "brake_actions": 75,
+        "positive_actions": 214,
+        "zero_actions": 237,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 252
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.000007713847093,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9595909274354273
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 526,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 64,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 473,
+      "stats": {
+        "actions": 473,
+        "brake_actions": 58,
+        "positive_actions": 174,
+        "zero_actions": 241,
+        "longitudinal_clipped": 3,
+        "target_reduced_steps": 213
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.002850304792999,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9561213374355005
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 473,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 65,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 517,
+      "stats": {
+        "actions": 517,
+        "brake_actions": 82,
+        "positive_actions": 199,
+        "zero_actions": 236,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 249
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0000067405954125,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9594735281808036
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 517,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 66,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 450,
+      "stats": {
+        "actions": 450,
+        "brake_actions": 70,
+        "positive_actions": 145,
+        "zero_actions": 235,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 190
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0014181054887614,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9555211827621487
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 450,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 67,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 462,
+      "stats": {
+        "actions": 462,
+        "brake_actions": 62,
+        "positive_actions": 163,
+        "zero_actions": 237,
+        "longitudinal_clipped": 9,
+        "target_reduced_steps": 202
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.001857867348166,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.955585021436464
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 462,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 68,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 477,
+      "stats": {
+        "actions": 477,
+        "brake_actions": 55,
+        "positive_actions": 184,
+        "zero_actions": 238,
+        "longitudinal_clipped": 5,
+        "target_reduced_steps": 217
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.002603230265373,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9560366184103597
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 477,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 69,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 528,
+      "stats": {
+        "actions": 528,
+        "brake_actions": 69,
+        "positive_actions": 220,
+        "zero_actions": 239,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 254
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0000209624234806,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9592672542649873
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 528,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 70,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 519,
+      "stats": {
+        "actions": 519,
+        "brake_actions": 75,
+        "positive_actions": 207,
+        "zero_actions": 237,
+        "longitudinal_clipped": 5,
+        "target_reduced_steps": 250
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0000075696552058,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9594913404815051
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 519,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 71,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 455,
+      "stats": {
+        "actions": 455,
+        "brake_actions": 63,
+        "positive_actions": 149,
+        "zero_actions": 243,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 195
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.001943278904913,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9556390225368606
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 455,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 72,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 460,
+      "stats": {
+        "actions": 460,
+        "brake_actions": 68,
+        "positive_actions": 157,
+        "zero_actions": 235,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 200
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0023608308497822,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9555158724041488
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 460,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 73,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 455,
+      "stats": {
+        "actions": 455,
+        "brake_actions": 67,
+        "positive_actions": 149,
+        "zero_actions": 239,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 195
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.001617323429331,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9556943360027824
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 455,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 74,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 479,
+      "stats": {
+        "actions": 479,
+        "brake_actions": 59,
+        "positive_actions": 180,
+        "zero_actions": 240,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 219
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0024276780339916,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9560094723099783
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 479,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 75,
+      "base_speed_mps": 3.0,
+      "status": "arrive_dest",
+      "n_steps": 478,
+      "stats": {
+        "actions": 478,
+        "brake_actions": 55,
+        "positive_actions": 182,
+        "zero_actions": 241,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 218
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 3.0022730820946313,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9555807545118049
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 478,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 60,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 408,
+      "stats": {
+        "actions": 408,
+        "brake_actions": 66,
+        "positive_actions": 156,
+        "zero_actions": 186,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 191
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.0001342410712475,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9536145771648756
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 408,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 61,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 418,
+      "stats": {
+        "actions": 418,
+        "brake_actions": 65,
+        "positive_actions": 168,
+        "zero_actions": 185,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 200
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000155327323397,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.953932782222232
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 418,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 62,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 411,
+      "stats": {
+        "actions": 411,
+        "brake_actions": 66,
+        "positive_actions": 159,
+        "zero_actions": 186,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 193
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000143776582068,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9537766133515502
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 411,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 63,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 405,
+      "stats": {
+        "actions": 405,
+        "brake_actions": 59,
+        "positive_actions": 158,
+        "zero_actions": 188,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 201
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000005735184627,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9594371562101403
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 405,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 64,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 377,
+      "stats": {
+        "actions": 377,
+        "brake_actions": 65,
+        "positive_actions": 163,
+        "zero_actions": 149,
+        "longitudinal_clipped": 4,
+        "target_reduced_steps": 200
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000033957608701,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9558808368365136
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 377,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 65,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 404,
+      "stats": {
+        "actions": 404,
+        "brake_actions": 66,
+        "positive_actions": 165,
+        "zero_actions": 173,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 200
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000002137913644,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9594526018415178
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 404,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 66,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 365,
+      "stats": {
+        "actions": 365,
+        "brake_actions": 73,
+        "positive_actions": 144,
+        "zero_actions": 148,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 189
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000013274362413,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9555014009838649
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 365,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 67,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 372,
+      "stats": {
+        "actions": 372,
+        "brake_actions": 71,
+        "positive_actions": 156,
+        "zero_actions": 145,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 196
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000073462832249,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.955988493707148
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 372,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 68,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 372,
+      "stats": {
+        "actions": 372,
+        "brake_actions": 54,
+        "positive_actions": 146,
+        "zero_actions": 172,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 196
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000079110132131,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9556196476372295
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 372,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 69,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 404,
+      "stats": {
+        "actions": 404,
+        "brake_actions": 61,
+        "positive_actions": 157,
+        "zero_actions": 186,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 200
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000006333467276,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9594744001116071
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 404,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 70,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 403,
+      "stats": {
+        "actions": 403,
+        "brake_actions": 69,
+        "positive_actions": 165,
+        "zero_actions": 169,
+        "longitudinal_clipped": 8,
+        "target_reduced_steps": 199
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000003080970272,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.959526217713648
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 403,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 71,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 370,
+      "stats": {
+        "actions": 370,
+        "brake_actions": 69,
+        "positive_actions": 155,
+        "zero_actions": 146,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 194
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000078686574548,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9556685758088048
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 370,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 72,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 372,
+      "stats": {
+        "actions": 372,
+        "brake_actions": 69,
+        "positive_actions": 154,
+        "zero_actions": 149,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 196
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.00007251939463,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9556794712325638
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 372,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 73,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 369,
+      "stats": {
+        "actions": 369,
+        "brake_actions": 71,
+        "positive_actions": 153,
+        "zero_actions": 145,
+        "longitudinal_clipped": 6,
+        "target_reduced_steps": 193
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.000079831933466,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9555105712029777
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 369,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 74,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 382,
+      "stats": {
+        "actions": 382,
+        "brake_actions": 64,
+        "positive_actions": 174,
+        "zero_actions": 144,
+        "longitudinal_clipped": 9,
+        "target_reduced_steps": 205
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.00002835278033,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9556987176891121
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 382,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 75,
+      "base_speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_steps": 376,
+      "stats": {
+        "actions": 376,
+        "brake_actions": 60,
+        "positive_actions": 168,
+        "zero_actions": 148,
+        "longitudinal_clipped": 7,
+        "target_reduced_steps": 200
+      },
+      "min_observed_speed_mps": 0.0,
+      "max_observed_speed_mps": 4.0000735281730595,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9558692777937078
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 376,
+      "split": "val"
+    }
+  ],
+  "limitations": [
+    "IDM steering drives during collection; learned V3.5 steering drives during evaluation.",
+    "Target speed and near-destination slowdown are hand-planned; low-level throttle/brake is native IDM.",
+    "No traffic, so IDM following/yielding behavior is not learned.",
+    "Only successful teacher episodes are retained."
+  ],
+  "successes_by_split": {
+    "train": 108,
+    "val": 36
+  },
+  "total_brake_rows_retained": 20026
+}

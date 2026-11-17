@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 30,
+    "gender": "Female",
+    "occupation": "Social worker"
+  },
+  "driving_experience": "12 years",
+  "driving_frequency_per_week": "5 to 10 h",
+  "driving_purposes": [
+    "Commuting to work",
+    "Professional driving"
+  ],
+  "driving_habits_preferences": [
+    "Comfortable with dense urban traffic and steady pace",
+    "Prefers smooth acceleration but does not deliberately drive slowly",
+    "Maintains moderate following distance and changes lanes selectively"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "Mild nearsightedness (corrected)",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Balanced",
+  "international_driving_experience": "None"
+}

@@ -1,0 +1,114 @@
+{
+  "status": "V310_HIGH_SPEED_RULE_LATERAL_SUPERVISION",
+  "maps": [
+    "S"
+  ],
+  "speeds_mps": [
+    4.0
+  ],
+  "splits": {
+    "train": [
+      130
+    ],
+    "val": [
+      142
+    ],
+    "eval": [
+      146
+    ]
+  },
+  "perturb_md": 0.0035,
+  "pulse_steps": 6,
+  "steps_cap": 1000,
+  "teacher": "frozen PDD V2 + V3.1 rule_lateral (.08*e-.30*h clipped to .08); no IDM",
+  "labels": "unperturbed teacher steering before env.step; noise only executed action",
+  "data_fields": [
+    "map",
+    "seed",
+    "split",
+    "step",
+    "target_speed_mps",
+    "noise_md",
+    "teacher_steer_md",
+    "applied_steer_md",
+    "pdd_steer_md",
+    "teacher_residual_md",
+    "speed_mps",
+    "wp1_forward_m",
+    "wp1_right_m",
+    "wp2_forward_m",
+    "wp2_right_m",
+    "lane_width_m",
+    "front_vehicle_dist_m",
+    "front_vehicle_closing_speed_mps",
+    "left_vehicle_dist_m",
+    "right_vehicle_dist_m",
+    "front_pedestrian_dist_m",
+    "has_front_vehicle",
+    "has_left_vehicle",
+    "has_right_vehicle",
+    "has_front_pedestrian",
+    "base_pdd_steer_md",
+    "planned_lateral_right_m",
+    "heading_error_rad",
+    "adaptive_lookahead"
+  ],
+  "rows_by_split": {
+    "train": 291,
+    "val": 293
+  },
+  "rows_by_cell": {
+    "train:S:4": 291,
+    "val:S:4": 293
+  },
+  "episodes": [
+    {
+      "map": "S",
+      "seed": 130,
+      "speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_applied_steps": 291,
+      "aligned_rows": 291,
+      "noise_steps": 25,
+      "recovery_state_steps": 31,
+      "max_abs_lateral_m": 0.030330657958984375,
+      "travelled_m": 89.05554677823439,
+      "terminal_info": {
+        "arrive_dest": true,
+        "crash": false,
+        "out_of_road": false,
+        "route_completion": 0.9502823173377918
+      },
+      "errors": [],
+      "rows_retained": 291,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 142,
+      "speed_mps": 4.0,
+      "status": "arrive_dest",
+      "n_applied_steps": 293,
+      "aligned_rows": 293,
+      "noise_steps": 30,
+      "recovery_state_steps": 1,
+      "max_abs_lateral_m": 0.024248600006103516,
+      "travelled_m": 89.89687943029205,
+      "terminal_info": {
+        "arrive_dest": true,
+        "crash": false,
+        "out_of_road": false,
+        "route_completion": 0.9506593606109578
+      },
+      "errors": [],
+      "rows_retained": 293,
+      "split": "val"
+    }
+  ],
+  "limitations": [
+    "Research in MetaDrive only, no traffic, privileged geometry.",
+    "Only completed teacher episodes retained; failures preserved in manifest.",
+    "Low-noise teacher trajectories do NOT certify recovery from large drift.",
+    "Evaluation seeds are reserved and NEVER collected."
+  ]
+}

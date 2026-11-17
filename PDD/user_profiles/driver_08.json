@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 51,
+    "gender": "Male",
+    "occupation": "Company manager"
+  },
+  "driving_experience": "30 years",
+  "driving_frequency_per_week": "25 to 30 h",
+  "driving_purposes": [
+    "Business site visits",
+    "Long-distance family visits"
+  ],
+  "driving_habits_preferences": [
+    "Prefers early morning driving to reduce stress",
+    "Keeps a steady moderate pace with predictable acceleration",
+    "Maintains safe spacing and values vehicle upkeep over speed"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "Mild hypertension (controlled)",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Calm",
+  "international_driving_experience": "5 years in Middle East"
+}

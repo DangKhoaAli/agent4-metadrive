@@ -1,0 +1,4 @@
+﻿map,seed,speed_mps,profile,status,success,time_to_goal_s,sim_elapsed_s,n_applied_steps,max_speed_mps,mean_speed_mps,max_abs_planned_lateral_right_m,min_estimated_edge_clearance_m,near_edge_warning_steps,brake_steps,throttle_steps,terminal_reasons,outside_learned_training_speeds
+S,120,4.0,governor_v35,arrive_dest,1,31.5,31.5,315,3.999543229309694,3.1315034389188474,0.07091468572616577,0.8205811426839413,0,28,65,,False
+S,120,4.0,learned_v37,arrive_dest,1,31.5,31.5,315,3.9997250894997243,3.131411941611068,0.06607940047979355,0.8207490850394551,0,29,65,,False
+S,120,4.0,learned_v38,arrive_dest,1,31.3,31.3,313,3.999342220990713,3.14988860697717,0.08360602706670761,0.8197661389610994,0,29,43,,False

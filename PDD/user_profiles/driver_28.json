@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 20,
+    "gender": "Male",
+    "occupation": "Electrician"
+  },
+  "driving_experience": "1 years",
+  "driving_frequency_per_week": "10 to 15 h",
+  "driving_purposes": [
+    "Business site visits",
+    "Visiting friends and family"
+  ],
+  "driving_habits_preferences": [
+    "Comfortable in dense urban traffic without forcing gaps",
+    "Uses navigation apps to maintain steady trip efficiency",
+    "Keeps moderate spacing and avoids unnecessary aggressive passing"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "Seasonal allergies",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Balanced",
+  "international_driving_experience": "Occasional rentals in Canada"
+}

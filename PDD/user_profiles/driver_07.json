@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 56,
+    "gender": "Female",
+    "occupation": "Retired school teacher"
+  },
+  "driving_experience": "30 years",
+  "driving_frequency_per_week": "5 to 10 h",
+  "driving_purposes": [
+    "Volunteer work commute",
+    "Transporting grandchildren and shopping"
+  ],
+  "driving_habits_preferences": [
+    "Avoids night driving but keeps steady daytime progress",
+    "Uses middle or right lanes unless a lane change clearly helps",
+    "Maintains a moderate following gap and adapts speed smoothly to traffic"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "Mild cataract (corrected with lenses)",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Balanced",
+  "international_driving_experience": "None"
+}

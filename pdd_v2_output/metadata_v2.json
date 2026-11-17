@@ -1,0 +1,338 @@
+{
+  "status": "V2_PROVISIONAL_SHARED_FEATURES_NOT_CLOSED_LOOP_VALIDATED",
+  "pdd_root": "D:\\Học\\Tri tue nhan to nang cao\\lab\\dataset\\PDD",
+  "pilot_dir": "D:\\Học\\Tri tue nhan to nang cao\\lab\\dataset\\pdd_pilot_output",
+  "split_counts": {
+    "train": 6117,
+    "val": 886,
+    "test": 804
+  },
+  "feature_order": [
+    "speed_mps",
+    "wp1_forward_m",
+    "wp1_right_m",
+    "wp2_forward_m",
+    "wp2_right_m",
+    "lane_width_m",
+    "front_vehicle_dist_m",
+    "front_vehicle_closing_speed_mps",
+    "left_vehicle_dist_m",
+    "right_vehicle_dist_m",
+    "front_pedestrian_dist_m",
+    "has_front_vehicle",
+    "has_left_vehicle",
+    "has_right_vehicle",
+    "has_front_pedestrian"
+  ],
+  "target_label_columns": [
+    "steer_at_t_carla",
+    "throttle_at_t_carla",
+    "brake_at_t_carla",
+    "a2_at_t_metadrive_candidate",
+    "steer_mean_next5_carla",
+    "throttle_mean_next5_carla",
+    "brake_mean_next5_carla",
+    "a2_mean_next5_metadrive_candidate"
+  ],
+  "split_scenarios": {
+    "train": [
+      "Accident",
+      "BlockedIntersection",
+      "ConstructionObstacle",
+      "ControlLoss",
+      "EnterActorFlow",
+      "HazardAtSideLane",
+      "HighwayExit",
+      "InvadingTurn",
+      "MergerIntoSlowTraffic",
+      "NonSignalizedJunctionLeftTurn",
+      "ParkingCutIn",
+      "SignalizedJunctionLeftTurn",
+      "SignalizedJunctionRightTurn",
+      "StaticCutIn",
+      "VehicleOpensDoorTwoWays"
+    ],
+    "val": [
+      "CrossingBicycleFlow",
+      "InterurbanActorFlow",
+      "NonSignalizedJunctionRightTurn"
+    ],
+    "test": [
+      "DynamicObjectCrossing",
+      "ParkedObstacle",
+      "VanillaNonSignalizedTurn"
+    ]
+  },
+  "coordinate_convention": "+x forward, +y right of ego; checkpoint vectors radially capped at 50m",
+  "pdd_box_y_sign": 1,
+  "pdd_waypoint_y_sign": 1,
+  "distance_no_object": "60m cap + has_X flag 0",
+  "object_distance": "Distance to object center, not bumper clearance",
+  "counts": {
+    "rows_seen": 7812,
+    "rows_kept": 7807,
+    "train_rows": 6117,
+    "val_rows": 886,
+    "rows_rejected": 5,
+    "test_rows": 804
+  },
+  "feature_stats": {
+    "speed_mps": {
+      "min": 0.0,
+      "p10": 0.17464283164705835,
+      "median": 5.059917598704287,
+      "p90": 10.478767845990967,
+      "max": 23.653820608102247
+    },
+    "wp1_forward_m": {
+      "min": 4.73584733600269,
+      "p10": 10.375464140261084,
+      "median": 26.338259504359932,
+      "p90": 49.80633905949422,
+      "max": 49.999999999997904
+    },
+    "wp1_right_m": {
+      "min": -38.43711175771341,
+      "p10": -1.91242523366711,
+      "median": 0.165965829866197,
+      "p90": 4.959051352129038,
+      "max": 46.95861388836459
+    },
+    "wp2_forward_m": {
+      "min": 4.211180923053639,
+      "p10": 16.921107700242906,
+      "median": 48.21445463161454,
+      "p90": 49.99972333687399,
+      "max": 49.99999999999994
+    },
+    "wp2_right_m": {
+      "min": -49.82234393556077,
+      "p10": -5.193830197176344,
+      "median": 0.29908948390486945,
+      "p90": 9.087418124724136,
+      "max": 49.42041522815746
+    },
+    "lane_width_m": {
+      "min": 1.6485642613843083,
+      "p10": 2.75,
+      "median": 3.25,
+      "p90": 3.5,
+      "max": 3.5
+    },
+    "front_vehicle_dist_m": {
+      "min": 1.9461882985428007,
+      "p10": 11.903968497834798,
+      "median": 34.550981535782434,
+      "p90": 60.0,
+      "max": 60.0
+    },
+    "front_vehicle_closing_speed_mps": {
+      "min": -19.62837621315791,
+      "p10": -3.486524371270205,
+      "median": 0.0,
+      "p90": 4.02028638989853,
+      "max": 20.92750140095114
+    },
+    "left_vehicle_dist_m": {
+      "min": 2.5311311419783804,
+      "p10": 3.9011708434089543,
+      "median": 17.78543116647633,
+      "p90": 60.0,
+      "max": 60.0
+    },
+    "right_vehicle_dist_m": {
+      "min": 2.566296420344813,
+      "p10": 9.719644343254533,
+      "median": 60.0,
+      "p90": 60.0,
+      "max": 60.0
+    },
+    "front_pedestrian_dist_m": {
+      "min": 5.537867093457256,
+      "p10": 60.0,
+      "median": 60.0,
+      "p90": 60.0,
+      "max": 60.0
+    },
+    "has_front_vehicle": {
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 1.0,
+      "p90": 1.0,
+      "max": 1.0
+    },
+    "has_left_vehicle": {
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 1.0,
+      "p90": 1.0,
+      "max": 1.0
+    },
+    "has_right_vehicle": {
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 1.0,
+      "max": 1.0
+    },
+    "has_front_pedestrian": {
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 1.0
+    }
+  },
+  "examples": [
+    {
+      "driver": "driver_01",
+      "scenario": "Accident",
+      "frame_id": 0,
+      "features": {
+        "speed_mps": 0.001027538758645831,
+        "wp1_forward_m": 49.99999999974381,
+        "wp1_right_m": -0.00016006091043619888,
+        "wp2_forward_m": 49.99999999995842,
+        "wp2_right_m": -6.448167101891886e-05,
+        "lane_width_m": 3.25,
+        "front_vehicle_dist_m": 60.0,
+        "front_vehicle_closing_speed_mps": 0.0,
+        "left_vehicle_dist_m": 60.0,
+        "right_vehicle_dist_m": 60.0,
+        "front_pedestrian_dist_m": 60.0,
+        "has_front_vehicle": 0.0,
+        "has_left_vehicle": 0.0,
+        "has_right_vehicle": 0.0,
+        "has_front_pedestrian": 0.0
+      }
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "Accident",
+      "frame_id": 1,
+      "features": {
+        "speed_mps": 0.00029492732257909164,
+        "wp1_forward_m": 49.999999999851575,
+        "wp1_right_m": -0.00012182948566656818,
+        "wp2_forward_m": 49.99999999997942,
+        "wp2_right_m": -4.5365552136698765e-05,
+        "lane_width_m": 3.25,
+        "front_vehicle_dist_m": 15.001186077806885,
+        "front_vehicle_closing_speed_mps": 0.00026993161253078385,
+        "left_vehicle_dist_m": 15.349248814766375,
+        "right_vehicle_dist_m": 60.0,
+        "front_pedestrian_dist_m": 60.0,
+        "has_front_vehicle": 1.0,
+        "has_left_vehicle": 1.0,
+        "has_right_vehicle": 0.0,
+        "has_front_pedestrian": 0.0
+      }
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "Accident",
+      "frame_id": 2,
+      "features": {
+        "speed_mps": 0.00011520611400594496,
+        "wp1_forward_m": 49.99999999990398,
+        "wp1_right_m": -9.798762775821971e-05,
+        "wp2_forward_m": 49.99999999999537,
+        "wp2_right_m": -2.1523694228213416e-05,
+        "lane_width_m": 3.25,
+        "front_vehicle_dist_m": 15.001062020687304,
+        "front_vehicle_closing_speed_mps": 9.869041614201072e-05,
+        "left_vehicle_dist_m": 15.349355249174849,
+        "right_vehicle_dist_m": 60.0,
+        "front_pedestrian_dist_m": 60.0,
+        "has_front_vehicle": 1.0,
+        "has_left_vehicle": 1.0,
+        "has_right_vehicle": 0.0,
+        "has_front_pedestrian": 0.0
+      }
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "Accident",
+      "frame_id": 3,
+      "features": {
+        "speed_mps": 5.118412426183713e-06,
+        "wp1_forward_m": 49.99999999994502,
+        "wp1_right_m": -7.414576984638827e-05,
+        "wp2_forward_m": 49.99999999999994,
+        "wp2_right_m": 2.3181636837549467e-06,
+        "lane_width_m": 3.25,
+        "front_vehicle_dist_m": 15.001156441960212,
+        "front_vehicle_closing_speed_mps": -1.1954486461918881e-05,
+        "left_vehicle_dist_m": 15.430232313195198,
+        "right_vehicle_dist_m": 60.0,
+        "front_pedestrian_dist_m": 60.0,
+        "has_front_vehicle": 1.0,
+        "has_left_vehicle": 1.0,
+        "has_right_vehicle": 0.0,
+        "has_front_pedestrian": 0.0
+      }
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "Accident",
+      "frame_id": 4,
+      "features": {
+        "speed_mps": 0.10004766369326543,
+        "wp1_forward_m": 49.99999999924613,
+        "wp1_right_m": -0.0002745678482933376,
+        "wp2_forward_m": 49.99999999998534,
+        "wp2_right_m": -3.8287327419981326e-05,
+        "lane_width_m": 3.25,
+        "front_vehicle_dist_m": 15.207530808008402,
+        "front_vehicle_closing_speed_mps": -1.86247585587291,
+        "left_vehicle_dist_m": 15.840556072149807,
+        "right_vehicle_dist_m": 60.0,
+        "front_pedestrian_dist_m": 60.0,
+        "has_front_vehicle": 1.0,
+        "has_left_vehicle": 1.0,
+        "has_right_vehicle": 0.0,
+        "has_front_pedestrian": 0.0
+      }
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "Accident",
+      "frame_id": 5,
+      "features": {
+        "speed_mps": 1.6010411870233108,
+        "wp1_forward_m": 49.99999117933936,
+        "wp1_right_m": 0.029699595723768738,
+        "wp2_forward_m": 49.999991196275005,
+        "wp2_right_m": 0.02967107047019386,
+        "lane_width_m": 3.25,
+        "front_vehicle_dist_m": 15.596344008034949,
+        "front_vehicle_closing_speed_mps": -1.4079572403833251,
+        "left_vehicle_dist_m": 16.328730198804625,
+        "right_vehicle_dist_m": 60.0,
+        "front_pedestrian_dist_m": 60.0,
+        "has_front_vehicle": 1.0,
+        "has_left_vehicle": 1.0,
+        "has_right_vehicle": 0.0,
+        "has_front_pedestrian": 0.0
+      }
+    }
+  ],
+  "rejected_examples": [
+    "driver_01/InterurbanActorFlow/22: AdapterDataError lane_width_m out of expected range: 0.6220777556300163",
+    "driver_01/InterurbanActorFlow/23: AdapterDataError lane_width_m out of expected range: 1.0909196808934212",
+    "driver_03/InterurbanActorFlow/38: AdapterDataError lane_width_m out of expected range: 1.0461893482133746",
+    "driver_03/InterurbanActorFlow/39: AdapterDataError lane_width_m out of expected range: 1.2839403105899692",
+    "driver_03/InterurbanActorFlow/40: AdapterDataError lane_width_m out of expected range: 1.4943343456834555"
+  ],
+  "limitations": [
+    "Mapping frame i -> 5*i is backed by timing correlations, but NOT certified by original collector.",
+    "PDD boxes x/y are documented ego-relative; side sign requires visual/local verification.",
+    "PDD and MetaDrive use different route checkpoint placement; physical units match but semantics are not identical.",
+    "The object speed field is interpreted as m/s by dataset card; verify it against source if using closing speed.",
+    "Closing speed uses speed magnitudes, not relative projected velocities.",
+    "Stationary obstacles, traffic lights, priority rules, and cyclists are not fully modeled.",
+    "Model outputs are CARLA control candidates; a2=(throttle-brake) is not dynamics-calibrated.",
+    "Training split remains by scenario type across three drivers.",
+    "This preprocessing is not evidence that Agent 4 will reach destinations."
+  ]
+}

@@ -1,0 +1,2912 @@
+{
+  "status": "METADRIVE_ACTION_NAV_CALIBRATION_NOT_TRANSFER_CERTIFIED",
+  "version": "v2.1",
+  "config": {
+    "use_render": false,
+    "map": "S",
+    "traffic_density": 0.0,
+    "num_scenarios": 4,
+    "log_level": 40
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "action_space_reference": "MetaDrive action = [steer, throttle/brake], each in [-1,1]; a2>0 throttle, a2<0 brake.",
+  "steering": {
+    "trials": [
+      {
+        "seed": 0,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 4.882653236389191,
+          "heading_rad": 0.0,
+          "position_xy": [
+            13.154624938964844,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 5.269272804260486,
+          "heading_rad": 0.0,
+          "position_xy": [
+            15.173222541809082,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": 0.0,
+        "speed_delta_mps": 0.3866195678712945,
+        "position_delta_xy": [
+          2.0185976028442383,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 0,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          -0.25,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 4.882653236389191,
+          "heading_rad": 0.0,
+          "position_xy": [
+            13.154624938964844,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 5.176490358130594,
+          "heading_rad": -0.09920994114039505,
+          "position_xy": [
+            15.13267993927002,
+            6.790639400482178
+          ]
+        },
+        "yaw_delta_rad": -0.09920994114039505,
+        "speed_delta_mps": 0.29383712174140264,
+        "position_delta_xy": [
+          1.9780550003051758,
+          -0.20936059951782227
+        ],
+        "left_displacement_m": -0.20936059951782227,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 0,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.25,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 4.882653236389191,
+          "heading_rad": 0.0,
+          "position_xy": [
+            13.154624938964844,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 5.176489681306442,
+          "heading_rad": 0.09920940850817672,
+          "position_xy": [
+            15.13267993927002,
+            7.209361553192139
+          ]
+        },
+        "yaw_delta_rad": 0.09920940850817672,
+        "speed_delta_mps": 0.29383644491725036,
+        "position_delta_xy": [
+          1.9780550003051758,
+          0.20936155319213867
+        ],
+        "left_displacement_m": 0.20936155319213867,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 0,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          -0.4,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 4.882653236389191,
+          "heading_rad": 0.0,
+          "position_xy": [
+            13.154624938964844,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 5.017742837969156,
+          "heading_rad": -0.13811872466645259,
+          "position_xy": [
+            15.079028129577637,
+            6.715384006500244
+          ]
+        },
+        "yaw_delta_rad": -0.13811872466645259,
+        "speed_delta_mps": 0.1350896015799652,
+        "position_delta_xy": [
+          1.924403190612793,
+          -0.28461599349975586
+        ],
+        "left_displacement_m": -0.28461599349975586,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 0,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.4,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 4.882653236389191,
+          "heading_rad": 0.0,
+          "position_xy": [
+            13.154624938964844,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 5.017742003404002,
+          "heading_rad": 0.1381176594020168,
+          "position_xy": [
+            15.079028129577637,
+            7.284615993499756
+          ]
+        },
+        "yaw_delta_rad": 0.1381176594020168,
+        "speed_delta_mps": 0.13508876701481043,
+        "position_delta_xy": [
+          1.924403190612793,
+          0.28461599349975586
+        ],
+        "left_displacement_m": 0.28461599349975586,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 1,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 5.200633525849702,
+          "heading_rad": -7.989483270520736e-07,
+          "position_xy": [
+            13.685670852661133,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 5.612430095673065,
+          "heading_rad": -3.9947416397012603e-07,
+          "position_xy": [
+            15.83573055267334,
+            3.5
+          ]
+        },
+        "yaw_delta_rad": 3.994741630819476e-07,
+        "speed_delta_mps": 0.41179656982336255,
+        "position_delta_xy": [
+          2.150059700012207,
+          0.0
+        ],
+        "left_displacement_m": 1.7177866003866534e-06,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 1,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          -0.25,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 5.200633525849702,
+          "heading_rad": -7.989483270520736e-07,
+          "position_xy": [
+            13.685670852661133,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 5.510496066002095,
+          "heading_rad": -0.10445450427508796,
+          "position_xy": [
+            15.791694641113281,
+            3.2764291763305664
+          ]
+        },
+        "yaw_delta_rad": -0.1044537053267609,
+        "speed_delta_mps": 0.3098625401523929,
+        "position_delta_xy": [
+          2.1060237884521484,
+          -0.2235708236694336
+        ],
+        "left_displacement_m": -0.22356914106517972,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 1,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.25,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 5.200633525849702,
+          "heading_rad": -7.989483270520736e-07,
+          "position_xy": [
+            13.685670852661133,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 5.51049681247186,
+          "heading_rad": 0.10445170795594372,
+          "position_xy": [
+            15.791694641113281,
+            3.723567008972168
+          ]
+        },
+        "yaw_delta_rad": 0.10445250690427077,
+        "speed_delta_mps": 0.309863286622158,
+        "position_delta_xy": [
+          2.1060237884521484,
+          0.22356700897216797
+        ],
+        "left_displacement_m": 0.22356869157627912,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 1,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          -0.4,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 5.200633525849702,
+          "heading_rad": -7.989483270520736e-07,
+          "position_xy": [
+            13.685670852661133,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 5.336842268344241,
+          "heading_rad": -0.14314943596561225,
+          "position_xy": [
+            15.73538589477539,
+            3.20186185836792
+          ]
+        },
+        "yaw_delta_rad": -0.1431486370172852,
+        "speed_delta_mps": 0.13620874249453863,
+        "position_delta_xy": [
+          2.049715042114258,
+          -0.2981381416320801
+        ],
+        "left_displacement_m": -0.2981365040155811,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 1,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.4,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 5.200633525849702,
+          "heading_rad": -7.989483270520736e-07,
+          "position_xy": [
+            13.685670852661133,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 5.336842229917786,
+          "heading_rad": 0.14314677280452237,
+          "position_xy": [
+            15.735387802124023,
+            3.7981343269348145
+          ]
+        },
+        "yaw_delta_rad": 0.14314757175284942,
+        "speed_delta_mps": 0.13620870406808372,
+        "position_delta_xy": [
+          2.0497169494628906,
+          0.29813432693481445
+        ],
+        "left_displacement_m": 0.298135964552647,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 2,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 5.155880928041918,
+          "heading_rad": -1.065264435773372e-06,
+          "position_xy": [
+            13.610916137695312,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 5.564167976382568,
+          "heading_rad": -1.1984224901340212e-06,
+          "position_xy": [
+            15.742480278015137,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": -1.331580543606492e-07,
+        "speed_delta_mps": 0.4082870483406502,
+        "position_delta_xy": [
+          2.131564140319824,
+          0.0
+        ],
+        "left_displacement_m": 2.270679471252121e-06,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 2,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          -0.25,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 5.155880928041918,
+          "heading_rad": -1.065264435773372e-06,
+          "position_xy": [
+            13.610916137695312,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 5.463491283561302,
+          "heading_rad": -0.103718806023954,
+          "position_xy": [
+            15.698933601379395,
+            6.778445243835449
+          ]
+        },
+        "yaw_delta_rad": -0.10371774075951823,
+        "speed_delta_mps": 0.3076103555193841,
+        "position_delta_xy": [
+          2.088017463684082,
+          -0.22155475616455078
+        ],
+        "left_displacement_m": -0.22155253187367974,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 2,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.25,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 5.155880928041918,
+          "heading_rad": -1.065264435773372e-06,
+          "position_xy": [
+            13.610916137695312,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 5.4634908140651826,
+          "heading_rad": 0.10371374601788208,
+          "position_xy": [
+            15.698933601379395,
+            7.221549987792969
+          ]
+        },
+        "yaw_delta_rad": 0.10371481128231785,
+        "speed_delta_mps": 0.3076098860232648,
+        "position_delta_xy": [
+          2.088017463684082,
+          0.22154998779296875
+        ],
+        "left_displacement_m": 0.22155221208358838,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 2,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          -0.4,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 5.1558809280418885,
+          "heading_rad": -1.065264435773372e-06,
+          "position_xy": [
+            13.610916137695312,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 5.2919615412586145,
+          "heading_rad": -0.14246207408826272,
+          "position_xy": [
+            15.642987251281738,
+            6.703726768493652
+          ]
+        },
+        "yaw_delta_rad": -0.14246100882382695,
+        "speed_delta_mps": 0.13608061321672604,
+        "position_delta_xy": [
+          2.032071113586426,
+          -0.29627323150634766
+        ],
+        "left_displacement_m": -0.29627106681309123,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 2,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.4,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 5.155880928041918,
+          "heading_rad": -1.065264435773372e-06,
+          "position_xy": [
+            13.610916137695312,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 5.2919608118985035,
+          "heading_rad": 0.14245967724328157,
+          "position_xy": [
+            15.642987251281738,
+            7.296269416809082
+          ]
+        },
+        "yaw_delta_rad": 0.14246074250771734,
+        "speed_delta_mps": 0.13607988385658576,
+        "position_delta_xy": [
+          2.032071113586426,
+          0.29626941680908203
+        ],
+        "left_displacement_m": 0.2962715815020022,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 3,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 5.045446873254666,
+          "heading_rad": -1.5313176268350048e-05,
+          "position_xy": [
+            13.426531791687012,
+            3.4999477863311768
+          ]
+        },
+        "end": {
+          "speed_mps": 5.444960117967626,
+          "heading_rad": -1.5313176268350048e-05,
+          "position_xy": [
+            15.512433052062988,
+            3.499915838241577
+          ]
+        },
+        "yaw_delta_rad": 0.0,
+        "speed_delta_mps": 0.3995132447129599,
+        "position_delta_xy": [
+          2.0859012603759766,
+          -3.1948089599609375e-05
+        ],
+        "left_displacement_m": -6.315918601059432e-09,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 3,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          -0.25,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 5.045446873254666,
+          "heading_rad": -1.5313176268350048e-05,
+          "position_xy": [
+            13.426531791687012,
+            3.4999477863311768
+          ]
+        },
+        "end": {
+          "speed_mps": 5.347501937472494,
+          "heading_rad": -0.10191065280184475,
+          "position_xy": [
+            15.47010326385498,
+            3.2833151817321777
+          ]
+        },
+        "yaw_delta_rad": -0.1018953396255764,
+        "speed_delta_mps": 0.3020550642178277,
+        "position_delta_xy": [
+          2.0435714721679688,
+          -0.21663260459899902
+        ],
+        "left_displacement_m": -0.2166013110034305,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 3,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.25,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 5.045446873254666,
+          "heading_rad": -1.5313176268350048e-05,
+          "position_xy": [
+            13.426531791687012,
+            3.4999477863311768
+          ]
+        },
+        "end": {
+          "speed_mps": 5.347501859061083,
+          "heading_rad": 0.10187976013319933,
+          "position_xy": [
+            15.470109939575195,
+            3.7165181636810303
+          ]
+        },
+        "yaw_delta_rad": 0.10189507330946768,
+        "speed_delta_mps": 0.302054985806417,
+        "position_delta_xy": [
+          2.0435781478881836,
+          0.21657037734985352
+        ],
+        "left_displacement_m": 0.2166016709968569,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 3,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          -0.4,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 5.045446873254666,
+          "heading_rad": -1.5313176268350048e-05,
+          "position_xy": [
+            13.426531791687012,
+            3.4999477863311768
+          ]
+        },
+        "end": {
+          "speed_mps": 5.181234444330826,
+          "heading_rad": -0.14078215207264044,
+          "position_xy": [
+            15.415056228637695,
+            3.2082302570343018
+          ]
+        },
+        "yaw_delta_rad": -0.1407668388963721,
+        "speed_delta_mps": 0.13578757107616024,
+        "position_delta_xy": [
+          1.9885244369506836,
+          -0.291717529296875
+        ],
+        "left_displacement_m": -0.2916870786374563,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 3,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.4,
+          0.35
+        ],
+        "pulse_steps_requested": 4,
+        "pulse_steps_completed": 4,
+        "start": {
+          "speed_mps": 5.045446873254666,
+          "heading_rad": -1.5313176268350048e-05,
+          "position_xy": [
+            13.426531791687012,
+            3.4999477863311768
+          ]
+        },
+        "end": {
+          "speed_mps": 5.1812368711798,
+          "heading_rad": 0.140751658878159,
+          "position_xy": [
+            15.415066719055176,
+            3.7916057109832764
+          ]
+        },
+        "yaw_delta_rad": 0.14076697205442734,
+        "speed_delta_mps": 0.13578999792513358,
+        "position_delta_xy": [
+          1.988534927368164,
+          0.2916579246520996
+        ],
+        "left_displacement_m": 0.2916883754037611,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      }
+    ],
+    "summary": {
+      "neutral_corrected_per_seed": [
+        {
+          "seed": 0,
+          "steer": -0.4,
+          "yaw_change_minus_neutral_rad": -0.13811872466645259,
+          "left_displacement_minus_neutral_m": -0.28461599349975586
+        },
+        {
+          "seed": 0,
+          "steer": -0.25,
+          "yaw_change_minus_neutral_rad": -0.09920994114039505,
+          "left_displacement_minus_neutral_m": -0.20936059951782227
+        },
+        {
+          "seed": 0,
+          "steer": 0.0,
+          "yaw_change_minus_neutral_rad": 0.0,
+          "left_displacement_minus_neutral_m": 0.0
+        },
+        {
+          "seed": 0,
+          "steer": 0.25,
+          "yaw_change_minus_neutral_rad": 0.09920940850817672,
+          "left_displacement_minus_neutral_m": 0.20936155319213867
+        },
+        {
+          "seed": 0,
+          "steer": 0.4,
+          "yaw_change_minus_neutral_rad": 0.1381176594020168,
+          "left_displacement_minus_neutral_m": 0.28461599349975586
+        },
+        {
+          "seed": 1,
+          "steer": -0.4,
+          "yaw_change_minus_neutral_rad": -0.14314903649144828,
+          "left_displacement_minus_neutral_m": -0.2981382218021815
+        },
+        {
+          "seed": 1,
+          "steer": -0.25,
+          "yaw_change_minus_neutral_rad": -0.10445410480092399,
+          "left_displacement_minus_neutral_m": -0.2235708588517801
+        },
+        {
+          "seed": 1,
+          "steer": 0.0,
+          "yaw_change_minus_neutral_rad": 0.0,
+          "left_displacement_minus_neutral_m": 0.0
+        },
+        {
+          "seed": 1,
+          "steer": 0.25,
+          "yaw_change_minus_neutral_rad": 0.10445210743010769,
+          "left_displacement_minus_neutral_m": 0.22356697378967874
+        },
+        {
+          "seed": 1,
+          "steer": 0.4,
+          "yaw_change_minus_neutral_rad": 0.14314717227868634,
+          "left_displacement_minus_neutral_m": 0.2981342467660466
+        },
+        {
+          "seed": 2,
+          "steer": -0.4,
+          "yaw_change_minus_neutral_rad": -0.1424608756657726,
+          "left_displacement_minus_neutral_m": -0.29627333749256246
+        },
+        {
+          "seed": 2,
+          "steer": -0.25,
+          "yaw_change_minus_neutral_rad": -0.10371760760146387,
+          "left_displacement_minus_neutral_m": -0.221554802553151
+        },
+        {
+          "seed": 2,
+          "steer": 0.0,
+          "yaw_change_minus_neutral_rad": 0.0,
+          "left_displacement_minus_neutral_m": 0.0
+        },
+        {
+          "seed": 2,
+          "steer": 0.25,
+          "yaw_change_minus_neutral_rad": 0.10371494444037221,
+          "left_displacement_minus_neutral_m": 0.22154994140411713
+        },
+        {
+          "seed": 2,
+          "steer": 0.4,
+          "yaw_change_minus_neutral_rad": 0.1424608756657717,
+          "left_displacement_minus_neutral_m": 0.296269310822531
+        },
+        {
+          "seed": 3,
+          "steer": -0.4,
+          "yaw_change_minus_neutral_rad": -0.1407668388963721,
+          "left_displacement_minus_neutral_m": -0.2916870723215377
+        },
+        {
+          "seed": 3,
+          "steer": -0.25,
+          "yaw_change_minus_neutral_rad": -0.1018953396255764,
+          "left_displacement_minus_neutral_m": -0.2166013046875119
+        },
+        {
+          "seed": 3,
+          "steer": 0.0,
+          "yaw_change_minus_neutral_rad": 0.0,
+          "left_displacement_minus_neutral_m": 0.0
+        },
+        {
+          "seed": 3,
+          "steer": 0.25,
+          "yaw_change_minus_neutral_rad": 0.10189507330946768,
+          "left_displacement_minus_neutral_m": 0.2166016773127755
+        },
+        {
+          "seed": 3,
+          "steer": 0.4,
+          "yaw_change_minus_neutral_rad": 0.14076697205442734,
+          "left_displacement_minus_neutral_m": 0.2916883817196797
+        }
+      ],
+      "plus_025_median_yaw_response_rad": 0.10280500887491995,
+      "minus_025_median_yaw_response_rad": -0.10280647361352013,
+      "plus_025_left_displacement_minus_neutral_m": 0.2190758093584463,
+      "minus_025_left_displacement_minus_neutral_m": -0.21907805362033145,
+      "left_right_direction_consistent_on_2plus_seeds": true,
+      "physical_direction_of_positive_metadrive_steer": "left",
+      "candidate_carla_to_metadrive_steer_sign_not_applied": -1,
+      "bidirectional_sign_supported": true,
+      "metadrive_positive_steer_yaw_sign": 1,
+      "important": "Heading radians are simulator-coordinate positive; physical left/right convention still needs mapping to CARLA. No gain is inferred."
+    }
+  },
+  "acceleration": {
+    "trials": [
+      {
+        "seed": 0,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.0
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 0.0035831234419382825,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.006786823272705,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": 0.0,
+        "speed_delta_mps": 0.0035831234419382825,
+        "position_delta_xy": [
+          0.006786823272705078,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 0,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.2
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 0.6628039479256876,
+          "heading_rad": 5.326322183307752e-07,
+          "position_xy": [
+            5.378018856048584,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": 5.326322183307752e-07,
+        "speed_delta_mps": 0.6628039479256876,
+        "position_delta_xy": [
+          0.378018856048584,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 0,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.4
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 1.325607895851387,
+          "heading_rad": 5.326322183307752e-07,
+          "position_xy": [
+            5.756038188934326,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": 5.326322183307752e-07,
+        "speed_delta_mps": 1.325607895851387,
+        "position_delta_xy": [
+          0.7560381889343262,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 0,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.7
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 2.3198132514959,
+          "heading_rad": 6.657902726914244e-07,
+          "position_xy": [
+            6.323066711425781,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": 6.657902726914244e-07,
+        "speed_delta_mps": 2.3198132514959,
+        "position_delta_xy": [
+          1.3230667114257812,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 1,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.0
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 0.0036454303190580806,
+          "heading_rad": -5.326322183307752e-07,
+          "position_xy": [
+            5.006772994995117,
+            3.5
+          ]
+        },
+        "yaw_delta_rad": -5.326322183307752e-07,
+        "speed_delta_mps": 0.0036454303190580806,
+        "position_delta_xy": [
+          0.0067729949951171875,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 1,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.2
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 0.7059704661369458,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.402638912200928,
+            3.5
+          ]
+        },
+        "yaw_delta_rad": 0.0,
+        "speed_delta_mps": 0.7059704661369458,
+        "position_delta_xy": [
+          0.40263891220092773,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 1,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.4
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 1.4119409322749599,
+          "heading_rad": -1.3315805453828489e-06,
+          "position_xy": [
+            5.8052754402160645,
+            3.5
+          ]
+        },
+        "yaw_delta_rad": -1.3315805453828489e-06,
+        "speed_delta_mps": 1.4119409322749599,
+        "position_delta_xy": [
+          0.8052754402160645,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 1,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.7
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 2.4708926677707175,
+          "heading_rad": -5.326322183307752e-07,
+          "position_xy": [
+            6.409232139587402,
+            3.5
+          ]
+        },
+        "yaw_delta_rad": -5.326322183307752e-07,
+        "speed_delta_mps": 2.4708926677707175,
+        "position_delta_xy": [
+          1.4092321395874023,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 2,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.0
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 0.0035831234419382825,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.006786823272705,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": 0.0,
+        "speed_delta_mps": 0.0035831234419382825,
+        "position_delta_xy": [
+          0.006786823272705078,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 2,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.2
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 0.6998916864397068,
+          "heading_rad": -7.989483270520736e-07,
+          "position_xy": [
+            5.399171829223633,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": -7.989483270520736e-07,
+        "speed_delta_mps": 0.6998916864397068,
+        "position_delta_xy": [
+          0.3991718292236328,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 2,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.4
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 1.3997833728795033,
+          "heading_rad": 9.321063814127228e-07,
+          "position_xy": [
+            5.798343181610107,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": 9.321063814127228e-07,
+        "speed_delta_mps": 1.3997833728795033,
+        "position_delta_xy": [
+          0.7983431816101074,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 2,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.7
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 2.449612379074186,
+          "heading_rad": -3.9947416397012603e-07,
+          "position_xy": [
+            6.397097110748291,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": -3.9947416397012603e-07,
+        "speed_delta_mps": 2.449612379074186,
+        "position_delta_xy": [
+          1.397097110748291,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 3,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.0
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 0.0036454303190580806,
+          "heading_rad": -5.326322183307752e-07,
+          "position_xy": [
+            5.006772994995117,
+            3.5
+          ]
+        },
+        "yaw_delta_rad": -5.326322183307752e-07,
+        "speed_delta_mps": 0.0036454303190580806,
+        "position_delta_xy": [
+          0.0067729949951171875,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 3,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.2
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 0.6849052309991769,
+          "heading_rad": 5.326322183307752e-07,
+          "position_xy": [
+            5.390625,
+            3.5
+          ]
+        },
+        "yaw_delta_rad": 5.326322183307752e-07,
+        "speed_delta_mps": 0.6849052309991769,
+        "position_delta_xy": [
+          0.390625,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 3,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.4
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 1.3698104619980027,
+          "heading_rad": -2.663161087212984e-07,
+          "position_xy": [
+            5.781250476837158,
+            3.5
+          ]
+        },
+        "yaw_delta_rad": -2.663161087212984e-07,
+        "speed_delta_mps": 1.3698104619980027,
+        "position_delta_xy": [
+          0.7812504768371582,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 3,
+        "warmup_steps_requested": 0,
+        "test_action": [
+          0.0,
+          0.7
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 0.0,
+          "heading_rad": 0.0,
+          "position_xy": [
+            5.0,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 2.3971714973449743,
+          "heading_rad": -1.331580543606492e-07,
+          "position_xy": [
+            6.367184638977051,
+            3.5
+          ]
+        },
+        "yaw_delta_rad": -1.331580543606492e-07,
+        "speed_delta_mps": 2.3971714973449743,
+        "position_delta_xy": [
+          1.3671846389770508,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      }
+    ],
+    "summary": {
+      "per_seed": [
+        {
+          "seed": 0,
+          "a2": 0.0,
+          "delta_speed_minus_neutral_mps": 0.0
+        },
+        {
+          "seed": 0,
+          "a2": 0.2,
+          "delta_speed_minus_neutral_mps": 0.6592208244837494
+        },
+        {
+          "seed": 0,
+          "a2": 0.4,
+          "delta_speed_minus_neutral_mps": 1.3220247724094487
+        },
+        {
+          "seed": 0,
+          "a2": 0.7,
+          "delta_speed_minus_neutral_mps": 2.3162301280539617
+        },
+        {
+          "seed": 1,
+          "a2": 0.0,
+          "delta_speed_minus_neutral_mps": 0.0
+        },
+        {
+          "seed": 1,
+          "a2": 0.2,
+          "delta_speed_minus_neutral_mps": 0.7023250358178877
+        },
+        {
+          "seed": 1,
+          "a2": 0.4,
+          "delta_speed_minus_neutral_mps": 1.4082955019559018
+        },
+        {
+          "seed": 1,
+          "a2": 0.7,
+          "delta_speed_minus_neutral_mps": 2.467247237451659
+        },
+        {
+          "seed": 2,
+          "a2": 0.0,
+          "delta_speed_minus_neutral_mps": 0.0
+        },
+        {
+          "seed": 2,
+          "a2": 0.2,
+          "delta_speed_minus_neutral_mps": 0.6963085629977686
+        },
+        {
+          "seed": 2,
+          "a2": 0.4,
+          "delta_speed_minus_neutral_mps": 1.396200249437565
+        },
+        {
+          "seed": 2,
+          "a2": 0.7,
+          "delta_speed_minus_neutral_mps": 2.4460292556322476
+        },
+        {
+          "seed": 3,
+          "a2": 0.0,
+          "delta_speed_minus_neutral_mps": 0.0
+        },
+        {
+          "seed": 3,
+          "a2": 0.2,
+          "delta_speed_minus_neutral_mps": 0.6812598006801188
+        },
+        {
+          "seed": 3,
+          "a2": 0.4,
+          "delta_speed_minus_neutral_mps": 1.3661650316789447
+        },
+        {
+          "seed": 3,
+          "a2": 0.7,
+          "delta_speed_minus_neutral_mps": 2.393526067025916
+        }
+      ],
+      "neutral_corrected_medians_mps": {
+        "0.0": 0.0,
+        "0.2": 0.6887841818389437,
+        "0.4": 1.3811826405582548,
+        "0.7": 2.419777661329082
+      },
+      "important": "These are finite-horizon responses, not a calibrated CARLA-to-MetaDrive throttle/brake gain."
+    }
+  },
+  "braking": {
+    "trials": [
+      {
+        "seed": 0,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          0.0
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 4.882653236389191,
+          "heading_rad": 0.0,
+          "position_xy": [
+            13.154624938964844,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 4.446290016174352,
+          "heading_rad": 0.0,
+          "position_xy": [
+            18.764362335205078,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": 0.0,
+        "speed_delta_mps": -0.4363632202148393,
+        "position_delta_xy": [
+          5.609737396240234,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 0,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          -0.15
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 4.882653236389191,
+          "heading_rad": 0.0,
+          "position_xy": [
+            13.154624938964844,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 1.9547567367555403,
+          "heading_rad": 3.9947416397012603e-07,
+          "position_xy": [
+            17.343364715576172,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": 3.9947416397012603e-07,
+        "speed_delta_mps": -2.927896499633651,
+        "position_delta_xy": [
+          4.188739776611328,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 0,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          -0.4
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 4.882653236389191,
+          "heading_rad": 0.0,
+          "position_xy": [
+            13.154624938964844,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 0.07109007239343175,
+          "heading_rad": 2.663161087212984e-07,
+          "position_xy": [
+            15.120548248291016,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": 2.663161087212984e-07,
+        "speed_delta_mps": -4.81156316399576,
+        "position_delta_xy": [
+          1.9659233093261719,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 0,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          -0.7
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 4.882653236389191,
+          "heading_rad": 0.0,
+          "position_xy": [
+            13.154624938964844,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 0.09621578454983287,
+          "heading_rad": -1.7310547084647965e-06,
+          "position_xy": [
+            14.534408569335938,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": -1.7310547084647965e-06,
+        "speed_delta_mps": -4.786437451839358,
+        "position_delta_xy": [
+          1.3797836303710938,
+          0.0
+        ],
+        "left_displacement_m": 0.0,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 1,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          0.0
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 5.200633525849702,
+          "heading_rad": -7.989483270520736e-07,
+          "position_xy": [
+            13.685670852661133,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 4.764270305644659,
+          "heading_rad": -2.130528871546744e-06,
+          "position_xy": [
+            19.67694854736328,
+            3.4999935626983643
+          ]
+        },
+        "yaw_delta_rad": -1.3315805444946704e-06,
+        "speed_delta_mps": -0.4363632202050436,
+        "position_delta_xy": [
+          5.991277694702148,
+          -6.4373016357421875e-06
+        ],
+        "left_displacement_m": -1.6505803446539558e-06,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 1,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          -0.15
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 5.200633525849702,
+          "heading_rad": -7.989483270520736e-07,
+          "position_xy": [
+            13.685670852661133,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 0.6541161537174497,
+          "heading_rad": -1.1984224901340212e-06,
+          "position_xy": [
+            17.332794189453125,
+            3.5
+          ]
+        },
+        "yaw_delta_rad": -3.994741630819476e-07,
+        "speed_delta_mps": -4.546517372132253,
+        "position_delta_xy": [
+          3.647123336791992,
+          0.0
+        ],
+        "left_displacement_m": 2.9138630884822287e-06,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 1,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          -0.4
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 5.200633525849702,
+          "heading_rad": -7.989483270520736e-07,
+          "position_xy": [
+            13.685670852661133,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 0.10680843144658833,
+          "heading_rad": -1.1984224901340212e-06,
+          "position_xy": [
+            15.339183807373047,
+            3.5
+          ]
+        },
+        "yaw_delta_rad": -3.994741630819476e-07,
+        "speed_delta_mps": -5.093825094403114,
+        "position_delta_xy": [
+          1.653512954711914,
+          0.0
+        ],
+        "left_displacement_m": 1.3210714089258743e-06,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 1,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          -0.7
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 5.200633525849702,
+          "heading_rad": -7.989483270520736e-07,
+          "position_xy": [
+            13.685670852661133,
+            3.5
+          ]
+        },
+        "end": {
+          "speed_mps": 0.08970337361144438,
+          "heading_rad": -3.062635252959467e-06,
+          "position_xy": [
+            14.926471710205078,
+            3.5
+          ]
+        },
+        "yaw_delta_rad": -2.2636869259073933e-06,
+        "speed_delta_mps": -5.110930152238258,
+        "position_delta_xy": [
+          1.2408008575439453,
+          0.0
+        ],
+        "left_displacement_m": 9.91335769339408e-07,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 2,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          0.0
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 5.155880928041918,
+          "heading_rad": -1.065264435773372e-06,
+          "position_xy": [
+            13.610916137695312,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 4.719517707835743,
+          "heading_rad": -2.130528871546744e-06,
+          "position_xy": [
+            19.54849624633789,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": -1.065264435773372e-06,
+        "speed_delta_mps": -0.43636322020617513,
+        "position_delta_xy": [
+          5.937580108642578,
+          0.0
+        ],
+        "left_displacement_m": 6.325092924291137e-06,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 2,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          -0.15
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 5.155880928041918,
+          "heading_rad": -1.065264435773372e-06,
+          "position_xy": [
+            13.610916137695312,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 0.8372588157655195,
+          "heading_rad": -6.657902726914244e-07,
+          "position_xy": [
+            17.334308624267578,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": 3.994741630819476e-07,
+        "speed_delta_mps": -4.318622112276398,
+        "position_delta_xy": [
+          3.7233924865722656,
+          0.0
+        ],
+        "left_displacement_m": 3.966397596370468e-06,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 2,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          -0.4
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 5.155880928041918,
+          "heading_rad": -1.065264435773372e-06,
+          "position_xy": [
+            13.610916137695312,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 0.11432439088866657,
+          "heading_rad": -2.7963191442381685e-06,
+          "position_xy": [
+            15.26993465423584,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": -1.7310547084647965e-06,
+        "speed_delta_mps": -5.041556537153252,
+        "position_delta_xy": [
+          1.6590185165405273,
+          0.0
+        ],
+        "left_displacement_m": 1.7672934239597874e-06,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 2,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          -0.7
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 5.155880928041918,
+          "heading_rad": -1.065264435773372e-06,
+          "position_xy": [
+            13.610916137695312,
+            7.0
+          ]
+        },
+        "end": {
+          "speed_mps": 0.11397300660657174,
+          "heading_rad": -2.7963191442381685e-06,
+          "position_xy": [
+            14.86545181274414,
+            7.0
+          ]
+        },
+        "yaw_delta_rad": -1.7310547084647965e-06,
+        "speed_delta_mps": -5.041907921435346,
+        "position_delta_xy": [
+          1.2545356750488281,
+          0.0
+        ],
+        "left_displacement_m": 1.3364122380382037e-06,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 3,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          0.0
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 5.045446873254666,
+          "heading_rad": -1.5313176268350048e-05,
+          "position_xy": [
+            13.426531791687012,
+            3.4999477863311768
+          ]
+        },
+        "end": {
+          "speed_mps": 4.609083653122596,
+          "heading_rad": -1.637844070412342e-05,
+          "position_xy": [
+            19.231603622436523,
+            3.4998619556427
+          ]
+        },
+        "yaw_delta_rad": -1.065264435773372e-06,
+        "speed_delta_mps": -0.43636322013206996,
+        "position_delta_xy": [
+          5.805071830749512,
+          -8.58306884765625e-05
+        ],
+        "left_displacement_m": 3.063399724727474e-06,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 3,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          -0.15
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 5.045446873254666,
+          "heading_rad": -1.5313176268350048e-05,
+          "position_xy": [
+            13.426531791687012,
+            3.4999477863311768
+          ]
+        },
+        "end": {
+          "speed_mps": 1.2887308598742302,
+          "heading_rad": -1.3715279614245901e-05,
+          "position_xy": [
+            17.337890625,
+            3.4998908042907715
+          ]
+        },
+        "yaw_delta_rad": 1.5978966541041473e-06,
+        "speed_delta_mps": -3.756716013380436,
+        "position_delta_xy": [
+          3.9113588333129883,
+          -5.698204040527344e-05
+        ],
+        "left_displacement_m": 2.9132868623564574e-06,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 3,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          -0.4
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 5.045446873254666,
+          "heading_rad": -1.5313176268350048e-05,
+          "position_xy": [
+            13.426531791687012,
+            3.4999477863311768
+          ]
+        },
+        "end": {
+          "speed_mps": 0.06738999486852654,
+          "heading_rad": -1.637844070412342e-05,
+          "position_xy": [
+            15.122291564941406,
+            3.4999213218688965
+          ]
+        },
+        "yaw_delta_rad": -1.065264435773372e-06,
+        "speed_delta_mps": -4.978056878386139,
+        "position_delta_xy": [
+          1.6957597732543945,
+          -2.6464462280273438e-05
+        ],
+        "left_displacement_m": -4.969939615635785e-07,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      },
+      {
+        "seed": 3,
+        "warmup_steps_requested": 34,
+        "test_action": [
+          0.0,
+          -0.7
+        ],
+        "pulse_steps_requested": 12,
+        "pulse_steps_completed": 12,
+        "start": {
+          "speed_mps": 5.045446873254666,
+          "heading_rad": -1.5313176268350048e-05,
+          "position_xy": [
+            13.426531791687012,
+            3.4999477863311768
+          ]
+        },
+        "end": {
+          "speed_mps": 0.20379048588986412,
+          "heading_rad": -1.771002124861809e-05,
+          "position_xy": [
+            14.716776847839355,
+            3.499927282333374
+          ]
+        },
+        "yaw_delta_rad": -2.3968449802680425e-06,
+        "speed_delta_mps": -4.841656387364802,
+        "position_delta_xy": [
+          1.2902450561523438,
+          -2.0503997802734375e-05
+        ],
+        "left_displacement_m": -7.462478268744796e-07,
+        "early_end": false,
+        "end_info": {
+          "terminated": false,
+          "truncated": false,
+          "arrive_dest": false,
+          "out_of_road": false,
+          "crash": false
+        }
+      }
+    ],
+    "summary": {
+      "per_seed": [
+        {
+          "seed": 0,
+          "a2": -0.7,
+          "delta_speed_minus_neutral_mps": -4.350074231624519
+        },
+        {
+          "seed": 0,
+          "a2": -0.4,
+          "delta_speed_minus_neutral_mps": -4.37519994378092
+        },
+        {
+          "seed": 0,
+          "a2": -0.15,
+          "delta_speed_minus_neutral_mps": -2.4915332794188116
+        },
+        {
+          "seed": 0,
+          "a2": 0.0,
+          "delta_speed_minus_neutral_mps": 0.0
+        },
+        {
+          "seed": 1,
+          "a2": -0.7,
+          "delta_speed_minus_neutral_mps": -4.674566932033215
+        },
+        {
+          "seed": 1,
+          "a2": -0.4,
+          "delta_speed_minus_neutral_mps": -4.65746187419807
+        },
+        {
+          "seed": 1,
+          "a2": -0.15,
+          "delta_speed_minus_neutral_mps": -4.110154151927209
+        },
+        {
+          "seed": 1,
+          "a2": 0.0,
+          "delta_speed_minus_neutral_mps": 0.0
+        },
+        {
+          "seed": 2,
+          "a2": -0.7,
+          "delta_speed_minus_neutral_mps": -4.605544701229171
+        },
+        {
+          "seed": 2,
+          "a2": -0.4,
+          "delta_speed_minus_neutral_mps": -4.6051933169470765
+        },
+        {
+          "seed": 2,
+          "a2": -0.15,
+          "delta_speed_minus_neutral_mps": -3.8822588920702232
+        },
+        {
+          "seed": 2,
+          "a2": 0.0,
+          "delta_speed_minus_neutral_mps": 0.0
+        },
+        {
+          "seed": 3,
+          "a2": -0.7,
+          "delta_speed_minus_neutral_mps": -4.405293167232732
+        },
+        {
+          "seed": 3,
+          "a2": -0.4,
+          "delta_speed_minus_neutral_mps": -4.5416936582540695
+        },
+        {
+          "seed": 3,
+          "a2": -0.15,
+          "delta_speed_minus_neutral_mps": -3.320352793248366
+        },
+        {
+          "seed": 3,
+          "a2": 0.0,
+          "delta_speed_minus_neutral_mps": 0.0
+        }
+      ],
+      "neutral_corrected_medians_mps": {
+        "-0.7": -4.505418934230951,
+        "-0.4": -4.5734434876005725,
+        "-0.15": -3.6013058426592943,
+        "0.0": 0.0
+      },
+      "important": "These are finite-horizon responses, not a calibrated CARLA-to-MetaDrive throttle/brake gain."
+    }
+  },
+  "navigation": {
+    "samples": [
+      {
+        "step": 0,
+        "seed": 0,
+        "speed_mps": 0.0,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          5.0000011920928955,
+          -3.4999996423721313
+        ],
+        "native_wp2_local_xy": [
+          44.999998807907104,
+          -3.4999966621398926
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          5.0,
+          0.0
+        ],
+        "lane_length_m": 10.0
+      },
+      {
+        "step": 10,
+        "seed": 0,
+        "speed_mps": 1.0494384765628713,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          4.506278038024902,
+          -3.50000262260437
+        ],
+        "native_wp2_local_xy": [
+          44.50571537017822,
+          -3.5000354051589966
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          5.493656158447266,
+          0.0
+        ],
+        "lane_length_m": 10.0
+      },
+      {
+        "step": 20,
+        "seed": 0,
+        "speed_mps": 2.098883390426911,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          2.9636263847351074,
+          -3.50000262260437
+        ],
+        "native_wp2_local_xy": [
+          42.96309947967529,
+          -3.5000234842300415
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          7.036334991455078,
+          0.0
+        ],
+        "lane_length_m": 10.0
+      },
+      {
+        "step": 30,
+        "seed": 0,
+        "speed_mps": 3.1483066082005235,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          0.37154555320739746,
+          -3.4999996423721313
+        ],
+        "native_wp2_local_xy": [
+          40.37101864814758,
+          -3.5000234842300415
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          9.628445625305176,
+          0.0
+        ],
+        "lane_length_m": 10.0
+      },
+      {
+        "step": 0,
+        "seed": 1,
+        "speed_mps": 0.0,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          5.0000011920928955,
+          0.0
+        ],
+        "native_wp2_local_xy": [
+          44.999998807907104,
+          0.0
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          5.0,
+          0.0
+        ],
+        "lane_length_m": 10.0
+      },
+      {
+        "step": 10,
+        "seed": 1,
+        "speed_mps": 1.1177804470076607,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          4.474133253097534,
+          5.9604644775390625e-06
+        ],
+        "native_wp2_local_xy": [
+          44.47360038757324,
+          8.940696716308594e-05
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          5.525805473327637,
+          0.0
+        ],
+        "lane_length_m": 10.0
+      },
+      {
+        "step": 20,
+        "seed": 1,
+        "speed_mps": 2.2355632782073296,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          2.831023931503296,
+          1.1920928955078125e-05
+        ],
+        "native_wp2_local_xy": [
+          42.83052682876587,
+          0.0001251697540283203
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          7.168942451477051,
+          1.1920928955078125e-06
+        ],
+        "lane_length_m": 10.0
+      },
+      {
+        "step": 30,
+        "seed": 1,
+        "speed_mps": 3.3533649444716898,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          0.07012486457824707,
+          1.1920928955078125e-05
+        ],
+        "native_wp2_local_xy": [
+          40.0696337223053,
+          0.00013113021850585938
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          9.929871559143066,
+          1.3113021850585938e-05
+        ],
+        "lane_length_m": 10.0
+      },
+      {
+        "step": 0,
+        "seed": 2,
+        "speed_mps": 0.0,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          5.0000011920928955,
+          -3.4999996423721313
+        ],
+        "native_wp2_local_xy": [
+          44.999998807907104,
+          -3.4999966621398926
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          5.0,
+          0.0
+        ],
+        "lane_length_m": 10.0
+      },
+      {
+        "step": 10,
+        "seed": 2,
+        "speed_mps": 1.1081594228744538,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          4.478663206100464,
+          -3.4999996423721313
+        ],
+        "native_wp2_local_xy": [
+          44.478124380111694,
+          -3.4999966621398926
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          5.521277904510498,
+          0.0
+        ],
+        "lane_length_m": 10.0
+      },
+      {
+        "step": 20,
+        "seed": 2,
+        "speed_mps": 2.2163288593292623,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          2.8496861457824707,
+          -3.4999996423721313
+        ],
+        "native_wp2_local_xy": [
+          42.849189043045044,
+          -3.5000085830688477
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          7.150277614593506,
+          0.0
+        ],
+        "lane_length_m": 10.0
+      },
+      {
+        "step": 30,
+        "seed": 2,
+        "speed_mps": 3.3244984149933368,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          0.11255145072937012,
+          -3.4999996423721313
+        ],
+        "native_wp2_local_xy": [
+          40.11205434799194,
+          -3.4999996423721313
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          9.887446403503418,
+          0.0
+        ],
+        "lane_length_m": 10.0
+      },
+      {
+        "step": 0,
+        "seed": 3,
+        "speed_mps": 0.0,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          5.0000011920928955,
+          0.0
+        ],
+        "native_wp2_local_xy": [
+          44.999998807907104,
+          0.0
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          5.0,
+          0.0
+        ],
+        "lane_length_m": 10.0
+      },
+      {
+        "step": 10,
+        "seed": 3,
+        "speed_mps": 1.0844340324402053,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          4.489821195602417,
+          0.0
+        ],
+        "native_wp2_local_xy": [
+          44.48927640914917,
+          0.0
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          5.510118007659912,
+          0.0
+        ],
+        "lane_length_m": 10.0
+      },
+      {
+        "step": 20,
+        "seed": 3,
+        "speed_mps": 2.1688570976257457,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          2.89573073387146,
+          0.0
+        ],
+        "native_wp2_local_xy": [
+          42.89522171020508,
+          0.0
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          7.104231357574463,
+          0.0
+        ],
+        "lane_length_m": 10.0
+      },
+      {
+        "step": 30,
+        "seed": 3,
+        "speed_mps": 3.2532801628113024,
+        "navi_point_dist_m": 50.0,
+        "native_wp1_local_xy": [
+          0.21722912788391113,
+          0.0
+        ],
+        "native_wp2_local_xy": [
+          40.21672010421753,
+          0.0
+        ],
+        "lane_center_at_forward_dist": {
+          "10": null,
+          "25": null,
+          "45": null
+        },
+        "lane_current_local_longitudinal_lateral": [
+          9.782768249511719,
+          0.0
+        ],
+        "lane_length_m": 10.0
+      }
+    ],
+    "episodes": [
+      {
+        "seed": 0,
+        "n_steps": 40,
+        "early_end": false,
+        "end_info": null
+      },
+      {
+        "seed": 1,
+        "n_steps": 40,
+        "early_end": false,
+        "end_info": null
+      },
+      {
+        "seed": 2,
+        "n_steps": 40,
+        "early_end": false,
+        "end_info": null
+      },
+      {
+        "seed": 3,
+        "n_steps": 40,
+        "early_end": false,
+        "end_info": null
+      }
+    ],
+    "navigation_summary": {
+      "native_wp1_forward_median_m": 3.718879818916321,
+      "native_wp1_to_lane_25m_abs_forward_gap_median": null,
+      "lane_25m_comparison_count": 0
+    },
+    "warning": "Current nav checkpoint and 25/45m lane center are NOT interchangeable on intersections; lane center lookahead is diagnostic only, not route-aware replacement."
+  },
+  "provisional_recommendation": {
+    "steering_sign_from_physics": 1,
+    "carla_to_metadrive_steering_multiplier": -1,
+    "carla_to_metadrive_longitudinal_multiplier": null,
+    "waypoint_adapter_patch": null,
+    "reason": "Require cross-simulator coordinate validation; a physical action test by itself does not determine dynamics-equivalent gains or route semantics."
+  },
+  "limitations": [
+    "No PDD data or learned policy used in this probe.",
+    "Traffic is disabled and map is straight; results are for vehicle-level sign/response only.",
+    "Longitudinal action effects are not a proof of cross-simulator equivalence.",
+    "Lane-center lookahead is only valid within the current lane segment.",
+    "No action scaling or waypoint transformation is automatically applied."
+  ]
+}

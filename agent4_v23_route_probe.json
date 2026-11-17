@@ -1,0 +1,1487 @@
+{
+  "status": "V23_ROUTE_LOOKAHEAD_SHADOW_NOT_CLOSED_LOOP",
+  "model_action_applied": false,
+  "reference_action": [
+    0.0,
+    0.28
+  ],
+  "map": "S",
+  "traffic_density": 0.0,
+  "lookahead_m": [
+    25.0,
+    45.0
+  ],
+  "episodes": [
+    {
+      "seed": 0,
+      "samples": 80,
+      "reference_episode_end": null
+    },
+    {
+      "seed": 1,
+      "samples": 80,
+      "reference_episode_end": null
+    },
+    {
+      "seed": 2,
+      "samples": 80,
+      "reference_episode_end": null
+    },
+    {
+      "seed": 3,
+      "samples": 80,
+      "reference_episode_end": null
+    }
+  ],
+  "summary": {
+    "n_samples": 320,
+    "n_usable": 320,
+    "n_incomplete_route": 0,
+    "n_geometry_discontinuous": 0,
+    "native_wp1_forward_m": {
+      "min": 0.04139542579650879,
+      "median": 22.161388397216797,
+      "p90": 37.381810545921326,
+      "max": 39.90744352340698,
+      "n": 320
+    },
+    "route_wp1_forward_m": {
+      "min": 24.99832534790039,
+      "median": 24.999598503112793,
+      "p90": 24.999603271484375,
+      "max": 25.0,
+      "n": 320
+    },
+    "native_wp2_forward_m": {
+      "min": 40.0407612323761,
+      "median": 49.95025098323822,
+      "p90": 49.99920725822449,
+      "max": 49.99920725822449,
+      "n": 320
+    },
+    "route_wp2_forward_m": {
+      "min": 44.99698257446289,
+      "median": 44.9992790222168,
+      "p90": 44.99928665161133,
+      "max": 45.0,
+      "n": 320
+    },
+    "native_wp1_right_m": {
+      "min": -5.364418029785156e-05,
+      "median": 1.7499983310699463,
+      "p90": 3.5000115633010864,
+      "max": 3.500017523765564,
+      "n": 320
+    },
+    "route_wp1_right_m": {
+      "min": -6.200553616508842e-05,
+      "median": 1.7499928971323016,
+      "p90": 3.5000107288360596,
+      "max": 3.500016689300537,
+      "n": 320
+    },
+    "steer_metadrive_sign_only_candidate": {
+      "min": -0.011459018140357947,
+      "median": 0.0002570688068129106,
+      "p90": 0.07641087665148706,
+      "max": 0.07734244110473995,
+      "n": 320
+    },
+    "steer_change_abs": {
+      "min": 0.00014733318279043994,
+      "median": 0.00034238448440704057,
+      "p90": 0.020779454026164334,
+      "max": 0.021980498831277322,
+      "n": 320
+    }
+  },
+  "errors": [],
+  "examples": [
+    {
+      "seed": 0,
+      "step": 0,
+      "speed_mps": 0.0,
+      "native_wp1": [
+        5.0000011920928955,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        44.999998807907104,
+        3.4999966621398926
+      ],
+      "route_wp1": [
+        25.0,
+        3.4999988079071045
+      ],
+      "route_wp2": [
+        45.0,
+        3.499998092651367
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.0,
+            3.5
+          ],
+          [
+            50.0,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07275548735308467,
+      "steer_carla_after": -0.0704781864132496,
+      "steer_metadrive_sign_only_candidate": 0.0704781864132496,
+      "longitudinal_before": 0.007715121690243401,
+      "longitudinal_after": 0.14966166894366412,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 1,
+      "speed_mps": 0.07732719928026206,
+      "native_wp1": [
+        4.998141527175903,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        44.99814510345459,
+        3.4999966621398926
+      ],
+      "route_wp1": [
+        24.999998092651367,
+        3.4999988079071045
+      ],
+      "route_wp2": [
+        44.999996185302734,
+        3.499998092651367
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.001855850219727,
+            3.5
+          ],
+          [
+            50.00185585021973,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07276907349771373,
+      "steer_carla_after": -0.07049177255787867,
+      "steer_metadrive_sign_only_candidate": 0.07049177255787867,
+      "longitudinal_before": 0.1505831126525265,
+      "longitudinal_after": 0.2064983735315877,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 2,
+      "speed_mps": 0.15465439856052404,
+      "native_wp1": [
+        4.988807439804077,
+        3.50000262260437
+      ],
+      "native_wp2": [
+        44.98835206031799,
+        3.500014543533325
+      ],
+      "route_wp1": [
+        24.999711990356445,
+        3.5000078678131104
+      ],
+      "route_wp2": [
+        44.99948501586914,
+        3.500014066696167
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.01113510131836,
+            3.5
+          ],
+          [
+            50.01113510131836,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07276907349771373,
+      "steer_carla_after": -0.07049177255787867,
+      "steer_metadrive_sign_only_candidate": 0.07049177255787867,
+      "longitudinal_before": 0.1505831126525265,
+      "longitudinal_after": 0.2064983735315877,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 3,
+      "speed_mps": 0.2319815903902155,
+      "native_wp1": [
+        4.971522092819214,
+        3.4999966621398926
+      ],
+      "native_wp2": [
+        44.96883153915405,
+        3.499975800514221
+      ],
+      "route_wp1": [
+        24.99832534790039,
+        3.4999868869781494
+      ],
+      "route_wp2": [
+        44.99698257446289,
+        3.499976634979248
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.028147220611572,
+            3.5
+          ],
+          [
+            50.02814722061157,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07276907349771373,
+      "steer_carla_after": -0.07049177255787867,
+      "steer_metadrive_sign_only_candidate": 0.07049177255787867,
+      "longitudinal_before": 0.1505831126525265,
+      "longitudinal_after": 0.2064983735315877,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 4,
+      "speed_mps": 0.3093090057373084,
+      "native_wp1": [
+        4.94685173034668,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        44.94478106498718,
+        3.499993681907654
+      ],
+      "route_wp1": [
+        24.998703002929688,
+        3.4999959468841553
+      ],
+      "route_wp2": [
+        44.99766540527344,
+        3.499992609024048
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.052891731262207,
+            3.5
+          ],
+          [
+            50.05289173126221,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07276907349771373,
+      "steer_carla_after": -0.07049177255787867,
+      "steer_metadrive_sign_only_candidate": 0.07049177255787867,
+      "longitudinal_before": 0.1505831126525265,
+      "longitudinal_after": 0.2064983735315877,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 5,
+      "speed_mps": 0.38663649559021007,
+      "native_wp1": [
+        4.91451621055603,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        44.91356015205383,
+        3.4999966621398926
+      ],
+      "route_wp1": [
+        24.999404907226562,
+        3.4999988079071045
+      ],
+      "route_wp2": [
+        44.99892807006836,
+        3.499998092651367
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.085369110107422,
+            3.5
+          ],
+          [
+            50.08536911010742,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07276907349771373,
+      "steer_carla_after": -0.07049177255787867,
+      "steer_metadrive_sign_only_candidate": 0.07049177255787867,
+      "longitudinal_before": 0.1505831126525265,
+      "longitudinal_after": 0.2064983735315877,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 6,
+      "speed_mps": 0.46396398544311546,
+      "native_wp1": [
+        4.8743486404418945,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        44.87375020980835,
+        3.4999966621398926
+      ],
+      "route_wp1": [
+        24.9996280670166,
+        3.4999988079071045
+      ],
+      "route_wp2": [
+        44.999332427978516,
+        3.499998092651367
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.125579357147217,
+            3.5
+          ],
+          [
+            50.12557935714722,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07617107082182105,
+      "steer_carla_after": -0.07509481468709898,
+      "steer_metadrive_sign_only_candidate": 0.07509481468709898,
+      "longitudinal_before": 0.1505831126525265,
+      "longitudinal_after": 0.2064983735315877,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 7,
+      "speed_mps": 0.5412914752960257,
+      "native_wp1": [
+        4.826408624649048,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        44.82583999633789,
+        3.5000085830688477
+      ],
+      "route_wp1": [
+        24.999645233154297,
+        3.500004768371582
+      ],
+      "route_wp2": [
+        44.99936294555664,
+        3.5000088214874268
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.173521995544434,
+            3.5
+          ],
+          [
+            50.173521995544434,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07639140475504973,
+      "steer_carla_after": -0.07531514862032766,
+      "steer_metadrive_sign_only_candidate": 0.07531514862032766,
+      "longitudinal_before": 0.1505831126525265,
+      "longitudinal_after": 0.2064983735315877,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 8,
+      "speed_mps": 0.6186189651489357,
+      "native_wp1": [
+        4.770725965499878,
+        3.50000262260437
+      ],
+      "native_wp2": [
+        44.77009177207947,
+        3.5000205039978027
+      ],
+      "route_wp1": [
+        24.999601364135742,
+        3.5000107288360596
+      ],
+      "route_wp2": [
+        44.99928665161133,
+        3.5000195503234863
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.22919750213623,
+            3.5
+          ],
+          [
+            50.22919750213623,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07748713278620913,
+      "steer_carla_after": -0.07641087665148706,
+      "steer_metadrive_sign_only_candidate": 0.07641087665148706,
+      "longitudinal_before": 0.1505831126525265,
+      "longitudinal_after": 0.2064983735315877,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 9,
+      "speed_mps": 0.6959464550018503,
+      "native_wp1": [
+        4.70731258392334,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        44.70661282539368,
+        3.4999966621398926
+      ],
+      "route_wp1": [
+        24.999563217163086,
+        3.4999988079071045
+      ],
+      "route_wp2": [
+        44.99921417236328,
+        3.499998092651367
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.292605876922607,
+            3.5
+          ],
+          [
+            50.29260587692261,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07748713278620913,
+      "steer_carla_after": -0.07641087665148706,
+      "steer_metadrive_sign_only_candidate": 0.07641087665148706,
+      "longitudinal_before": 0.24278694538723944,
+      "longitudinal_after": 0.29489488889574117,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 10,
+      "speed_mps": 0.7732739448547391,
+      "native_wp1": [
+        4.636168479919434,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        44.63546872138977,
+        3.4999966621398926
+      ],
+      "route_wp1": [
+        24.99955940246582,
+        3.4999988079071045
+      ],
+      "route_wp2": [
+        44.99920654296875,
+        3.499998092651367
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.363746643066406,
+            3.5
+          ],
+          [
+            50.363746643066406,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07781829025770161,
+      "steer_carla_after": -0.07674203412297954,
+      "steer_metadrive_sign_only_candidate": 0.07674203412297954,
+      "longitudinal_before": 0.24278694538723944,
+      "longitudinal_after": 0.29489488889574117,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 11,
+      "speed_mps": 0.8506014347076467,
+      "native_wp1": [
+        4.557305574417114,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        44.556623697280884,
+        3.4999877214431763
+      ],
+      "route_wp1": [
+        24.999576568603516,
+        3.499992847442627
+      ],
+      "route_wp2": [
+        44.999237060546875,
+        3.4999873638153076
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.442620277404785,
+            3.5
+          ],
+          [
+            50.442620277404785,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07781829025770161,
+      "steer_carla_after": -0.07674203412297954,
+      "steer_metadrive_sign_only_candidate": 0.07674203412297954,
+      "longitudinal_before": 0.24278694538723944,
+      "longitudinal_after": 0.29489488889574117,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 12,
+      "speed_mps": 0.9279289245605504,
+      "native_wp1": [
+        4.470700025558472,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        44.47004199028015,
+        3.4999966621398926
+      ],
+      "route_wp1": [
+        24.999588012695312,
+        3.4999988079071045
+      ],
+      "route_wp2": [
+        44.9992561340332,
+        3.499998092651367
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.529226779937744,
+            3.5
+          ],
+          [
+            50.529226779937744,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07781829025770161,
+      "steer_carla_after": -0.07674203412297954,
+      "steer_metadrive_sign_only_candidate": 0.07674203412297954,
+      "longitudinal_before": 0.24278694538723944,
+      "longitudinal_after": 0.29489488889574117,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 13,
+      "speed_mps": 1.0052562952041633,
+      "native_wp1": [
+        4.376363754272461,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        44.37570571899414,
+        3.4999966621398926
+      ],
+      "route_wp1": [
+        24.999589920043945,
+        3.4999988079071045
+      ],
+      "route_wp2": [
+        44.999263763427734,
+        3.499998092651367
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.623565673828125,
+            3.5
+          ],
+          [
+            50.623565673828125,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07781829025770161,
+      "steer_carla_after": -0.07674203412297954,
+      "steer_metadrive_sign_only_candidate": 0.07674203412297954,
+      "longitudinal_before": 0.2808770154736136,
+      "longitudinal_after": 0.3329849589821155,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 14,
+      "speed_mps": 1.0825825929641741,
+      "native_wp1": [
+        4.2742908000946045,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        44.273632764816284,
+        3.5000085830688477
+      ],
+      "route_wp1": [
+        24.999588012695312,
+        3.500004768371582
+      ],
+      "route_wp2": [
+        44.99925994873047,
+        3.5000088214874268
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.725637912750244,
+            3.5
+          ],
+          [
+            50.725637912750244,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07781829025770161,
+      "steer_carla_after": -0.07674203412297954,
+      "steer_metadrive_sign_only_candidate": 0.07674203412297954,
+      "longitudinal_before": 0.2808770154736136,
+      "longitudinal_after": 0.3329849589821155,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 15,
+      "speed_mps": 1.1599088907241997,
+      "native_wp1": [
+        4.16448712348938,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        44.16382908821106,
+        3.5000085830688477
+      ],
+      "route_wp1": [
+        24.999588012695312,
+        3.500004768371582
+      ],
+      "route_wp2": [
+        44.9992561340332,
+        3.5000088214874268
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.835442543029785,
+            3.5
+          ],
+          [
+            50.835442543029785,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07781829025770161,
+      "steer_carla_after": -0.07674203412297954,
+      "steer_metadrive_sign_only_candidate": 0.07674203412297954,
+      "longitudinal_before": 0.2808770154736136,
+      "longitudinal_after": 0.3329849589821155,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 16,
+      "speed_mps": 1.2372351884842157,
+      "native_wp1": [
+        4.046952724456787,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        44.04628872871399,
+        3.4999966621398926
+      ],
+      "route_wp1": [
+        24.999588012695312,
+        3.4999988079071045
+      ],
+      "route_wp2": [
+        44.9992561340332,
+        3.499998092651367
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            30.952979564666748,
+            3.5
+          ],
+          [
+            50.95297956466675,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07781829025770161,
+      "steer_carla_after": -0.07674203412297954,
+      "steer_metadrive_sign_only_candidate": 0.07674203412297954,
+      "longitudinal_before": 0.2808770154736136,
+      "longitudinal_after": 0.3329849589821155,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 17,
+      "speed_mps": 1.3145614862442239,
+      "native_wp1": [
+        3.921687602996826,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        43.92102360725403,
+        3.4999966621398926
+      ],
+      "route_wp1": [
+        24.999588012695312,
+        3.4999988079071045
+      ],
+      "route_wp2": [
+        44.9992561340332,
+        3.499998092651367
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            31.07824945449829,
+            3.5
+          ],
+          [
+            51.07824945449829,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07781829025770161,
+      "steer_carla_after": -0.07674203412297954,
+      "steer_metadrive_sign_only_candidate": 0.07674203412297954,
+      "longitudinal_before": 0.2808770154736136,
+      "longitudinal_after": 0.3329849589821155,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 18,
+      "speed_mps": 1.3918877840042285,
+      "native_wp1": [
+        3.7886857986450195,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        43.7880277633667,
+        3.4999966621398926
+      ],
+      "route_wp1": [
+        24.999588012695312,
+        3.4999988079071045
+      ],
+      "route_wp2": [
+        44.9992561340332,
+        3.499998092651367
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            31.211252212524414,
+            3.5
+          ],
+          [
+            51.211252212524414,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07781829025770161,
+      "steer_carla_after": -0.07674203412297954,
+      "steer_metadrive_sign_only_candidate": 0.07674203412297954,
+      "longitudinal_before": 0.2808770154736136,
+      "longitudinal_after": 0.3329849589821155,
+      "raw_lateral_to_right_sign": -1
+    },
+    {
+      "seed": 0,
+      "step": 19,
+      "speed_mps": 1.4692140817642603,
+      "native_wp1": [
+        3.6479532718658447,
+        3.4999996423721313
+      ],
+      "native_wp2": [
+        43.647295236587524,
+        3.4999966621398926
+      ],
+      "route_wp1": [
+        24.999588012695312,
+        3.4999988079071045
+      ],
+      "route_wp2": [
+        44.9992561340332,
+        3.499998092651367
+      ],
+      "route_geometry": {
+        "requested_lookahead_m": [
+          25.0,
+          45.0
+        ],
+        "route_waypoints_world_xy": [
+          [
+            31.35198736190796,
+            3.5
+          ],
+          [
+            51.35198736190796,
+            3.5
+          ]
+        ],
+        "route_sample_statuses": [
+          {
+            "requested_m": 25.0,
+            "achieved_m": 25.0,
+            "complete": true,
+            "road": [
+              ">>",
+              ">>>"
+            ]
+          },
+          {
+            "requested_m": 45.0,
+            "achieved_m": 45.0,
+            "complete": true,
+            "road": [
+              ">>>",
+              "1S0_0_"
+            ]
+          }
+        ],
+        "num_remaining_segments": 3,
+        "centerline_discontinuities": [],
+        "complete": true,
+        "geometry_continuous": true,
+        "usable_for_shadow": true,
+        "note": "Fixed road-arc-distance lookahead, not equal to original CARLA route target selection."
+      },
+      "steer_carla_before": -0.07759924224004781,
+      "steer_carla_after": -0.07652298610532575,
+      "steer_metadrive_sign_only_candidate": 0.07652298610532575,
+      "longitudinal_before": 0.2808770154736136,
+      "longitudinal_after": 0.3329849589821155,
+      "raw_lateral_to_right_sign": -1
+    }
+  ],
+  "invalid_examples": [],
+  "warnings": [
+    "Route-aware lookahead is EXPERIMENTAL; PDD targets use their own variable horizon.",
+    "This is privileged simulator navigation, not a camera-based agent.",
+    "No model actions were sent to MetaDrive. Steering gain and longitudinal dynamics not calibrated."
+  ]
+}

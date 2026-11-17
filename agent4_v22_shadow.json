@@ -1,0 +1,2016 @@
+{
+  "status": "V22_COORDINATE_SHADOW_NOT_CLOSED_LOOP",
+  "action_model_applied": false,
+  "reference_action": [
+    0.0,
+    0.28
+  ],
+  "pdd_sign_stats": {
+    "n": 6156,
+    "pearson_corr_steer_vs_next_025s_yaw_deg": 0.90395,
+    "sign_agreement": {
+      "n": 804,
+      "same_sign_pct": 100.0
+    }
+  },
+  "md_steering_summary": {
+    "neutral_corrected_per_seed": [
+      {
+        "seed": 0,
+        "steer": -0.4,
+        "yaw_change_minus_neutral_rad": -0.30834984575708013,
+        "left_displacement_minus_neutral_m": -0.8295450210571289
+      },
+      {
+        "seed": 0,
+        "steer": -0.25,
+        "yaw_change_minus_neutral_rad": -0.20911700143131107,
+        "left_displacement_minus_neutral_m": -0.5851850509643555
+      },
+      {
+        "seed": 0,
+        "steer": 0.0,
+        "yaw_change_minus_neutral_rad": 0.0,
+        "left_displacement_minus_neutral_m": 0.0
+      },
+      {
+        "seed": 1,
+        "steer": -0.4,
+        "yaw_change_minus_neutral_rad": -0.32390630179061475,
+        "left_displacement_minus_neutral_m": -0.8908126378845422
+      },
+      {
+        "seed": 1,
+        "steer": -0.25,
+        "yaw_change_minus_neutral_rad": -0.2213210702846533,
+        "left_displacement_minus_neutral_m": -0.6361750198979051
+      },
+      {
+        "seed": 1,
+        "steer": 0.0,
+        "yaw_change_minus_neutral_rad": 0.0,
+        "left_displacement_minus_neutral_m": 0.0
+      },
+      {
+        "seed": 1,
+        "steer": 0.25,
+        "yaw_change_minus_neutral_rad": 0.22132067081049023,
+        "left_displacement_minus_neutral_m": 0.6361683772421917
+      },
+      {
+        "seed": 1,
+        "steer": 0.4,
+        "yaw_change_minus_neutral_rad": 0.3239048370520159,
+        "left_displacement_minus_neutral_m": 0.8908045267282294
+      }
+    ],
+    "plus_025_median_yaw_response_rad": 0.22132067081049023,
+    "minus_025_median_yaw_response_rad": -0.2152190358579822,
+    "plus_025_left_displacement_minus_neutral_m": 0.6361683772421917,
+    "minus_025_left_displacement_minus_neutral_m": -0.6106800354311304,
+    "left_right_direction_consistent_on_2plus_seeds": false,
+    "physical_direction_of_positive_metadrive_steer": null,
+    "candidate_carla_to_metadrive_steer_sign_not_applied": null,
+    "bidirectional_sign_supported": true,
+    "metadrive_positive_steer_yaw_sign": 1,
+    "important": "Heading radians are simulator-coordinate positive; physical left/right convention still needs mapping to CARLA. No gain is inferred."
+  },
+  "lateral_signs_found": [
+    -1
+  ],
+  "axis_samples": [
+    {
+      "seed": 0,
+      "heading_rad": 0.0,
+      "world_left_unit_xy": [
+        -0.0,
+        1.0
+      ],
+      "world_left_in_ego_local_xy": [
+        -4.371138828673793e-08,
+        1.0
+      ],
+      "local_y_positive": "left",
+      "raw_to_pdd_right_multiplier": -1,
+      "route_inspection": {
+        "checkpoints": {
+          "count": 4,
+          "sample": [
+            {
+              "type": "str",
+              "repr": ">",
+              "index": "<built-in method index of str object at 0x000001DC53CB5130>"
+            },
+            {
+              "type": "str",
+              "repr": ">>",
+              "index": "<built-in method index of str object at 0x000001DC081F2B70>"
+            },
+            {
+              "type": "str",
+              "repr": ">>>",
+              "index": "<built-in method index of str object at 0x000001DC081F2B30>"
+            },
+            {
+              "type": "str",
+              "repr": "1S0_0_",
+              "index": "<built-in method index of str object at 0x000001DC12F53470>"
+            }
+          ]
+        },
+        "_target_checkpoints_index": {
+          "count": 2,
+          "sample": [
+            {
+              "type": "int",
+              "repr": "0"
+            },
+            {
+              "type": "int",
+              "repr": "1"
+            }
+          ]
+        },
+        "current_ref_lanes": {
+          "count": 3,
+          "sample": [
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B0DDDE0>",
+              "length": 10.0,
+              "width": 3.5,
+              "index": "('>', '>>', 0)"
+            },
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B0DDD20>",
+              "length": 10.0,
+              "width": 3.5,
+              "index": "('>', '>>', 1)"
+            },
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B0DDD50>",
+              "length": 10.0,
+              "width": 3.5,
+              "index": "('>', '>>', 2)"
+            }
+          ]
+        },
+        "next_ref_lanes": {
+          "count": 3,
+          "sample": [
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B0DDF60>",
+              "length": 40.0,
+              "width": 3.5,
+              "index": "('>>', '>>>', 0)"
+            },
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B0DDF30>",
+              "length": 40.0,
+              "width": 3.5,
+              "index": "('>>', '>>>', 1)"
+            },
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B0DDE70>",
+              "length": 40.0,
+              "width": 3.5,
+              "index": "('>>', '>>>', 2)"
+            }
+          ]
+        },
+        "final_road": {
+          "type": "Road",
+          "repr": "Road from >>> to 1S0_0_"
+        },
+        "current_road": {
+          "type": "Road",
+          "repr": "Road from > to >>"
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "heading_rad": 0.0,
+      "world_left_unit_xy": [
+        -0.0,
+        1.0
+      ],
+      "world_left_in_ego_local_xy": [
+        -4.371138828673793e-08,
+        1.0
+      ],
+      "local_y_positive": "left",
+      "raw_to_pdd_right_multiplier": -1,
+      "route_inspection": {
+        "checkpoints": {
+          "count": 4,
+          "sample": [
+            {
+              "type": "str",
+              "repr": ">",
+              "index": "<built-in method index of str object at 0x000001DC53CB5130>"
+            },
+            {
+              "type": "str",
+              "repr": ">>",
+              "index": "<built-in method index of str object at 0x000001DC081F2B70>"
+            },
+            {
+              "type": "str",
+              "repr": ">>>",
+              "index": "<built-in method index of str object at 0x000001DC081F2B30>"
+            },
+            {
+              "type": "str",
+              "repr": "1S0_0_",
+              "index": "<built-in method index of str object at 0x000001DC1B1A6030>"
+            }
+          ]
+        },
+        "_target_checkpoints_index": {
+          "count": 2,
+          "sample": [
+            {
+              "type": "int",
+              "repr": "0"
+            },
+            {
+              "type": "int",
+              "repr": "1"
+            }
+          ]
+        },
+        "current_ref_lanes": {
+          "count": 3,
+          "sample": [
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B136200>",
+              "length": 10.0,
+              "width": 3.5,
+              "index": "('>', '>>', 0)"
+            },
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B1361A0>",
+              "length": 10.0,
+              "width": 3.5,
+              "index": "('>', '>>', 1)"
+            },
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B136140>",
+              "length": 10.0,
+              "width": 3.5,
+              "index": "('>', '>>', 2)"
+            }
+          ]
+        },
+        "next_ref_lanes": {
+          "count": 3,
+          "sample": [
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B136380>",
+              "length": 40.0,
+              "width": 3.5,
+              "index": "('>>', '>>>', 0)"
+            },
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B136350>",
+              "length": 40.0,
+              "width": 3.5,
+              "index": "('>>', '>>>', 1)"
+            },
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B136290>",
+              "length": 40.0,
+              "width": 3.5,
+              "index": "('>>', '>>>', 2)"
+            }
+          ]
+        },
+        "final_road": {
+          "type": "Road",
+          "repr": "Road from >>> to 1S0_0_"
+        },
+        "current_road": {
+          "type": "Road",
+          "repr": "Road from > to >>"
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "heading_rad": 0.0,
+      "world_left_unit_xy": [
+        -0.0,
+        1.0
+      ],
+      "world_left_in_ego_local_xy": [
+        -4.371138828673793e-08,
+        1.0
+      ],
+      "local_y_positive": "left",
+      "raw_to_pdd_right_multiplier": -1,
+      "route_inspection": {
+        "checkpoints": {
+          "count": 4,
+          "sample": [
+            {
+              "type": "str",
+              "repr": ">",
+              "index": "<built-in method index of str object at 0x000001DC53CB5130>"
+            },
+            {
+              "type": "str",
+              "repr": ">>",
+              "index": "<built-in method index of str object at 0x000001DC081F2B70>"
+            },
+            {
+              "type": "str",
+              "repr": ">>>",
+              "index": "<built-in method index of str object at 0x000001DC081F2B30>"
+            },
+            {
+              "type": "str",
+              "repr": "1S0_0_",
+              "index": "<built-in method index of str object at 0x000001DC1B1DF970>"
+            }
+          ]
+        },
+        "_target_checkpoints_index": {
+          "count": 2,
+          "sample": [
+            {
+              "type": "int",
+              "repr": "0"
+            },
+            {
+              "type": "int",
+              "repr": "1"
+            }
+          ]
+        },
+        "current_ref_lanes": {
+          "count": 3,
+          "sample": [
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B1C1E70>",
+              "length": 10.0,
+              "width": 3.5,
+              "index": "('>', '>>', 0)"
+            },
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B1C1D80>",
+              "length": 10.0,
+              "width": 3.5,
+              "index": "('>', '>>', 1)"
+            },
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B1C1DB0>",
+              "length": 10.0,
+              "width": 3.5,
+              "index": "('>', '>>', 2)"
+            }
+          ]
+        },
+        "next_ref_lanes": {
+          "count": 3,
+          "sample": [
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B1C1FC0>",
+              "length": 40.0,
+              "width": 3.5,
+              "index": "('>>', '>>>', 0)"
+            },
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B1C1F90>",
+              "length": 40.0,
+              "width": 3.5,
+              "index": "('>>', '>>>', 1)"
+            },
+            {
+              "type": "StraightLane",
+              "repr": "<metadrive.component.lane.straight_lane.StraightLane object at 0x000001DC1B1C1ED0>",
+              "length": 40.0,
+              "width": 3.5,
+              "index": "('>>', '>>>', 2)"
+            }
+          ]
+        },
+        "final_road": {
+          "type": "Road",
+          "repr": "Road from >>> to 1S0_0_"
+        },
+        "current_road": {
+          "type": "Road",
+          "repr": "Road from > to >>"
+        }
+      }
+    }
+  ],
+  "shadow_samples": [
+    {
+      "seed": 0,
+      "step": 0,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          5.0000011920928955,
+          -3.4999996423721313
+        ],
+        [
+          44.999998807907104,
+          -3.4999966621398926
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          5.0000011920928955,
+          3.4999996423721313
+        ],
+        [
+          44.999998807907104,
+          3.4999966621398926
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11520667349796924,
+      "model_steering_after_coordinate_patch_carla": -0.07275548735308467,
+      "model_steering_sign_only_metadrive_candidate": 0.07275548735308467,
+      "model_longitudinal_before": 0.05224696416262347,
+      "model_longitudinal_after": 0.007715121690243401,
+      "raw_nav_xy": [
+        0.550000011920929,
+        0.4650000035762787,
+        0.949999988079071,
+        0.4650000333786011
+      ]
+    },
+    {
+      "seed": 0,
+      "step": 1,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.998141527175903,
+          -3.4999996423721313
+        ],
+        [
+          44.99814510345459,
+          -3.4999966621398926
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.998141527175903,
+          3.4999996423721313
+        ],
+        [
+          44.99814510345459,
+          3.4999966621398926
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11551149974094992,
+      "model_steering_after_coordinate_patch_carla": -0.07276907349771373,
+      "model_steering_sign_only_metadrive_candidate": 0.07276907349771373,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.549981415271759,
+        0.4650000035762787,
+        0.9499814510345459,
+        0.4650000333786011
+      ]
+    },
+    {
+      "seed": 0,
+      "step": 2,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.988807439804077,
+          -3.50000262260437
+        ],
+        [
+          44.98835206031799,
+          -3.500014543533325
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.988807439804077,
+          3.50000262260437
+        ],
+        [
+          44.98835206031799,
+          3.500014543533325
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11551149974094992,
+      "model_steering_after_coordinate_patch_carla": -0.07276907349771373,
+      "model_steering_sign_only_metadrive_candidate": 0.07276907349771373,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.5498880743980408,
+        0.4649999737739563,
+        0.9498835206031799,
+        0.46499985456466675
+      ]
+    },
+    {
+      "seed": 0,
+      "step": 3,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.971522092819214,
+          -3.4999966621398926
+        ],
+        [
+          44.96883153915405,
+          -3.499975800514221
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.971522092819214,
+          3.4999966621398926
+        ],
+        [
+          44.96883153915405,
+          3.499975800514221
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11551149974094992,
+      "model_steering_after_coordinate_patch_carla": -0.07276907349771373,
+      "model_steering_sign_only_metadrive_candidate": 0.07276907349771373,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.5497152209281921,
+        0.4650000333786011,
+        0.9496883153915405,
+        0.4650002419948578
+      ]
+    },
+    {
+      "seed": 0,
+      "step": 4,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.94685173034668,
+          -3.4999996423721313
+        ],
+        [
+          44.94478106498718,
+          -3.499993681907654
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.94685173034668,
+          3.4999996423721313
+        ],
+        [
+          44.94478106498718,
+          3.499993681907654
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11551149974094992,
+      "model_steering_after_coordinate_patch_carla": -0.07276907349771373,
+      "model_steering_sign_only_metadrive_candidate": 0.07276907349771373,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.5494685173034668,
+        0.4650000035762787,
+        0.9494478106498718,
+        0.46500006318092346
+      ]
+    },
+    {
+      "seed": 0,
+      "step": 5,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.91451621055603,
+          -3.4999996423721313
+        ],
+        [
+          44.91356015205383,
+          -3.4999966621398926
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.91451621055603,
+          3.4999996423721313
+        ],
+        [
+          44.91356015205383,
+          3.4999966621398926
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11551149974094992,
+      "model_steering_after_coordinate_patch_carla": -0.07276907349771373,
+      "model_steering_sign_only_metadrive_candidate": 0.07276907349771373,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.5491451621055603,
+        0.4650000035762787,
+        0.9491356015205383,
+        0.4650000333786011
+      ]
+    },
+    {
+      "seed": 0,
+      "step": 6,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.8743486404418945,
+          -3.4999996423721313
+        ],
+        [
+          44.87375020980835,
+          -3.4999966621398926
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.8743486404418945,
+          3.4999996423721313
+        ],
+        [
+          44.87375020980835,
+          3.4999966621398926
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.117576518094954,
+      "model_steering_after_coordinate_patch_carla": -0.07617107082182105,
+      "model_steering_sign_only_metadrive_candidate": 0.07617107082182105,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.548743486404419,
+        0.4650000035762787,
+        0.9487375020980835,
+        0.4650000333786011
+      ]
+    },
+    {
+      "seed": 0,
+      "step": 7,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.826408624649048,
+          -3.4999996423721313
+        ],
+        [
+          44.82583999633789,
+          -3.5000085830688477
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.826408624649048,
+          3.4999996423721313
+        ],
+        [
+          44.82583999633789,
+          3.5000085830688477
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11779685202818267,
+      "model_steering_after_coordinate_patch_carla": -0.07639140475504973,
+      "model_steering_sign_only_metadrive_candidate": 0.07639140475504973,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.5482640862464905,
+        0.4650000035762787,
+        0.9482583999633789,
+        0.4649999141693115
+      ]
+    },
+    {
+      "seed": 0,
+      "step": 8,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.770725965499878,
+          -3.50000262260437
+        ],
+        [
+          44.77009177207947,
+          -3.5000205039978027
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.770725965499878,
+          3.50000262260437
+        ],
+        [
+          44.77009177207947,
+          3.5000205039978027
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11889258005934214,
+      "model_steering_after_coordinate_patch_carla": -0.07748713278620913,
+      "model_steering_sign_only_metadrive_candidate": 0.07748713278620913,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.5477072596549988,
+        0.4649999737739563,
+        0.9477009177207947,
+        0.464999794960022
+      ]
+    },
+    {
+      "seed": 0,
+      "step": 9,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.70731258392334,
+          -3.4999996423721313
+        ],
+        [
+          44.70661282539368,
+          -3.4999966621398926
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.70731258392334,
+          3.4999996423721313
+        ],
+        [
+          44.70661282539368,
+          3.4999966621398926
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11889258005934214,
+      "model_steering_after_coordinate_patch_carla": -0.07748713278620913,
+      "model_steering_sign_only_metadrive_candidate": 0.07748713278620913,
+      "model_longitudinal_before": 0.2670142386850265,
+      "model_longitudinal_after": 0.24278694538723944,
+      "raw_nav_xy": [
+        0.5470731258392334,
+        0.4650000035762787,
+        0.9470661282539368,
+        0.4650000333786011
+      ]
+    },
+    {
+      "seed": 0,
+      "step": 10,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.636168479919434,
+          -3.4999996423721313
+        ],
+        [
+          44.63546872138977,
+          -3.4999966621398926
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.636168479919434,
+          3.4999996423721313
+        ],
+        [
+          44.63546872138977,
+          3.4999966621398926
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.12139202065622054,
+      "model_steering_after_coordinate_patch_carla": -0.07781829025770161,
+      "model_steering_sign_only_metadrive_candidate": 0.07781829025770161,
+      "model_longitudinal_before": 0.2670142386850265,
+      "model_longitudinal_after": 0.24278694538723944,
+      "raw_nav_xy": [
+        0.5463616847991943,
+        0.4650000035762787,
+        0.9463546872138977,
+        0.4650000333786011
+      ]
+    },
+    {
+      "seed": 0,
+      "step": 11,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.557305574417114,
+          -3.4999996423721313
+        ],
+        [
+          44.556623697280884,
+          -3.4999877214431763
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.557305574417114,
+          3.4999996423721313
+        ],
+        [
+          44.556623697280884,
+          3.4999877214431763
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.12139202065622054,
+      "model_steering_after_coordinate_patch_carla": -0.07781829025770161,
+      "model_steering_sign_only_metadrive_candidate": 0.07781829025770161,
+      "model_longitudinal_before": 0.2670142386850265,
+      "model_longitudinal_after": 0.24278694538723944,
+      "raw_nav_xy": [
+        0.5455730557441711,
+        0.4650000035762787,
+        0.9455662369728088,
+        0.46500012278556824
+      ]
+    },
+    {
+      "seed": 1,
+      "step": 0,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          5.0000011920928955,
+          0.0
+        ],
+        [
+          44.999998807907104,
+          0.0
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          5.0000011920928955,
+          -0.0
+        ],
+        [
+          44.999998807907104,
+          -0.0
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.023779193751373277,
+      "model_steering_after_coordinate_patch_carla": -0.023779193751373277,
+      "model_steering_sign_only_metadrive_candidate": 0.023779193751373277,
+      "model_longitudinal_before": 0.05773838457511311,
+      "model_longitudinal_after": 0.05773838457511311,
+      "raw_nav_xy": [
+        0.550000011920929,
+        0.5,
+        0.949999988079071,
+        0.5
+      ]
+    },
+    {
+      "seed": 1,
+      "step": 1,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.9980223178863525,
+          0.0
+        ],
+        [
+          44.99802589416504,
+          5.9604644775390625e-06
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.9980223178863525,
+          -0.0
+        ],
+        [
+          44.99802589416504,
+          -5.9604644775390625e-06
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.024084019994353934,
+      "model_steering_after_coordinate_patch_carla": -0.024084019994353934,
+      "model_steering_sign_only_metadrive_candidate": 0.024084019994353934,
+      "model_longitudinal_before": 0.18427070776127294,
+      "model_longitudinal_after": 0.18427070776127294,
+      "raw_nav_xy": [
+        0.5499802231788635,
+        0.5,
+        0.9499802589416504,
+        0.5000000596046448
+      ]
+    },
+    {
+      "seed": 1,
+      "step": 2,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.988086223602295,
+          0.0
+        ],
+        [
+          44.98765468597412,
+          0.0
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.988086223602295,
+          -0.0
+        ],
+        [
+          44.98765468597412,
+          -0.0
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.024084019994353934,
+      "model_steering_after_coordinate_patch_carla": -0.024084019994353934,
+      "model_steering_sign_only_metadrive_candidate": 0.024084019994353934,
+      "model_longitudinal_before": 0.18427070776127294,
+      "model_longitudinal_after": 0.18427070776127294,
+      "raw_nav_xy": [
+        0.549880862236023,
+        0.5,
+        0.9498765468597412,
+        0.5
+      ]
+    },
+    {
+      "seed": 1,
+      "step": 3,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.969698190689087,
+          0.0
+        ],
+        [
+          44.96709704399109,
+          0.0
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.969698190689087,
+          -0.0
+        ],
+        [
+          44.96709704399109,
+          -0.0
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.024084019994353934,
+      "model_steering_after_coordinate_patch_carla": -0.024084019994353934,
+      "model_steering_sign_only_metadrive_candidate": 0.024084019994353934,
+      "model_longitudinal_before": 0.18427070776127294,
+      "model_longitudinal_after": 0.18427070776127294,
+      "raw_nav_xy": [
+        0.5496969819068909,
+        0.5,
+        0.9496709704399109,
+        0.5
+      ]
+    },
+    {
+      "seed": 1,
+      "step": 4,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.94341254234314,
+          0.0
+        ],
+        [
+          44.94140148162842,
+          1.1920928955078125e-05
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.94341254234314,
+          -0.0
+        ],
+        [
+          44.94140148162842,
+          -1.1920928955078125e-05
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.024084019994353934,
+      "model_steering_after_coordinate_patch_carla": -0.024084019994353934,
+      "model_steering_sign_only_metadrive_candidate": 0.024084019994353934,
+      "model_longitudinal_before": 0.18427070776127294,
+      "model_longitudinal_after": 0.18427070776127294,
+      "raw_nav_xy": [
+        0.5494341254234314,
+        0.5,
+        0.9494140148162842,
+        0.5000001192092896
+      ]
+    },
+    {
+      "seed": 1,
+      "step": 5,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.908961057662964,
+          5.9604644775390625e-06
+        ],
+        [
+          44.90804076194763,
+          4.76837158203125e-05
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.908961057662964,
+          -5.9604644775390625e-06
+        ],
+        [
+          44.90804076194763,
+          -4.76837158203125e-05
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.024084019994353934,
+      "model_steering_after_coordinate_patch_carla": -0.024084019994353934,
+      "model_steering_sign_only_metadrive_candidate": 0.024084019994353934,
+      "model_longitudinal_before": 0.18427070776127294,
+      "model_longitudinal_after": 0.18427070776127294,
+      "raw_nav_xy": [
+        0.5490896105766296,
+        0.5000000596046448,
+        0.9490804076194763,
+        0.5000004768371582
+      ]
+    },
+    {
+      "seed": 1,
+      "step": 6,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.866170883178711,
+          5.9604644775390625e-06
+        ],
+        [
+          44.865602254867554,
+          5.364418029785156e-05
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.866170883178711,
+          -5.9604644775390625e-06
+        ],
+        [
+          44.865602254867554,
+          -5.364418029785156e-05
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.026369372281586593,
+      "model_steering_after_coordinate_patch_carla": -0.026369372281586593,
+      "model_steering_sign_only_metadrive_candidate": 0.026369372281586593,
+      "model_longitudinal_before": 0.18427070776127294,
+      "model_longitudinal_after": 0.18427070776127294,
+      "raw_nav_xy": [
+        0.5486617088317871,
+        0.5000000596046448,
+        0.9486560225486755,
+        0.500000536441803
+      ]
+    },
+    {
+      "seed": 1,
+      "step": 7,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.815113544464111,
+          5.9604644775390625e-06
+        ],
+        [
+          44.814568758010864,
+          5.9604644775390625e-05
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.815113544464111,
+          -5.9604644775390625e-06
+        ],
+        [
+          44.814568758010864,
+          -5.9604644775390625e-05
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.027465100312746,
+      "model_steering_after_coordinate_patch_carla": -0.027465100312746,
+      "model_steering_sign_only_metadrive_candidate": 0.027465100312746,
+      "model_longitudinal_before": 0.18427070776127294,
+      "model_longitudinal_after": 0.18427070776127294,
+      "raw_nav_xy": [
+        0.5481511354446411,
+        0.5000000596046448,
+        0.9481456875801086,
+        0.5000005960464478
+      ]
+    },
+    {
+      "seed": 1,
+      "step": 8,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.75580096244812,
+          5.9604644775390625e-06
+        ],
+        [
+          44.75519061088562,
+          4.172325134277344e-05
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.75580096244812,
+          -5.9604644775390625e-06
+        ],
+        [
+          44.75519061088562,
+          -4.172325134277344e-05
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.027465100312746,
+      "model_steering_after_coordinate_patch_carla": -0.027465100312746,
+      "model_steering_sign_only_metadrive_candidate": 0.027465100312746,
+      "model_longitudinal_before": 0.18427070776127294,
+      "model_longitudinal_after": 0.18427070776127294,
+      "raw_nav_xy": [
+        0.5475580096244812,
+        0.5000000596046448,
+        0.9475519061088562,
+        0.5000004172325134
+      ]
+    },
+    {
+      "seed": 1,
+      "step": 9,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.688262939453125,
+          5.9604644775390625e-06
+        ],
+        [
+          44.68758702278137,
+          5.364418029785156e-05
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.688262939453125,
+          -5.9604644775390625e-06
+        ],
+        [
+          44.68758702278137,
+          -5.364418029785156e-05
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.027465100312746,
+      "model_steering_after_coordinate_patch_carla": -0.027465100312746,
+      "model_steering_sign_only_metadrive_candidate": 0.027465100312746,
+      "model_longitudinal_before": 0.2764745404959858,
+      "model_longitudinal_after": 0.2764745404959858,
+      "raw_nav_xy": [
+        0.5468826293945312,
+        0.5000000596046448,
+        0.9468758702278137,
+        0.500000536441803
+      ]
+    },
+    {
+      "seed": 1,
+      "step": 10,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.612487554550171,
+          5.9604644775390625e-06
+        ],
+        [
+          44.61181163787842,
+          4.172325134277344e-05
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.612487554550171,
+          -5.9604644775390625e-06
+        ],
+        [
+          44.61181163787842,
+          -4.172325134277344e-05
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.027796257784238474,
+      "model_steering_after_coordinate_patch_carla": -0.027796257784238474,
+      "model_steering_sign_only_metadrive_candidate": 0.027796257784238474,
+      "model_longitudinal_before": 0.2764745404959858,
+      "model_longitudinal_after": 0.2764745404959858,
+      "raw_nav_xy": [
+        0.5461248755455017,
+        0.5000000596046448,
+        0.9461181163787842,
+        0.5000004172325134
+      ]
+    },
+    {
+      "seed": 1,
+      "step": 11,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.528480768203735,
+          5.9604644775390625e-06
+        ],
+        [
+          44.52782869338989,
+          4.172325134277344e-05
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.528480768203735,
+          -5.9604644775390625e-06
+        ],
+        [
+          44.52782869338989,
+          -4.172325134277344e-05
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.027796257784238474,
+      "model_steering_after_coordinate_patch_carla": -0.027796257784238474,
+      "model_steering_sign_only_metadrive_candidate": 0.027796257784238474,
+      "model_longitudinal_before": 0.2764745404959858,
+      "model_longitudinal_after": 0.2764745404959858,
+      "raw_nav_xy": [
+        0.5452848076820374,
+        0.5000000596046448,
+        0.9452782869338989,
+        0.5000004172325134
+      ]
+    },
+    {
+      "seed": 2,
+      "step": 0,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          5.0000011920928955,
+          -3.4999996423721313
+        ],
+        [
+          44.999998807907104,
+          -3.4999966621398926
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          5.0000011920928955,
+          3.4999996423721313
+        ],
+        [
+          44.999998807907104,
+          3.4999966621398926
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11520667349796924,
+      "model_steering_after_coordinate_patch_carla": -0.07275548735308467,
+      "model_steering_sign_only_metadrive_candidate": 0.07275548735308467,
+      "model_longitudinal_before": 0.05224696416262347,
+      "model_longitudinal_after": 0.007715121690243401,
+      "raw_nav_xy": [
+        0.550000011920929,
+        0.4650000035762787,
+        0.949999988079071,
+        0.4650000333786011
+      ]
+    },
+    {
+      "seed": 2,
+      "step": 1,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.998040199279785,
+          -3.4999996423721313
+        ],
+        [
+          44.998037815093994,
+          -3.499993681907654
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.998040199279785,
+          3.4999996423721313
+        ],
+        [
+          44.998037815093994,
+          3.499993681907654
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11551149974094992,
+      "model_steering_after_coordinate_patch_carla": -0.07276907349771373,
+      "model_steering_sign_only_metadrive_candidate": 0.07276907349771373,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.5499804019927979,
+        0.4650000035762787,
+        0.9499803781509399,
+        0.46500006318092346
+      ]
+    },
+    {
+      "seed": 2,
+      "step": 2,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.988187551498413,
+          -3.4999996423721313
+        ],
+        [
+          44.98775005340576,
+          -3.4999966621398926
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.988187551498413,
+          3.4999996423721313
+        ],
+        [
+          44.98775005340576,
+          3.4999966621398926
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11551149974094992,
+      "model_steering_after_coordinate_patch_carla": -0.07276907349771373,
+      "model_steering_sign_only_metadrive_candidate": 0.07276907349771373,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.5498818755149841,
+        0.4650000035762787,
+        0.9498775005340576,
+        0.4650000333786011
+      ]
+    },
+    {
+      "seed": 2,
+      "step": 3,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.9699485301971436,
+          -3.50000262260437
+        ],
+        [
+          44.96733546257019,
+          -3.500029444694519
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.9699485301971436,
+          3.50000262260437
+        ],
+        [
+          44.96733546257019,
+          3.500029444694519
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11551149974094992,
+      "model_steering_after_coordinate_patch_carla": -0.07276907349771373,
+      "model_steering_sign_only_metadrive_candidate": 0.07276907349771373,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.5496994853019714,
+        0.4649999737739563,
+        0.9496733546257019,
+        0.4649997055530548
+      ]
+    },
+    {
+      "seed": 2,
+      "step": 4,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.94389533996582,
+          -3.50000262260437
+        ],
+        [
+          44.94187831878662,
+          -3.500014543533325
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.94389533996582,
+          3.50000262260437
+        ],
+        [
+          44.94187831878662,
+          3.500014543533325
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11551149974094992,
+      "model_steering_after_coordinate_patch_carla": -0.07276907349771373,
+      "model_steering_sign_only_metadrive_candidate": 0.07276907349771373,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.5494389533996582,
+        0.4649999737739563,
+        0.9494187831878662,
+        0.46499985456466675
+      ]
+    },
+    {
+      "seed": 2,
+      "step": 5,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.9097418785095215,
+          -3.50000262260437
+        ],
+        [
+          44.90881562232971,
+          -3.5000205039978027
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.9097418785095215,
+          3.50000262260437
+        ],
+        [
+          44.90881562232971,
+          3.5000205039978027
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11551149974094992,
+      "model_steering_after_coordinate_patch_carla": -0.07276907349771373,
+      "model_steering_sign_only_metadrive_candidate": 0.07276907349771373,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.5490974187850952,
+        0.4649999737739563,
+        0.9490881562232971,
+        0.464999794960022
+      ]
+    },
+    {
+      "seed": 2,
+      "step": 6,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.867321252822876,
+          -3.4999996423721313
+        ],
+        [
+          44.86675262451172,
+          -3.5000085830688477
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.867321252822876,
+          3.4999996423721313
+        ],
+        [
+          44.86675262451172,
+          3.5000085830688477
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11779685202818267,
+      "model_steering_after_coordinate_patch_carla": -0.07639140475504973,
+      "model_steering_sign_only_metadrive_candidate": 0.07639140475504973,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.5486732125282288,
+        0.4650000035762787,
+        0.9486675262451172,
+        0.4649999141693115
+      ]
+    },
+    {
+      "seed": 2,
+      "step": 7,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.816699028015137,
+          -3.50000262260437
+        ],
+        [
+          44.81614828109741,
+          -3.5000234842300415
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.816699028015137,
+          3.50000262260437
+        ],
+        [
+          44.81614828109741,
+          3.5000234842300415
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11889258005934214,
+      "model_steering_after_coordinate_patch_carla": -0.07748713278620913,
+      "model_steering_sign_only_metadrive_candidate": 0.07748713278620913,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.5481669902801514,
+        0.4649999737739563,
+        0.9481614828109741,
+        0.4649997651576996
+      ]
+    },
+    {
+      "seed": 2,
+      "step": 8,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.757905006408691,
+          -3.4999996423721313
+        ],
+        [
+          44.757288694381714,
+          -3.5000085830688477
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.757905006408691,
+          3.4999996423721313
+        ],
+        [
+          44.757288694381714,
+          3.5000085830688477
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11889258005934214,
+      "model_steering_after_coordinate_patch_carla": -0.07748713278620913,
+      "model_steering_sign_only_metadrive_candidate": 0.07748713278620913,
+      "model_longitudinal_before": 0.17481040595031358,
+      "model_longitudinal_after": 0.1505831126525265,
+      "raw_nav_xy": [
+        0.5475790500640869,
+        0.4650000035762787,
+        0.9475728869438171,
+        0.4649999141693115
+      ]
+    },
+    {
+      "seed": 2,
+      "step": 9,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.69093918800354,
+          -3.4999996423721313
+        ],
+        [
+          44.69026327133179,
+          -3.5000085830688477
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.69093918800354,
+          3.4999996423721313
+        ],
+        [
+          44.69026327133179,
+          3.5000085830688477
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.11889258005934214,
+      "model_steering_after_coordinate_patch_carla": -0.07748713278620913,
+      "model_steering_sign_only_metadrive_candidate": 0.07748713278620913,
+      "model_longitudinal_before": 0.2670142386850265,
+      "model_longitudinal_after": 0.24278694538723944,
+      "raw_nav_xy": [
+        0.5469093918800354,
+        0.4650000035762787,
+        0.9469026327133179,
+        0.4649999141693115
+      ]
+    },
+    {
+      "seed": 2,
+      "step": 10,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.615819454193115,
+          -3.4999996423721313
+        ],
+        [
+          44.61514353752136,
+          -3.4999966621398926
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.615819454193115,
+          3.4999996423721313
+        ],
+        [
+          44.61514353752136,
+          3.4999966621398926
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.12139202065622054,
+      "model_steering_after_coordinate_patch_carla": -0.07781829025770161,
+      "model_steering_sign_only_metadrive_candidate": 0.07781829025770161,
+      "model_longitudinal_before": 0.2670142386850265,
+      "model_longitudinal_after": 0.24278694538723944,
+      "raw_nav_xy": [
+        0.5461581945419312,
+        0.4650000035762787,
+        0.9461514353752136,
+        0.4650000333786011
+      ]
+    },
+    {
+      "seed": 2,
+      "step": 11,
+      "lateral_sign": -1,
+      "raw_waypoints": [
+        [
+          4.5325398445129395,
+          -3.4999996423721313
+        ],
+        [
+          44.5318877696991,
+          -3.4999966621398926
+        ]
+      ],
+      "corrected_waypoints": [
+        [
+          4.5325398445129395,
+          3.4999996423721313
+        ],
+        [
+          44.5318877696991,
+          3.4999966621398926
+        ]
+      ],
+      "raw_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "corrected_side_vehicle_distances": [
+        60.0,
+        60.0
+      ],
+      "model_steering_before_coordinate_patch_carla": -0.12139202065622054,
+      "model_steering_after_coordinate_patch_carla": -0.07781829025770161,
+      "model_steering_sign_only_metadrive_candidate": 0.07781829025770161,
+      "model_longitudinal_before": 0.2670142386850265,
+      "model_longitudinal_after": 0.24278694538723944,
+      "raw_nav_xy": [
+        0.5453253984451294,
+        0.4650000035762787,
+        0.945318877696991,
+        0.4650000333786011
+      ]
+    }
+  ],
+  "warnings": [
+    "Positive steering physical LEFT/RIGHT requires more complete seeds",
+    "Waypoint lookahead gap not corrected: MetaDrive wp1 is a near checkpoint, PDD wp1 is farther",
+    "Action gain and brake dynamics not matched; sign-only model action is NOT applied"
+  ]
+}

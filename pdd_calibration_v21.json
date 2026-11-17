@@ -1,0 +1,46 @@
+{
+  "status": "PDD_WAYPOINT_STEER_DIAGNOSTIC_NOT_COORDINATE_CERTIFICATE",
+  "source": "D:\\Học\\Tri tue nhan to nang cao\\lab\\dataset\\PDD",
+  "scenes_seen": 63,
+  "missing_scenes": 0,
+  "bad_scenes": 0,
+  "steer_vs_yaw": {
+    "n": 6156,
+    "pearson_corr_steer_vs_next_025s_yaw_deg": 0.90395,
+    "sign_agreement": {
+      "n": 804,
+      "same_sign_pct": 100.0
+    }
+  },
+  "waypoint_distances_m": {
+    "wp1": {
+      "p10": 11.57155,
+      "median": 27.38326,
+      "p90": 49.2783
+    },
+    "wp1_right_raw": {
+      "p10": -1.75005,
+      "median": 0.14716,
+      "p90": 3.8222
+    }
+  },
+  "steer_vs_wp1_right": {
+    "n": 6156,
+    "pearson_corr": 0.64101
+  },
+  "target_right_vs_future_rightward_motion": {
+    "n": 5975,
+    "pearson_corr": 0.59541,
+    "sign_agreement": {
+      "n": 1025,
+      "same_sign_pct": 94.05
+    },
+    "description": "Target lateral coordinate vs rightward displacement over ~1s using CARLA right_vector; lookahead mismatch may weaken correlation."
+  },
+  "limits": [
+    "CARLA raw yaw is in degrees. CARLA positive yaw/steer conventions differ from MetaDrive; do not infer sign by comparing yaw numbers alone.",
+    "A 1-second motion does not necessarily follow a 25m waypoint on curved roads.",
+    "Vehicle lane changes, braking and route plans confound raw correlations.",
+    "Action labels are from original PDD controls; frame/control synchronization is still a statistical candidate."
+  ]
+}

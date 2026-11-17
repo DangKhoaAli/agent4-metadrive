@@ -1,0 +1,132 @@
+{
+  "status": "OFFLINE_PDD_BASELINE_NOT_METADRIVE_VALIDATED",
+  "label_mode": "at_t",
+  "input_features_in_order": [
+    "speed_mps",
+    "waypoint1_forward_candidate_m",
+    "waypoint1_lateral_candidate_m",
+    "waypoint2_forward_candidate_m",
+    "waypoint2_lateral_candidate_m",
+    "lead_distance_capped_m",
+    "has_lead_vehicle"
+  ],
+  "output_labels_in_order": [
+    "steer_at_t_carla",
+    "a2_at_t_metadrive_candidate"
+  ],
+  "rows": {
+    "train": 6117,
+    "val": 891,
+    "test": 804
+  },
+  "split_scenarios": {
+    "train": [
+      "Accident",
+      "BlockedIntersection",
+      "ConstructionObstacle",
+      "ControlLoss",
+      "EnterActorFlow",
+      "HazardAtSideLane",
+      "HighwayExit",
+      "InvadingTurn",
+      "MergerIntoSlowTraffic",
+      "NonSignalizedJunctionLeftTurn",
+      "ParkingCutIn",
+      "SignalizedJunctionLeftTurn",
+      "SignalizedJunctionRightTurn",
+      "StaticCutIn",
+      "VehicleOpensDoorTwoWays"
+    ],
+    "val": [
+      "CrossingBicycleFlow",
+      "InterurbanActorFlow",
+      "NonSignalizedJunctionRightTurn"
+    ],
+    "test": [
+      "DynamicObjectCrossing",
+      "ParkedObstacle",
+      "VanillaNonSignalizedTurn"
+    ]
+  },
+  "train_only_target_mean": [
+    0.005900688726410515,
+    0.39753163745269554
+  ],
+  "train_only_target_std": [
+    0.06905071197523861,
+    0.286725737057968
+  ],
+  "validation": {
+    "constant_mean": {
+      "n": 891,
+      "mae_steer": 0.034513,
+      "mae_longitudinal": 0.287888,
+      "rmse_steer": 0.077176,
+      "rmse_longitudinal": 0.378636,
+      "mean_normalized_mae": 0.751939,
+      "strong_turn_samples": 137,
+      "braking_samples": 41,
+      "strong_turn_mae_steer": 0.175638,
+      "braking_mae_longitudinal": 1.01273
+    },
+    "ridge": {
+      "n": 891,
+      "mae_steer": 0.035205,
+      "mae_longitudinal": 0.287326,
+      "rmse_steer": 0.061667,
+      "rmse_longitudinal": 0.373825,
+      "mean_normalized_mae": 0.755969,
+      "strong_turn_samples": 137,
+      "braking_samples": 41,
+      "strong_turn_mae_steer": 0.111497,
+      "braking_mae_longitudinal": 0.957323
+    },
+    "mlp": {
+      "n": 891,
+      "mae_steer": 0.040685,
+      "mae_longitudinal": 0.29279,
+      "rmse_steer": 0.072475,
+      "rmse_longitudinal": 0.407473,
+      "mean_normalized_mae": 0.805175,
+      "strong_turn_samples": 137,
+      "braking_samples": 41,
+      "strong_turn_mae_steer": 0.117597,
+      "braking_mae_longitudinal": 1.112877
+    }
+  },
+  "selected_using_validation": "ridge",
+  "test": {
+    "constant_mean": {
+      "n": 804,
+      "mae_steer": 0.0258,
+      "mae_longitudinal": 0.191137,
+      "rmse_steer": 0.061382,
+      "rmse_longitudinal": 0.283538,
+      "mean_normalized_mae": 0.520127,
+      "strong_turn_samples": 85,
+      "braking_samples": 23,
+      "strong_turn_mae_steer": 0.168336,
+      "braking_mae_longitudinal": 0.97448
+    },
+    "selected_model": {
+      "n": 804,
+      "mae_steer": 0.026811,
+      "mae_longitudinal": 0.196691,
+      "rmse_steer": 0.051576,
+      "rmse_longitudinal": 0.28267,
+      "mean_normalized_mae": 0.537134,
+      "strong_turn_samples": 85,
+      "braking_samples": 23,
+      "strong_turn_mae_steer": 0.121499,
+      "braking_mae_longitudinal": 0.96973
+    }
+  },
+  "model_path": "D:\\Học\\Tri tue nhan to nang cao\\lab\\dataset\\pdd_baseline_output\\at_t\\model_bundle.joblib",
+  "limitations": [
+    "Only PDD offline imitation quality was tested; closed-loop route completion is NOT measured.",
+    "PDD image/control timing, CARLA vs MetaDrive action calibration, waypoint coordinate equivalence remain unverified.",
+    "MetaDrive physical observation adapter (including lead vehicle) has NOT been implemented.",
+    "Model can lack obstacle/side-vehicle/traffic-light signals; good MAE alone is insufficient.",
+    "The at_t and mean5 targets have different meanings; DO NOT directly rank their MAEs against each other."
+  ]
+}

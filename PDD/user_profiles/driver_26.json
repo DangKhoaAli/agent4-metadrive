@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 21,
+    "gender": "Female",
+    "occupation": "Small business owner"
+  },
+  "driving_experience": "3 years",
+  "driving_frequency_per_week": "1 to 4 h",
+  "driving_purposes": [
+    "Outdoor recreation",
+    "Visiting friends and family"
+  ],
+  "driving_habits_preferences": [
+    "Avoids night driving and complex situations when possible",
+    "Uses cruise control only to maintain a gentle steady pace",
+    "Leaves extra following distance and avoids aggressive merging"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "Astigmatism (corrected)",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Cautious",
+  "international_driving_experience": "Short-term driving in Singapore"
+}

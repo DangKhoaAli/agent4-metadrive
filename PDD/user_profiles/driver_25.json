@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 40,
+    "gender": "Female",
+    "occupation": "Small business owner"
+  },
+  "driving_experience": "18 years",
+  "driving_frequency_per_week": "25 to 30 h",
+  "driving_purposes": [
+    "Professional driving",
+    "Visiting friends and family"
+  ],
+  "driving_habits_preferences": [
+    "Comfortable keeping pace in dense urban traffic",
+    "Changes lanes proactively when it helps maintain progress",
+    "Uses brisk but controlled acceleration instead of waiting behind slow vehicles"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "Seasonal allergies",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Assertive",
+  "international_driving_experience": "Short-term driving in Singapore"
+}

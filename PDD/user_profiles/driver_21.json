@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 33,
+    "gender": "Female",
+    "occupation": "Research scientist"
+  },
+  "driving_experience": "15 years",
+  "driving_frequency_per_week": "5 to 10 h",
+  "driving_purposes": [
+    "Outdoor recreation",
+    "Routine errands with time pressure"
+  ],
+  "driving_habits_preferences": [
+    "Prefers left lane for passing when traffic slows",
+    "Maintains brisk progress with controlled acceleration",
+    "Keeps a moderate following gap while still driving purposefully"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "Mild hypertension (controlled)",
+    "accidents_last_5_years": "One minor rear-end collision"
+  },
+  "driving_style": "Assertive",
+  "international_driving_experience": "None"
+}

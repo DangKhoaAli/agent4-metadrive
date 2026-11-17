@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 39,
+    "gender": "Female",
+    "occupation": "Restaurant manager"
+  },
+  "driving_experience": "11 years",
+  "driving_frequency_per_week": "25 to 30 h",
+  "driving_purposes": [
+    "Grocery shopping",
+    "Night-shift commute"
+  ],
+  "driving_habits_preferences": [
+    "Comfortable keeping brisk pace in urban traffic",
+    "Accelerates decisively when the road opens",
+    "Changes lanes in a timely way instead of lingering behind slower cars"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "Mild back pain (managed)",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Assertive",
+  "international_driving_experience": "None"
+}

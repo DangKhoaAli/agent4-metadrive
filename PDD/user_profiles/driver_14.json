@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 18,
+    "gender": "Female",
+    "occupation": "Auto shop apprentice"
+  },
+  "driving_experience": "1 year",
+  "driving_frequency_per_week": "6 to 10 h",
+  "driving_purposes": [
+    "Commuting to vocational classes",
+    "Visiting friends and family"
+  ],
+  "driving_habits_preferences": [
+    "Checks traffic conditions before departure",
+    "Prefers smooth throttle inputs and predictable lane behavior",
+    "Maintains a safe but not excessive following distance"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "Seasonal allergies",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Calm",
+  "international_driving_experience": "None"
+}

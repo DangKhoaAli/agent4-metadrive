@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 31,
+    "gender": "Female",
+    "occupation": "Product manager"
+  },
+  "driving_experience": "3 years",
+  "driving_frequency_per_week": "25 to 30 h",
+  "driving_purposes": [
+    "Night-shift commute",
+    "Weekend trips"
+  ],
+  "driving_habits_preferences": [
+    "Avoids heavy traffic hours when possible",
+    "Prefers measured acceleration over abrupt inputs",
+    "Maintains a somewhat larger following distance than average"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "Astigmatism (corrected)",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Balanced",
+  "international_driving_experience": "Occasional rentals in Canada"
+}

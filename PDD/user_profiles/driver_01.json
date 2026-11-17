@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 45,
+    "gender": "Female",
+    "occupation": "Senior data analyst"
+  },
+  "driving_experience": "20 years",
+  "driving_frequency_per_week": "10 to 15 h",
+  "driving_purposes": [
+    "School drop-off/pick-up",
+    "Cross-town grocery shopping"
+  ],
+  "driving_habits_preferences": [
+    "Prefers left lane for passing slower vehicles",
+    "Accelerates decisively when traffic gaps open",
+    "Uses cruise control on clear highways to maintain a brisk commute pace"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "None",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Aggressive",
+  "international_driving_experience": "Short-term driving in Singapore"
+}

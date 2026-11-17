@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 34,
+    "gender": "Female",
+    "occupation": "Mechanic"
+  },
+  "driving_experience": "13 years",
+  "driving_frequency_per_week": "10 to 15 h",
+  "driving_purposes": [
+    "Medical appointments",
+    "Outdoor recreation"
+  ],
+  "driving_habits_preferences": [
+    "Prefers smooth acceleration and steady cruising",
+    "Keeps a comfortable following distance on open roads",
+    "Listens to music or podcasts and avoids unnecessary lane changes"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "Seasonal allergies",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Calm",
+  "international_driving_experience": "Short-term driving in Singapore"
+}

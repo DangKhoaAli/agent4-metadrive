@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 29,
+    "gender": "Female",
+    "occupation": "Graduate student"
+  },
+  "driving_experience": "7 years",
+  "driving_frequency_per_week": "5 to 8 h",
+  "driving_purposes": [
+    "Commuting to campus",
+    "Grocery shopping and visiting friends"
+  ],
+  "driving_habits_preferences": [
+    "Avoids heavy traffic hours whenever possible",
+    "Uses navigation apps for low-stress and eco-friendly routes",
+    "Maintains extra following distance and accelerates gradually"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "None",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Cautious",
+  "international_driving_experience": "Occasional rentals in Canada"
+}

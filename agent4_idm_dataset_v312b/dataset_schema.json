@@ -1,0 +1,24 @@
+{
+  "version": "AGENT4_V312B_FULL_STEP_IDM_DATASET",
+  "sampling_interval_s": 0.1,
+  "split_policy": "disjoint procedural map seeds across train, val, test; no row-wise split",
+  "observation_time": "all input columns are measured before env.step()",
+  "label_time": "vehicle.current_action after that same env.step()",
+  "authoritative_supervision": ["applied_steering", "applied_throttle_brake"],
+  "audit_only_labels": ["raw_steering", "raw_throttle_brake"],
+  "recommended_steering_features": [
+    "speed_mps", "planned_lateral_right_m", "heading_error_rad",
+    "distance_to_lane_end_m", "curvature_proxy_rad_per_m",
+    "lookahead_heading_5m_rad", "lookahead_heading_10m_rad", "lookahead_heading_20m_rad",
+    "lookahead_5m_available", "lookahead_10m_available", "lookahead_20m_available",
+    "is_circular_lane"
+  ],
+  "avoid_as_model_inputs": ["seed", "step", "split", "map", "pos_x_m", "pos_y_m", "raw_steering", "raw_throttle_brake", "post_speed_mps", "post_pos_x_m", "post_pos_y_m", "arrive_dest", "terminated", "truncated"],
+  "quality_filter": "clean/ contains only successful, quality-approved episodes and samples with verified action and no raw out-of-range spikes",
+  "known_limitations": [
+    "Privileged geometry inputs are read directly from the simulator",
+    "No physical-car performance guaranteed",
+    "No demonstration of generalization until a trained model is independently evaluated on held-out seeds",
+    "Applied action verification on user's installed MetaDrive 0.4.3 is required"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "basic_information": {
+    "age": 27,
+    "gender": "Male",
+    "occupation": "Sales manager"
+  },
+  "driving_experience": "5 years",
+  "driving_frequency_per_week": "More than 20 h",
+  "driving_purposes": [
+    "Frequent business travel between cities"
+  ],
+  "driving_habits_preferences": [
+    "Often overtakes slower cars instead of waiting behind them",
+    "Prefers express lanes and faster-moving traffic streams",
+    "Accelerates briskly at green lights and during merges"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "None",
+    "accidents_last_5_years": "Two speeding citations in the last 3 years"
+  },
+  "driving_style": "Aggressive",
+  "international_driving_experience": "Drove rental cars in Germany; enjoys autobahn but notes higher stress in urban European traffic"
+}

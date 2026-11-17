@@ -1,0 +1,79 @@
+{
+  "status": "PILOT_ONLY_LABEL_ALIGNMENT_AND_TRANSFER_NOT_PROVEN",
+  "source_root": "D:\\Học\\Tri tue nhan to nang cao\\lab\\dataset\\PDD",
+  "drivers": [
+    "driver_01",
+    "driver_02",
+    "driver_03"
+  ],
+  "rows_total": 7812,
+  "split_row_counts": {
+    "train": 6117,
+    "val": 891,
+    "test": 804
+  },
+  "split_scenarios": {
+    "train": [
+      "Accident",
+      "BlockedIntersection",
+      "ConstructionObstacle",
+      "ControlLoss",
+      "EnterActorFlow",
+      "HazardAtSideLane",
+      "HighwayExit",
+      "InvadingTurn",
+      "MergerIntoSlowTraffic",
+      "NonSignalizedJunctionLeftTurn",
+      "ParkingCutIn",
+      "SignalizedJunctionLeftTurn",
+      "SignalizedJunctionRightTurn",
+      "StaticCutIn",
+      "VehicleOpensDoorTwoWays"
+    ],
+    "val": [
+      "CrossingBicycleFlow",
+      "InterurbanActorFlow",
+      "NonSignalizedJunctionRightTurn"
+    ],
+    "test": [
+      "DynamicObjectCrossing",
+      "ParkedObstacle",
+      "VanillaNonSignalizedTurn"
+    ]
+  },
+  "input_features": [
+    "speed_mps",
+    "waypoint1_forward_candidate_m",
+    "waypoint1_lateral_candidate_m",
+    "waypoint2_forward_candidate_m",
+    "waypoint2_lateral_candidate_m",
+    "lead_distance_capped_m",
+    "has_lead_vehicle"
+  ],
+  "candidate_training_labels": [
+    "steer_at_t_carla",
+    "throttle_at_t_carla",
+    "brake_at_t_carla",
+    "a2_at_t_metadrive_candidate",
+    "steer_mean_next5_carla",
+    "throttle_mean_next5_carla",
+    "brake_mean_next5_carla",
+    "a2_mean_next5_metadrive_candidate"
+  ],
+  "validation": {
+    "rows_kept": 7812,
+    "scenes_accepted": 63
+  },
+  "warnings": [],
+  "critical_limitations": [
+    "Frame i -> step 5*i is a well-supported CANDIDATE; original image/action timing is not independently certified.",
+    "Waypoint x/y are treated as forward/lateral CANDIDATES, not yet verified against MetaDrive vehicle coordinates.",
+    "CARLA steering sign/magnitude and throttle-brake scale are not MetaDrive-calibrated.",
+    "No raw speed_limit field is used because its actual units are disputed.",
+    "No expert_control_* appears in model inputs; these are expert reference controls, NOT necessarily the recorded human actions.",
+    "Lead vehicle distance needs a MetaDrive-side physical adapter; this CSV alone cannot be used as closed-loop agent input.",
+    "Train/val/test split is by scenario name (across drivers), not by individual frames.",
+    "Mean next5 labels apply a control window over 0.25 seconds; do not conflate with instantaneous controls.",
+    "These CSVs are experimental data prep artifacts, not an operational autonomous-driving model."
+  ]
+}

@@ -1,0 +1,3672 @@
+{
+  "status": "V25_IDM_REFERENCE_COVERAGE_SHADOW_NOT_CLOSED_LOOP",
+  "model_action_applied": false,
+  "reference_ego_policy": "MetaDrive IDMPolicy",
+  "env_step_placeholder_action_not_used_for_control": [
+    0.0,
+    0.0
+  ],
+  "maps": [
+    "C",
+    "X"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "steps_per_seed_requested": 450,
+  "lookahead_m": [
+    25.0,
+    45.0
+  ],
+  "results": [
+    {
+      "map": "C",
+      "reference_policy": "MetaDrive IDMPolicy (ego)",
+      "episodes": [
+        {
+          "seed": 0,
+          "n_samples": 293,
+          "end_info": {
+            "terminated": true,
+            "truncated": false,
+            "arrive_dest": true,
+            "out_of_road": false,
+            "crash": false
+          },
+          "max_speed_mps": 8.333332600670115,
+          "distance_travelled_approx_m": 230.17268841276183,
+          "n_geometry_errors": 0
+        },
+        {
+          "seed": 1,
+          "n_samples": 330,
+          "end_info": {
+            "terminated": true,
+            "truncated": false,
+            "arrive_dest": true,
+            "out_of_road": false,
+            "crash": false
+          },
+          "max_speed_mps": 8.333325799299883,
+          "distance_travelled_approx_m": 260.9996424754842,
+          "n_geometry_errors": 0
+        },
+        {
+          "seed": 2,
+          "n_samples": 165,
+          "end_info": {
+            "terminated": true,
+            "truncated": false,
+            "arrive_dest": true,
+            "out_of_road": false,
+            "crash": false
+          },
+          "max_speed_mps": 8.333325478188376,
+          "distance_travelled_approx_m": 124.1214434200136,
+          "n_geometry_errors": 0
+        }
+      ],
+      "summary": {
+        "n_samples": 788,
+        "n_usable": 644,
+        "n_not_usable": 144,
+        "n_in_curve_lane": 361,
+        "n_in_curve_block": 579,
+        "n_in_intersection_block": 0,
+        "n_non_initial_road": 730,
+        "n_turn_motion_samples": 366,
+        "n_usable_turning_samples": 437,
+        "n_usable_intersection_samples": 0,
+        "n_lane_chain_broken": 0,
+        "n_lane_horizon_incomplete": 144,
+        "n_road_horizon_incomplete": 144,
+        "road_lane_wp1_lateral_difference_m": {
+          "n": 644,
+          "min": 0.0,
+          "median": 3.114430535584688,
+          "p90": 3.4999999006682514,
+          "max": 3.500000030222509
+        },
+        "steer_road_lane_abs_difference": {
+          "n": 644,
+          "min": 0.0,
+          "median": 0.0001319707344887705,
+          "p90": 0.01713791565976848,
+          "max": 0.06972523036490538
+        },
+        "steer_lane_carla": {
+          "n": 644,
+          "min": -0.06351187722767022,
+          "median": 0.011162122560226783,
+          "p90": 0.039128463801676255,
+          "max": 0.039128463801676255
+        },
+        "steer_lane_md_sign_only": {
+          "n": 644,
+          "min": -0.039128463801676255,
+          "median": -0.011162122560226783,
+          "p90": 0.012772177240533386,
+          "max": 0.06351187722767022
+        },
+        "steer_lane_during_turns_carla": {
+          "n": 437,
+          "min": -0.06244816345301931,
+          "median": 0.039128463801676255,
+          "p90": 0.039128463801676255,
+          "max": 0.039128463801676255
+        },
+        "steer_lane_during_intersection_carla": null
+      },
+      "errors": [],
+      "warnings": [
+        "Insufficient remaining route length for at least one waypoint"
+      ],
+      "examples": [
+        {
+          "seed": 0,
+          "step": 70,
+          "ego_xy": [
+            50.2326774597168,
+            7.0
+          ],
+          "ego_heading_rad": -5.326322183307752e-07,
+          "yaw_change_this_step_rad": 0.0,
+          "speed_mps": 8.333318710327148,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.805339813232422,
+              8.467370986938477
+            ],
+            [
+              38.33915328979492,
+              18.936965942382812
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.247526168823242,
+              5.278330326080322
+            ],
+            [
+              40.75376510620117,
+              16.4033260345459
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.1890406608581543,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 0,
+          "step": 71,
+          "ego_xy": [
+            51.06520080566406,
+            6.989681243896484
+          ],
+          "ego_heading_rad": -0.0058251322523306115,
+          "yaw_change_this_step_rad": -0.005824599620112281,
+          "speed_mps": 8.313281245029327,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.73523712158203,
+              8.653325080871582
+            ],
+            [
+              38.18278121948242,
+              19.250207901000977
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.2034912109375,
+              5.476286888122559
+            ],
+            [
+              40.61805725097656,
+              16.736539840698242
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.1770381927490234,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 0,
+          "step": 72,
+          "ego_xy": [
+            51.895999908447266,
+            6.955362319946289
+          ],
+          "ego_heading_rad": -0.023811989096670594,
+          "yaw_change_this_step_rad": -0.017986856844339982,
+          "speed_mps": 8.319330823830228,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.76968765258789,
+              8.549118041992188
+            ],
+            [
+              38.25939178466797,
+              19.084362030029297
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.225250244140625,
+              5.3662848472595215
+            ],
+            [
+              40.68461608886719,
+              16.56104278564453
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.182833194732666,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 0,
+          "step": 73,
+          "ego_xy": [
+            52.72694778442383,
+            6.912788391113281
+          ],
+          "ego_heading_rad": -0.0388824182312657,
+          "yaw_change_this_step_rad": -0.015070429134595107,
+          "speed_mps": 8.324836042773747,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.778833389282227,
+              8.514141082763672
+            ],
+            [
+              38.27972412109375,
+              19.03260612487793
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.231016159057617,
+              5.329664707183838
+            ],
+            [
+              40.7022705078125,
+              16.506589889526367
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.184476375579834,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 0,
+          "step": 74,
+          "ego_xy": [
+            53.558326721191406,
+            6.868951797485352
+          ],
+          "ego_heading_rad": -0.047346743123864776,
+          "yaw_change_this_step_rad": -0.008464324892599073,
+          "speed_mps": 8.32769587107445,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.7312068939209,
+              8.64057445526123
+            ],
+            [
+              38.17344284057617,
+              19.24485969543457
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.201059341430664,
+              5.46419620513916
+            ],
+            [
+              40.6099853515625,
+              16.732315063476562
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.1763782501220703,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 0,
+          "step": 75,
+          "ego_xy": [
+            54.389312744140625,
+            6.81611967086792
+          ],
+          "ego_heading_rad": -0.05649030725248849,
+          "yaw_change_this_step_rad": -0.009143564128623716,
+          "speed_mps": 8.325764499218863,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.68874168395996,
+              8.754545211791992
+            ],
+            [
+              38.079071044921875,
+              19.434219360351562
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.174068450927734,
+              5.58540678024292
+            ],
+            [
+              40.52783966064453,
+              16.933631896972656
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.1691384315490723,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 0,
+          "step": 76,
+          "ego_xy": [
+            55.219093322753906,
+            6.7482099533081055
+          ],
+          "ego_heading_rad": -0.07001210821320214,
+          "yaw_change_this_step_rad": -0.013521800960713648,
+          "speed_mps": 8.325953672177233,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.68439483642578,
+              8.765451431274414
+            ],
+            [
+              38.06941223144531,
+              19.452882766723633
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.171295166015625,
+              5.597080230712891
+            ],
+            [
+              40.5194206237793,
+              16.953548431396484
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.1683712005615234,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 0,
+          "step": 77,
+          "ego_xy": [
+            56.04783630371094,
+            6.667577266693115
+          ],
+          "ego_heading_rad": -0.08475536800788142,
+          "yaw_change_this_step_rad": -0.014743259794679274,
+          "speed_mps": 8.328600301262412,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.690744400024414,
+              8.747315406799316
+            ],
+            [
+              38.083473205566406,
+              19.4235782623291
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.175355911254883,
+              5.577856063842773
+            ],
+            [
+              40.53167724609375,
+              16.922456741333008
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.169459342956543,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 0,
+          "step": 0,
+          "ego_xy": [
+            5.0,
+            7.0
+          ],
+          "ego_heading_rad": 0.0,
+          "yaw_change_this_step_rad": 0.0,
+          "speed_mps": 0.0,
+          "lane_type": "StraightLane",
+          "lane_index": "('>', '>>', 0)",
+          "road_nodes": [
+            ">",
+            ">>"
+          ],
+          "entered_non_initial_road": false,
+          "in_curve_lane": false,
+          "in_curve_block": false,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              25.0,
+              3.4999988079071045
+            ],
+            [
+              45.0,
+              3.499998092651367
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              25.0,
+              -1.0927847142738756e-06
+            ],
+            [
+              45.0,
+              -1.967012394743506e-06
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": -0.0704781864132496,
+          "steer_lane_carla": -0.0017986949200959556,
+          "steer_lane_md_sign_only": 0.0017986949200959556,
+          "longitudinal_road": 0.14966166894366412,
+          "longitudinal_lane": 0.1998465182761997,
+          "road_lane_lateral_gap_m": 3.4999999006918188,
+          "steer_prediction_delta_abs": 0.06867949149315364
+        },
+        {
+          "seed": 2,
+          "step": 164,
+          "ego_xy": [
+            91.7825698852539,
+            67.77521514892578
+          ],
+          "ego_heading_rad": 1.211669852746038,
+          "yaw_change_this_step_rad": -3.2290828224645907e-06,
+          "speed_mps": 8.33332379983462,
+          "lane_type": "StraightLane",
+          "lane_index": "('1C0_0_', '1C0_1_', 0)",
+          "road_nodes": [
+            "1C0_0_",
+            "1C0_1_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": false,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              5.053886413574219,
+              3.5585734844207764
+            ],
+            [
+              5.053886413574219,
+              3.5585734844207764
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              5.052163124084473,
+              0.05857372283935547
+            ],
+            [
+              5.052163124084473,
+              0.05857372283935547
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0
+          ],
+          "lane_gaps": []
+        }
+      ],
+      "turn_examples": [
+        {
+          "seed": 0,
+          "step": 70,
+          "ego_xy": [
+            50.2326774597168,
+            7.0
+          ],
+          "ego_heading_rad": -5.326322183307752e-07,
+          "yaw_change_this_step_rad": 0.0,
+          "speed_mps": 8.333318710327148,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.805339813232422,
+              8.467370986938477
+            ],
+            [
+              38.33915328979492,
+              18.936965942382812
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.247526168823242,
+              5.278330326080322
+            ],
+            [
+              40.75376510620117,
+              16.4033260345459
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.1890406608581543,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 0,
+          "step": 71,
+          "ego_xy": [
+            51.06520080566406,
+            6.989681243896484
+          ],
+          "ego_heading_rad": -0.0058251322523306115,
+          "yaw_change_this_step_rad": -0.005824599620112281,
+          "speed_mps": 8.313281245029327,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.73523712158203,
+              8.653325080871582
+            ],
+            [
+              38.18278121948242,
+              19.250207901000977
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.2034912109375,
+              5.476286888122559
+            ],
+            [
+              40.61805725097656,
+              16.736539840698242
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.1770381927490234,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 0,
+          "step": 72,
+          "ego_xy": [
+            51.895999908447266,
+            6.955362319946289
+          ],
+          "ego_heading_rad": -0.023811989096670594,
+          "yaw_change_this_step_rad": -0.017986856844339982,
+          "speed_mps": 8.319330823830228,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.76968765258789,
+              8.549118041992188
+            ],
+            [
+              38.25939178466797,
+              19.084362030029297
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.225250244140625,
+              5.3662848472595215
+            ],
+            [
+              40.68461608886719,
+              16.56104278564453
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.182833194732666,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 0,
+          "step": 73,
+          "ego_xy": [
+            52.72694778442383,
+            6.912788391113281
+          ],
+          "ego_heading_rad": -0.0388824182312657,
+          "yaw_change_this_step_rad": -0.015070429134595107,
+          "speed_mps": 8.324836042773747,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.778833389282227,
+              8.514141082763672
+            ],
+            [
+              38.27972412109375,
+              19.03260612487793
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.231016159057617,
+              5.329664707183838
+            ],
+            [
+              40.7022705078125,
+              16.506589889526367
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.184476375579834,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 0,
+          "step": 74,
+          "ego_xy": [
+            53.558326721191406,
+            6.868951797485352
+          ],
+          "ego_heading_rad": -0.047346743123864776,
+          "yaw_change_this_step_rad": -0.008464324892599073,
+          "speed_mps": 8.32769587107445,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.7312068939209,
+              8.64057445526123
+            ],
+            [
+              38.17344284057617,
+              19.24485969543457
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.201059341430664,
+              5.46419620513916
+            ],
+            [
+              40.6099853515625,
+              16.732315063476562
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.1763782501220703,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 0,
+          "step": 75,
+          "ego_xy": [
+            54.389312744140625,
+            6.81611967086792
+          ],
+          "ego_heading_rad": -0.05649030725248849,
+          "yaw_change_this_step_rad": -0.009143564128623716,
+          "speed_mps": 8.325764499218863,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.68874168395996,
+              8.754545211791992
+            ],
+            [
+              38.079071044921875,
+              19.434219360351562
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.174068450927734,
+              5.58540678024292
+            ],
+            [
+              40.52783966064453,
+              16.933631896972656
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.1691384315490723,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 0,
+          "step": 76,
+          "ego_xy": [
+            55.219093322753906,
+            6.7482099533081055
+          ],
+          "ego_heading_rad": -0.07001210821320214,
+          "yaw_change_this_step_rad": -0.013521800960713648,
+          "speed_mps": 8.325953672177233,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.68439483642578,
+              8.765451431274414
+            ],
+            [
+              38.06941223144531,
+              19.452882766723633
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.171295166015625,
+              5.597080230712891
+            ],
+            [
+              40.5194206237793,
+              16.953548431396484
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.1683712005615234,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 0,
+          "step": 77,
+          "ego_xy": [
+            56.04783630371094,
+            6.667577266693115
+          ],
+          "ego_heading_rad": -0.08475536800788142,
+          "yaw_change_this_step_rad": -0.014743259794679274,
+          "speed_mps": 8.328600301262412,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1C0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1C0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              22.690744400024414,
+              8.747315406799316
+            ],
+            [
+              38.083473205566406,
+              19.4235782623291
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.175355911254883,
+              5.577856063842773
+            ],
+            [
+              40.53167724609375,
+              16.922456741333008
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.038996493067187485,
+          "steer_lane_carla": 0.039128463801676255,
+          "steer_lane_md_sign_only": -0.039128463801676255,
+          "longitudinal_road": 0.30741951054874395,
+          "longitudinal_lane": 0.3036121931781848,
+          "road_lane_lateral_gap_m": 3.169459342956543,
+          "steer_prediction_delta_abs": 0.0001319707344887705
+        },
+        {
+          "seed": 2,
+          "step": 164,
+          "ego_xy": [
+            91.7825698852539,
+            67.77521514892578
+          ],
+          "ego_heading_rad": 1.211669852746038,
+          "yaw_change_this_step_rad": -3.2290828224645907e-06,
+          "speed_mps": 8.33332379983462,
+          "lane_type": "StraightLane",
+          "lane_index": "('1C0_0_', '1C0_1_', 0)",
+          "road_nodes": [
+            "1C0_0_",
+            "1C0_1_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": false,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              5.053886413574219,
+              3.5585734844207764
+            ],
+            [
+              5.053886413574219,
+              3.5585734844207764
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              5.052163124084473,
+              0.05857372283935547
+            ],
+            [
+              5.052163124084473,
+              0.05857372283935547
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0
+          ],
+          "lane_gaps": []
+        }
+      ],
+      "intersection_examples": [],
+      "invalid_examples": [
+        {
+          "seed": 0,
+          "step": 245,
+          "ego_xy": [
+            92.19905090332031,
+            -101.73760223388672
+          ],
+          "ego_heading_rad": -2.014812392170576,
+          "yaw_change_this_step_rad": -2.929477199486996e-06,
+          "speed_mps": 8.33332277945541,
+          "lane_type": "StraightLane",
+          "lane_index": "('1C0_0_', '1C0_1_', 0)",
+          "road_nodes": [
+            "1C0_0_",
+            "1C0_1_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": false,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              24.996732711791992,
+              3.4251718521118164
+            ],
+            [
+              44.94971466064453,
+              3.4401588439941406
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.99936294555664,
+              -0.0748281478881836
+            ],
+            [
+              44.95234298706055,
+              -0.05983924865722656
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0
+          ],
+          "lane_gaps": []
+        },
+        {
+          "seed": 0,
+          "step": 246,
+          "ego_xy": [
+            91.84107971191406,
+            -102.49012756347656
+          ],
+          "ego_heading_rad": -2.0148187837571916,
+          "yaw_change_this_step_rad": -6.391586615528411e-06,
+          "speed_mps": 8.33332165433634,
+          "lane_type": "StraightLane",
+          "lane_index": "('1C0_0_', '1C0_1_', 0)",
+          "road_nodes": [
+            "1C0_0_",
+            "1C0_1_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": false,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              24.99675178527832,
+              3.4256439208984375
+            ],
+            [
+              44.116432189941406,
+              3.4398880004882812
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.999361038208008,
+              -0.07435417175292969
+            ],
+            [
+              44.11903762817383,
+              -0.06011199951171875
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0
+          ],
+          "lane_gaps": []
+        },
+        {
+          "seed": 0,
+          "step": 247,
+          "ego_xy": [
+            91.48310852050781,
+            -103.2426528930664
+          ],
+          "ego_heading_rad": -2.014824376395481,
+          "yaw_change_this_step_rad": -5.5926382893645155e-06,
+          "speed_mps": 8.333322920939247,
+          "lane_type": "StraightLane",
+          "lane_index": "('1C0_0_', '1C0_1_', 0)",
+          "road_nodes": [
+            "1C0_0_",
+            "1C0_1_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": false,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              24.99677085876465,
+              3.4261293411254883
+            ],
+            [
+              43.283145904541016,
+              3.439647674560547
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.999359130859375,
+              -0.07386970520019531
+            ],
+            [
+              43.28573226928711,
+              -0.060352325439453125
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0
+          ],
+          "lane_gaps": []
+        },
+        {
+          "seed": 0,
+          "step": 248,
+          "ego_xy": [
+            91.12512969970703,
+            -103.99517822265625
+          ],
+          "ego_heading_rad": -2.014828637453225,
+          "yaw_change_this_step_rad": -4.261057743981667e-06,
+          "speed_mps": 8.333324360914094,
+          "lane_type": "StraightLane",
+          "lane_index": "('1C0_0_', '1C0_1_', 0)",
+          "road_nodes": [
+            "1C0_0_",
+            "1C0_1_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": false,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              24.996784210205078,
+              3.4266433715820312
+            ],
+            [
+              42.449851989746094,
+              3.4394702911376953
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.999357223510742,
+              -0.07335567474365234
+            ],
+            [
+              42.452423095703125,
+              -0.060527801513671875
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0
+          ],
+          "lane_gaps": []
+        },
+        {
+          "seed": 0,
+          "step": 249,
+          "ego_xy": [
+            90.76712036132812,
+            -104.7477035522461
+          ],
+          "ego_heading_rad": -2.0148334311431872,
+          "yaw_change_this_step_rad": -4.793689962312442e-06,
+          "speed_mps": 8.333326942428304,
+          "lane_type": "StraightLane",
+          "lane_index": "('1C0_0_', '1C0_1_', 0)",
+          "road_nodes": [
+            "1C0_0_",
+            "1C0_1_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": false,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              24.996803283691406,
+              3.427117347717285
+            ],
+            [
+              41.616546630859375,
+              3.439253807067871
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.999359130859375,
+              -0.07288169860839844
+            ],
+            [
+              41.619102478027344,
+              -0.0607452392578125
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0
+          ],
+          "lane_gaps": []
+        },
+        {
+          "seed": 0,
+          "step": 250,
+          "ego_xy": [
+            90.40911102294922,
+            -105.50022888183594
+          ],
+          "ego_heading_rad": -2.014838757465368,
+          "yaw_change_this_step_rad": -5.326322180643218e-06,
+          "speed_mps": 8.33332705545729,
+          "lane_type": "StraightLane",
+          "lane_index": "('1C0_0_', '1C0_1_', 0)",
+          "road_nodes": [
+            "1C0_0_",
+            "1C0_1_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": false,
+          "in_curve_block": true,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              24.9968204498291,
+              3.4275741577148438
+            ],
+            [
+              40.783241271972656,
+              3.4390134811401367
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              24.999357223510742,
+              -0.07242488861083984
+            ],
+            [
+              40.78577423095703,
+              -0.060985565185546875
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0
+          ],
+          "lane_gaps": []
+        }
+      ]
+    },
+    {
+      "map": "X",
+      "reference_policy": "MetaDrive IDMPolicy (ego)",
+      "episodes": [
+        {
+          "seed": 0,
+          "n_samples": 139,
+          "end_info": {
+            "terminated": true,
+            "truncated": false,
+            "arrive_dest": true,
+            "out_of_road": false,
+            "crash": false
+          },
+          "max_speed_mps": 8.333325061877618,
+          "distance_travelled_approx_m": 101.57909868064108,
+          "n_geometry_errors": 0
+        },
+        {
+          "seed": 1,
+          "n_samples": 151,
+          "end_info": {
+            "terminated": true,
+            "truncated": false,
+            "arrive_dest": true,
+            "out_of_road": false,
+            "crash": false
+          },
+          "max_speed_mps": 8.3333213080681,
+          "distance_travelled_approx_m": 111.8810596358134,
+          "n_geometry_errors": 0
+        },
+        {
+          "seed": 2,
+          "n_samples": 138,
+          "end_info": {
+            "terminated": true,
+            "truncated": false,
+            "arrive_dest": true,
+            "out_of_road": false,
+            "crash": false
+          },
+          "max_speed_mps": 8.33332128441762,
+          "distance_travelled_approx_m": 101.46866905371843,
+          "n_geometry_errors": 0
+        }
+      ],
+      "summary": {
+        "n_samples": 428,
+        "n_usable": 283,
+        "n_not_usable": 145,
+        "n_in_curve_lane": 68,
+        "n_in_curve_block": 0,
+        "n_in_intersection_block": 219,
+        "n_non_initial_road": 370,
+        "n_turn_motion_samples": 84,
+        "n_usable_turning_samples": 46,
+        "n_usable_intersection_samples": 74,
+        "n_lane_chain_broken": 0,
+        "n_lane_horizon_incomplete": 145,
+        "n_road_horizon_incomplete": 145,
+        "road_lane_wp1_lateral_difference_m": {
+          "n": 283,
+          "min": 0.0,
+          "median": 1.635732650756836,
+          "p90": 3.500000019800427,
+          "max": 3.500000030222509
+        },
+        "steer_road_lane_abs_difference": {
+          "n": 283,
+          "min": 0.0,
+          "median": 0.0027335844536239134,
+          "p90": 0.0320498981211388,
+          "max": 0.06972523036490538
+        },
+        "steer_lane_carla": {
+          "n": 283,
+          "min": -0.007016803758074163,
+          "median": 0.0002837230560649033,
+          "p90": 0.03998592586847388,
+          "max": 0.06842393794507608
+        },
+        "steer_lane_md_sign_only": {
+          "n": 283,
+          "min": -0.06842393794507608,
+          "median": -0.0002837230560649033,
+          "p90": 0.0005085507056976625,
+          "max": 0.007016803758074163
+        },
+        "steer_lane_during_turns_carla": {
+          "n": 46,
+          "min": -0.0002570688068129106,
+          "median": 0.03737361555079509,
+          "p90": 0.040749790041783286,
+          "max": 0.06842393794507608
+        },
+        "steer_lane_during_intersection_carla": {
+          "n": 74,
+          "min": -0.0002570688068129106,
+          "median": 0.03651808560259649,
+          "p90": 0.04007081776363547,
+          "max": 0.06842393794507608
+        }
+      },
+      "errors": [],
+      "warnings": [
+        "Insufficient remaining route length for at least one waypoint"
+      ],
+      "examples": [
+        {
+          "seed": 0,
+          "step": 70,
+          "ego_xy": [
+            50.2326774597168,
+            7.0
+          ],
+          "ego_heading_rad": -5.326322183307752e-07,
+          "yaw_change_this_step_rad": 0.0,
+          "speed_mps": 8.333318710327148,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": false,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              13.216462135314941,
+              15.833402633666992
+            ],
+            [
+              13.266968727111816,
+              35.529117584228516
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.703271865844727,
+              15.530951499938965
+            ],
+            [
+              16.76687240600586,
+              35.529117584228516
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.03651808560259649,
+          "steer_lane_carla": 0.03651808560259649,
+          "steer_lane_md_sign_only": -0.03651808560259649,
+          "longitudinal_road": 0.1650544326040457,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.30245113372802734,
+          "steer_prediction_delta_abs": 0.0
+        },
+        {
+          "seed": 0,
+          "step": 71,
+          "ego_xy": [
+            51.0628662109375,
+            6.988697052001953
+          ],
+          "ego_heading_rad": -0.006312490731814613,
+          "yaw_change_this_step_rad": -0.006311958099596282,
+          "speed_mps": 8.213941244046215,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": false,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.530919075012207,
+              16.401023864746094
+            ],
+            [
+              12.665933609008789,
+              36.26814651489258
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.02741813659668,
+              16.247081756591797
+            ],
+            [
+              16.165756225585938,
+              36.246192932128906
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06842393794507608,
+          "steer_lane_carla": 0.03651808560259649,
+          "steer_lane_md_sign_only": -0.03651808560259649,
+          "longitudinal_road": 0.17748961487576762,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.15394210815429688,
+          "steer_prediction_delta_abs": 0.031905852342479585
+        },
+        {
+          "seed": 0,
+          "step": 72,
+          "ego_xy": [
+            51.880775451660156,
+            6.930963039398193
+          ],
+          "ego_heading_rad": -0.037218741498293184,
+          "yaw_change_this_step_rad": -0.03090625076647857,
+          "speed_mps": 8.146725340364275,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.247325897216797,
+              16.663818359375
+            ],
+            [
+              12.991501808166504,
+              36.64814758300781
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              15.744772911071777,
+              16.534008026123047
+            ],
+            [
+              16.488948822021484,
+              36.51833724975586
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06663020130102684,
+          "steer_lane_carla": 0.06504134912122764,
+          "steer_lane_md_sign_only": -0.06504134912122764,
+          "longitudinal_road": 0.20980694490057625,
+          "longitudinal_lane": 0.17774653059362536,
+          "road_lane_lateral_gap_m": 0.12981033325195312,
+          "steer_prediction_delta_abs": 0.001588852179799205
+        },
+        {
+          "seed": 0,
+          "step": 73,
+          "ego_xy": [
+            52.68717575073242,
+            6.815290927886963
+          ],
+          "ego_heading_rad": -0.0895678332557086,
+          "yaw_change_this_step_rad": -0.05234909175741542,
+          "speed_mps": 8.155900820722449,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.361710548400879,
+              16.766460418701172
+            ],
+            [
+              14.15060806274414,
+              36.683631896972656
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              15.847552299499512,
+              16.453950881958008
+            ],
+            [
+              17.636449813842773,
+              36.37112045288086
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06504134912122764,
+          "steer_lane_carla": 0.06842393794507608,
+          "steer_lane_md_sign_only": -0.06842393794507608,
+          "longitudinal_road": 0.18629104531409876,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.31250953674316406,
+          "steer_prediction_delta_abs": 0.0033825888238484397
+        },
+        {
+          "seed": 0,
+          "step": 74,
+          "ego_xy": [
+            53.487491607666016,
+            6.650462627410889
+          ],
+          "ego_heading_rad": -0.14863701254977535,
+          "yaw_change_this_step_rad": -0.05906917929406674,
+          "speed_mps": 8.218394679116894,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.635040283203125,
+              16.77053451538086
+            ],
+            [
+              15.596763610839844,
+              36.54882049560547
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.096351623535156,
+              16.252573013305664
+            ],
+            [
+              19.058074951171875,
+              36.03085708618164
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06504134912122764,
+          "steer_lane_carla": 0.03651808560259649,
+          "steer_lane_md_sign_only": -0.03651808560259649,
+          "longitudinal_road": 0.17774653059362536,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.5179615020751953,
+          "steer_prediction_delta_abs": 0.028523263518631145
+        },
+        {
+          "seed": 0,
+          "step": 75,
+          "ego_xy": [
+            54.28718948364258,
+            6.457098960876465
+          ],
+          "ego_heading_rad": -0.19780322733038158,
+          "yaw_change_this_step_rad": -0.04916621478060624,
+          "speed_mps": 8.261274118389997,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.783588409423828,
+              16.903404235839844
+            ],
+            [
+              16.713825225830078,
+              36.5130729675293
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.21527099609375,
+              16.215778350830078
+            ],
+            [
+              20.1455078125,
+              35.825443267822266
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06504134912122764,
+          "steer_lane_carla": 0.03651808560259649,
+          "steer_lane_md_sign_only": -0.03651808560259649,
+          "longitudinal_road": 0.17774653059362536,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.6876258850097656,
+          "steer_prediction_delta_abs": 0.028523263518631145
+        },
+        {
+          "seed": 0,
+          "step": 76,
+          "ego_xy": [
+            55.08234405517578,
+            6.233369827270508
+          ],
+          "ego_heading_rad": -0.24104324289529,
+          "yaw_change_this_step_rad": -0.04324001556490841,
+          "speed_mps": 8.269545699730537,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.873825073242188,
+              17.10932731628418
+            ],
+            [
+              17.648040771484375,
+              36.5306510925293
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.272565841674805,
+              16.274045944213867
+            ],
+            [
+              21.046781539916992,
+              35.69537353515625
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06504134912122764,
+          "steer_lane_carla": 0.036355291101389804,
+          "steer_lane_md_sign_only": -0.036355291101389804,
+          "longitudinal_road": 0.17774653059362536,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.8352813720703125,
+          "steer_prediction_delta_abs": 0.028686058019837833
+        },
+        {
+          "seed": 0,
+          "step": 77,
+          "ego_xy": [
+            55.86504364013672,
+            5.96765661239624
+          ],
+          "ego_heading_rad": -0.28837560494926784,
+          "yaw_change_this_step_rad": -0.04733236205397783,
+          "speed_mps": 8.266146138375241,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              13.077853202819824,
+              17.24075698852539
+            ],
+            [
+              18.765605926513672,
+              36.4140510559082
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.433238983154297,
+              16.2457332611084
+            ],
+            [
+              22.120990753173828,
+              35.419029235839844
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06842393794507608,
+          "steer_lane_carla": 0.036648546785455885,
+          "steer_lane_md_sign_only": -0.036648546785455885,
+          "longitudinal_road": 0.18947120155681538,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.9950237274169922,
+          "steer_prediction_delta_abs": 0.03177539115962019
+        },
+        {
+          "seed": 0,
+          "step": 0,
+          "ego_xy": [
+            5.0,
+            7.0
+          ],
+          "ego_heading_rad": 0.0,
+          "yaw_change_this_step_rad": 0.0,
+          "speed_mps": 0.0,
+          "lane_type": "StraightLane",
+          "lane_index": "('>', '>>', 0)",
+          "road_nodes": [
+            ">",
+            ">>"
+          ],
+          "entered_non_initial_road": false,
+          "in_curve_lane": false,
+          "in_curve_block": false,
+          "in_intersection_block": false,
+          "turn_motion": false,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              25.0,
+              3.4999988079071045
+            ],
+            [
+              45.0,
+              3.499998092651367
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              25.0,
+              -1.0927847142738756e-06
+            ],
+            [
+              45.0,
+              -1.967012394743506e-06
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": -0.0704781864132496,
+          "steer_lane_carla": -0.0017986949200959556,
+          "steer_lane_md_sign_only": 0.0017986949200959556,
+          "longitudinal_road": 0.14966166894366412,
+          "longitudinal_lane": 0.1998465182761997,
+          "road_lane_lateral_gap_m": 3.4999999006918188,
+          "steer_prediction_delta_abs": 0.06867949149315364
+        },
+        {
+          "seed": 2,
+          "step": 137,
+          "ego_xy": [
+            66.91600036621094,
+            -39.807865142822266
+          ],
+          "ego_heading_rad": -1.5708301489407406,
+          "yaw_change_this_step_rad": -9.241168982576653e-05,
+          "speed_mps": 8.333318757154448,
+          "lane_type": "StraightLane",
+          "lane_index": "('1X0_0_', '1X0_1_', 0)",
+          "road_nodes": [
+            "1X0_0_",
+            "1X0_1_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": false,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": false,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              5.192104816436768,
+              3.415825128555298
+            ],
+            [
+              5.192104816436768,
+              3.415825128555298
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              5.191986560821533,
+              -0.08417495340108871
+            ],
+            [
+              5.191986560821533,
+              -0.08417495340108871
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0
+          ],
+          "lane_gaps": []
+        }
+      ],
+      "turn_examples": [
+        {
+          "seed": 0,
+          "step": 70,
+          "ego_xy": [
+            50.2326774597168,
+            7.0
+          ],
+          "ego_heading_rad": -5.326322183307752e-07,
+          "yaw_change_this_step_rad": 0.0,
+          "speed_mps": 8.333318710327148,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": false,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              13.216462135314941,
+              15.833402633666992
+            ],
+            [
+              13.266968727111816,
+              35.529117584228516
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.703271865844727,
+              15.530951499938965
+            ],
+            [
+              16.76687240600586,
+              35.529117584228516
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.03651808560259649,
+          "steer_lane_carla": 0.03651808560259649,
+          "steer_lane_md_sign_only": -0.03651808560259649,
+          "longitudinal_road": 0.1650544326040457,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.30245113372802734,
+          "steer_prediction_delta_abs": 0.0
+        },
+        {
+          "seed": 0,
+          "step": 71,
+          "ego_xy": [
+            51.0628662109375,
+            6.988697052001953
+          ],
+          "ego_heading_rad": -0.006312490731814613,
+          "yaw_change_this_step_rad": -0.006311958099596282,
+          "speed_mps": 8.213941244046215,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": false,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.530919075012207,
+              16.401023864746094
+            ],
+            [
+              12.665933609008789,
+              36.26814651489258
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.02741813659668,
+              16.247081756591797
+            ],
+            [
+              16.165756225585938,
+              36.246192932128906
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06842393794507608,
+          "steer_lane_carla": 0.03651808560259649,
+          "steer_lane_md_sign_only": -0.03651808560259649,
+          "longitudinal_road": 0.17748961487576762,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.15394210815429688,
+          "steer_prediction_delta_abs": 0.031905852342479585
+        },
+        {
+          "seed": 0,
+          "step": 72,
+          "ego_xy": [
+            51.880775451660156,
+            6.930963039398193
+          ],
+          "ego_heading_rad": -0.037218741498293184,
+          "yaw_change_this_step_rad": -0.03090625076647857,
+          "speed_mps": 8.146725340364275,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.247325897216797,
+              16.663818359375
+            ],
+            [
+              12.991501808166504,
+              36.64814758300781
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              15.744772911071777,
+              16.534008026123047
+            ],
+            [
+              16.488948822021484,
+              36.51833724975586
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06663020130102684,
+          "steer_lane_carla": 0.06504134912122764,
+          "steer_lane_md_sign_only": -0.06504134912122764,
+          "longitudinal_road": 0.20980694490057625,
+          "longitudinal_lane": 0.17774653059362536,
+          "road_lane_lateral_gap_m": 0.12981033325195312,
+          "steer_prediction_delta_abs": 0.001588852179799205
+        },
+        {
+          "seed": 0,
+          "step": 73,
+          "ego_xy": [
+            52.68717575073242,
+            6.815290927886963
+          ],
+          "ego_heading_rad": -0.0895678332557086,
+          "yaw_change_this_step_rad": -0.05234909175741542,
+          "speed_mps": 8.155900820722449,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.361710548400879,
+              16.766460418701172
+            ],
+            [
+              14.15060806274414,
+              36.683631896972656
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              15.847552299499512,
+              16.453950881958008
+            ],
+            [
+              17.636449813842773,
+              36.37112045288086
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06504134912122764,
+          "steer_lane_carla": 0.06842393794507608,
+          "steer_lane_md_sign_only": -0.06842393794507608,
+          "longitudinal_road": 0.18629104531409876,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.31250953674316406,
+          "steer_prediction_delta_abs": 0.0033825888238484397
+        },
+        {
+          "seed": 0,
+          "step": 74,
+          "ego_xy": [
+            53.487491607666016,
+            6.650462627410889
+          ],
+          "ego_heading_rad": -0.14863701254977535,
+          "yaw_change_this_step_rad": -0.05906917929406674,
+          "speed_mps": 8.218394679116894,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.635040283203125,
+              16.77053451538086
+            ],
+            [
+              15.596763610839844,
+              36.54882049560547
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.096351623535156,
+              16.252573013305664
+            ],
+            [
+              19.058074951171875,
+              36.03085708618164
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06504134912122764,
+          "steer_lane_carla": 0.03651808560259649,
+          "steer_lane_md_sign_only": -0.03651808560259649,
+          "longitudinal_road": 0.17774653059362536,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.5179615020751953,
+          "steer_prediction_delta_abs": 0.028523263518631145
+        },
+        {
+          "seed": 0,
+          "step": 75,
+          "ego_xy": [
+            54.28718948364258,
+            6.457098960876465
+          ],
+          "ego_heading_rad": -0.19780322733038158,
+          "yaw_change_this_step_rad": -0.04916621478060624,
+          "speed_mps": 8.261274118389997,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.783588409423828,
+              16.903404235839844
+            ],
+            [
+              16.713825225830078,
+              36.5130729675293
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.21527099609375,
+              16.215778350830078
+            ],
+            [
+              20.1455078125,
+              35.825443267822266
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06504134912122764,
+          "steer_lane_carla": 0.03651808560259649,
+          "steer_lane_md_sign_only": -0.03651808560259649,
+          "longitudinal_road": 0.17774653059362536,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.6876258850097656,
+          "steer_prediction_delta_abs": 0.028523263518631145
+        },
+        {
+          "seed": 0,
+          "step": 76,
+          "ego_xy": [
+            55.08234405517578,
+            6.233369827270508
+          ],
+          "ego_heading_rad": -0.24104324289529,
+          "yaw_change_this_step_rad": -0.04324001556490841,
+          "speed_mps": 8.269545699730537,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.873825073242188,
+              17.10932731628418
+            ],
+            [
+              17.648040771484375,
+              36.5306510925293
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.272565841674805,
+              16.274045944213867
+            ],
+            [
+              21.046781539916992,
+              35.69537353515625
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06504134912122764,
+          "steer_lane_carla": 0.036355291101389804,
+          "steer_lane_md_sign_only": -0.036355291101389804,
+          "longitudinal_road": 0.17774653059362536,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.8352813720703125,
+          "steer_prediction_delta_abs": 0.028686058019837833
+        },
+        {
+          "seed": 0,
+          "step": 77,
+          "ego_xy": [
+            55.86504364013672,
+            5.96765661239624
+          ],
+          "ego_heading_rad": -0.28837560494926784,
+          "yaw_change_this_step_rad": -0.04733236205397783,
+          "speed_mps": 8.266146138375241,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              13.077853202819824,
+              17.24075698852539
+            ],
+            [
+              18.765605926513672,
+              36.4140510559082
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.433238983154297,
+              16.2457332611084
+            ],
+            [
+              22.120990753173828,
+              35.419029235839844
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06842393794507608,
+          "steer_lane_carla": 0.036648546785455885,
+          "steer_lane_md_sign_only": -0.036648546785455885,
+          "longitudinal_road": 0.18947120155681538,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.9950237274169922,
+          "steer_prediction_delta_abs": 0.03177539115962019
+        },
+        {
+          "seed": 2,
+          "step": 111,
+          "ego_xy": [
+            66.71066284179688,
+            -18.153900146484375
+          ],
+          "ego_heading_rad": -1.557021925004788,
+          "yaw_change_this_step_rad": 0.010388192464072077,
+          "speed_mps": 8.29435437974016,
+          "lane_type": "StraightLane",
+          "lane_index": "('1X0_0_', '1X0_1_', 0)",
+          "road_nodes": [
+            "1X0_0_",
+            "1X0_1_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": false,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              24.952770233154297,
+              3.5541646480560303
+            ],
+            [
+              26.798648834228516,
+              3.5795538425445557
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              25.0009765625,
+              0.05451095104217529
+            ],
+            [
+              26.84685516357422,
+              0.07989996671676636
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0
+          ],
+          "lane_gaps": []
+        }
+      ],
+      "intersection_examples": [
+        {
+          "seed": 0,
+          "step": 70,
+          "ego_xy": [
+            50.2326774597168,
+            7.0
+          ],
+          "ego_heading_rad": -5.326322183307752e-07,
+          "yaw_change_this_step_rad": 0.0,
+          "speed_mps": 8.333318710327148,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": false,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              13.216462135314941,
+              15.833402633666992
+            ],
+            [
+              13.266968727111816,
+              35.529117584228516
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.703271865844727,
+              15.530951499938965
+            ],
+            [
+              16.76687240600586,
+              35.529117584228516
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.03651808560259649,
+          "steer_lane_carla": 0.03651808560259649,
+          "steer_lane_md_sign_only": -0.03651808560259649,
+          "longitudinal_road": 0.1650544326040457,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.30245113372802734,
+          "steer_prediction_delta_abs": 0.0
+        },
+        {
+          "seed": 0,
+          "step": 71,
+          "ego_xy": [
+            51.0628662109375,
+            6.988697052001953
+          ],
+          "ego_heading_rad": -0.006312490731814613,
+          "yaw_change_this_step_rad": -0.006311958099596282,
+          "speed_mps": 8.213941244046215,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": false,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.530919075012207,
+              16.401023864746094
+            ],
+            [
+              12.665933609008789,
+              36.26814651489258
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.02741813659668,
+              16.247081756591797
+            ],
+            [
+              16.165756225585938,
+              36.246192932128906
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06842393794507608,
+          "steer_lane_carla": 0.03651808560259649,
+          "steer_lane_md_sign_only": -0.03651808560259649,
+          "longitudinal_road": 0.17748961487576762,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.15394210815429688,
+          "steer_prediction_delta_abs": 0.031905852342479585
+        },
+        {
+          "seed": 0,
+          "step": 72,
+          "ego_xy": [
+            51.880775451660156,
+            6.930963039398193
+          ],
+          "ego_heading_rad": -0.037218741498293184,
+          "yaw_change_this_step_rad": -0.03090625076647857,
+          "speed_mps": 8.146725340364275,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.247325897216797,
+              16.663818359375
+            ],
+            [
+              12.991501808166504,
+              36.64814758300781
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              15.744772911071777,
+              16.534008026123047
+            ],
+            [
+              16.488948822021484,
+              36.51833724975586
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06663020130102684,
+          "steer_lane_carla": 0.06504134912122764,
+          "steer_lane_md_sign_only": -0.06504134912122764,
+          "longitudinal_road": 0.20980694490057625,
+          "longitudinal_lane": 0.17774653059362536,
+          "road_lane_lateral_gap_m": 0.12981033325195312,
+          "steer_prediction_delta_abs": 0.001588852179799205
+        },
+        {
+          "seed": 0,
+          "step": 73,
+          "ego_xy": [
+            52.68717575073242,
+            6.815290927886963
+          ],
+          "ego_heading_rad": -0.0895678332557086,
+          "yaw_change_this_step_rad": -0.05234909175741542,
+          "speed_mps": 8.155900820722449,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.361710548400879,
+              16.766460418701172
+            ],
+            [
+              14.15060806274414,
+              36.683631896972656
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              15.847552299499512,
+              16.453950881958008
+            ],
+            [
+              17.636449813842773,
+              36.37112045288086
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06504134912122764,
+          "steer_lane_carla": 0.06842393794507608,
+          "steer_lane_md_sign_only": -0.06842393794507608,
+          "longitudinal_road": 0.18629104531409876,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.31250953674316406,
+          "steer_prediction_delta_abs": 0.0033825888238484397
+        },
+        {
+          "seed": 0,
+          "step": 74,
+          "ego_xy": [
+            53.487491607666016,
+            6.650462627410889
+          ],
+          "ego_heading_rad": -0.14863701254977535,
+          "yaw_change_this_step_rad": -0.05906917929406674,
+          "speed_mps": 8.218394679116894,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.635040283203125,
+              16.77053451538086
+            ],
+            [
+              15.596763610839844,
+              36.54882049560547
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.096351623535156,
+              16.252573013305664
+            ],
+            [
+              19.058074951171875,
+              36.03085708618164
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06504134912122764,
+          "steer_lane_carla": 0.03651808560259649,
+          "steer_lane_md_sign_only": -0.03651808560259649,
+          "longitudinal_road": 0.17774653059362536,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.5179615020751953,
+          "steer_prediction_delta_abs": 0.028523263518631145
+        },
+        {
+          "seed": 0,
+          "step": 75,
+          "ego_xy": [
+            54.28718948364258,
+            6.457098960876465
+          ],
+          "ego_heading_rad": -0.19780322733038158,
+          "yaw_change_this_step_rad": -0.04916621478060624,
+          "speed_mps": 8.261274118389997,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.783588409423828,
+              16.903404235839844
+            ],
+            [
+              16.713825225830078,
+              36.5130729675293
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.21527099609375,
+              16.215778350830078
+            ],
+            [
+              20.1455078125,
+              35.825443267822266
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06504134912122764,
+          "steer_lane_carla": 0.03651808560259649,
+          "steer_lane_md_sign_only": -0.03651808560259649,
+          "longitudinal_road": 0.17774653059362536,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.6876258850097656,
+          "steer_prediction_delta_abs": 0.028523263518631145
+        },
+        {
+          "seed": 0,
+          "step": 76,
+          "ego_xy": [
+            55.08234405517578,
+            6.233369827270508
+          ],
+          "ego_heading_rad": -0.24104324289529,
+          "yaw_change_this_step_rad": -0.04324001556490841,
+          "speed_mps": 8.269545699730537,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              12.873825073242188,
+              17.10932731628418
+            ],
+            [
+              17.648040771484375,
+              36.5306510925293
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.272565841674805,
+              16.274045944213867
+            ],
+            [
+              21.046781539916992,
+              35.69537353515625
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06504134912122764,
+          "steer_lane_carla": 0.036355291101389804,
+          "steer_lane_md_sign_only": -0.036355291101389804,
+          "longitudinal_road": 0.17774653059362536,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.8352813720703125,
+          "steer_prediction_delta_abs": 0.028686058019837833
+        },
+        {
+          "seed": 0,
+          "step": 77,
+          "ego_xy": [
+            55.86504364013672,
+            5.96765661239624
+          ],
+          "ego_heading_rad": -0.28837560494926784,
+          "yaw_change_this_step_rad": -0.04733236205397783,
+          "speed_mps": 8.266146138375241,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": true,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              13.077853202819824,
+              17.24075698852539
+            ],
+            [
+              18.765605926513672,
+              36.4140510559082
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              16.433238983154297,
+              16.2457332611084
+            ],
+            [
+              22.120990753173828,
+              35.419029235839844
+            ]
+          ],
+          "road_complete": true,
+          "road_continuous": true,
+          "lane_complete": true,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": [],
+          "steer_road_carla": 0.06842393794507608,
+          "steer_lane_carla": 0.036648546785455885,
+          "steer_lane_md_sign_only": -0.036648546785455885,
+          "longitudinal_road": 0.18947120155681538,
+          "longitudinal_lane": 0.18947120155681538,
+          "road_lane_lateral_gap_m": 0.9950237274169922,
+          "steer_prediction_delta_abs": 0.03177539115962019
+        },
+        {
+          "seed": 2,
+          "step": 137,
+          "ego_xy": [
+            66.91600036621094,
+            -39.807865142822266
+          ],
+          "ego_heading_rad": -1.5708301489407406,
+          "yaw_change_this_step_rad": -9.241168982576653e-05,
+          "speed_mps": 8.333318757154448,
+          "lane_type": "StraightLane",
+          "lane_index": "('1X0_0_', '1X0_1_', 0)",
+          "road_nodes": [
+            "1X0_0_",
+            "1X0_1_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": false,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": false,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              5.192104816436768,
+              3.415825128555298
+            ],
+            [
+              5.192104816436768,
+              3.415825128555298
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              5.191986560821533,
+              -0.08417495340108871
+            ],
+            [
+              5.191986560821533,
+              -0.08417495340108871
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0
+          ],
+          "lane_gaps": []
+        }
+      ],
+      "invalid_examples": [
+        {
+          "seed": 0,
+          "step": 90,
+          "ego_xy": [
+            64.15120697021484,
+            -0.6536229848861694
+          ],
+          "ego_heading_rad": -0.9277105678324489,
+          "yaw_change_this_step_rad": -0.048872201796262615,
+          "speed_mps": 8.304626657393312,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              19.15383529663086,
+              15.167830467224121
+            ],
+            [
+              35.09661102294922,
+              27.115541458129883
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              21.25261116027832,
+              12.367297172546387
+            ],
+            [
+              37.19538497924805,
+              24.31500816345215
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": []
+        },
+        {
+          "seed": 0,
+          "step": 91,
+          "ego_xy": [
+            64.58841705322266,
+            -1.359581708908081
+          ],
+          "ego_heading_rad": -0.9766759802668634,
+          "yaw_change_this_step_rad": -0.048965412434414546,
+          "speed_mps": 8.30460923420628,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              19.733386993408203,
+              14.64535903930664
+            ],
+            [
+              35.55192565917969,
+              25.332416534423828
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              21.69256019592285,
+              11.74544906616211
+            ],
+            [
+              37.51110076904297,
+              22.432506561279297
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": []
+        },
+        {
+          "seed": 0,
+          "step": 92,
+          "ego_xy": [
+            64.99053955078125,
+            -2.0861079692840576
+          ],
+          "ego_heading_rad": -1.0256597685128002,
+          "yaw_change_this_step_rad": -0.048983788245936744,
+          "speed_mps": 8.304789705410125,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              20.30907440185547,
+              14.060537338256836
+            ],
+            [
+              35.91984558105469,
+              23.528453826904297
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              22.12389373779297,
+              11.068166732788086
+            ],
+            [
+              37.73466491699219,
+              20.536083221435547
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": []
+        },
+        {
+          "seed": 0,
+          "step": 93,
+          "ego_xy": [
+            65.35668182373047,
+            -2.831432342529297
+          ],
+          "ego_heading_rad": -1.0746022777618407,
+          "yaw_change_this_step_rad": -0.04894250924904053,
+          "speed_mps": 8.304884711025613,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              20.875333786010742,
+              13.413880348205566
+            ],
+            [
+              36.19807815551758,
+              21.7101993560791
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              22.54157257080078,
+              10.336295127868652
+            ],
+            [
+              37.864315032958984,
+              18.632614135742188
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": []
+        },
+        {
+          "seed": 0,
+          "step": 94,
+          "ego_xy": [
+            65.68594360351562,
+            -3.5937740802764893
+          ],
+          "ego_heading_rad": -1.1235330691020842,
+          "yaw_change_this_step_rad": -0.048930791340243474,
+          "speed_mps": 8.304829972203734,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              21.427806854248047,
+              12.704349517822266
+            ],
+            [
+              36.38677215576172,
+              19.880964279174805
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              22.941511154174805,
+              9.548941612243652
+            ],
+            [
+              37.90047836303711,
+              16.725557327270508
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": []
+        },
+        {
+          "seed": 0,
+          "step": 95,
+          "ego_xy": [
+            65.97747802734375,
+            -4.371321201324463
+          ],
+          "ego_heading_rad": -1.1724920899498823,
+          "yaw_change_this_step_rad": -0.04895902084779813,
+          "speed_mps": 8.304771861441282,
+          "lane_type": "CircularLane",
+          "lane_index": "('>>>', '1X0_0_', 0)",
+          "road_nodes": [
+            ">>>",
+            "1X0_0_"
+          ],
+          "entered_non_initial_road": true,
+          "in_curve_lane": true,
+          "in_curve_block": false,
+          "in_intersection_block": true,
+          "turn_motion": true,
+          "usable": false,
+          "geometry_error": null,
+          "road_waypoints": [
+            [
+              21.962158203125,
+              11.93086051940918
+            ],
+            [
+              36.486289978027344,
+              18.0435791015625
+            ]
+          ],
+          "lane_waypoints": [
+            [
+              23.31961441040039,
+              8.705142974853516
+            ],
+            [
+              37.843746185302734,
+              14.817861557006836
+            ]
+          ],
+          "road_complete": false,
+          "road_continuous": true,
+          "lane_complete": false,
+          "lane_continuous": true,
+          "lane_indices_along_route": [
+            0,
+            0
+          ],
+          "lane_gaps": []
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "IDMPolicy drives ego, not the learned model; all model predictions are shadow-only.",
+    "Physical action gains CARLA-to-MetaDrive remain UNCALIBRATED.",
+    "Nearest-continuous lane is not guaranteed to be correct for planned turns or lane changes.",
+    "A curved block map label does NOT prove the ego reached that curve; inspect coverage counts."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "status": "CANDIDATE_TIMING_DIAGNOSTICS_ONLY",
+  "pdd_root": "D:\\Học\\Tri tue nhan to nang cao\\lab\\dataset\\PDD",
+  "counts": {
+    "brake_over_005_at_frame": 185,
+    "control_records": 39239,
+    "front_distance_sentinel_minus_one": 1392,
+    "intervals_with_speeds": 7812,
+    "matching_step5": 7812,
+    "non_step5": 0,
+    "scenarios": 63,
+    "speed_limit_raw_120": 688,
+    "speed_limit_raw_30": 6358,
+    "speed_limit_raw_40": 85,
+    "speed_limit_raw_50": 592,
+    "speed_limit_raw_80": 127,
+    "speed_limit_raw_90": 25,
+    "telemetry_records": 7875
+  },
+  "speed_vs_velocity": {
+    "n": 7875,
+    "median_abs_error_mps": 0.000139,
+    "pct_abs_error_over_05_mps": 0.0
+  },
+  "position_vs_speed_4fps": {
+    "n": 6689,
+    "median_travel_to_expected_ratio": 1.00023,
+    "interpretation": "Near 1 suggests m/s speed and ~0.25s spacing; not a timestamp certificate."
+  },
+  "control_windows": {
+    "-5": {
+      "control_window": "[telemetry_step-5, telemetry_step-1]",
+      "steer_yaw_n": 6203,
+      "corr_steer_vs_next_yaw": 0.8881,
+      "accel_speed_n": 7749,
+      "corr_a2_vs_next_speed_change": 0.7539
+    },
+    "0": {
+      "control_window": "[telemetry_step+0, telemetry_step+4]",
+      "steer_yaw_n": 6203,
+      "corr_steer_vs_next_yaw": 0.9021,
+      "accel_speed_n": 7812,
+      "corr_a2_vs_next_speed_change": 0.7649
+    },
+    "5": {
+      "control_window": "[telemetry_step+5, telemetry_step+9]",
+      "steer_yaw_n": 6156,
+      "corr_steer_vs_next_yaw": 0.8453,
+      "accel_speed_n": 7763,
+      "corr_a2_vs_next_speed_change": 0.5194
+    }
+  },
+  "warnings": [
+    "Correlation does not establish exact timestamp alignment or true control latency.",
+    "The PDD dataset card labels speed_limit as m/s, but raw values should be checked against original collector before unit conversion.",
+    "Do not use these diagnostics as training labels. Do not put expert_control_* into model inputs."
+  ]
+}

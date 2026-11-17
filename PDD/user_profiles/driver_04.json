@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 48,
+    "gender": "Female",
+    "occupation": "Small business owner"
+  },
+  "driving_experience": "8 years",
+  "driving_frequency_per_week": "15 to 20 h",
+  "driving_purposes": [
+    "Night-shift commute under schedule pressure",
+    "Professional driving and deliveries"
+  ],
+  "driving_habits_preferences": [
+    "Checks traffic updates to keep the fastest moving route",
+    "Changes lanes proactively to avoid slow traffic",
+    "Maintains confident highway speed and decisive acceleration"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "Mild back pain (managed)",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Aggressive",
+  "international_driving_experience": "Driven in Mexico on vacations"
+}

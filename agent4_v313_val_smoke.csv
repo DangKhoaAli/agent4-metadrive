@@ -1,0 +1,3 @@
+﻿map,seed,speed_mps,status,confirmed_success,n_applied_steps,mean_speed_mps,max_abs_planned_lateral_m,min_edge_clearance_proxy_m,near_edge_warning_steps,road_marked_steps,quality_pass,missing_lookahead_5_10_steps,model_predictions_valid,teacher_fallback_calls
+C,186,3.0,arrive_dest,True,374,2.8499127457941356,0.521645341009539,0.2490082611322859,55,0,False,17,True,0
+X,186,3.0,arrive_dest,True,358,2.8356422052799646,0.37302398681640625,0.805941231970642,0,0,True,17,True,0

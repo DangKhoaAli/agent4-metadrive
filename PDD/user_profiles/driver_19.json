@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 42,
+    "gender": "Male",
+    "occupation": "Software engineer"
+  },
+  "driving_experience": "18 years",
+  "driving_frequency_per_week": "15 to 20 h",
+  "driving_purposes": [
+    "Office commute",
+    "Weekend family trips and shopping"
+  ],
+  "driving_habits_preferences": [
+    "Prefers cruise control on highways for steady progress",
+    "Maintains a moderate-to-large following gap",
+    "Values smooth, consistent travel more than aggressive passing"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "None",
+    "accidents_last_5_years": "One minor rear-end collision"
+  },
+  "driving_style": "Balanced",
+  "international_driving_experience": "2 years in Germany"
+}

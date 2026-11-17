@@ -1,0 +1,904 @@
+{
+  "version": "AGENT4_V313_IDM_IMITATION_STEERING",
+  "config": {
+    "maps": [
+      "C",
+      "X"
+    ],
+    "seeds": [
+      186
+    ],
+    "speeds_mps": [
+      3.0
+    ],
+    "steps": 2500,
+    "model_sha256": "48b3402a127148ea2567523a213f5f896b78c320268c8e19f09f1bf24b931a1f",
+    "trace_stride": 20,
+    "throttle_type": "rule_based_P_governor",
+    "traffic_density": 0.0
+  },
+  "episodes": [
+    {
+      "map": "C",
+      "seed": 186,
+      "speed_mps": 3.0,
+      "profile": "learned_v313",
+      "status": "arrive_dest",
+      "confirmed_success": true,
+      "quality_pass": false,
+      "n_applied_steps": 374,
+      "n_verified_prediction_steps": 374,
+      "model_predictions_valid": true,
+      "teacher_fallback_calls": 0,
+      "idm_policy_used": false,
+      "learned_steering": true,
+      "learned_longitudinal": false,
+      "elapsed_s": 37.4,
+      "mean_speed_mps": 2.8499127457941356,
+      "max_speed_mps": 2.9999710203899475,
+      "max_abs_planned_lateral_m": 0.521645341009539,
+      "max_abs_heading_error_rad": 0.05308108966462444,
+      "min_edge_clearance_proxy_m": 0.2490082611322859,
+      "near_edge_warning_steps": 55,
+      "road_marked_steps": 0,
+      "has_circular_lane": true,
+      "missing_lookahead_5_10_steps": 17,
+      "route_completion": 0.9587358669457412,
+      "termination_flags": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "crash_vehicle": false,
+        "crash_object": false,
+        "on_yellow_continuous_line": false
+      },
+      "errors": [],
+      "trace": [
+        {
+          "step": 0,
+          "speed_mps": 0.0,
+          "lateral_m": 0.0,
+          "heading_error_rad": 0.0,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": -3.807574773252713e-12,
+          "applied_steer": -3.807574773252713e-12,
+          "applied_longitudinal": 0.4,
+          "edge_clearance_proxy_m": 0.824,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 20,
+          "speed_mps": 2.010164976120055,
+          "lateral_m": 0.0,
+          "heading_error_rad": -5.326322183307752e-07,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 2.0323506672331243e-06,
+          "applied_steer": 2.0323506672331243e-06,
+          "applied_longitudinal": 0.22766205549238736,
+          "edge_clearance_proxy_m": 0.8239987975828984,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 40,
+          "speed_mps": 2.733301555826657,
+          "lateral_m": 0.025423049926757812,
+          "heading_error_rad": -0.010972223691126715,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.011656336200375083,
+          "applied_steer": 0.011656336200375083,
+          "applied_longitudinal": 0.06134064215986886,
+          "edge_clearance_proxy_m": 0.8247094918142364,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 60,
+          "speed_mps": 2.9282077957809833,
+          "lateral_m": 0.04311084747314453,
+          "heading_error_rad": -0.0030582410377926195,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.0013477847652471695,
+          "applied_steer": 0.0013477847652471695,
+          "applied_longitudinal": 0.016512206970373835,
+          "edge_clearance_proxy_m": 0.8602112094530218,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 80,
+          "speed_mps": 2.9806866015778257,
+          "lateral_m": 0.059085845947265625,
+          "heading_error_rad": -0.002754108041305159,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.0007774990229060625,
+          "applied_steer": 0.0007774990229060625,
+          "applied_longitudinal": 0.004442081637100084,
+          "edge_clearance_proxy_m": 0.8768719668081807,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 100,
+          "speed_mps": 2.994803166301628,
+          "lateral_m": 0.07378864288330078,
+          "heading_error_rad": -0.002260357975204741,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.0004635168190014778,
+          "applied_steer": 0.0004635168190014778,
+          "applied_longitudinal": 0.0011952717506255306,
+          "edge_clearance_proxy_m": 0.8926882546664674,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 120,
+          "speed_mps": 2.9986051129126277,
+          "lateral_m": 0.08462285995483398,
+          "heading_error_rad": -0.0017301226021704255,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.00020168639490948152,
+          "applied_steer": 0.00020168639490948152,
+          "applied_longitudinal": 0.00032082403009563886,
+          "edge_clearance_proxy_m": 0.9047184960377317,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 140,
+          "speed_mps": 2.999616282481362,
+          "lateral_m": 0.09336137771606445,
+          "heading_error_rad": -0.0010161291139194617,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.0017661015256715013,
+          "applied_steer": 0.0017661015256715013,
+          "applied_longitudinal": 8.8255029286759e-05,
+          "edge_clearance_proxy_m": 0.9150679446921092,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 160,
+          "speed_mps": 2.999895313784211,
+          "lateral_m": 0.08769559860229492,
+          "heading_error_rad": 0.002115215695795314,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.0034463345400065244,
+          "applied_steer": 0.0034463345400065244,
+          "applied_longitudinal": 2.4077829631461434e-05,
+          "edge_clearance_proxy_m": 0.9069225742546403,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 180,
+          "speed_mps": 2.9798725471242045,
+          "lateral_m": -0.09956899790939744,
+          "heading_error_rad": -0.002405756204516968,
+          "curvature_proxy": 0.04481572051446241,
+          "is_circular_lane": true,
+          "predicted_steer": 0.16079766937246207,
+          "applied_steer": 0.16079766937246207,
+          "applied_longitudinal": 0.004629314161432974,
+          "edge_clearance_proxy_m": 0.7190026923843358,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 200,
+          "speed_mps": 2.992700163816741,
+          "lateral_m": -0.3497292744610121,
+          "heading_error_rad": -0.03073902820551605,
+          "curvature_proxy": 0.04481572051446339,
+          "is_circular_lane": true,
+          "predicted_steer": 0.13960320884193025,
+          "applied_steer": 0.13960320884193025,
+          "applied_longitudinal": 0.0016789623221495243,
+          "edge_clearance_proxy_m": 0.405325745635586,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 220,
+          "speed_mps": 2.9941747622945334,
+          "lateral_m": -0.41983342606070906,
+          "heading_error_rad": -0.050800562555660345,
+          "curvature_proxy": 0.04409238233349651,
+          "is_circular_lane": true,
+          "predicted_steer": 0.15909159022742214,
+          "applied_steer": 0.15909159022742214,
+          "applied_longitudinal": 0.001339804672257321,
+          "edge_clearance_proxy_m": 0.2907282301471432,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 240,
+          "speed_mps": 2.995136865403197,
+          "lateral_m": -0.45907404241492955,
+          "heading_error_rad": -0.05031324275458871,
+          "curvature_proxy": 0.022407860256669413,
+          "is_circular_lane": true,
+          "predicted_steer": 0.15506645578894776,
+          "applied_steer": 0.15506645578894776,
+          "applied_longitudinal": 0.0011185209572646617,
+          "edge_clearance_proxy_m": 0.25256352807733884,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 260,
+          "speed_mps": 2.993221410578823,
+          "lateral_m": -0.4366660823636628,
+          "heading_error_rad": -0.024358203436239956,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": -0.009492694427307236,
+          "applied_steer": -0.009492694427307236,
+          "applied_longitudinal": 0.0015590755668706937,
+          "edge_clearance_proxy_m": 0.33262540541875707,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 280,
+          "speed_mps": 2.9979365511935065,
+          "lateral_m": -0.2909019100994774,
+          "heading_error_rad": -0.021062674745321752,
+          "curvature_proxy": 1.2351231148954868e-15,
+          "is_circular_lane": false,
+          "predicted_steer": 0.006088518412795421,
+          "applied_steer": 0.006088518412795421,
+          "applied_longitudinal": 0.0004745932254934937,
+          "edge_clearance_proxy_m": 0.4857580133258085,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 300,
+          "speed_mps": 2.9994405979179635,
+          "lateral_m": -0.20239843439969896,
+          "heading_error_rad": -0.012811868793119574,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.0044726581204061295,
+          "applied_steer": 0.0044726581204061295,
+          "applied_longitudinal": 0.0001286624788684021,
+          "edge_clearance_proxy_m": 0.5927555606678622,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 320,
+          "speed_mps": 2.9998505360668557,
+          "lateral_m": -0.15470349389406124,
+          "heading_error_rad": -0.006417086383631143,
+          "curvature_proxy": -2.4702462297909733e-15,
+          "is_circular_lane": false,
+          "predicted_steer": 0.0024150073630375634,
+          "applied_steer": 0.0024150073630375634,
+          "applied_longitudinal": 3.437670462318909e-05,
+          "edge_clearance_proxy_m": 0.6548290988289308,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 340,
+          "speed_mps": 2.999960528300904,
+          "lateral_m": -0.12792568831375917,
+          "heading_error_rad": -0.004019375875235043,
+          "curvature_proxy": -2.4424906541753444e-15,
+          "is_circular_lane": false,
+          "predicted_steer": 0.0007491439789026892,
+          "applied_steer": 0.0007491439789026892,
+          "applied_longitudinal": 9.078490792058248e-06,
+          "edge_clearance_proxy_m": 0.6870080750114974,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 360,
+          "speed_mps": 2.999970662556828,
+          "lateral_m": -0.10820316316127432,
+          "heading_error_rad": -0.003078813957216986,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.0004230078698461853,
+          "applied_steer": 0.0004230078698461853,
+          "applied_longitudinal": 6.7476119295895035e-06,
+          "edge_clearance_proxy_m": 0.7088508141286183,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 373,
+          "speed_mps": 2.9999710203899475,
+          "lateral_m": -0.0975313555411148,
+          "heading_error_rad": -0.00268526532713087,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.0002764286360808494,
+          "applied_steer": 0.0002764286360808494,
+          "applied_longitudinal": 6.66531031208617e-06,
+          "edge_clearance_proxy_m": 0.7204100037969152,
+          "flags": {
+            "arrive_dest": true,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        }
+      ]
+    },
+    {
+      "map": "X",
+      "seed": 186,
+      "speed_mps": 3.0,
+      "profile": "learned_v313",
+      "status": "arrive_dest",
+      "confirmed_success": true,
+      "quality_pass": true,
+      "n_applied_steps": 358,
+      "n_verified_prediction_steps": 358,
+      "model_predictions_valid": true,
+      "teacher_fallback_calls": 0,
+      "idm_policy_used": false,
+      "learned_steering": true,
+      "learned_longitudinal": false,
+      "elapsed_s": 35.800000000000004,
+      "mean_speed_mps": 2.8356422052799646,
+      "max_speed_mps": 2.9999369326567784,
+      "max_abs_planned_lateral_m": 0.37302398681640625,
+      "max_abs_heading_error_rad": 0.0747012872224897,
+      "min_edge_clearance_proxy_m": 0.805941231970642,
+      "near_edge_warning_steps": 0,
+      "road_marked_steps": 0,
+      "has_circular_lane": true,
+      "missing_lookahead_5_10_steps": 17,
+      "route_completion": 0.9567628898184641,
+      "termination_flags": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "crash_vehicle": false,
+        "crash_object": false,
+        "on_yellow_continuous_line": false
+      },
+      "errors": [],
+      "trace": [
+        {
+          "step": 0,
+          "speed_mps": 0.0,
+          "lateral_m": 0.0,
+          "heading_error_rad": 0.0,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": -3.807574773252713e-12,
+          "applied_steer": -3.807574773252713e-12,
+          "applied_longitudinal": 0.4,
+          "edge_clearance_proxy_m": 0.824,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 20,
+          "speed_mps": 2.010164976120055,
+          "lateral_m": 0.0,
+          "heading_error_rad": -5.326322183307752e-07,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 2.0323506672331243e-06,
+          "applied_steer": 2.0323506672331243e-06,
+          "applied_longitudinal": 0.22766205549238736,
+          "edge_clearance_proxy_m": 0.8239987975828984,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 40,
+          "speed_mps": 2.733301555826657,
+          "lateral_m": 0.025423049926757812,
+          "heading_error_rad": -0.010972223691126715,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.011656336200375088,
+          "applied_steer": 0.011656336200375088,
+          "applied_longitudinal": 0.06134064215986886,
+          "edge_clearance_proxy_m": 0.8247094918142364,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 60,
+          "speed_mps": 2.9282077957809833,
+          "lateral_m": 0.04311084747314453,
+          "heading_error_rad": -0.0030582410377926195,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.00134778476524717,
+          "applied_steer": 0.00134778476524717,
+          "applied_longitudinal": 0.016512206970373835,
+          "edge_clearance_proxy_m": 0.8602112094530218,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 80,
+          "speed_mps": 2.9806866015778257,
+          "lateral_m": 0.059085845947265625,
+          "heading_error_rad": -0.002754108041305159,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.0007774990229060622,
+          "applied_steer": 0.0007774990229060622,
+          "applied_longitudinal": 0.004442081637100084,
+          "edge_clearance_proxy_m": 0.8768719668081807,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 100,
+          "speed_mps": 2.994803166301628,
+          "lateral_m": 0.07378864288330078,
+          "heading_error_rad": -0.002260357975204741,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.00046351681900147756,
+          "applied_steer": 0.00046351681900147756,
+          "applied_longitudinal": 0.0011952717506255306,
+          "edge_clearance_proxy_m": 0.8926882546664674,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 120,
+          "speed_mps": 2.9986025691005747,
+          "lateral_m": 0.08351421356201172,
+          "heading_error_rad": -0.0013707290130637875,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.0008907424587177372,
+          "applied_steer": 0.0008907424587177372,
+          "applied_longitudinal": 0.0003214091068678293,
+          "edge_clearance_proxy_m": 0.9044206637136873,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 140,
+          "speed_mps": 2.999622185185297,
+          "lateral_m": 0.08823442459106445,
+          "heading_error_rad": -0.0006819023971145199,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": -0.00011736068043118025,
+          "applied_steer": -0.00011736068043118025,
+          "applied_longitudinal": 8.689740738171636e-05,
+          "edge_clearance_proxy_m": 0.9106952453396477,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 160,
+          "speed_mps": 2.999894958885494,
+          "lateral_m": 0.09651947021484375,
+          "heading_error_rad": -0.0016170714138956654,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": -0.0010346538673033886,
+          "applied_steer": -0.0010346538673033886,
+          "applied_longitudinal": 2.4159456336390052e-05,
+          "edge_clearance_proxy_m": 0.9168701437966283,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 180,
+          "speed_mps": 2.9855456789596513,
+          "lateral_m": 0.1336734796310992,
+          "heading_error_rad": 0.06445735368715186,
+          "curvature_proxy": -0.058823529411763706,
+          "is_circular_lane": true,
+          "predicted_steer": -0.19635887281348688,
+          "applied_steer": -0.19635887281348688,
+          "applied_longitudinal": 0.0033244938392802048,
+          "edge_clearance_proxy_m": 0.8141847276142118,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 200,
+          "speed_mps": 2.9889720861519486,
+          "lateral_m": 0.15308114971371722,
+          "heading_error_rad": 0.07465188410709644,
+          "curvature_proxy": -0.058823529411764906,
+          "is_circular_lane": true,
+          "predicted_steer": -0.21234476001925273,
+          "applied_steer": -0.21234476001925273,
+          "applied_longitudinal": 0.002536420185051811,
+          "edge_clearance_proxy_m": 0.8112900645690693,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 220,
+          "speed_mps": 2.990516573588884,
+          "lateral_m": 0.18117723640764893,
+          "heading_error_rad": 0.07217927096629784,
+          "curvature_proxy": -0.058823529411765774,
+          "is_circular_lane": true,
+          "predicted_steer": -0.21334880932966185,
+          "applied_steer": -0.21334880932966185,
+          "applied_longitudinal": 0.002181188074556704,
+          "edge_clearance_proxy_m": 0.8447850936843053,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 240,
+          "speed_mps": 2.9909637401417473,
+          "lateral_m": 0.22286858580969948,
+          "heading_error_rad": 0.07047755181547477,
+          "curvature_proxy": -0.05765256621003025,
+          "is_circular_lane": true,
+          "predicted_steer": -0.21275584280415938,
+          "applied_steer": -0.21275584280415938,
+          "applied_longitudinal": 0.0020783397673981296,
+          "edge_clearance_proxy_m": 0.8901960016987858,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 260,
+          "speed_mps": 2.9916409301102758,
+          "lateral_m": 0.26874460273258194,
+          "heading_error_rad": 0.003191303208826435,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": true,
+          "predicted_steer": -0.21070757510640495,
+          "applied_steer": -0.21070757510640495,
+          "applied_longitudinal": 0.0019225860746365743,
+          "edge_clearance_proxy_m": 1.085544963348047,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 280,
+          "speed_mps": 2.9420090613853183,
+          "lateral_m": 0.2928924560546875,
+          "heading_error_rad": 0.013442039286065466,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": 0.001975371935433909,
+          "applied_steer": 0.001975371935433909,
+          "applied_longitudinal": 0.013337915881376802,
+          "edge_clearance_proxy_m": 1.0866316236808455,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 300,
+          "speed_mps": 2.984405961249818,
+          "lateral_m": 0.21978759765625,
+          "heading_error_rad": 0.010754377113958213,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": -0.003275265193521346,
+          "applied_steer": -0.003275265193521346,
+          "applied_longitudinal": 0.003586628912541823,
+          "edge_clearance_proxy_m": 1.0195636078064159,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 320,
+          "speed_mps": 2.995817965336412,
+          "lateral_m": 0.17626190185546875,
+          "heading_error_rad": 0.006211024294282552,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": -0.001780787117039638,
+          "applied_steer": -0.001780787117039638,
+          "applied_longitudinal": 0.00096186797262527,
+          "edge_clearance_proxy_m": 0.9862584656725784,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 340,
+          "speed_mps": 2.998862210645732,
+          "lateral_m": 0.14844512939453125,
+          "heading_error_rad": 0.004249073519221547,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": -0.0006706269202956011,
+          "applied_steer": -0.0006706269202956011,
+          "applied_longitudinal": 0.00026169155148166647,
+          "edge_clearance_proxy_m": 0.9628612340681992,
+          "flags": {
+            "arrive_dest": false,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        },
+        {
+          "step": 357,
+          "speed_mps": 2.9996204955473353,
+          "lateral_m": 0.13045501708984375,
+          "heading_error_rad": 0.003303917648352695,
+          "curvature_proxy": 0.0,
+          "is_circular_lane": false,
+          "predicted_steer": -0.0005062597105509036,
+          "applied_steer": -0.0005062597105509036,
+          "applied_longitudinal": 8.728602411287145e-05,
+          "edge_clearance_proxy_m": 0.9470014906122483,
+          "flags": {
+            "arrive_dest": true,
+            "out_of_road": false,
+            "crash": false,
+            "crash_vehicle": false,
+            "crash_object": false,
+            "on_yellow_continuous_line": false
+          }
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "map": "C",
+      "speed_mps": 3.0,
+      "total": 1,
+      "arrive_dest": 1,
+      "quality_accepted": 0,
+      "max_lateral_m": 0.521645341009539,
+      "failures": []
+    },
+    {
+      "map": "X",
+      "speed_mps": 3.0,
+      "total": 1,
+      "arrive_dest": 1,
+      "quality_accepted": 1,
+      "max_lateral_m": 0.37302398681640625,
+      "failures": []
+    }
+  ],
+  "warnings": [
+    "True closed-loop MODEL steering only, no teacher/IDM call.",
+    "Throttle is hand-coded, not learned.",
+    "Uses privileged MetaDrive lane geometry, zero traffic, simulator only.",
+    "Metrics from test-seed evaluation are not a retraining signal."
+  ]
+}

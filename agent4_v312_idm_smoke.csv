@@ -1,0 +1,3 @@
+﻿map,seed,policy,idm_speed_kmh,status,confirmed_success,steps,elapsed_s,route_completion,max_speed_mps,mean_speed_mps,max_abs_planned_lateral_m,max_abs_heading_error_rad,min_estimated_edge_clearance_m,near_edge_warning_steps,policy_action_count,recorded_actions_aligned,policy_capture_errors,geometry_missing_steps,errors
+C,158,idm_reference,10.8,arrive_dest,True,480,48.0,0.9681652795447063,3.000549161984707,2.9623395780508956,0.25756928716533384,0.03738569762509037,0.520132672654747,0,480,True,0,0,
+X,158,idm_reference,10.8,arrive_dest,True,345,34.5,0.9579100576867524,3.0015734426468645,2.946787957722976,0.38397216796875,0.07105776531372443,0.7828141747567918,0,345,True,0,0,

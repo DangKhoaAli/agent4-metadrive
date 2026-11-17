@@ -1,0 +1,124 @@
+{
+  "status": "V2_OFFLINE_ONLY_NOT_METADRIVE_CALIBRATED",
+  "labels": [
+    "steer_at_t_carla",
+    "a2_at_t_metadrive_candidate"
+  ],
+  "features": [
+    "speed_mps",
+    "wp1_forward_m",
+    "wp1_right_m",
+    "wp2_forward_m",
+    "wp2_right_m",
+    "lane_width_m",
+    "front_vehicle_dist_m",
+    "front_vehicle_closing_speed_mps",
+    "left_vehicle_dist_m",
+    "right_vehicle_dist_m",
+    "front_pedestrian_dist_m",
+    "has_front_vehicle",
+    "has_left_vehicle",
+    "has_right_vehicle",
+    "has_front_pedestrian"
+  ],
+  "n_rows": {
+    "train": 6117,
+    "val": 886,
+    "test": 804
+  },
+  "results": {
+    "steering": {
+      "chosen": "hist_gradient_boost",
+      "validation": {
+        "constant_median": {
+          "mae": 0.032694297773305236,
+          "rmse": 0.07651260565200296,
+          "hard_samples": 137,
+          "hard_mae": 0.17351069763629107,
+          "selection_score": 1.0852779875618657
+        },
+        "ridge": {
+          "mae": 0.051286012318480324,
+          "rmse": 0.07633304440463802,
+          "hard_samples": 137,
+          "hard_mae": 0.10766718368264573,
+          "selection_score": 0.9876851632201331
+        },
+        "hist_gradient_boost": {
+          "mae": 0.04491409338281508,
+          "rmse": 0.07422806621791167,
+          "hard_samples": 137,
+          "hard_mae": 0.09902249237444345,
+          "selection_score": 0.8855319710856941
+        }
+      },
+      "test": {
+        "constant_median": {
+          "mae": 0.02367287251486707,
+          "rmse": 0.06238152383613034,
+          "hard_samples": 85,
+          "hard_mae": 0.1717642391429228,
+          "selection_score": 0.9862357759280505
+        },
+        "selected": {
+          "mae": 0.01864250006469037,
+          "rmse": 0.04106792031007492,
+          "hard_samples": 85,
+          "hard_mae": 0.09733143980106895,
+          "selection_score": 0.6118572970073701
+        }
+      },
+      "train_hard_samples": 652
+    },
+    "longitudinal": {
+      "chosen": "hist_gradient_boost",
+      "validation": {
+        "constant_median": {
+          "mae": 0.28000391133743585,
+          "rmse": 0.3781350775596102,
+          "hard_samples": 41,
+          "hard_mae": 1.0541130441866344,
+          "selection_score": 1.7865039129313853
+        },
+        "ridge": {
+          "mae": 0.3254118024884701,
+          "rmse": 0.4083652001926694,
+          "hard_samples": 41,
+          "hard_mae": 0.8275651241357628,
+          "selection_score": 1.6603246149696433
+        },
+        "hist_gradient_boost": {
+          "mae": 0.2774027459469868,
+          "rmse": 0.36630636190203336,
+          "hard_samples": 41,
+          "hard_mae": 0.6439644249231443,
+          "selection_score": 1.3510166670581032
+        }
+      },
+      "test": {
+        "constant_median": {
+          "mae": 0.18457691133776347,
+          "rmse": 0.2832589366412433,
+          "hard_samples": 23,
+          "hard_mae": 1.015862908071105,
+          "selection_score": 1.5135115347877914
+        },
+        "selected": {
+          "mae": 0.19614867896224544,
+          "rmse": 0.2819005864563228,
+          "hard_samples": 23,
+          "hard_mae": 0.7459371415875807,
+          "selection_score": 1.2593400978051879
+        }
+      },
+      "train_hard_samples": 113
+    }
+  },
+  "training": "Two independent regression heads with hard-sample weighting",
+  "limits": [
+    "No closed-loop driving tested",
+    "No calibrated CARLA->MetaDrive action",
+    "Object/waypoint representations are candidate semantic matches",
+    "Extra physical features may not generalize to different traffic density"
+  ]
+}

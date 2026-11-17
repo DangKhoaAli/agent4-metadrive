@@ -1,0 +1,1003 @@
+{
+  "status": "DIAGNOSTICS_ONLY_NOT_MODEL_COMPATIBILITY_PROOF",
+  "pdd": {
+    "scenarios_found": 63,
+    "candidates": 7875,
+    "missing": {},
+    "speed_mps_p10_p50_p90": [
+      0.181,
+      5.06345,
+      10.57132
+    ],
+    "steer_p10_p50_p90": [
+      -0.01831,
+      -3e-05,
+      0.02563
+    ],
+    "a2_candidate_p10_p50_p90": [
+      3e-05,
+      0.43891,
+      0.72737
+    ],
+    "target1_forward_p10_p50_p90": [
+      10.20382,
+      26.16433,
+      50.68989
+    ],
+    "target1_lateral_p10_p50_p90": [
+      -1.89394,
+      0.16681,
+      4.97281
+    ],
+    "sample_record_previews": [
+      {
+        "driver": "driver_01",
+        "scenario": "Accident",
+        "frame_id": 0,
+        "telemetry_step": 0,
+        "target_point": [
+          51.00126253261876,
+          -0.0001632661702881677
+        ],
+        "lane_info_preview": "{\"lane_id\": 2, \"lane_type\": \"Driving\", \"lane_width\": 3.25, \"is_junction\": false}",
+        "other_vehicles_preview": "[{\"id\": 7553, \"type\": \"vehicle.lincoln.mkz_2020\", \"speed_kmh\": 0.24077428877353668, \"transform\": {\"location\": {\"x\": 2916.713134765625, \"y\": 4249.2333984375, \"z\": 360.5396728515625}, \"rotation\": {\"roll\": -0.0413207933306694, \"pitch\": -0.35467803478240967, \"yaw\": -170.80848693847656}}, \"velocity\": {\"x\": -0.0014019411755725741, \"y\": 0.000397561932913959, \"z\": 0.2407698780298233}, \"bounding_box_extent\": {\"x\": 2.44619083404541, \"y\": 0.9183566570281982, \"z\": 0.7451388239860535}}, {\"id\": 7552, \"type\": \"vehicle.nissan.patrol_2021\", \"speed_kmh\": 0.5516078472137451, \"transform\": {\"location\": {\"x\": 2922. ...",
+        "boxes_path": "D:\\Học\\Tri tue nhan to nang cao\\lab\\dataset\\PDD\\driver_01\\data\\Accident\\boxes\\0.json.gz"
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "Accident",
+        "frame_id": 1,
+        "telemetry_step": 5,
+        "target_point": [
+          51.001021526744324,
+          -0.00012426856442182554
+        ],
+        "lane_info_preview": "{\"lane_id\": 2, \"lane_type\": \"Driving\", \"lane_width\": 3.25, \"is_junction\": false}",
+        "other_vehicles_preview": "[{\"id\": 7563, \"type\": \"vehicle.dodge.charger_2020\", \"speed_kmh\": 0.0, \"transform\": {\"location\": {\"x\": 2961.61767578125, \"y\": 4267.36376953125, \"z\": 361.134765625}, \"rotation\": {\"roll\": 6.67034072421302e-09, \"pitch\": 0.4804491400718689, \"yaw\": 9.191607475280762}}, \"velocity\": {\"x\": 0.0, \"y\": 0.0, \"z\": 0.0}, \"bounding_box_extent\": {\"x\": 2.5039126873016357, \"y\": 0.9408109784126282, \"z\": 0.7673624753952026}}, {\"id\": 7562, \"type\": \"vehicle.ford.mustang\", \"speed_kmh\": 0.0, \"transform\": {\"location\": {\"x\": 2962.137451171875, \"y\": 4264.1552734375, \"z\": 361.134765625}, \"rotation\": {\"roll\": 6.67034072421 ...",
+        "boxes_path": "D:\\Học\\Tri tue nhan to nang cao\\lab\\dataset\\PDD\\driver_01\\data\\Accident\\boxes\\1.json.gz"
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "Accident",
+        "frame_id": 2,
+        "telemetry_step": 10,
+        "target_point": [
+          51.00102152679778,
+          -9.994938225332817e-05
+        ],
+        "lane_info_preview": "{\"lane_id\": 2, \"lane_type\": \"Driving\", \"lane_width\": 3.25, \"is_junction\": false}",
+        "other_vehicles_preview": "[{\"id\": 7563, \"type\": \"vehicle.dodge.charger_2020\", \"speed_kmh\": 0.0, \"transform\": {\"location\": {\"x\": 2963.671142578125, \"y\": 4267.6962890625, \"z\": 361.0550842285156}, \"rotation\": {\"roll\": 6.67034072421302e-09, \"pitch\": 0.4804491400718689, \"yaw\": 9.191607475280762}}, \"velocity\": {\"x\": 0.0, \"y\": 0.0, \"z\": 0.0}, \"bounding_box_extent\": {\"x\": 2.5039126873016357, \"y\": 0.9408109784126282, \"z\": 0.7673624753952026}}, {\"id\": 7562, \"type\": \"vehicle.ford.mustang\", \"speed_kmh\": 0.0, \"transform\": {\"location\": {\"x\": 2964.191162109375, \"y\": 4264.48779296875, \"z\": 361.0550842285156}, \"rotation\": {\"roll\": 6.67 ...",
+        "boxes_path": "D:\\Học\\Tri tue nhan to nang cao\\lab\\dataset\\PDD\\driver_01\\data\\Accident\\boxes\\2.json.gz"
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "Accident",
+        "frame_id": 3,
+        "telemetry_step": 15,
+        "target_point": [
+          51.001021526839644,
+          -7.563020008127808e-05
+        ],
+        "lane_info_preview": "{\"lane_id\": 2, \"lane_type\": \"Driving\", \"lane_width\": 3.25, \"is_junction\": false}",
+        "other_vehicles_preview": "[{\"id\": 7563, \"type\": \"vehicle.dodge.charger_2020\", \"speed_kmh\": 0.0, \"transform\": {\"location\": {\"x\": 2965.7265625, \"y\": 4268.0283203125, \"z\": 361.03076171875}, \"rotation\": {\"roll\": 3.3351768014000527e-09, \"pitch\": 0.49297571182250977, \"yaw\": 9.191607475280762}}, \"velocity\": {\"x\": 0.0, \"y\": 0.0, \"z\": 0.0}, \"bounding_box_extent\": {\"x\": 2.5039126873016357, \"y\": 0.9408109784126282, \"z\": 0.7673624753952026}}, {\"id\": 7562, \"type\": \"vehicle.ford.mustang\", \"speed_kmh\": 0.0, \"transform\": {\"location\": {\"x\": 2966.24658203125, \"y\": 4264.81982421875, \"z\": 361.03076171875}, \"rotation\": {\"roll\": 3.335176801 ...",
+        "boxes_path": "D:\\Học\\Tri tue nhan to nang cao\\lab\\dataset\\PDD\\driver_01\\data\\Accident\\boxes\\3.json.gz"
+      }
+    ],
+    "scenario_summary": [
+      {
+        "driver": "driver_01",
+        "scenario": "Accident",
+        "images": 70,
+        "telemetry": 70,
+        "controls": 350,
+        "candidate_pairs": 70,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 345,
+        "telemetry_gaps": {
+          "5": 69
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "BlockedIntersection",
+        "images": 93,
+        "telemetry": 93,
+        "controls": 465,
+        "candidate_pairs": 93,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 460,
+        "telemetry_gaps": {
+          "5": 92
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "ConstructionObstacle",
+        "images": 192,
+        "telemetry": 192,
+        "controls": 958,
+        "candidate_pairs": 192,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 955,
+        "telemetry_gaps": {
+          "5": 191
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "ControlLoss",
+        "images": 75,
+        "telemetry": 75,
+        "controls": 373,
+        "candidate_pairs": 75,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 370,
+        "telemetry_gaps": {
+          "5": 74
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "CrossingBicycleFlow",
+        "images": 52,
+        "telemetry": 52,
+        "controls": 256,
+        "candidate_pairs": 52,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 255,
+        "telemetry_gaps": {
+          "5": 51
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "DynamicObjectCrossing",
+        "images": 85,
+        "telemetry": 85,
+        "controls": 424,
+        "candidate_pairs": 85,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 420,
+        "telemetry_gaps": {
+          "5": 84
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "EnterActorFlow",
+        "images": 79,
+        "telemetry": 79,
+        "controls": 395,
+        "candidate_pairs": 79,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 390,
+        "telemetry_gaps": {
+          "5": 78
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "HazardAtSideLane",
+        "images": 83,
+        "telemetry": 83,
+        "controls": 413,
+        "candidate_pairs": 83,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 410,
+        "telemetry_gaps": {
+          "5": 82
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "HighwayExit",
+        "images": 117,
+        "telemetry": 117,
+        "controls": 584,
+        "candidate_pairs": 117,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 580,
+        "telemetry_gaps": {
+          "5": 116
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "InterurbanActorFlow",
+        "images": 57,
+        "telemetry": 57,
+        "controls": 285,
+        "candidate_pairs": 57,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 280,
+        "telemetry_gaps": {
+          "5": 56
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "InvadingTurn",
+        "images": 68,
+        "telemetry": 68,
+        "controls": 337,
+        "candidate_pairs": 68,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 335,
+        "telemetry_gaps": {
+          "5": 67
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "MergerIntoSlowTraffic",
+        "images": 151,
+        "telemetry": 151,
+        "controls": 751,
+        "candidate_pairs": 151,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 750,
+        "telemetry_gaps": {
+          "5": 150
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "NonSignalizedJunctionLeftTurn",
+        "images": 62,
+        "telemetry": 62,
+        "controls": 309,
+        "candidate_pairs": 62,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 305,
+        "telemetry_gaps": {
+          "5": 61
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "NonSignalizedJunctionRightTurn",
+        "images": 73,
+        "telemetry": 73,
+        "controls": 363,
+        "candidate_pairs": 73,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 360,
+        "telemetry_gaps": {
+          "5": 72
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "ParkedObstacle",
+        "images": 42,
+        "telemetry": 42,
+        "controls": 208,
+        "candidate_pairs": 42,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 205,
+        "telemetry_gaps": {
+          "5": 41
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "ParkingCutIn",
+        "images": 81,
+        "telemetry": 81,
+        "controls": 405,
+        "candidate_pairs": 81,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 400,
+        "telemetry_gaps": {
+          "5": 80
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "SignalizedJunctionLeftTurn",
+        "images": 70,
+        "telemetry": 70,
+        "controls": 347,
+        "candidate_pairs": 70,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 345,
+        "telemetry_gaps": {
+          "5": 69
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "SignalizedJunctionRightTurn",
+        "images": 73,
+        "telemetry": 73,
+        "controls": 362,
+        "candidate_pairs": 73,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 360,
+        "telemetry_gaps": {
+          "5": 72
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "StaticCutIn",
+        "images": 62,
+        "telemetry": 62,
+        "controls": 306,
+        "candidate_pairs": 62,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 305,
+        "telemetry_gaps": {
+          "5": 61
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "VanillaNonSignalizedTurn",
+        "images": 37,
+        "telemetry": 37,
+        "controls": 182,
+        "candidate_pairs": 37,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 180,
+        "telemetry_gaps": {
+          "5": 36
+        }
+      },
+      {
+        "driver": "driver_01",
+        "scenario": "VehicleOpensDoorTwoWays",
+        "images": 62,
+        "telemetry": 62,
+        "controls": 306,
+        "candidate_pairs": 62,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 305,
+        "telemetry_gaps": {
+          "5": 61
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "Accident",
+        "images": 210,
+        "telemetry": 210,
+        "controls": 1048,
+        "candidate_pairs": 210,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 1045,
+        "telemetry_gaps": {
+          "5": 209
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "BlockedIntersection",
+        "images": 281,
+        "telemetry": 281,
+        "controls": 1403,
+        "candidate_pairs": 281,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 1400,
+        "telemetry_gaps": {
+          "5": 280
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "ConstructionObstacle",
+        "images": 210,
+        "telemetry": 210,
+        "controls": 1046,
+        "candidate_pairs": 210,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 1045,
+        "telemetry_gaps": {
+          "5": 209
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "ControlLoss",
+        "images": 107,
+        "telemetry": 107,
+        "controls": 535,
+        "candidate_pairs": 107,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 530,
+        "telemetry_gaps": {
+          "5": 106
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "CrossingBicycleFlow",
+        "images": 132,
+        "telemetry": 132,
+        "controls": 659,
+        "candidate_pairs": 132,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 655,
+        "telemetry_gaps": {
+          "5": 131
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "DynamicObjectCrossing",
+        "images": 123,
+        "telemetry": 123,
+        "controls": 615,
+        "candidate_pairs": 123,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 610,
+        "telemetry_gaps": {
+          "5": 122
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "EnterActorFlow",
+        "images": 151,
+        "telemetry": 151,
+        "controls": 753,
+        "candidate_pairs": 151,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 750,
+        "telemetry_gaps": {
+          "5": 150
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "HazardAtSideLane",
+        "images": 295,
+        "telemetry": 295,
+        "controls": 1475,
+        "candidate_pairs": 295,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 1470,
+        "telemetry_gaps": {
+          "5": 294
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "HighwayExit",
+        "images": 158,
+        "telemetry": 158,
+        "controls": 788,
+        "candidate_pairs": 158,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 785,
+        "telemetry_gaps": {
+          "5": 157
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "InterurbanActorFlow",
+        "images": 115,
+        "telemetry": 115,
+        "controls": 572,
+        "candidate_pairs": 115,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 570,
+        "telemetry_gaps": {
+          "5": 114
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "InvadingTurn",
+        "images": 149,
+        "telemetry": 149,
+        "controls": 741,
+        "candidate_pairs": 149,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 740,
+        "telemetry_gaps": {
+          "5": 148
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "MergerIntoSlowTraffic",
+        "images": 172,
+        "telemetry": 172,
+        "controls": 856,
+        "candidate_pairs": 172,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 855,
+        "telemetry_gaps": {
+          "5": 171
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "NonSignalizedJunctionLeftTurn",
+        "images": 124,
+        "telemetry": 124,
+        "controls": 618,
+        "candidate_pairs": 124,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 615,
+        "telemetry_gaps": {
+          "5": 123
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "NonSignalizedJunctionRightTurn",
+        "images": 131,
+        "telemetry": 131,
+        "controls": 655,
+        "candidate_pairs": 131,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 650,
+        "telemetry_gaps": {
+          "5": 130
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "ParkedObstacle",
+        "images": 133,
+        "telemetry": 133,
+        "controls": 661,
+        "candidate_pairs": 133,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 660,
+        "telemetry_gaps": {
+          "5": 132
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "ParkingCutIn",
+        "images": 107,
+        "telemetry": 107,
+        "controls": 534,
+        "candidate_pairs": 107,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 530,
+        "telemetry_gaps": {
+          "5": 106
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "SignalizedJunctionLeftTurn",
+        "images": 166,
+        "telemetry": 166,
+        "controls": 826,
+        "candidate_pairs": 166,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 825,
+        "telemetry_gaps": {
+          "5": 165
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "SignalizedJunctionRightTurn",
+        "images": 141,
+        "telemetry": 141,
+        "controls": 701,
+        "candidate_pairs": 141,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 700,
+        "telemetry_gaps": {
+          "5": 140
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "StaticCutIn",
+        "images": 109,
+        "telemetry": 109,
+        "controls": 543,
+        "candidate_pairs": 109,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 540,
+        "telemetry_gaps": {
+          "5": 108
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "VanillaNonSignalizedTurn",
+        "images": 69,
+        "telemetry": 69,
+        "controls": 345,
+        "candidate_pairs": 69,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 340,
+        "telemetry_gaps": {
+          "5": 68
+        }
+      },
+      {
+        "driver": "driver_02",
+        "scenario": "VehicleOpensDoorTwoWays",
+        "images": 124,
+        "telemetry": 124,
+        "controls": 616,
+        "candidate_pairs": 124,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 615,
+        "telemetry_gaps": {
+          "5": 123
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "Accident",
+        "images": 156,
+        "telemetry": 156,
+        "controls": 777,
+        "candidate_pairs": 156,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 775,
+        "telemetry_gaps": {
+          "5": 155
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "BlockedIntersection",
+        "images": 136,
+        "telemetry": 136,
+        "controls": 676,
+        "candidate_pairs": 136,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 675,
+        "telemetry_gaps": {
+          "5": 135
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "ConstructionObstacle",
+        "images": 197,
+        "telemetry": 197,
+        "controls": 983,
+        "candidate_pairs": 197,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 980,
+        "telemetry_gaps": {
+          "5": 196
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "ControlLoss",
+        "images": 123,
+        "telemetry": 123,
+        "controls": 615,
+        "candidate_pairs": 123,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 610,
+        "telemetry_gaps": {
+          "5": 122
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "CrossingBicycleFlow",
+        "images": 98,
+        "telemetry": 98,
+        "controls": 488,
+        "candidate_pairs": 98,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 485,
+        "telemetry_gaps": {
+          "5": 97
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "DynamicObjectCrossing",
+        "images": 147,
+        "telemetry": 147,
+        "controls": 731,
+        "candidate_pairs": 147,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 730,
+        "telemetry_gaps": {
+          "5": 146
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "EnterActorFlow",
+        "images": 150,
+        "telemetry": 150,
+        "controls": 746,
+        "candidate_pairs": 150,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 745,
+        "telemetry_gaps": {
+          "5": 149
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "HazardAtSideLane",
+        "images": 171,
+        "telemetry": 171,
+        "controls": 855,
+        "candidate_pairs": 171,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 850,
+        "telemetry_gaps": {
+          "5": 170
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "HighwayExit",
+        "images": 212,
+        "telemetry": 212,
+        "controls": 1058,
+        "candidate_pairs": 212,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 1055,
+        "telemetry_gaps": {
+          "5": 211
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "InterurbanActorFlow",
+        "images": 125,
+        "telemetry": 125,
+        "controls": 625,
+        "candidate_pairs": 125,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 620,
+        "telemetry_gaps": {
+          "5": 124
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "InvadingTurn",
+        "images": 124,
+        "telemetry": 124,
+        "controls": 617,
+        "candidate_pairs": 124,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 615,
+        "telemetry_gaps": {
+          "5": 123
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "MergerIntoSlowTraffic",
+        "images": 276,
+        "telemetry": 276,
+        "controls": 1377,
+        "candidate_pairs": 276,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 1375,
+        "telemetry_gaps": {
+          "5": 275
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "NonSignalizedJunctionLeftTurn",
+        "images": 136,
+        "telemetry": 136,
+        "controls": 676,
+        "candidate_pairs": 136,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 675,
+        "telemetry_gaps": {
+          "5": 135
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "NonSignalizedJunctionRightTurn",
+        "images": 117,
+        "telemetry": 117,
+        "controls": 584,
+        "candidate_pairs": 117,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 580,
+        "telemetry_gaps": {
+          "5": 116
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "ParkedObstacle",
+        "images": 93,
+        "telemetry": 93,
+        "controls": 462,
+        "candidate_pairs": 93,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 460,
+        "telemetry_gaps": {
+          "5": 92
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "ParkingCutIn",
+        "images": 145,
+        "telemetry": 145,
+        "controls": 722,
+        "candidate_pairs": 145,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 720,
+        "telemetry_gaps": {
+          "5": 144
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "SignalizedJunctionLeftTurn",
+        "images": 127,
+        "telemetry": 127,
+        "controls": 631,
+        "candidate_pairs": 127,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 630,
+        "telemetry_gaps": {
+          "5": 126
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "SignalizedJunctionRightTurn",
+        "images": 126,
+        "telemetry": 126,
+        "controls": 627,
+        "candidate_pairs": 126,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 625,
+        "telemetry_gaps": {
+          "5": 125
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "StaticCutIn",
+        "images": 116,
+        "telemetry": 116,
+        "controls": 580,
+        "candidate_pairs": 116,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 575,
+        "telemetry_gaps": {
+          "5": 115
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "VanillaNonSignalizedTurn",
+        "images": 84,
+        "telemetry": 84,
+        "controls": 417,
+        "candidate_pairs": 84,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 415,
+        "telemetry_gaps": {
+          "5": 83
+        }
+      },
+      {
+        "driver": "driver_03",
+        "scenario": "VehicleOpensDoorTwoWays",
+        "images": 125,
+        "telemetry": 125,
+        "controls": 623,
+        "candidate_pairs": 125,
+        "first_telemetry_step": 0,
+        "last_telemetry_step": 620,
+        "telemetry_gaps": {
+          "5": 124
+        }
+      }
+    ],
+    "image": {
+      "created": true,
+      "source": "D:\\Học\\Tri tue nhan to nang cao\\lab\\dataset\\PDD\\driver_01\\data\\Accident\\images\\0.jpg",
+      "saved_path": "D:\\Học\\Tri tue nhan to nang cao\\lab\\dataset\\bridge_output\\pdd_sample.png"
+    },
+    "critical_note": "Frame-index/order mapping is candidate-only. Do NOT train until original collection timing is validated."
+  },
+  "metadrive": {
+    "success": true,
+    "initial": {
+      "rgb_shape": [
+        100,
+        200,
+        3,
+        1
+      ],
+      "rgb_min_max": [
+        0.0,
+        0.7921568751335144
+      ],
+      "state_length": 19,
+      "state_19_normalized_values": [
+        0.0972222238779068,
+        0.4861111044883728,
+        0.5,
+        0.012345679104328156,
+        0.5,
+        0.5,
+        0.5,
+        0.0,
+        0.5,
+        0.550000011920929,
+        0.4650000035762787,
+        0.0,
+        0.5,
+        0.5,
+        0.949999988079071,
+        0.4650000333786011,
+        0.0,
+        0.5,
+        0.5
+      ],
+      "speed_kmh": 0.0,
+      "speed_mps": 0.0,
+      "heading_theta_radians": 0.0,
+      "position_xy": [
+        5.0,
+        7.0
+      ],
+      "lane_local_longitudinal_lateral": [
+        5.0,
+        0.0
+      ],
+      "navigation_info_normalized": [
+        0.550000011920929,
+        0.4650000035762787,
+        0.0,
+        0.5,
+        0.5,
+        0.949999988079071,
+        0.4650000333786011,
+        0.0,
+        0.5,
+        0.5
+      ],
+      "image_created": true
+    },
+    "after_acceleration": {
+      "speed_kmh": 8.947884464268034,
+      "speed_mps": 2.485523462296676,
+      "route_completion": 0.01475192465002315,
+      "arrive_dest": false,
+      "crash": false
+    },
+    "steering_tests": [
+      {
+        "steer_command": 0.35,
+        "yaw_change_radians": 0.1986748799551643,
+        "final_speed_mps": 6.031789032656424
+      },
+      {
+        "steer_command": -0.35,
+        "yaw_change_radians": -0.6260658959099157,
+        "final_speed_mps": 6.611069486922894
+      }
+    ],
+    "action_space": "Box(-1.0, 1.0, (2,), float32)",
+    "notes": "Steering direction measured in MetaDrive. CARLA label sign and force calibration remain independent."
+  },
+  "gates_to_train": [
+    "Validate image/telemetry/control timestamps or original data collector",
+    "Verify speed units, waypoint coordinate frame/handedness, camera pose",
+    "Build same named physical features from PDD and MetaDrive (not native 259/19 vector)",
+    "Calibrate steer sign and gas/brake response in MetaDrive",
+    "Train a small behavioral cloning baseline and evaluate closed-loop, unseen seeds"
+  ]
+}

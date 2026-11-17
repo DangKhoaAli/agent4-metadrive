@@ -1,0 +1,1396 @@
+{
+  "status": "V33_SLOW_IDM_TEACHER_DATA_NOT_LEARNED_AGENT",
+  "maps": [
+    "S",
+    "C",
+    "X"
+  ],
+  "splits": {
+    "train": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "val": [
+      24,
+      25,
+      26,
+      27
+    ],
+    "eval": [
+      28,
+      29,
+      30,
+      31
+    ]
+  },
+  "model_path": "pdd_v2_models\\at_t\\model_v2.joblib",
+  "speed_target_mps": 3.0,
+  "perturbation": 0.012,
+  "data_fields": [
+    "map",
+    "seed",
+    "step",
+    "lane_class",
+    "is_circular_lane",
+    "perturb_md",
+    "teacher_steer_md",
+    "teacher_native_steer_md",
+    "applied_steer_md",
+    "original_idm_longitudinal",
+    "governed_longitudinal",
+    "speed_mps",
+    "wp1_forward_m",
+    "wp1_right_m",
+    "wp2_forward_m",
+    "wp2_right_m",
+    "lane_width_m",
+    "front_vehicle_dist_m",
+    "front_vehicle_closing_speed_mps",
+    "left_vehicle_dist_m",
+    "right_vehicle_dist_m",
+    "front_pedestrian_dist_m",
+    "has_front_vehicle",
+    "has_left_vehicle",
+    "has_right_vehicle",
+    "has_front_pedestrian",
+    "base_pdd_steer_md",
+    "planned_lateral_right_m",
+    "heading_error_rad",
+    "adaptive_lookahead"
+  ],
+  "only_successful_episodes_kept": true,
+  "simulator_policy": "SlowRecordedIDMPolicy: IDM steering + independent governor longitudinal",
+  "episodes": [
+    {
+      "map": "S",
+      "seed": 4,
+      "status": "arrive_dest",
+      "n_steps": 426,
+      "n_aligned_feature_rows": 426,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 59,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9593334324597169
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 426,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 5,
+      "status": "arrive_dest",
+      "n_steps": 382,
+      "n_aligned_feature_rows": 382,
+      "n_native_steer_clipped": 4,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9545832845440416
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 382,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 6,
+      "status": "arrive_dest",
+      "n_steps": 419,
+      "n_aligned_feature_rows": 419,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 56,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9588914267188732
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 419,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 7,
+      "status": "arrive_dest",
+      "n_steps": 451,
+      "n_aligned_feature_rows": 451,
+      "n_native_steer_clipped": 0,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9616867827922407
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 451,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 8,
+      "status": "arrive_dest",
+      "n_steps": 374,
+      "n_aligned_feature_rows": 374,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 53,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.953131678161147
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 374,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 9,
+      "status": "arrive_dest",
+      "n_steps": 390,
+      "n_aligned_feature_rows": 390,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9552022248576951
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 390,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 10,
+      "status": "arrive_dest",
+      "n_steps": 321,
+      "n_aligned_feature_rows": 321,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9451454737489234
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 321,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 11,
+      "status": "arrive_dest",
+      "n_steps": 447,
+      "n_aligned_feature_rows": 447,
+      "n_native_steer_clipped": 4,
+      "n_perturb_steps": 49,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9613938158861954
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 447,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 12,
+      "status": "arrive_dest",
+      "n_steps": 420,
+      "n_aligned_feature_rows": 420,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 51,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9589137731337929
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 420,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 13,
+      "status": "arrive_dest",
+      "n_steps": 364,
+      "n_aligned_feature_rows": 364,
+      "n_native_steer_clipped": 0,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9518723567366996
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 364,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 14,
+      "status": "arrive_dest",
+      "n_steps": 330,
+      "n_aligned_feature_rows": 330,
+      "n_native_steer_clipped": 4,
+      "n_perturb_steps": 47,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9466868163581784
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 330,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 15,
+      "status": "arrive_dest",
+      "n_steps": 342,
+      "n_aligned_feature_rows": 342,
+      "n_native_steer_clipped": 0,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9487914761705554
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 342,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 16,
+      "status": "arrive_dest",
+      "n_steps": 371,
+      "n_aligned_feature_rows": 371,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9529352705288062
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 371,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 17,
+      "status": "arrive_dest",
+      "n_steps": 432,
+      "n_aligned_feature_rows": 432,
+      "n_native_steer_clipped": 4,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9599650985769889
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 432,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 18,
+      "status": "arrive_dest",
+      "n_steps": 419,
+      "n_aligned_feature_rows": 419,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9587831698485079
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 419,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 19,
+      "status": "arrive_dest",
+      "n_steps": 434,
+      "n_aligned_feature_rows": 434,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9603053117343054
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 434,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 20,
+      "status": "arrive_dest",
+      "n_steps": 397,
+      "n_aligned_feature_rows": 397,
+      "n_native_steer_clipped": 0,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9563922218570114
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 397,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 21,
+      "status": "arrive_dest",
+      "n_steps": 347,
+      "n_aligned_feature_rows": 347,
+      "n_native_steer_clipped": 0,
+      "n_perturb_steps": 47,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9498303303149422
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 347,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 22,
+      "status": "arrive_dest",
+      "n_steps": 394,
+      "n_aligned_feature_rows": 394,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9557080248810841
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 394,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 23,
+      "status": "arrive_dest",
+      "n_steps": 389,
+      "n_aligned_feature_rows": 389,
+      "n_native_steer_clipped": 0,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9557052126745884
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 389,
+      "split": "train"
+    },
+    {
+      "map": "S",
+      "seed": 24,
+      "status": "arrive_dest",
+      "n_steps": 373,
+      "n_aligned_feature_rows": 373,
+      "n_native_steer_clipped": 4,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9531687895582431
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 373,
+      "split": "val"
+    },
+    {
+      "map": "S",
+      "seed": 25,
+      "status": "arrive_dest",
+      "n_steps": 345,
+      "n_aligned_feature_rows": 345,
+      "n_native_steer_clipped": 4,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9494429768448908
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 345,
+      "split": "val"
+    },
+    {
+      "map": "S",
+      "seed": 26,
+      "status": "arrive_dest",
+      "n_steps": 420,
+      "n_aligned_feature_rows": 420,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9587822448821923
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 420,
+      "split": "val"
+    },
+    {
+      "map": "S",
+      "seed": 27,
+      "status": "arrive_dest",
+      "n_steps": 428,
+      "n_aligned_feature_rows": 428,
+      "n_native_steer_clipped": 0,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9595190770161949
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 428,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 4,
+      "status": "arrive_dest",
+      "n_steps": 809,
+      "n_aligned_feature_rows": 809,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 107,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9800294598318938
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 809,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 5,
+      "status": "arrive_dest",
+      "n_steps": 588,
+      "n_aligned_feature_rows": 588,
+      "n_native_steer_clipped": 5,
+      "n_perturb_steps": 72,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9678467303543752
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 588,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 6,
+      "status": "arrive_dest",
+      "n_steps": 772,
+      "n_aligned_feature_rows": 772,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 97,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9790771889723092
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 772,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 7,
+      "status": "arrive_dest",
+      "n_steps": 975,
+      "n_aligned_feature_rows": 975,
+      "n_native_steer_clipped": 0,
+      "n_perturb_steps": 132,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.982684272497204
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 975,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 8,
+      "status": "arrive_dest",
+      "n_steps": 545,
+      "n_aligned_feature_rows": 545,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 77,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9663772817865995
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 545,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 9,
+      "status": "arrive_dest",
+      "n_steps": 645,
+      "n_aligned_feature_rows": 645,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 84,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9748401043543465
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 645,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 10,
+      "status": "arrive_dest",
+      "n_steps": 380,
+      "n_aligned_feature_rows": 380,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9509909163391908
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 380,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 11,
+      "status": "arrive_dest",
+      "n_steps": 889,
+      "n_aligned_feature_rows": 889,
+      "n_native_steer_clipped": 5,
+      "n_perturb_steps": 120,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9826397618325057
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 889,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 12,
+      "status": "arrive_dest",
+      "n_steps": 778,
+      "n_aligned_feature_rows": 778,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 97,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9795280201815418
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 778,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 13,
+      "status": "arrive_dest",
+      "n_steps": 498,
+      "n_aligned_feature_rows": 498,
+      "n_native_steer_clipped": 1,
+      "n_perturb_steps": 72,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.965643751243519
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 498,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 14,
+      "status": "arrive_dest",
+      "n_steps": 413,
+      "n_aligned_feature_rows": 413,
+      "n_native_steer_clipped": 5,
+      "n_perturb_steps": 59,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9529615550112851
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 413,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 15,
+      "status": "arrive_dest",
+      "n_steps": 430,
+      "n_aligned_feature_rows": 430,
+      "n_native_steer_clipped": 1,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9602340716684071
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 430,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 16,
+      "status": "arrive_dest",
+      "n_steps": 533,
+      "n_aligned_feature_rows": 533,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 72,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9660006640929781
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 533,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 17,
+      "status": "arrive_dest",
+      "n_steps": 812,
+      "n_aligned_feature_rows": 812,
+      "n_native_steer_clipped": 5,
+      "n_perturb_steps": 96,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9809128546850041
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 812,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 18,
+      "status": "arrive_dest",
+      "n_steps": 774,
+      "n_aligned_feature_rows": 774,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 96,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9791345192170513
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 774,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 19,
+      "status": "arrive_dest",
+      "n_steps": 849,
+      "n_aligned_feature_rows": 849,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 120,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9809613058235623
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 849,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 20,
+      "status": "arrive_dest",
+      "n_steps": 697,
+      "n_aligned_feature_rows": 697,
+      "n_native_steer_clipped": 0,
+      "n_perturb_steps": 96,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9757631066786975
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 697,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 21,
+      "status": "arrive_dest",
+      "n_steps": 443,
+      "n_aligned_feature_rows": 443,
+      "n_native_steer_clipped": 1,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9611348140523162
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 443,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 22,
+      "status": "arrive_dest",
+      "n_steps": 661,
+      "n_aligned_feature_rows": 661,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 84,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9756779315636945
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 661,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 23,
+      "status": "arrive_dest",
+      "n_steps": 661,
+      "n_aligned_feature_rows": 661,
+      "n_native_steer_clipped": 0,
+      "n_perturb_steps": 84,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9744557886929883
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 661,
+      "split": "train"
+    },
+    {
+      "map": "C",
+      "seed": 24,
+      "status": "arrive_dest",
+      "n_steps": 556,
+      "n_aligned_feature_rows": 556,
+      "n_native_steer_clipped": 5,
+      "n_perturb_steps": 72,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9657640344271703
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 556,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 25,
+      "status": "arrive_dest",
+      "n_steps": 457,
+      "n_aligned_feature_rows": 457,
+      "n_native_steer_clipped": 5,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.957481138425271
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 457,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 26,
+      "status": "arrive_dest",
+      "n_steps": 779,
+      "n_aligned_feature_rows": 779,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 108,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9791076368387633
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 779,
+      "split": "val"
+    },
+    {
+      "map": "C",
+      "seed": 27,
+      "status": "arrive_dest",
+      "n_steps": 850,
+      "n_aligned_feature_rows": 850,
+      "n_native_steer_clipped": 0,
+      "n_perturb_steps": 108,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9802754681506972
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 850,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 4,
+      "status": "arrive_dest",
+      "n_steps": 429,
+      "n_aligned_feature_rows": 429,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 59,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9596292301100128
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 429,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 5,
+      "status": "arrive_dest",
+      "n_steps": 448,
+      "n_aligned_feature_rows": 448,
+      "n_native_steer_clipped": 5,
+      "n_perturb_steps": 56,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9542660196462409
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 448,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 6,
+      "status": "arrive_dest",
+      "n_steps": 429,
+      "n_aligned_feature_rows": 429,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9596860301737883
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 429,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 7,
+      "status": "arrive_dest",
+      "n_steps": 391,
+      "n_aligned_feature_rows": 391,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 57,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9558854394055708
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 391,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 8,
+      "status": "arrive_dest",
+      "n_steps": 429,
+      "n_aligned_feature_rows": 429,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 59,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9597042161591199
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 429,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 9,
+      "status": "arrive_dest",
+      "n_steps": 428,
+      "n_aligned_feature_rows": 428,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9592527428451849
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 428,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 10,
+      "status": "arrive_dest",
+      "n_steps": 428,
+      "n_aligned_feature_rows": 428,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9592549226721939
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 428,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 11,
+      "status": "arrive_dest",
+      "n_steps": 447,
+      "n_aligned_feature_rows": 447,
+      "n_native_steer_clipped": 5,
+      "n_perturb_steps": 49,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9536500705381142
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 447,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 12,
+      "status": "arrive_dest",
+      "n_steps": 429,
+      "n_aligned_feature_rows": 429,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9596038818359375
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 429,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 13,
+      "status": "arrive_dest",
+      "n_steps": 391,
+      "n_aligned_feature_rows": 391,
+      "n_native_steer_clipped": 1,
+      "n_perturb_steps": 51,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9557887714860926
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 391,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 14,
+      "status": "arrive_dest",
+      "n_steps": 447,
+      "n_aligned_feature_rows": 447,
+      "n_native_steer_clipped": 5,
+      "n_perturb_steps": 71,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9536940795070185
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 447,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 15,
+      "status": "arrive_dest",
+      "n_steps": 391,
+      "n_aligned_feature_rows": 391,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9560890960456071
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 391,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 16,
+      "status": "arrive_dest",
+      "n_steps": 429,
+      "n_aligned_feature_rows": 429,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.959615403778699
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 429,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 17,
+      "status": "arrive_dest",
+      "n_steps": 448,
+      "n_aligned_feature_rows": 448,
+      "n_native_steer_clipped": 5,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9542024717786516
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 448,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 18,
+      "status": "arrive_dest",
+      "n_steps": 429,
+      "n_aligned_feature_rows": 429,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 54,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9597984469666773
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 429,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 19,
+      "status": "arrive_dest",
+      "n_steps": 428,
+      "n_aligned_feature_rows": 428,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9592150629783164
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 428,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 20,
+      "status": "arrive_dest",
+      "n_steps": 391,
+      "n_aligned_feature_rows": 391,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.955823740405232
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 391,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 21,
+      "status": "arrive_dest",
+      "n_steps": 391,
+      "n_aligned_feature_rows": 391,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.956083056448301
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 391,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 22,
+      "status": "arrive_dest",
+      "n_steps": 429,
+      "n_aligned_feature_rows": 429,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9597434530452806
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 429,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 23,
+      "status": "arrive_dest",
+      "n_steps": 391,
+      "n_aligned_feature_rows": 391,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9560761255701374
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 391,
+      "split": "train"
+    },
+    {
+      "map": "X",
+      "seed": 24,
+      "status": "arrive_dest",
+      "n_steps": 447,
+      "n_aligned_feature_rows": 447,
+      "n_native_steer_clipped": 5,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9537272375754683
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 447,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 25,
+      "status": "arrive_dest",
+      "n_steps": 448,
+      "n_aligned_feature_rows": 448,
+      "n_native_steer_clipped": 5,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9543329586404118
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 448,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 26,
+      "status": "arrive_dest",
+      "n_steps": 429,
+      "n_aligned_feature_rows": 429,
+      "n_native_steer_clipped": 3,
+      "n_perturb_steps": 60,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.959749681122449
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 429,
+      "split": "val"
+    },
+    {
+      "map": "X",
+      "seed": 27,
+      "status": "arrive_dest",
+      "n_steps": 391,
+      "n_aligned_feature_rows": 391,
+      "n_native_steer_clipped": 2,
+      "n_perturb_steps": 48,
+      "info": {
+        "arrive_dest": true,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.9558782313848896
+      },
+      "sample_errors": [],
+      "rows_accepted_for_training": 391,
+      "split": "val"
+    }
+  ],
+  "rows_by_split": {
+    "train": 29424,
+    "val": 5923
+  },
+  "limitations": [
+    "PDD V2 steering remains frozen and is a student input, not the teacher label.",
+    "Teacher labels come from MetaDrive IDM, NOT CARLA/PDD.",
+    "Steering teacher is bounded to [-0.35,0.35]; longitudinal teacher is replaced.",
+    "Perturbation affects executed action only; labels are unperturbed IDM steer.",
+    "Data from successes only can bias toward easy routes.",
+    "All observations are simulator privileged; no traffic or physical vehicle.",
+    "Do NOT use reserved eval seeds for training/validation."
+  ],
+  "successes_by_split": {
+    "train": 60,
+    "val": 12
+  }
+}

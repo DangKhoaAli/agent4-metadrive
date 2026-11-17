@@ -1,0 +1,2341 @@
+{
+  "status": "V26_IDM_EXPERT_ACTION_VS_PDD_SHADOW_NO_MODEL_CONTROL",
+  "model_action_applied": false,
+  "reference_driver": "RecordedIDMPolicy (subclass of MetaDrive IDMPolicy)",
+  "placeholder_env_step_action": [
+    0.0,
+    0.0
+  ],
+  "lookahead_m": [
+    25.0,
+    45.0
+  ],
+  "maps": [
+    "C",
+    "X"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "results": [
+    {
+      "map": "C",
+      "episodes": [
+        {
+          "seed": 0,
+          "steps": 293,
+          "end_info": {
+            "terminated": true,
+            "truncated": false,
+            "arrive_dest": true,
+            "out_of_road": false,
+            "crash": false
+          },
+          "feature_capture_errors": 0
+        },
+        {
+          "seed": 1,
+          "steps": 330,
+          "end_info": {
+            "terminated": true,
+            "truncated": false,
+            "arrive_dest": true,
+            "out_of_road": false,
+            "crash": false
+          },
+          "feature_capture_errors": 0
+        },
+        {
+          "seed": 2,
+          "steps": 165,
+          "end_info": {
+            "terminated": true,
+            "truncated": false,
+            "arrive_dest": true,
+            "out_of_road": false,
+            "crash": false
+          },
+          "feature_capture_errors": 0
+        }
+      ],
+      "summary": {
+        "all_usable": {
+          "n": 644,
+          "teacher_steer": {
+            "n": 644,
+            "min": -0.4030412714454592,
+            "median": -0.041967886036767155,
+            "p90": 0.0011148976223497743,
+            "max": 1.4465565724822351
+          },
+          "model_sign_only_steer": {
+            "n": 644,
+            "min": -0.039128463801676255,
+            "median": -0.011162122560226783,
+            "p90": 0.012772177240533386,
+            "max": 0.06351187722767022
+          },
+          "teacher_longitudinal": {
+            "n": 644,
+            "min": 1.1672233300785706e-05,
+            "median": 0.002664123894227377,
+            "p90": 0.9709400009919884,
+            "max": 1.0
+          },
+          "model_longitudinal_as_is": {
+            "n": 644,
+            "min": 0.025263489508838388,
+            "median": 0.3036121931781848,
+            "p90": 0.42831940008611813,
+            "max": 0.48107185588965706
+          },
+          "steering_mae_without_gain": 0.030722568633270844,
+          "steering_rmse_without_gain": 0.09656056356810386,
+          "longitudinal_mae_raw_not_dynamics_matched": 0.356473243718613,
+          "steering_pearson": 0.4101781173333009,
+          "n_informative_steer_sign": 341,
+          "informative_steer_sign_agreement": 0.9970674486803519,
+          "gain_least_squares_through_zero_DIAGNOSTIC_ONLY": 1.537410636975636,
+          "teacher_brake_samples": 0,
+          "model_negative_longitudinal_samples": 0
+        },
+        "curve_usable": {
+          "n": 361,
+          "teacher_steer": {
+            "n": 361,
+            "min": -0.3153211607562042,
+            "median": -0.058070073567356204,
+            "p90": 0.13111344633560246,
+            "max": 1.1108328862917507
+          },
+          "model_sign_only_steer": {
+            "n": 361,
+            "min": -0.039128463801676255,
+            "median": -0.039128463801676255,
+            "p90": 0.012772177240533386,
+            "max": 0.06244816345301931
+          },
+          "teacher_longitudinal": {
+            "n": 361,
+            "min": 1.754746885884728e-05,
+            "median": 0.0026604493134964047,
+            "p90": 0.012077907615417383,
+            "max": 0.36940434698044167
+          },
+          "model_longitudinal_as_is": {
+            "n": 361,
+            "min": 0.025263489508838388,
+            "median": 0.3036121931781848,
+            "p90": 0.41351533517965855,
+            "max": 0.48107185588965706
+          },
+          "steering_mae_without_gain": 0.037171684005351174,
+          "steering_rmse_without_gain": 0.07514330568185902,
+          "longitudinal_mae_raw_not_dynamics_matched": 0.30487025414448204,
+          "steering_pearson": 0.6201121956153711,
+          "n_informative_steer_sign": 341,
+          "informative_steer_sign_agreement": 0.9970674486803519,
+          "gain_least_squares_through_zero_DIAGNOSTIC_ONLY": 1.7169451051436773,
+          "teacher_brake_samples": 0,
+          "model_negative_longitudinal_samples": 0
+        },
+        "intersection_usable": {
+          "n": 0,
+          "reason": "No aligned teacher-and-model actions"
+        },
+        "straight_usable": {
+          "n": 283,
+          "teacher_steer": {
+            "n": 283,
+            "min": -0.4030412714454592,
+            "median": 1.0958907890934454e-06,
+            "p90": 0.00012098407056298664,
+            "max": 1.4465565724822351
+          },
+          "model_sign_only_steer": {
+            "n": 283,
+            "min": -0.039128463801676255,
+            "median": 0.0002570688068129106,
+            "p90": 0.007016803758074163,
+            "max": 0.06351187722767022
+          },
+          "teacher_longitudinal": {
+            "n": 283,
+            "min": 1.1672233300785706e-05,
+            "median": 0.011908997141552136,
+            "p90": 0.999990223208221,
+            "max": 1.0
+          },
+          "model_longitudinal_as_is": {
+            "n": 283,
+            "min": 0.1998465182761997,
+            "median": 0.41115243459906,
+            "p90": 0.4319105183522602,
+            "max": 0.47147844670042194
+          },
+          "steering_mae_without_gain": 0.022495958564998766,
+          "steering_rmse_without_gain": 0.11838468935733748,
+          "longitudinal_mae_raw_not_dynamics_matched": 0.42229896540151496,
+          "steering_pearson": 0.006154404472941146,
+          "n_informative_steer_sign": 0,
+          "informative_steer_sign_agreement": null,
+          "gain_least_squares_through_zero_DIAGNOSTIC_ONLY": 0.08892906962590025,
+          "teacher_brake_samples": 0,
+          "model_negative_longitudinal_samples": 0
+        },
+        "moving_fast_usable": {
+          "n": 589,
+          "teacher_steer": {
+            "n": 589,
+            "min": -0.4030412714454592,
+            "median": -0.05791297097247523,
+            "p90": 0.004793666737242059,
+            "max": 1.4465565724822351
+          },
+          "model_sign_only_steer": {
+            "n": 589,
+            "min": -0.039128463801676255,
+            "median": -0.014982102409410902,
+            "p90": 0.015101134559777182,
+            "max": 0.06351187722767022
+          },
+          "teacher_longitudinal": {
+            "n": 589,
+            "min": 1.1672233300785706e-05,
+            "median": 0.0026580276307461848,
+            "p90": 0.12383780673625032,
+            "max": 0.99026675632572
+          },
+          "model_longitudinal_as_is": {
+            "n": 589,
+            "min": 0.025263489508838388,
+            "median": 0.3036121931781848,
+            "p90": 0.42831940008611813,
+            "max": 0.48107185588965706
+          },
+          "steering_mae_without_gain": 0.03336499567532776,
+          "steering_rmse_without_gain": 0.100961999382768,
+          "longitudinal_mae_raw_not_dynamics_matched": 0.3303710691549154,
+          "steering_pearson": 0.4088964491228495,
+          "n_informative_steer_sign": 341,
+          "informative_steer_sign_agreement": 0.9970674486803519,
+          "gain_least_squares_through_zero_DIAGNOSTIC_ONLY": 1.5394483549333013,
+          "teacher_brake_samples": 0,
+          "model_negative_longitudinal_samples": 0
+        }
+      },
+      "total_samples": 788,
+      "n_usable_and_aligned": 644,
+      "n_incomplete_horizon": 144,
+      "n_idm_action_not_captured": 0,
+      "errors": [],
+      "example_rows": {
+        "start": [
+          {
+            "seed": 0,
+            "step": 0,
+            "speed_mps": 0.0,
+            "lane_type": "StraightLane",
+            "road_nodes": [
+              ">",
+              ">>"
+            ],
+            "in_curve_lane": false,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              0.0,
+              1.0
+            ],
+            "model_sign_only_action": [
+              0.0017986949200959556,
+              0.1998465182761997
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "model_carla_action": [
+              -0.0017986949200959556,
+              0.1998465182761997
+            ],
+            "waypoints": [
+              [
+                25.0,
+                -1.0927847142738756e-06
+              ],
+              [
+                45.0,
+                -1.967012394743506e-06
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 1,
+            "speed_mps": 0.2761685848236095,
+            "lane_type": "StraightLane",
+            "road_nodes": [
+              ">",
+              ">>"
+            ],
+            "in_curve_lane": false,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -6.937534632189824e-07,
+              0.9999999999999984
+            ],
+            "model_sign_only_action": [
+              0.0021035211630766127,
+              0.24034755508800018
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "model_carla_action": [
+              -0.0021035211630766127,
+              0.24034755508800018
+            ],
+            "waypoints": [
+              [
+                24.999982833862305,
+                4.867676580033731e-06
+              ],
+              [
+                44.999969482421875,
+                9.13154235604452e-06
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 2,
+            "speed_mps": 0.5523371696472184,
+            "lane_type": "StraightLane",
+            "road_nodes": [
+              ">",
+              ">>"
+            ],
+            "in_curve_lane": false,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              1.1584750729376481e-06,
+              0.9999999999983638
+            ],
+            "model_sign_only_action": [
+              0.005589918255422287,
+              0.24034755508800018
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "model_carla_action": [
+              -0.005589918255422287,
+              0.24034755508800018
+            ],
+            "waypoints": [
+              [
+                24.999996185302734,
+                -4.073016498296056e-06
+              ],
+              [
+                44.99999237060547,
+                5.978676199447364e-06
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 3,
+            "speed_mps": 0.8285057544708464,
+            "lane_type": "StraightLane",
+            "road_nodes": [
+              ">",
+              ">>"
+            ],
+            "in_curve_lane": false,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              9.214537361756925e-07,
+              0.9999999999056444
+            ],
+            "model_sign_only_action": [
+              0.007016803758074163,
+              0.3287440704521537
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "model_carla_action": [
+              -0.007016803758074163,
+              0.3287440704521537
+            ],
+            "waypoints": [
+              [
+                24.999727249145508,
+                -7.053172794257989e-06
+              ],
+              [
+                44.999507904052734,
+                7.235159864649177e-05
+              ]
+            ]
+          }
+        ],
+        "curve": [
+          {
+            "seed": 0,
+            "step": 70,
+            "speed_mps": 8.333318710327148,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1C0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.10825928408978329,
+              1.754746885884728e-05
+            ],
+            "model_sign_only_action": [
+              -0.039128463801676255,
+              0.3036121931781848
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.039128463801676255,
+              0.3036121931781848
+            ],
+            "waypoints": [
+              [
+                24.247526168823242,
+                5.278330326080322
+              ],
+              [
+                40.75376510620117,
+                16.4033260345459
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 71,
+            "speed_mps": 8.313281245029327,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1C0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.07806261615654936,
+              0.023803618932967563
+            ],
+            "model_sign_only_action": [
+              -0.039128463801676255,
+              0.3036121931781848
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.039128463801676255,
+              0.3036121931781848
+            ],
+            "waypoints": [
+              [
+                24.2034912109375,
+                5.476286888122559
+              ],
+              [
+                40.61805725097656,
+                16.736539840698242
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 72,
+            "speed_mps": 8.319330823830228,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1C0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.02416837317043434,
+              0.01667652549841736
+            ],
+            "model_sign_only_action": [
+              -0.039128463801676255,
+              0.3036121931781848
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.039128463801676255,
+              0.3036121931781848
+            ],
+            "waypoints": [
+              [
+                24.225250244140625,
+                5.3662848472595215
+              ],
+              [
+                40.68461608886719,
+                16.56104278564453
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 73,
+            "speed_mps": 8.324836042773747,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1C0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.029914336917513627,
+              0.010150087510421124
+            ],
+            "model_sign_only_action": [
+              -0.039128463801676255,
+              0.3036121931781848
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.039128463801676255,
+              0.3036121931781848
+            ],
+            "waypoints": [
+              [
+                24.231016159057617,
+                5.329664707183838
+              ],
+              [
+                40.7022705078125,
+                16.506589889526367
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 74,
+            "speed_mps": 8.32769587107445,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1C0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.06334936447698118,
+              0.006744397742669661
+            ],
+            "model_sign_only_action": [
+              -0.039128463801676255,
+              0.3036121931781848
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.039128463801676255,
+              0.3036121931781848
+            ],
+            "waypoints": [
+              [
+                24.201059341430664,
+                5.46419620513916
+              ],
+              [
+                40.6099853515625,
+                16.732315063476562
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 75,
+            "speed_mps": 8.325764499218863,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1C0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.07057099924038575,
+              0.00904556856752281
+            ],
+            "model_sign_only_action": [
+              -0.039128463801676255,
+              0.3036121931781848
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.039128463801676255,
+              0.3036121931781848
+            ],
+            "waypoints": [
+              [
+                24.174068450927734,
+                5.58540678024292
+              ],
+              [
+                40.52783966064453,
+                16.933631896972656
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 76,
+            "speed_mps": 8.325953672177233,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1C0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.05604843292820215,
+              0.00882038690420639
+            ],
+            "model_sign_only_action": [
+              -0.039128463801676255,
+              0.3036121931781848
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.039128463801676255,
+              0.3036121931781848
+            ],
+            "waypoints": [
+              [
+                24.171295166015625,
+                5.597080230712891
+              ],
+              [
+                40.5194206237793,
+                16.953548431396484
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 77,
+            "speed_mps": 8.328600301262412,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1C0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.05029521269180972,
+              0.005665144217126383
+            ],
+            "model_sign_only_action": [
+              -0.039128463801676255,
+              0.3036121931781848
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.039128463801676255,
+              0.3036121931781848
+            ],
+            "waypoints": [
+              [
+                24.175355911254883,
+                5.577856063842773
+              ],
+              [
+                40.53167724609375,
+                16.922456741333008
+              ]
+            ]
+          }
+        ],
+        "intersection": [],
+        "unusable": [
+          {
+            "seed": 0,
+            "step": 245,
+            "speed_mps": 8.33332277945541,
+            "lane_type": "StraightLane",
+            "road_nodes": [
+              "1C0_0_",
+              "1C0_1_"
+            ],
+            "in_curve_lane": false,
+            "in_intersection_block": false,
+            "usable": false,
+            "error": null,
+            "teacher_action": [
+              -2.795009561705475e-05,
+              1.2664581331311986e-05
+            ],
+            "model_sign_only_action": null,
+            "route_complete": false,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              44.95354921651616
+            ],
+            "lane_indices_along_route": [
+              0
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 246,
+            "speed_mps": 8.33332165433634,
+            "lane_type": "StraightLane",
+            "road_nodes": [
+              "1C0_0_",
+              "1C0_1_"
+            ],
+            "in_curve_lane": false,
+            "in_intersection_block": false,
+            "usable": false,
+            "error": null,
+            "teacher_action": [
+              -1.484983792227057e-05,
+              1.4014708006104826e-05
+            ],
+            "model_sign_only_action": null,
+            "route_complete": false,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              44.12022013913241
+            ],
+            "lane_indices_along_route": [
+              0
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 247,
+            "speed_mps": 8.333322920939247,
+            "lane_type": "StraightLane",
+            "road_nodes": [
+              "1C0_0_",
+              "1C0_1_"
+            ],
+            "in_curve_lane": false,
+            "in_intersection_block": false,
+            "usable": false,
+            "error": null,
+            "teacher_action": [
+              -1.9221494608340217e-05,
+              1.2494802648421732e-05
+            ],
+            "model_sign_only_action": null,
+            "route_complete": false,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              43.28689106174865
+            ],
+            "lane_indices_along_route": [
+              0
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 248,
+            "speed_mps": 8.333324360914094,
+            "lane_type": "StraightLane",
+            "road_nodes": [
+              "1C0_0_",
+              "1C0_1_"
+            ],
+            "in_curve_lane": false,
+            "in_intersection_block": false,
+            "usable": false,
+            "error": null,
+            "teacher_action": [
+              -2.65100947794486e-05,
+              1.0766850920274074e-05
+            ],
+            "model_sign_only_action": null,
+            "route_complete": false,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.000000000000004,
+              42.45355870183414
+            ],
+            "lane_indices_along_route": [
+              0
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 249,
+            "speed_mps": 8.333326942428304,
+            "lane_type": "StraightLane",
+            "road_nodes": [
+              "1C0_0_",
+              "1C0_1_"
+            ],
+            "in_curve_lane": false,
+            "in_intersection_block": false,
+            "usable": false,
+            "error": null,
+            "teacher_action": [
+              -1.820995911860912e-05,
+              7.669059568504721e-06
+            ],
+            "model_sign_only_action": null,
+            "route_complete": false,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              41.62021321179665
+            ],
+            "lane_indices_along_route": [
+              0
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 250,
+            "speed_mps": 8.33332705545729,
+            "lane_type": "StraightLane",
+            "road_nodes": [
+              "1C0_0_",
+              "1C0_1_"
+            ],
+            "in_curve_lane": false,
+            "in_intersection_block": false,
+            "usable": false,
+            "error": null,
+            "teacher_action": [
+              -1.1515567959363704e-05,
+              7.5334257140236005e-06
+            ],
+            "model_sign_only_action": null,
+            "route_complete": false,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              24.999999999999996,
+              40.786867721759165
+            ],
+            "lane_indices_along_route": [
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "map": "X",
+      "episodes": [
+        {
+          "seed": 0,
+          "steps": 139,
+          "end_info": {
+            "terminated": true,
+            "truncated": false,
+            "arrive_dest": true,
+            "out_of_road": false,
+            "crash": false
+          },
+          "feature_capture_errors": 0
+        },
+        {
+          "seed": 1,
+          "steps": 151,
+          "end_info": {
+            "terminated": true,
+            "truncated": false,
+            "arrive_dest": true,
+            "out_of_road": false,
+            "crash": false
+          },
+          "feature_capture_errors": 0
+        },
+        {
+          "seed": 2,
+          "steps": 138,
+          "end_info": {
+            "terminated": true,
+            "truncated": false,
+            "arrive_dest": true,
+            "out_of_road": false,
+            "crash": false
+          },
+          "feature_capture_errors": 0
+        }
+      ],
+      "summary": {
+        "all_usable": {
+          "n": 283,
+          "teacher_steer": {
+            "n": 283,
+            "min": -0.37833423299777696,
+            "median": 1.0692591781769067e-06,
+            "p90": 7.135113297906282e-05,
+            "max": 1.232000855395988
+          },
+          "model_sign_only_steer": {
+            "n": 283,
+            "min": -0.06842393794507608,
+            "median": -0.0002837230560649033,
+            "p90": 0.0005085507056976625,
+            "max": 0.007016803758074163
+          },
+          "teacher_longitudinal": {
+            "n": 283,
+            "min": 1.44302245742578e-05,
+            "median": 0.03896574459693669,
+            "p90": 0.999990223208221,
+            "max": 1.0
+          },
+          "model_longitudinal_as_is": {
+            "n": 283,
+            "min": 0.17774653059362536,
+            "median": 0.3938865153191173,
+            "p90": 0.42831940008611813,
+            "max": 0.4686530381462164
+          },
+          "steering_mae_without_gain": 0.04668713431202086,
+          "steering_rmse_without_gain": 0.12944029857475586,
+          "longitudinal_mae_raw_not_dynamics_matched": 0.3622717868809588,
+          "steering_pearson": 0.3943009776179656,
+          "n_informative_steer_sign": 41,
+          "informative_steer_sign_agreement": 1.0,
+          "gain_least_squares_through_zero_DIAGNOSTIC_ONLY": 2.5811482434193893,
+          "teacher_brake_samples": 0,
+          "model_negative_longitudinal_samples": 0
+        },
+        "curve_usable": {
+          "n": 41,
+          "teacher_steer": {
+            "n": 41,
+            "min": -0.37833423299777696,
+            "median": -0.21378006834072605,
+            "p90": -0.20284219604630255,
+            "max": -0.16516346402828677
+          },
+          "model_sign_only_steer": {
+            "n": 41,
+            "min": -0.06842393794507608,
+            "median": -0.03737361555079509,
+            "p90": -0.03651808560259649,
+            "max": -0.036355291101389804
+          },
+          "teacher_longitudinal": {
+            "n": 41,
+            "min": 1.754746885884728e-05,
+            "median": 0.03970985171724262,
+            "p90": 0.13437781222227785,
+            "max": 0.20266063210938012
+          },
+          "model_longitudinal_as_is": {
+            "n": 41,
+            "min": 0.17774653059362536,
+            "median": 0.1994816665175275,
+            "p90": 0.20972760328670706,
+            "max": 0.22569227540154732
+          },
+          "steering_mae_without_gain": 0.1881513657022239,
+          "steering_rmse_without_gain": 0.1934311818420295,
+          "longitudinal_mae_raw_not_dynamics_matched": 0.1361620505585173,
+          "steering_pearson": 0.1701574529837086,
+          "n_informative_steer_sign": 41,
+          "informative_steer_sign_agreement": 1.0,
+          "gain_least_squares_through_zero_DIAGNOSTIC_ONLY": 5.53054096252297,
+          "teacher_brake_samples": 0,
+          "model_negative_longitudinal_samples": 0
+        },
+        "intersection_usable": {
+          "n": 74,
+          "teacher_steer": {
+            "n": 74,
+            "min": -0.37833423299777696,
+            "median": -0.20247106775334817,
+            "p90": 0.0007760375960070397,
+            "max": 1.232000855395988
+          },
+          "model_sign_only_steer": {
+            "n": 74,
+            "min": -0.06842393794507608,
+            "median": -0.03651808560259649,
+            "p90": -0.0002837230560649033,
+            "max": 0.0002570688068129106
+          },
+          "teacher_longitudinal": {
+            "n": 74,
+            "min": 1.44302245742578e-05,
+            "median": 0.03461271435547303,
+            "p90": 0.15397934719943593,
+            "max": 0.32671198815161506
+          },
+          "model_longitudinal_as_is": {
+            "n": 74,
+            "min": 0.17774653059362536,
+            "median": 0.20972760328670706,
+            "p90": 0.42831940008611813,
+            "max": 0.42831940008611813
+          },
+          "steering_mae_without_gain": 0.12679166497701883,
+          "steering_rmse_without_gain": 0.20472366810744574,
+          "longitudinal_mae_raw_not_dynamics_matched": 0.24513803943065063,
+          "steering_pearson": 0.637600675876351,
+          "n_informative_steer_sign": 41,
+          "informative_steer_sign_agreement": 1.0,
+          "gain_least_squares_through_zero_DIAGNOSTIC_ONLY": 5.528009280262764,
+          "teacher_brake_samples": 0,
+          "model_negative_longitudinal_samples": 0
+        },
+        "straight_usable": {
+          "n": 209,
+          "teacher_steer": {
+            "n": 209,
+            "min": -0.194974959717773,
+            "median": 1.1358382067516715e-06,
+            "p90": 4.237733541353668e-05,
+            "max": 1.231999011967235
+          },
+          "model_sign_only_steer": {
+            "n": 209,
+            "min": -0.04225294614719653,
+            "median": -0.0002837230560649033,
+            "p90": 0.0021035211630766127,
+            "max": 0.007016803758074163
+          },
+          "teacher_longitudinal": {
+            "n": 209,
+            "min": 1.754746884774505e-05,
+            "median": 0.10764522917687624,
+            "p90": 0.9999996025825111,
+            "max": 1.0
+          },
+          "model_longitudinal_as_is": {
+            "n": 209,
+            "min": 0.1926446534173824,
+            "median": 0.39986584078748594,
+            "p90": 0.42831940008611813,
+            "max": 0.4686530381462164
+          },
+          "steering_mae_without_gain": 0.018324764602882813,
+          "steering_rmse_without_gain": 0.0885862940555653,
+          "longitudinal_mae_raw_not_dynamics_matched": 0.4037449797581015,
+          "steering_pearson": 0.03241525841041042,
+          "n_informative_steer_sign": 0,
+          "informative_steer_sign_agreement": null,
+          "gain_least_squares_through_zero_DIAGNOSTIC_ONLY": 0.006673143828047104,
+          "teacher_brake_samples": 0,
+          "model_negative_longitudinal_samples": 0
+        },
+        "moving_fast_usable": {
+          "n": 228,
+          "teacher_steer": {
+            "n": 228,
+            "min": -0.37833423299777696,
+            "median": 1.098553949412384e-06,
+            "p90": 9.459265445814628e-05,
+            "max": 1.232000855395988
+          },
+          "model_sign_only_steer": {
+            "n": 228,
+            "min": -0.06842393794507608,
+            "median": -0.0002837230560649033,
+            "p90": 0.0002570688068129106,
+            "max": 0.0002570688068129106
+          },
+          "teacher_longitudinal": {
+            "n": 228,
+            "min": 1.44302245742578e-05,
+            "median": 0.013242291621948676,
+            "p90": 0.8124001724171267,
+            "max": 0.99026675632572
+          },
+          "model_longitudinal_as_is": {
+            "n": 228,
+            "min": 0.17774653059362536,
+            "median": 0.40762716258598175,
+            "p90": 0.42831940008611813,
+            "max": 0.4686530381462164
+          },
+          "steering_mae_without_gain": 0.05736450554054181,
+          "steering_rmse_without_gain": 0.1441985641712323,
+          "longitudinal_mae_raw_not_dynamics_matched": 0.2959600552406111,
+          "steering_pearson": 0.39130484613141175,
+          "n_informative_steer_sign": 41,
+          "informative_steer_sign_agreement": 1.0,
+          "gain_least_squares_through_zero_DIAGNOSTIC_ONLY": 2.5944771194586593,
+          "teacher_brake_samples": 0,
+          "model_negative_longitudinal_samples": 0
+        }
+      },
+      "total_samples": 428,
+      "n_usable_and_aligned": 283,
+      "n_incomplete_horizon": 145,
+      "n_idm_action_not_captured": 0,
+      "errors": [],
+      "example_rows": {
+        "start": [
+          {
+            "seed": 0,
+            "step": 0,
+            "speed_mps": 0.0,
+            "lane_type": "StraightLane",
+            "road_nodes": [
+              ">",
+              ">>"
+            ],
+            "in_curve_lane": false,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              0.0,
+              1.0
+            ],
+            "model_sign_only_action": [
+              0.0017986949200959556,
+              0.1998465182761997
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "model_carla_action": [
+              -0.0017986949200959556,
+              0.1998465182761997
+            ],
+            "waypoints": [
+              [
+                25.0,
+                -1.0927847142738756e-06
+              ],
+              [
+                45.0,
+                -1.967012394743506e-06
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 1,
+            "speed_mps": 0.2761685848236095,
+            "lane_type": "StraightLane",
+            "road_nodes": [
+              ">",
+              ">>"
+            ],
+            "in_curve_lane": false,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -6.937534632189824e-07,
+              0.9999999999999984
+            ],
+            "model_sign_only_action": [
+              0.0021035211630766127,
+              0.24034755508800018
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "model_carla_action": [
+              -0.0021035211630766127,
+              0.24034755508800018
+            ],
+            "waypoints": [
+              [
+                24.999982833862305,
+                4.867676580033731e-06
+              ],
+              [
+                44.999969482421875,
+                1.0053901860374026e-05
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 2,
+            "speed_mps": 0.5523371696472184,
+            "lane_type": "StraightLane",
+            "road_nodes": [
+              ">",
+              ">>"
+            ],
+            "in_curve_lane": false,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              1.1584750729376481e-06,
+              0.9999999999983638
+            ],
+            "model_sign_only_action": [
+              0.005589918255422287,
+              0.24034755508800018
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "model_carla_action": [
+              -0.005589918255422287,
+              0.24034755508800018
+            ],
+            "waypoints": [
+              [
+                24.999996185302734,
+                -4.073016498296056e-06
+              ],
+              [
+                44.99999237060547,
+                3.918358561350033e-05
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 3,
+            "speed_mps": 0.8285057544708464,
+            "lane_type": "StraightLane",
+            "road_nodes": [
+              ">",
+              ">>"
+            ],
+            "in_curve_lane": false,
+            "in_intersection_block": false,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              9.214537361756925e-07,
+              0.9999999999056444
+            ],
+            "model_sign_only_action": [
+              0.007016803758074163,
+              0.3287440704521537
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "model_carla_action": [
+              -0.007016803758074163,
+              0.3287440704521537
+            ],
+            "waypoints": [
+              [
+                24.999727249145508,
+                -7.053172794257989e-06
+              ],
+              [
+                44.999507904052734,
+                0.0002845196577254683
+              ]
+            ]
+          }
+        ],
+        "curve": [
+          {
+            "seed": 0,
+            "step": 70,
+            "speed_mps": 8.333318710327148,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.37833423299777696,
+              1.754746885884728e-05
+            ],
+            "model_sign_only_action": [
+              -0.03651808560259649,
+              0.18947120155681538
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.03651808560259649,
+              0.18947120155681538
+            ],
+            "waypoints": [
+              [
+                16.703271865844727,
+                15.530951499938965
+              ],
+              [
+                16.76687240600586,
+                35.529117584228516
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 71,
+            "speed_mps": 8.213941244046215,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.35369217767297106,
+              0.13437781222227785
+            ],
+            "model_sign_only_action": [
+              -0.03651808560259649,
+              0.18947120155681538
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.03651808560259649,
+              0.18947120155681538
+            ],
+            "waypoints": [
+              [
+                16.02741813659668,
+                16.247081756591797
+              ],
+              [
+                16.165756225585938,
+                36.246192932128906
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 72,
+            "speed_mps": 8.146725340364275,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.29965925075435723,
+              0.20266063210938012
+            ],
+            "model_sign_only_action": [
+              -0.06504134912122764,
+              0.17774653059362536
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.06504134912122764,
+              0.17774653059362536
+            ],
+            "waypoints": [
+              [
+                15.744772911071777,
+                16.534008026123047
+              ],
+              [
+                16.488948822021484,
+                36.51833724975586
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 73,
+            "speed_mps": 8.155900820722449,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.2142451797563305,
+              0.19363472025175898
+            ],
+            "model_sign_only_action": [
+              -0.06842393794507608,
+              0.18947120155681538
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.06842393794507608,
+              0.18947120155681538
+            ],
+            "waypoints": [
+              [
+                15.847552299499512,
+                16.453950881958008
+              ],
+              [
+                17.636449813842773,
+                36.37112045288086
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 74,
+            "speed_mps": 8.218394679116894,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.16810873657291026,
+              0.12967311425204775
+            ],
+            "model_sign_only_action": [
+              -0.03651808560259649,
+              0.18947120155681538
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.03651808560259649,
+              0.18947120155681538
+            ],
+            "waypoints": [
+              [
+                16.096351623535156,
+                16.252573013305664
+              ],
+              [
+                19.058074951171875,
+                36.03085708618164
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 75,
+            "speed_mps": 8.261274118389997,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.20284219604630255,
+              0.0831827240204519
+            ],
+            "model_sign_only_action": [
+              -0.03651808560259649,
+              0.18947120155681538
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.03651808560259649,
+              0.18947120155681538
+            ],
+            "waypoints": [
+              [
+                16.21527099609375,
+                16.215778350830078
+              ],
+              [
+                20.1455078125,
+                35.825443267822266
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 76,
+            "speed_mps": 8.269545699730537,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.2362379826039871,
+              0.07396164212742018
+            ],
+            "model_sign_only_action": [
+              -0.036355291101389804,
+              0.18947120155681538
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.036355291101389804,
+              0.18947120155681538
+            ],
+            "waypoints": [
+              [
+                16.272565841674805,
+                16.274045944213867
+              ],
+              [
+                21.046781539916992,
+                35.69537353515625
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 77,
+            "speed_mps": 8.266146138375241,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.22532751590518682,
+              0.07776149633965268
+            ],
+            "model_sign_only_action": [
+              -0.036648546785455885,
+              0.18947120155681538
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.036648546785455885,
+              0.18947120155681538
+            ],
+            "waypoints": [
+              [
+                16.433238983154297,
+                16.2457332611084
+              ],
+              [
+                22.120990753173828,
+                35.419029235839844
+              ]
+            ]
+          }
+        ],
+        "intersection": [
+          {
+            "seed": 0,
+            "step": 70,
+            "speed_mps": 8.333318710327148,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.37833423299777696,
+              1.754746885884728e-05
+            ],
+            "model_sign_only_action": [
+              -0.03651808560259649,
+              0.18947120155681538
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.03651808560259649,
+              0.18947120155681538
+            ],
+            "waypoints": [
+              [
+                16.703271865844727,
+                15.530951499938965
+              ],
+              [
+                16.76687240600586,
+                35.529117584228516
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 71,
+            "speed_mps": 8.213941244046215,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.35369217767297106,
+              0.13437781222227785
+            ],
+            "model_sign_only_action": [
+              -0.03651808560259649,
+              0.18947120155681538
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.03651808560259649,
+              0.18947120155681538
+            ],
+            "waypoints": [
+              [
+                16.02741813659668,
+                16.247081756591797
+              ],
+              [
+                16.165756225585938,
+                36.246192932128906
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 72,
+            "speed_mps": 8.146725340364275,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.29965925075435723,
+              0.20266063210938012
+            ],
+            "model_sign_only_action": [
+              -0.06504134912122764,
+              0.17774653059362536
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.06504134912122764,
+              0.17774653059362536
+            ],
+            "waypoints": [
+              [
+                15.744772911071777,
+                16.534008026123047
+              ],
+              [
+                16.488948822021484,
+                36.51833724975586
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 73,
+            "speed_mps": 8.155900820722449,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.2142451797563305,
+              0.19363472025175898
+            ],
+            "model_sign_only_action": [
+              -0.06842393794507608,
+              0.18947120155681538
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.06842393794507608,
+              0.18947120155681538
+            ],
+            "waypoints": [
+              [
+                15.847552299499512,
+                16.453950881958008
+              ],
+              [
+                17.636449813842773,
+                36.37112045288086
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 74,
+            "speed_mps": 8.218394679116894,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.16810873657291026,
+              0.12967311425204775
+            ],
+            "model_sign_only_action": [
+              -0.03651808560259649,
+              0.18947120155681538
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.03651808560259649,
+              0.18947120155681538
+            ],
+            "waypoints": [
+              [
+                16.096351623535156,
+                16.252573013305664
+              ],
+              [
+                19.058074951171875,
+                36.03085708618164
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 75,
+            "speed_mps": 8.261274118389997,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.20284219604630255,
+              0.0831827240204519
+            ],
+            "model_sign_only_action": [
+              -0.03651808560259649,
+              0.18947120155681538
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.03651808560259649,
+              0.18947120155681538
+            ],
+            "waypoints": [
+              [
+                16.21527099609375,
+                16.215778350830078
+              ],
+              [
+                20.1455078125,
+                35.825443267822266
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 76,
+            "speed_mps": 8.269545699730537,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.2362379826039871,
+              0.07396164212742018
+            ],
+            "model_sign_only_action": [
+              -0.036355291101389804,
+              0.18947120155681538
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.036355291101389804,
+              0.18947120155681538
+            ],
+            "waypoints": [
+              [
+                16.272565841674805,
+                16.274045944213867
+              ],
+              [
+                21.046781539916992,
+                35.69537353515625
+              ]
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 77,
+            "speed_mps": 8.266146138375241,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": true,
+            "error": null,
+            "teacher_action": [
+              -0.22532751590518682,
+              0.07776149633965268
+            ],
+            "model_sign_only_action": [
+              -0.036648546785455885,
+              0.18947120155681538
+            ],
+            "route_complete": true,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              45.0
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ],
+            "model_carla_action": [
+              0.036648546785455885,
+              0.18947120155681538
+            ],
+            "waypoints": [
+              [
+                16.433238983154297,
+                16.2457332611084
+              ],
+              [
+                22.120990753173828,
+                35.419029235839844
+              ]
+            ]
+          }
+        ],
+        "unusable": [
+          {
+            "seed": 0,
+            "step": 90,
+            "speed_mps": 8.304626657393312,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": false,
+            "error": null,
+            "teacher_action": [
+              -0.21323710270920823,
+              0.03391888760827999
+            ],
+            "model_sign_only_action": null,
+            "route_complete": false,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              44.92284643687253
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 91,
+            "speed_mps": 8.30460923420628,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": false,
+            "error": null,
+            "teacher_action": [
+              -0.2128755254178566,
+              0.033939155892081296
+            ],
+            "model_sign_only_action": null,
+            "route_complete": false,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              44.09029468511103
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 92,
+            "speed_mps": 8.304789705410125,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": false,
+            "error": null,
+            "teacher_action": [
+              -0.21276486809333162,
+              0.03372919632725291
+            ],
+            "model_sign_only_action": null,
+            "route_complete": false,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              43.25754312504772
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 93,
+            "speed_mps": 8.304884711025613,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": false,
+            "error": null,
+            "teacher_action": [
+              -0.2129773559882071,
+              0.033618650628088775
+            ],
+            "model_sign_only_action": null,
+            "route_complete": false,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              42.42458527310671
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 94,
+            "speed_mps": 8.304829972203734,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": false,
+            "error": null,
+            "teacher_action": [
+              -0.21313683576498088,
+              0.03368234447747298
+            ],
+            "model_sign_only_action": null,
+            "route_complete": false,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              41.59143457411874
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ]
+          },
+          {
+            "seed": 0,
+            "step": 95,
+            "speed_mps": 8.304771861441282,
+            "lane_type": "CircularLane",
+            "road_nodes": [
+              ">>>",
+              "1X0_0_"
+            ],
+            "in_curve_lane": true,
+            "in_intersection_block": true,
+            "usable": false,
+            "error": null,
+            "teacher_action": [
+              -0.21312114042944408,
+              0.033749957767356675
+            ],
+            "model_sign_only_action": null,
+            "route_complete": false,
+            "lane_chain_continuous": true,
+            "route_achieved_m": [
+              25.0,
+              40.75810315478785
+            ],
+            "lane_indices_along_route": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "warnings": [
+    "Teacher IDM actions are a reference policy, not the PDD expert labels.",
+    "Predicted steering is sign-converted only; its physical gain is not calibrated.",
+    "Comparing raw longitudinal actions is NOT dynamics calibration.",
+    "Least-squares gain is DIAGNOSTIC ONLY. Never apply it without independent tests.",
+    "Near-destination route-horizon failures remain unresolved.",
+    "Model never controls the MetaDrive vehicle."
+  ]
+}

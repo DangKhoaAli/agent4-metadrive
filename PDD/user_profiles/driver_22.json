@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 24,
+    "gender": "Female",
+    "occupation": "Real estate agent"
+  },
+  "driving_experience": "2 years",
+  "driving_frequency_per_week": "10 to 15 h",
+  "driving_purposes": [
+    "Business site visits",
+    "Visiting friends and family"
+  ],
+  "driving_habits_preferences": [
+    "Drives more cautiously in rain or fog but otherwise keeps strong pace",
+    "Uses whichever lane keeps progress rather than staying in the right lane",
+    "Merges decisively and accelerates confidently in normal conditions"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "Seasonal allergies",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Assertive",
+  "international_driving_experience": "Driven in Mexico on vacations"
+}

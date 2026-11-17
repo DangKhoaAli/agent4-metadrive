@@ -1,0 +1,2039 @@
+{
+  "status": "V27_GUARDED_LEARNED_STEERING_WITH_INDEPENDENT_SPEED_CONTROL",
+  "learned_steering_applied": true,
+  "learned_longitudinal_applied": false,
+  "teacher_idm_used_for_control": false,
+  "this_is_full_agent4_autonomy": false,
+  "traffic_density": 0.0,
+  "maps": [
+    "S"
+  ],
+  "seeds": [
+    0
+  ],
+  "parameters": {
+    "steps": 650,
+    "speed_limit_mps": 3.0,
+    "steer_gain": 1.0,
+    "steer_limit": 0.35,
+    "max_steer_delta": 0.12,
+    "guard_lane_offset_m": 1.5,
+    "max_gap": 2.0
+  },
+  "results": [
+    {
+      "map": "S",
+      "episodes": [
+        {
+          "seed": 0,
+          "status": "arrive_dest",
+          "end_info": {
+            "terminated": true,
+            "truncated": false,
+            "arrive_dest": true,
+            "out_of_road": false,
+            "crash": false
+          },
+          "travelled_approx_m": 111.40520164177724,
+          "counts": {
+            "model_steering_steps": 423,
+            "adaptive_lookahead_steps": 167,
+            "steering_limit_steps": 0,
+            "speed_governor_steps": 423
+          },
+          "errors": [],
+          "trace": [
+            {
+              "step": 0,
+              "speed_mps_before": 0.0,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": -0.0017986949200959556,
+              "action_applied": [
+                0.0017986949200959556,
+                0.4
+              ],
+              "lane_offset_m_before": 0.0,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 116.3259048461914,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.0031483179185896465,
+              "xy_after": [
+                5.002651214599609,
+                7.000001430511475
+              ]
+            },
+            {
+              "step": 5,
+              "speed_mps_before": 0.5523357441676858,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": -0.005083436289331237,
+              "action_applied": [
+                0.005083436289331237,
+                0.4
+              ],
+              "lane_offset_m_before": -0.00010776519775390625,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 116.20394897460938,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.06042575346313344,
+              "xy_after": [
+                5.179399013519287,
+                7.000219345092773
+              ]
+            },
+            {
+              "step": 10,
+              "speed_mps_before": 1.1046692258524562,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": -0.006510321791983111,
+              "action_applied": [
+                0.006510321791983111,
+                0.4
+              ],
+              "lane_offset_m_before": -0.0011830329895019531,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 115.80626916885376,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.11814377838863833,
+              "xy_after": [
+                5.6323113441467285,
+                7.00155782699585
+              ]
+            },
+            {
+              "step": 15,
+              "speed_mps_before": 1.6248326912995248,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": -0.0062912737743293125,
+              "action_applied": [
+                0.0062912737743293125,
+                0.3162884810011093
+              ],
+              "lane_offset_m_before": -0.00373077392578125,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 115.13504648208618,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.17190941457640102,
+              "xy_after": [
+                6.355062961578369,
+                7.00446081161499
+              ]
+            },
+            {
+              "step": 20,
+              "speed_mps_before": 2.0094979542942877,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": -0.005607142294899973,
+              "action_applied": [
+                0.005607142294899973,
+                0.22781547051231385
+              ],
+              "lane_offset_m_before": -0.007595539093017578,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 114.23307704925537,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.211514756953253,
+              "xy_after": [
+                7.295016765594482,
+                7.0082688331604
+              ]
+            },
+            {
+              "step": 25,
+              "speed_mps_before": 2.2865579729658716,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": -0.0017908700551897928,
+              "action_applied": [
+                0.0017908700551897928,
+                0.16409166621784954
+              ],
+              "lane_offset_m_before": -0.011980533599853516,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 113.16383361816406,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.24003999921849445,
+              "xy_after": [
+                8.391617774963379,
+                7.01298189163208
+              ]
+            },
+            {
+              "step": 30,
+              "speed_mps_before": 2.486134811110931,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": -0.0007151532600532551,
+              "action_applied": [
+                0.0007151532600532551,
+                0.11818899344448584
+              ],
+              "lane_offset_m_before": -0.01743459701538086,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 111.97409915924072,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.2605877584258668,
+              "xy_after": [
+                9.601058959960938,
+                7.01857328414917
+              ]
+            },
+            {
+              "step": 35,
+              "speed_mps_before": 2.629877817288048,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0002324875472427676,
+              "action_applied": [
+                -0.0002324875472427676,
+                0.08512810202374899
+              ],
+              "lane_offset_m_before": -0.022849082946777344,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 110.6975793838501,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.2753899066347077,
+              "xy_after": [
+                10.891775131225586,
+                7.023931503295898
+              ]
+            },
+            {
+              "step": 40,
+              "speed_mps_before": 2.733410127495078,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.000648894398406973,
+              "action_applied": [
+                -0.000648894398406973,
+                0.06131567067613202
+              ],
+              "lane_offset_m_before": -0.028439044952392578,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 109.35854721069336,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.28604769322971846,
+              "xy_after": [
+                12.241028785705566,
+                7.02958345413208
+              ]
+            },
+            {
+              "step": 45,
+              "speed_mps_before": 2.8079812928123804,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.000648894398406973,
+              "action_applied": [
+                -0.000648894398406973,
+                0.04416430265315251
+              ],
+              "lane_offset_m_before": -0.03388643264770508,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 107.97449398040771,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.29372813314104584,
+              "xy_after": [
+                13.632448196411133,
+                7.034939765930176
+              ]
+            },
+            {
+              "step": 50,
+              "speed_mps_before": 2.8616899198400887,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.000648894398406973,
+              "action_applied": [
+                -0.000648894398406973,
+                0.031811318436779604
+              ],
+              "lane_offset_m_before": -0.03904867172241211,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 106.55800533294678,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.2992568874018668,
+              "xy_after": [
+                15.054239273071289,
+                7.040047645568848
+              ]
+            },
+            {
+              "step": 55,
+              "speed_mps_before": 2.9003728482143076,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0013370198527037649,
+              "action_applied": [
+                -0.0013370198527037649,
+                0.022914244910709244
+              ],
+              "lane_offset_m_before": -0.04382467269897461,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 105.11816215515137,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.3032393736266151,
+              "xy_after": [
+                16.497901916503906,
+                7.044661998748779
+              ]
+            },
+            {
+              "step": 60,
+              "speed_mps_before": 2.9282399249494513,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0013370198527037649,
+              "action_applied": [
+                -0.0013370198527037649,
+                0.016504817261626205
+              ],
+              "lane_offset_m_before": -0.04771614074707031,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 103.66149139404297,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.3061110267838784,
+              "xy_after": [
+                17.957326889038086,
+                7.048403263092041
+              ]
+            },
+            {
+              "step": 65,
+              "speed_mps_before": 2.948306654509717,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0013370198527037649,
+              "action_applied": [
+                -0.0013370198527037649,
+                0.011889469462765048
+              ],
+              "lane_offset_m_before": -0.05083751678466797,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 102.19270515441895,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.30817733384385243,
+              "xy_after": [
+                19.4280948638916,
+                7.051366806030273
+              ]
+            },
+            {
+              "step": 70,
+              "speed_mps_before": 2.962771386500138,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0013370198527037649,
+              "action_applied": [
+                -0.0013370198527037649,
+                0.008562581104968223
+              ],
+              "lane_offset_m_before": -0.05316019058227539,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 100.71518516540527,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.30966879605626274,
+              "xy_after": [
+                20.907045364379883,
+                7.053526878356934
+              ]
+            },
+            {
+              "step": 75,
+              "speed_mps_before": 2.9731791258532825,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0013370198527037649,
+              "action_applied": [
+                -0.0013370198527037649,
+                0.00616880105374503
+              ],
+              "lane_offset_m_before": -0.05466747283935547,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 99.23137092590332,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31073880264549925,
+              "xy_after": [
+                22.39188575744629,
+                7.05487060546875
+              ]
+            },
+            {
+              "step": 80,
+              "speed_mps_before": 2.9806790671095174,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0013370198527037649,
+              "action_applied": [
+                -0.0013370198527037649,
+                0.004443814564811009
+              ],
+              "lane_offset_m_before": -0.05535173416137695,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 97.7430362701416,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31151045871564287,
+              "xy_after": [
+                23.88096046447754,
+                7.055388450622559
+              ]
+            },
+            {
+              "step": 85,
+              "speed_mps_before": 2.986081857333467,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0013370198527037649,
+              "action_applied": [
+                -0.0013370198527037649,
+                0.0032011728133026197
+              ],
+              "lane_offset_m_before": -0.055201053619384766,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 96.2514419555664,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.312065377433568,
+              "xy_after": [
+                25.37308692932129,
+                7.055070400238037
+              ]
+            },
+            {
+              "step": 90,
+              "speed_mps_before": 2.989978787037971,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0013370198527037649,
+              "action_applied": [
+                -0.0013370198527037649,
+                0.0023048789812666606
+              ],
+              "lane_offset_m_before": -0.054212093353271484,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 94.75749588012695,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31246899044547505,
+              "xy_after": [
+                26.867420196533203,
+                7.053913116455078
+              ]
+            },
+            {
+              "step": 95,
+              "speed_mps_before": 2.992784699966038,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0013370198527037649,
+              "action_applied": [
+                -0.0013370198527037649,
+                0.001659519007811281
+              ],
+              "lane_offset_m_before": -0.05238151550292969,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 93.26185607910156,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31275929685605813,
+              "xy_after": [
+                28.363338470458984,
+                7.051914691925049
+              ]
+            },
+            {
+              "step": 100,
+              "speed_mps_before": 2.9948047673705656,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0013370198527037649,
+              "action_applied": [
+                -0.0013370198527037649,
+                0.001194903504769922
+              ],
+              "lane_offset_m_before": -0.04971170425415039,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 91.76499557495117,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31296426556295426,
+              "xy_after": [
+                29.860395431518555,
+                7.049077033996582
+              ]
+            },
+            {
+              "step": 105,
+              "speed_mps_before": 2.9962617508127187,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0008305378866127158,
+              "action_applied": [
+                -0.0008305378866127158,
+                0.0008597973130746928
+              ],
+              "lane_offset_m_before": -0.04627561569213867,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 90.26726150512695,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.313111557121868,
+              "xy_after": [
+                31.3582706451416,
+                7.045547962188721
+              ]
+            },
+            {
+              "step": 110,
+              "speed_mps_before": 2.9973135640687874,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0008305378866127158,
+              "action_applied": [
+                -0.0008305378866127158,
+                0.0006178802641789094
+              ],
+              "lane_offset_m_before": -0.042421817779541016,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 88.76889038085938,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31322089443798756,
+              "xy_after": [
+                32.856746673583984,
+                7.041586875915527
+              ]
+            },
+            {
+              "step": 115,
+              "speed_mps_before": 2.998065310522405,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0008305378866127158,
+              "action_applied": [
+                -0.0008305378866127158,
+                0.00044497857984682643
+              ],
+              "lane_offset_m_before": -0.038036346435546875,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 87.27006530761719,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31330035699414294,
+              "xy_after": [
+                34.355648040771484,
+                7.03709602355957
+              ]
+            },
+            {
+              "step": 120,
+              "speed_mps_before": 2.998612382586314,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0008305378866127158,
+              "action_applied": [
+                -0.0008305378866127158,
+                0.00031915200514782694
+              ],
+              "lane_offset_m_before": -0.033123016357421875,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 85.77091217041016,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31335223854726885,
+              "xy_after": [
+                35.85485076904297,
+                7.032076835632324
+              ]
+            },
+            {
+              "step": 125,
+              "speed_mps_before": 2.998997707491385,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0008305378866127158,
+              "action_applied": [
+                -0.0008305378866127158,
+                0.00023052727698141153
+              ],
+              "lane_offset_m_before": -0.02768087387084961,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 84.27152633666992,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.3133881978473744,
+              "xy_after": [
+                37.354270935058594,
+                7.026528835296631
+              ]
+            },
+            {
+              "step": 130,
+              "speed_mps_before": 2.9992832601520227,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0008305378866127158,
+              "action_applied": [
+                -0.0008305378866127158,
+                0.00016485016503477114
+              ],
+              "lane_offset_m_before": -0.021710872650146484,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 82.77197647094727,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31342756575721864,
+              "xy_after": [
+                38.853858947753906,
+                7.020453453063965
+              ]
+            },
+            {
+              "step": 135,
+              "speed_mps_before": 2.9994881175508907,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0008305378866127158,
+              "action_applied": [
+                -0.0008305378866127158,
+                0.00011773296329513183
+              ],
+              "lane_offset_m_before": -0.015213966369628906,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 81.27230072021484,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31344749702745883,
+              "xy_after": [
+                40.353553771972656,
+                7.013851642608643
+              ]
+            },
+            {
+              "step": 140,
+              "speed_mps_before": 2.999632688229578,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                8.448170719709492e-05
+              ],
+              "lane_offset_m_before": -0.008548259735107422,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 79.77254867553711,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.3134671744207893,
+              "xy_after": [
+                41.85332489013672,
+                7.007230281829834
+              ]
+            },
+            {
+              "step": 145,
+              "speed_mps_before": 2.999738040092547,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                6.0250778714223686e-05
+              ],
+              "lane_offset_m_before": -0.0019354820251464844,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 78.272705078125,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31346760539801266,
+              "xy_after": [
+                43.35316848754883,
+                7.000607490539551
+              ]
+            },
+            {
+              "step": 150,
+              "speed_mps_before": 2.9998099793180053,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                4.370475685878006e-05
+              ],
+              "lane_offset_m_before": 0.0047245025634765625,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 76.77286148071289,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31347937320443137,
+              "xy_after": [
+                44.853023529052734,
+                6.993937969207764
+              ]
+            },
+            {
+              "step": 155,
+              "speed_mps_before": 2.999862853058821,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                3.154379647113182e-05
+              ],
+              "lane_offset_m_before": 0.011429786682128906,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 75.27293014526367,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31348721908326027,
+              "xy_after": [
+                46.352962493896484,
+                6.987223148345947
+              ]
+            },
+            {
+              "step": 160,
+              "speed_mps_before": 2.999901403954933,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                2.2677090365412767e-05
+              ],
+              "lane_offset_m_before": 0.01818227767944336,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 73.77299118041992,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.3134873711186116,
+              "xy_after": [
+                47.852901458740234,
+                6.980461597442627
+              ]
+            },
+            {
+              "step": 165,
+              "speed_mps_before": 2.9999256473585345,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                1.7101107537063067e-05
+              ],
+              "lane_offset_m_before": 0.02498006820678711,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 72.27305221557617,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31348748021241846,
+              "xy_after": [
+                49.352840423583984,
+                6.9736552238464355
+              ]
+            },
+            {
+              "step": 170,
+              "speed_mps_before": 2.999949899863162,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                1.1523031472697732e-05
+              ],
+              "lane_offset_m_before": 0.03182220458984375,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 70.77311325073242,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31348758934976073,
+              "xy_after": [
+                50.852779388427734,
+                6.966804027557373
+              ]
+            },
+            {
+              "step": 175,
+              "speed_mps_before": 2.999964619859804,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                8.137432245129971e-06
+              ],
+              "lane_offset_m_before": 0.03870964050292969,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 69.27317428588867,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31348763412541697,
+              "xy_after": [
+                52.352718353271484,
+                6.959907531738281
+              ]
+            },
+            {
+              "step": 180,
+              "speed_mps_before": 2.999965044391268,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                8.039790008362858e-06
+              ],
+              "lane_offset_m_before": 0.04564189910888672,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 67.77323532104492,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31348763603733154,
+              "xy_after": [
+                53.852657318115234,
+                6.95296573638916
+              ]
+            },
+            {
+              "step": 185,
+              "speed_mps_before": 2.999965479696065,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                7.939669905030477e-06
+              ],
+              "lane_offset_m_before": 0.05261993408203125,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 66.27329635620117,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31348763800712637,
+              "xy_after": [
+                55.352596282958984,
+                6.94597864151001
+              ]
+            },
+            {
+              "step": 190,
+              "speed_mps_before": 2.999965906323579,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                7.84154557686545e-06
+              ],
+              "lane_offset_m_before": 0.05964517593383789,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 64.77335739135742,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31348763993663586,
+              "xy_after": [
+                56.852535247802734,
+                6.938944339752197
+              ]
+            },
+            {
+              "step": 195,
+              "speed_mps_before": 2.9999663305734976,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                7.743968095552667e-06
+              ],
+              "lane_offset_m_before": 0.06671571731567383,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 63.27341842651367,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.3134876418411769,
+              "xy_after": [
+                58.352474212646484,
+                6.9318647384643555
+              ]
+            },
+            {
+              "step": 200,
+              "speed_mps_before": 2.9999667554645804,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                7.646243146517407e-06
+              ],
+              "lane_offset_m_before": 0.07383108139038086,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 61.77347946166992,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31348764375733124,
+              "xy_after": [
+                59.852413177490234,
+                6.924740791320801
+              ]
+            },
+            {
+              "step": 205,
+              "speed_mps_before": 2.999967187971139,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                7.546766638046876e-06
+              ],
+              "lane_offset_m_before": 0.08099126815795898,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 60.27354049682617,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31348764570292026,
+              "xy_after": [
+                61.352352142333984,
+                6.917571067810059
+              ]
+            },
+            {
+              "step": 210,
+              "speed_mps_before": 2.9999676283886765,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                7.445470604410254e-06
+              ],
+              "lane_offset_m_before": 0.08819723129272461,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 58.77360153198242,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.3134876476854734,
+              "xy_after": [
+                62.852291107177734,
+                6.910356044769287
+              ]
+            },
+            {
+              "step": 215,
+              "speed_mps_before": 2.9999680752160116,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                7.3427003173298645e-06
+              ],
+              "lane_offset_m_before": 0.09544897079467773,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 57.273658752441406,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.3134876496875436,
+              "xy_after": [
+                64.35223388671875,
+                6.903095245361328
+              ]
+            },
+            {
+              "step": 220,
+              "speed_mps_before": 2.9999685126211597,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                7.242097133266512e-06
+              ],
+              "lane_offset_m_before": 0.10274600982666016,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 55.773719787597656,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31348765167064746,
+              "xy_after": [
+                65.8521728515625,
+                6.89578914642334
+              ]
+            },
+            {
+              "step": 225,
+              "speed_mps_before": 2.9999689520189845,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                7.1410356335643856e-06
+              ],
+              "lane_offset_m_before": 0.11008834838867188,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 54.273780822753906,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.3134876536565193,
+              "xy_after": [
+                67.35211181640625,
+                6.8884382247924805
+              ]
+            },
+            {
+              "step": 230,
+              "speed_mps_before": 2.9999693998215506,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                7.038041043352373e-06
+              ],
+              "lane_offset_m_before": 0.11747550964355469,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 52.773841857910156,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31348765567449266,
+              "xy_after": [
+                68.85205078125,
+                6.881041526794434
+              ]
+            },
+            {
+              "step": 235,
+              "speed_mps_before": 2.9999698472104686,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                6.935141592232519e-06
+              ],
+              "lane_offset_m_before": 0.124908447265625,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 51.273902893066406,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31348765768351916,
+              "xy_after": [
+                70.35198974609375,
+                6.873599529266357
+              ]
+            },
+            {
+              "step": 240,
+              "speed_mps_before": 2.999970296974562,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                6.8316958507219644e-06
+              ],
+              "lane_offset_m_before": 0.1323862075805664,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 49.773963928222656,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31348765972344755,
+              "xy_after": [
+                71.8519287109375,
+                6.86611270904541
+              ]
+            },
+            {
+              "step": 245,
+              "speed_mps_before": 2.9999707536771947,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                6.726654245223785e-06
+              ],
+              "lane_offset_m_before": 0.1399092674255371,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 48.274024963378906,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.31348766177916026,
+              "xy_after": [
+                73.35186767578125,
+                6.858580589294434
+              ]
+            },
+            {
+              "step": 250,
+              "speed_mps_before": 2.99997123072149,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                6.616934057332991e-06
+              ],
+              "lane_offset_m_before": 0.14747858047485352,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 46.774085998535156,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.3134876639159646,
+              "xy_after": [
+                74.851806640625,
+                6.851002216339111
+              ]
+            },
+            {
+              "step": 255,
+              "speed_mps_before": 2.9999716910274365,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                6.511063689593755e-06
+              ],
+              "lane_offset_m_before": 0.15509414672851562,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 45.274147033691406,
+              "lookahead_m": [
+                25.0,
+                45.0
+              ],
+              "adapted": false,
+              "reward": 0.3134876659769126,
+              "xy_after": [
+                76.35174560546875,
+                6.843377590179443
+              ]
+            },
+            {
+              "step": 260,
+              "speed_mps_before": 2.999972148855131,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                6.405763319876634e-06
+              ],
+              "lane_offset_m_before": 0.16275453567504883,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 43.774208068847656,
+              "lookahead_m": [
+                24.075814437866214,
+                39.39678726196289
+              ],
+              "adapted": true,
+              "reward": 0.3134876680539417,
+              "xy_after": [
+                77.8516845703125,
+                6.835707664489746
+              ]
+            },
+            {
+              "step": 265,
+              "speed_mps_before": 2.9999726116346763,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                6.299324024445774e-06
+              ],
+              "lane_offset_m_before": 0.17046022415161133,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 42.274269104003906,
+              "lookahead_m": [
+                23.25084800720215,
+                38.04684219360352
+              ],
+              "adapted": true,
+              "reward": 0.3134876701396815,
+              "xy_after": [
+                79.35162353515625,
+                6.827992916107178
+              ]
+            },
+            {
+              "step": 270,
+              "speed_mps_before": 2.99997308190684,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 7.413667010501883e-05,
+              "action_applied": [
+                -7.413667010501883e-05,
+                6.191161426754022e-06
+              ],
+              "lane_offset_m_before": 0.17821121215820312,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 40.774330139160156,
+              "lookahead_m": [
+                22.42588157653809,
+                36.69689712524414
+              ],
+              "adapted": true,
+              "reward": 0.3134876722666336,
+              "xy_after": [
+                80.8515625,
+                6.820233345031738
+              ]
+            },
+            {
+              "step": 275,
+              "speed_mps_before": 2.9999708569627344,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": -0.0011770761585012462,
+              "action_applied": [
+                0.0011770761585012462,
+                6.702898571098182e-06
+              ],
+              "lane_offset_m_before": 0.18545150756835938,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 39.274391174316406,
+              "lookahead_m": [
+                21.600915145874026,
+                35.34695205688477
+              ],
+              "adapted": true,
+              "reward": 0.31348765601202305,
+              "xy_after": [
+                82.35150146484375,
+                6.813223361968994
+              ]
+            },
+            {
+              "step": 280,
+              "speed_mps_before": 2.9999670692519076,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0006615639476305746,
+              "action_applied": [
+                -0.0006615639476305746,
+                7.574072061253823e-06
+              ],
+              "lane_offset_m_before": 0.1920928955078125,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 37.774452209472656,
+              "lookahead_m": [
+                20.775948715209964,
+                33.99700698852539
+              ],
+              "adapted": true,
+              "reward": 0.313487648637001,
+              "xy_after": [
+                83.8514404296875,
+                6.806448459625244
+              ]
+            },
+            {
+              "step": 285,
+              "speed_mps_before": 2.999970812947924,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0008786569568110179,
+              "action_applied": [
+                -0.0008786569568110179,
+                6.7130219775046744e-06
+              ],
+              "lane_offset_m_before": 0.1995868682861328,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 36.274513244628906,
+              "lookahead_m": [
+                19.9509822845459,
+                32.64706192016602
+              ],
+              "adapted": true,
+              "reward": 0.31348766692864527,
+              "xy_after": [
+                85.35137939453125,
+                6.798841953277588
+              ]
+            },
+            {
+              "step": 290,
+              "speed_mps_before": 2.999975157871616,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0011215472010689866,
+              "action_applied": [
+                -0.0011215472010689866,
+                5.7136895283571575e-06
+              ],
+              "lane_offset_m_before": 0.20769214630126953,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 34.774574279785156,
+              "lookahead_m": [
+                19.12601585388184,
+                31.297116851806642
+              ],
+              "adapted": true,
+              "reward": 0.31348768271468164,
+              "xy_after": [
+                86.851318359375,
+                6.790594100952148
+              ]
+            },
+            {
+              "step": 295,
+              "speed_mps_before": 2.9999791814009744,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.001191816671012375,
+              "action_applied": [
+                -0.001191816671012375,
+                4.788277775884531e-06
+              ],
+              "lane_offset_m_before": 0.21657180786132812,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 33.274635314941406,
+              "lookahead_m": [
+                18.301049423217776,
+                29.947171783447267
+              ],
+              "adapted": true,
+              "reward": 0.3134877077333992,
+              "xy_after": [
+                88.35125732421875,
+                6.781558990478516
+              ]
+            },
+            {
+              "step": 300,
+              "speed_mps_before": 2.999984868743589,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.001088416790127486,
+              "action_applied": [
+                -0.001088416790127486,
+                3.480188974518406e-06
+              ],
+              "lane_offset_m_before": 0.22621536254882812,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 31.774696350097656,
+              "lookahead_m": [
+                17.476082992553714,
+                28.597226715087892
+              ],
+              "adapted": true,
+              "reward": 0.31348773272794167,
+              "xy_after": [
+                89.8511962890625,
+                6.7717766761779785
+              ]
+            },
+            {
+              "step": 305,
+              "speed_mps_before": 2.9999942900352052,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.001088416790127486,
+              "action_applied": [
+                -0.001088416790127486,
+                1.3132919027958324e-06
+              ],
+              "lane_offset_m_before": 0.2365283966064453,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 30.274757385253906,
+              "lookahead_m": [
+                16.65111656188965,
+                27.247281646728517
+              ],
+              "adapted": true,
+              "reward": 0.3134877718590724,
+              "xy_after": [
+                91.35113525390625,
+                6.761326789855957
+              ]
+            },
+            {
+              "step": 310,
+              "speed_mps_before": 2.999996230828024,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0004755485414501628,
+              "action_applied": [
+                -0.0004755485414501628,
+                8.669095544489025e-07
+              ],
+              "lane_offset_m_before": 0.2473464012145996,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 28.774818420410156,
+              "lookahead_m": [
+                15.826150131225587,
+                25.897336578369142
+              ],
+              "adapted": true,
+              "reward": 0.3134877805206012,
+              "xy_after": [
+                92.85107421875,
+                6.750477313995361
+              ]
+            },
+            {
+              "step": 315,
+              "speed_mps_before": 3.0000008428532126,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0004755485414501628,
+              "action_applied": [
+                -0.0004755485414501628,
+                -1.9385623888812376e-07
+              ],
+              "lane_offset_m_before": 0.25835704803466797,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 27.274879455566406,
+              "lookahead_m": [
+                15.001183700561525,
+                24.547391510009767
+              ],
+              "adapted": true,
+              "reward": 0.31348780081414085,
+              "xy_after": [
+                94.35101318359375,
+                6.739404201507568
+              ]
+            },
+            {
+              "step": 320,
+              "speed_mps_before": 3.000005413575802,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0004755485414501628,
+              "action_applied": [
+                -0.0004755485414501628,
+                -1.24512243442787e-06
+              ],
+              "lane_offset_m_before": 0.2696700096130371,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 25.774940490722656,
+              "lookahead_m": [
+                14.176217269897462,
+                23.197446441650392
+              ],
+              "adapted": true,
+              "reward": 0.31348782151206356,
+              "xy_after": [
+                95.8509521484375,
+                6.728031635284424
+              ]
+            },
+            {
+              "step": 325,
+              "speed_mps_before": 3.0000047570942945,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": 0.0003450056675487489,
+              "action_applied": [
+                -0.0003450056675487489,
+                -1.0941316877310924e-06
+              ],
+              "lane_offset_m_before": 0.2812771797180176,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 24.275001525878906,
+              "lookahead_m": [
+                13.3512508392334,
+                21.847501373291017
+              ],
+              "adapted": true,
+              "reward": 0.3134878167716209,
+              "xy_after": [
+                97.35089111328125,
+                6.7163777351379395
+              ]
+            },
+            {
+              "step": 330,
+              "speed_mps_before": 3.000006235425198,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": -0.000597483998691416,
+              "action_applied": [
+                0.000597483998691416,
+                -1.4341477955293058e-06
+              ],
+              "lane_offset_m_before": 0.2929244041442871,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 22.775062561035156,
+              "lookahead_m": [
+                12.526284408569337,
+                20.497556304931642
+              ],
+              "adapted": true,
+              "reward": 0.3134878212388499,
+              "xy_after": [
+                98.850830078125,
+                6.704817771911621
+              ]
+            },
+            {
+              "step": 335,
+              "speed_mps_before": 3.0000025132671446,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": -0.003490096532179252,
+              "action_applied": [
+                0.003490096532179252,
+                -5.780514432629502e-07
+              ],
+              "lane_offset_m_before": 0.30284643173217773,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 21.275123596191406,
+              "lookahead_m": [
+                11.701317977905275,
+                19.147611236572267
+              ],
+              "adapted": true,
+              "reward": 0.31348780196903514,
+              "xy_after": [
+                100.35076904296875,
+                6.695488452911377
+              ]
+            },
+            {
+              "step": 340,
+              "speed_mps_before": 3.000004441519798,
+              "target_speed_mps": 3.0,
+              "steer_carla_pred": -0.003490096532179252,
+              "action_applied": [
+                0.003490096532179252,
+                -1.0215495535792485e-06
+              ],
+              "lane_offset_m_before": 0.31021642684936523,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 19.775184631347656,
+              "lookahead_m": [
+                10.876351547241212,
+                17.797666168212892
+              ],
+              "adapted": true,
+              "reward": 0.3134878188487084,
+              "xy_after": [
+                101.8507080078125,
+                6.688577651977539
+              ]
+            },
+            {
+              "step": 345,
+              "speed_mps_before": 2.9895290576636504,
+              "target_speed_mps": 2.924078369140625,
+              "steer_carla_pred": -0.00469231598470242,
+              "action_applied": [
+                0.00469231598470242,
+                -0.015053658360295864
+              ],
+              "lane_offset_m_before": 0.31356048583984375,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 18.275489807128906,
+              "lookahead_m": [
+                10.051519393920898,
+                16.447940826416016
+              ],
+              "adapted": true,
+              "reward": 0.31174358849190786,
+              "xy_after": [
+                103.34881591796875,
+                6.6862993240356445
+              ]
+            },
+            {
+              "step": 350,
+              "speed_mps_before": 2.808497689563754,
+              "target_speed_mps": 2.69057373046875,
+              "steer_carla_pred": -0.002452253781695756,
+              "action_applied": [
+                0.002452253781695756,
+                -0.02712251059185094
+              ],
+              "lane_offset_m_before": 0.313962459564209,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 16.816085815429688,
+              "lookahead_m": [
+                9.24884719848633,
+                15.134477233886718
+              ],
+              "adapted": true,
+              "reward": 0.2924003454736386,
+              "xy_after": [
+                104.78977966308594,
+                6.6860127449035645
+              ]
+            },
+            {
+              "step": 355,
+              "speed_mps_before": 2.5883393910469374,
+              "target_speed_mps": 2.473671875,
+              "steer_carla_pred": 0.005511580671488201,
+              "action_applied": [
+                -0.005511580671488201,
+                -0.026373528690795622
+              ],
+              "lane_offset_m_before": 0.31470537185668945,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 15.46044921875,
+              "lookahead_m": [
+                8.5032470703125,
+                13.914404296875
+              ],
+              "adapted": true,
+              "reward": 0.26943480853897,
+              "xy_after": [
+                106.1234359741211,
+                6.6845598220825195
+              ]
+            },
+            {
+              "step": 360,
+              "speed_mps_before": 2.3801343586276946,
+              "target_speed_mps": 2.27403564453125,
+              "steer_carla_pred": 0.0075940062019138905,
+              "action_applied": [
+                -0.0075940062019138905,
+                -0.024402704242182223
+              ],
+              "lane_offset_m_before": 0.3205714225769043,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 14.212722778320312,
+              "lookahead_m": [
+                7.816997528076173,
+                12.791450500488281
+              ],
+              "adapted": true,
+              "reward": 0.2477451220957996,
+              "xy_after": [
+                107.35039520263672,
+                6.677916049957275
+              ]
+            },
+            {
+              "step": 365,
+              "speed_mps_before": 2.187886859234092,
+              "target_speed_mps": 2.09049560546875,
+              "steer_carla_pred": -0.018812405623830023,
+              "action_applied": [
+                0.018812405623830023,
+                -0.02239998836602868
+              ],
+              "lane_offset_m_before": 0.3252830505371094,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 13.065597534179688,
+              "lookahead_m": [
+                7.186078643798829,
+                11.75903778076172
+              ],
+              "adapted": true,
+              "reward": 0.2277372823175311,
+              "xy_after": [
+                108.47836303710938,
+                6.675821304321289
+              ]
+            },
+            {
+              "step": 370,
+              "speed_mps_before": 2.011494158346793,
+              "target_speed_mps": 1.921767578125,
+              "steer_carla_pred": -0.01794765627573387,
+              "action_applied": [
+                0.01794765627573387,
+                -0.020637113451012348
+              ],
+              "lane_offset_m_before": 0.3185276985168457,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 12.01104736328125,
+              "lookahead_m": [
+                6.606076049804688,
+                10.809942626953125
+              ],
+              "adapted": true,
+              "reward": 0.20937823620266263,
+              "xy_after": [
+                109.51533508300781,
+                6.6832356452941895
+              ]
+            },
+            {
+              "step": 375,
+              "speed_mps_before": 1.84915861523529,
+              "target_speed_mps": 1.7666577148437501,
+              "steer_carla_pred": -0.012645410174106426,
+              "action_applied": [
+                0.012645410174106426,
+                -0.018975207090054153
+              ],
+              "lane_offset_m_before": 0.30878591537475586,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 11.041610717773438,
+              "lookahead_m": [
+                6.072885894775391,
+                9.937449645996095
+              ],
+              "adapted": true,
+              "reward": 0.1924779780619692,
+              "xy_after": [
+                110.46858978271484,
+                6.693295955657959
+              ]
+            },
+            {
+              "step": 380,
+              "speed_mps_before": 1.6998943801333835,
+              "target_speed_mps": 1.624072265625,
+              "steer_carla_pred": -0.017011456856153535,
+              "action_applied": [
+                0.017011456856153535,
+                -0.017439086336928204
+              ],
+              "lane_offset_m_before": 0.2968921661376953,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 10.15045166015625,
+              "lookahead_m": [
+                5.582748413085938,
+                9.135406494140625
+              ],
+              "adapted": true,
+              "reward": 0.1769325786875499,
+              "xy_after": [
+                111.34486389160156,
+                6.705939292907715
+              ]
+            },
+            {
+              "step": 385,
+              "speed_mps_before": 1.5626698600237523,
+              "target_speed_mps": 1.492998046875,
+              "steer_carla_pred": 0.002104143566518907,
+              "action_applied": [
+                -0.002104143566518907,
+                -0.016024517024213047
+              ],
+              "lane_offset_m_before": 0.28311729431152344,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 9.33123779296875,
+              "lookahead_m": [
+                5.132180786132813,
+                8.398114013671876
+              ],
+              "adapted": true,
+              "reward": 0.16264591551691762,
+              "xy_after": [
+                112.15039825439453,
+                6.71875
+              ]
+            },
+            {
+              "step": 390,
+              "speed_mps_before": 1.436581757793104,
+              "target_speed_mps": 1.3724951171875,
+              "steer_carla_pred": 0.0018850955488651099,
+              "action_applied": [
+                -0.0018850955488651099,
+                -0.014739927339288916
+              ],
+              "lane_offset_m_before": 0.2741236686706543,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 8.578094482421875,
+              "lookahead_m": [
+                4.717951965332031,
+                7.720285034179688
+              ],
+              "adapted": true,
+              "reward": 0.14952994094870398,
+              "xy_after": [
+                112.89098358154297,
+                6.72756814956665
+              ]
+            },
+            {
+              "step": 395,
+              "speed_mps_before": 1.32063171126599,
+              "target_speed_mps": 1.26172119140625,
+              "steer_carla_pred": 0.0018850955488651099,
+              "action_applied": [
+                -0.0018850955488651099,
+                -0.013549419567740187
+              ],
+              "lane_offset_m_before": 0.2660183906555176,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 7.8857574462890625,
+              "lookahead_m": [
+                4.337166595458985,
+                7.097181701660157
+              ],
+              "adapted": true,
+              "reward": 0.1374583444602492,
+              "xy_after": [
+                113.57176208496094,
+                6.735495090484619
+              ]
+            },
+            {
+              "step": 400,
+              "speed_mps_before": 1.2140432697669623,
+              "target_speed_mps": 1.15988525390625,
+              "steer_carla_pred": 0.0018850955488651099,
+              "action_applied": [
+                -0.0018850955488651099,
+                -0.012456343647963813
+              ],
+              "lane_offset_m_before": 0.2587881088256836,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 7.2492828369140625,
+              "lookahead_m": [
+                3.9871055603027346,
+                6.524354553222657
+              ],
+              "adapted": true,
+              "reward": 0.12635894995115055,
+              "xy_after": [
+                114.1976089477539,
+                6.7425618171691895
+              ]
+            },
+            {
+              "step": 405,
+              "speed_mps_before": 1.116057558878709,
+              "target_speed_mps": 1.06627197265625,
+              "steer_carla_pred": 0.0018850955488651099,
+              "action_applied": [
+                -0.0018850955488651099,
+                -0.011450684831165568
+              ],
+              "lane_offset_m_before": 0.2523345947265625,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 6.6641998291015625,
+              "lookahead_m": [
+                3.66530990600586,
+                5.997779846191406
+              ],
+              "adapted": true,
+              "reward": 0.11616738010621716,
+              "xy_after": [
+                114.77293395996094,
+                6.748871326446533
+              ]
+            },
+            {
+              "step": 410,
+              "speed_mps_before": 1.0259812090022589,
+              "target_speed_mps": 0.980211181640625,
+              "steer_carla_pred": 0.0021116101014574157,
+              "action_applied": [
+                -0.0021116101014574157,
+                -0.01052710629317578
+              ],
+              "lane_offset_m_before": 0.2465987205505371,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 6.126319885253906,
+              "lookahead_m": [
+                3.3694759368896485,
+                5.5136878967285154
+              ],
+              "adapted": true,
+              "reward": 0.1067813699797834,
+              "xy_after": [
+                115.30182647705078,
+                6.754469394683838
+              ]
+            },
+            {
+              "step": 415,
+              "speed_mps_before": 0.9431737495731671,
+              "target_speed_mps": 0.901097412109375,
+              "steer_carla_pred": 0.0024051668507800435,
+              "action_applied": [
+                -0.0024051668507800435,
+                -0.009677557616672192
+              ],
+              "lane_offset_m_before": 0.24150609970092773,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 5.631858825683594,
+              "lookahead_m": [
+                3.0975223541259767,
+                5.068672943115234
+              ],
+              "adapted": true,
+              "reward": 0.0981752156904444,
+              "xy_after": [
+                115.78804779052734,
+                6.759435653686523
+              ]
+            },
+            {
+              "step": 420,
+              "speed_mps_before": 0.8670442165833878,
+              "target_speed_mps": 0.828363037109375,
+              "steer_carla_pred": 0.0024051668507800435,
+              "action_applied": [
+                -0.0024051668507800435,
+                -0.008896671279022954
+              ],
+              "lane_offset_m_before": 0.23700857162475586,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 5.177268981933594,
+              "lookahead_m": [
+                2.847497940063477,
+                4.659542083740234
+              ],
+              "adapted": true,
+              "reward": 0.09025472687557176,
+              "xy_after": [
+                116.23505401611328,
+                6.763830184936523
+              ]
+            },
+            {
+              "step": 422,
+              "speed_mps_before": 0.8383416777527215,
+              "target_speed_mps": 0.8009423828125,
+              "steer_carla_pred": 0.0024051668507800435,
+              "action_applied": [
+                -0.0024051668507800435,
+                -0.008601837836250955
+              ],
+              "lane_offset_m_before": 0.2353501319885254,
+              "lane_width_m": 3.5,
+              "remaining_route_m": 5.005889892578125,
+              "lookahead_m": [
+                2.753239440917969,
+                4.505300903320313
+              ],
+              "adapted": true,
+              "reward": 10.0,
+              "xy_after": [
+                116.40357208251953,
+                6.765451431274414
+              ]
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "n_arrived": 1,
+      "n_guarded": 0
+    }
+  ],
+  "warnings": [
+    "Hybrid pilot: model controls steering; speed comes from independent governor.",
+    "Steering gain 1 is experimental, not physically calibrated.",
+    "Adaptive near-destination lookahead differs from PDD training data.",
+    "Only traffic-free MetaDrive simulation; NOT real-road safe.",
+    "Travel, success and failures are not comparable to IDM under same speed policy."
+  ]
+}

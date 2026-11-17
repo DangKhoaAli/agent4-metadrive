@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 36,
+    "gender": "Female",
+    "occupation": "School teacher"
+  },
+  "driving_experience": "16 years",
+  "driving_frequency_per_week": "5 to 10 h",
+  "driving_purposes": [
+    "Commuting to school",
+    "Weekend hiking trips with family"
+  ],
+  "driving_habits_preferences": [
+    "Maintains a calm and steady pace regardless of surrounding traffic",
+    "Keeps a generous following distance and avoids sudden braking",
+    "Plans routes in advance and avoids unfamiliar or high-traffic roads"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "None",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Calm",
+  "international_driving_experience": "None"
+}

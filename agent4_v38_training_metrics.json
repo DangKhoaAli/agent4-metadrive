@@ -1,0 +1,91 @@
+{
+  "version": "V38_CONTROLLED_LEAD_TRAFFIC_BC",
+  "teacher": "executed handcrafted gap-aware policy (NOT IDM)",
+  "splits": {
+    "train": [
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111
+    ],
+    "val": [
+      112,
+      113,
+      114,
+      115
+    ],
+    "eval": [
+      116,
+      117,
+      118,
+      119
+    ]
+  },
+  "metrics": {
+    "train": {
+      "all": {
+        "n": 45839,
+        "mae": 0.00097648870393949,
+        "rmse": 0.0021523893528947132,
+        "brake_n": 3321,
+        "brake_mae": 0.0020369856740113912,
+        "brake_recall_at_0p02": 0.953026196928636
+      },
+      "front_present": {
+        "n": 29239,
+        "mae": 0.0014581310505602256,
+        "rmse": 0.002684746570058865,
+        "brake_n": 2053,
+        "brake_mae": 0.0029426640623427492,
+        "brake_recall_at_0p02": 0.9283974671212859
+      },
+      "front_absent": {
+        "n": 16600,
+        "mae": 0.00012813083810553274,
+        "rmse": 0.0003115506592222014,
+        "brake_n": 1268,
+        "brake_mae": 0.0005706152235032861,
+        "brake_recall_at_0p02": 0.9929022082018928
+      }
+    },
+    "val": {
+      "all": {
+        "n": 14338,
+        "mae": 0.0012740375978594536,
+        "rmse": 0.0026701691364341296,
+        "brake_n": 866,
+        "brake_mae": 0.0037185661472964484,
+        "brake_recall_at_0p02": 0.9157043879907621
+      },
+      "front_present": {
+        "n": 9182,
+        "mae": 0.001925225137090854,
+        "rmse": 0.0033317135839644784,
+        "brake_n": 579,
+        "brake_mae": 0.005291423008941287,
+        "brake_recall_at_0p02": 0.8791018998272885
+      },
+      "front_absent": {
+        "n": 5156,
+        "mae": 0.00011437817481392986,
+        "rmse": 0.00024282667316536215,
+        "brake_n": 287,
+        "brake_mae": 0.0005454507365216698,
+        "brake_recall_at_0p02": 0.9895470383275261
+      }
+    }
+  },
+  "limitations": [
+    "Controlled scripted lead, S maps only.",
+    "Teacher is rule-based; learned response not a proof of physical safety.",
+    "No random traffic, pedestrians, intersections, or lane-change training."
+  ]
+}

@@ -1,0 +1,58 @@
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== Virtual Environment =====
+.venv/
+venv/
+env/
+
+# ===== Environment / Secrets =====
+.env
+.env.*
+!.env.example
+*.key
+
+# ===== Dataset MetaDrive =====
+data/
+dataset/
+datasets/
+agent4_v312b_idm_dataset/
+agent4_v312b_smoke/
+
+# ===== Trained Models =====
+models/
+checkpoints/
+*.joblib
+*.pkl
+*.pth
+*.pt
+*.ckpt
+
+# ===== Simulation Outputs =====
+logs/
+outputs/
+runs/
+tmp/
+temp/
+
+# ===== Reports =====
+reports/raw/
+reports/traces/
+*.log
+
+# ===== IDE / Windows =====
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+
+# ===== Build =====
+build/
+dist/
+*.egg-info/

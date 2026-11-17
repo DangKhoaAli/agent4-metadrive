@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 49,
+    "gender": "Male",
+    "occupation": "Fitness coach"
+  },
+  "driving_experience": "12 years",
+  "driving_frequency_per_week": "10 to 15 h",
+  "driving_purposes": [
+    "Medical appointments",
+    "Professional driving"
+  ],
+  "driving_habits_preferences": [
+    "Comfortable in dense urban traffic but avoids rushing",
+    "Keeps a larger following distance in mixed traffic",
+    "Uses cruise control on open stretches and accelerates gradually"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "None",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Calm",
+  "international_driving_experience": "International driving in Australia (6 months)"
+}

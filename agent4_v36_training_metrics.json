@@ -1,0 +1,305 @@
+{
+  "status": "V36_LONGITUDINAL_OFFLINE_IMITATION",
+  "model_path": "agent4_v36_longitudinal.joblib",
+  "train_splits": {
+    "train": [
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71
+    ],
+    "val": [
+      72,
+      73,
+      74,
+      75
+    ],
+    "eval": [
+      76,
+      77,
+      78,
+      79
+    ]
+  },
+  "teacher_label": "executed clipped native IDM longitudinal action",
+  "training_speed_schedule_enabled": true,
+  "metrics": {
+    "train": {
+      "overall": {
+        "n": 63791,
+        "mae": 0.0020660571211469038,
+        "rmse": 0.004307125691506698,
+        "brake_n": 14413,
+        "brake_mae": 0.0033152271205153685,
+        "brake_recall_at_0p02": 0.9921598556858392,
+        "throttle_n": 31088,
+        "throttle_mae": 0.002549890003346725,
+        "output_brake_fraction": 0.22490633474941607,
+        "teacher_brake_fraction": 0.22594096345879514
+      },
+      "by_speed_and_map": {
+        "2.0": {
+          "C": {
+            "n": 12306,
+            "mae": 0.0022617018496195874,
+            "rmse": 0.004279963544932209,
+            "brake_n": 3903,
+            "brake_mae": 0.002763358951258699,
+            "brake_recall_at_0p02": 0.9905201127337945,
+            "throttle_n": 7703,
+            "throttle_mae": 0.0021040413539704663,
+            "output_brake_fraction": 0.3142369575816675,
+            "teacher_brake_fraction": 0.3171623598244759
+          },
+          "S": {
+            "n": 7858,
+            "mae": 0.0022917230726780978,
+            "rmse": 0.0045731317821555454,
+            "brake_n": 2503,
+            "brake_mae": 0.0028689148195065258,
+            "brake_recall_at_0p02": 0.986016779864163,
+            "throttle_n": 4981,
+            "throttle_mae": 0.002075899762523297,
+            "output_brake_fraction": 0.3143293458895393,
+            "teacher_brake_fraction": 0.31852888775769916
+          },
+          "X": {
+            "n": 8946,
+            "mae": 0.002349574291027232,
+            "rmse": 0.004462469394451273,
+            "brake_n": 2807,
+            "brake_mae": 0.0029627581005530054,
+            "brake_recall_at_0p02": 0.9882436765229783,
+            "throttle_n": 5625,
+            "throttle_mae": 0.0021415423988636268,
+            "output_brake_fraction": 0.3101945003353454,
+            "teacher_brake_fraction": 0.3137715179968701
+          }
+        },
+        "3.0": {
+          "C": {
+            "n": 8055,
+            "mae": 0.001712414450374883,
+            "rmse": 0.00400364902582011,
+            "brake_n": 1032,
+            "brake_mae": 0.004494309137015905,
+            "brake_recall_at_0p02": 1.0,
+            "throttle_n": 2648,
+            "throttle_mae": 0.003227522737903538,
+            "output_brake_fraction": 0.1292364990689013,
+            "teacher_brake_fraction": 0.12811918063314712
+          },
+          "S": {
+            "n": 5252,
+            "mae": 0.0017446887540461958,
+            "rmse": 0.003821067797333393,
+            "brake_n": 730,
+            "brake_mae": 0.004467313244446895,
+            "brake_recall_at_0p02": 1.0,
+            "throttle_n": 1892,
+            "throttle_mae": 0.0029713056738967175,
+            "output_brake_fraction": 0.1407083015993907,
+            "teacher_brake_fraction": 0.138994668697639
+          },
+          "X": {
+            "n": 5999,
+            "mae": 0.0018921934146842552,
+            "rmse": 0.004184421805934932,
+            "brake_n": 855,
+            "brake_mae": 0.004811565739157829,
+            "brake_recall_at_0p02": 0.9988304093567252,
+            "throttle_n": 2243,
+            "throttle_mae": 0.0030358549417144206,
+            "output_brake_fraction": 0.14402400400066678,
+            "teacher_brake_fraction": 0.14252375395899317
+          }
+        },
+        "4.0": {
+          "C": {
+            "n": 6346,
+            "mae": 0.0018329809720371711,
+            "rmse": 0.004427050889874825,
+            "brake_n": 1013,
+            "brake_mae": 0.003343487127814414,
+            "brake_recall_at_0p02": 0.998025666337611,
+            "throttle_n": 2253,
+            "throttle_mae": 0.0034001452564111933,
+            "output_brake_fraction": 0.1599432713520328,
+            "teacher_brake_fraction": 0.15962811219665932
+          },
+          "S": {
+            "n": 4320,
+            "mae": 0.0020890224501167636,
+            "rmse": 0.0043986188524816365,
+            "brake_n": 786,
+            "brake_mae": 0.0037706641954409897,
+            "brake_recall_at_0p02": 0.9987277353689568,
+            "throttle_n": 1851,
+            "throttle_mae": 0.0031229808931668864,
+            "output_brake_fraction": 0.18263888888888888,
+            "teacher_brake_fraction": 0.18194444444444444
+          },
+          "X": {
+            "n": 4709,
+            "mae": 0.002117466357881916,
+            "rmse": 0.004531734848413653,
+            "brake_n": 784,
+            "brake_mae": 0.003999711475547163,
+            "brake_recall_at_0p02": 0.9948979591836735,
+            "throttle_n": 1892,
+            "throttle_mae": 0.0033078959241432952,
+            "output_brake_fraction": 0.16712677850923763,
+            "teacher_brake_fraction": 0.16648970057337015
+          }
+        }
+      },
+      "clip_fraction": 0.012713392171309432
+    },
+    "val": {
+      "overall": {
+        "n": 25789,
+        "mae": 0.002228091519192941,
+        "rmse": 0.004825228914230212,
+        "brake_n": 5613,
+        "brake_mae": 0.0035008458734429137,
+        "brake_recall_at_0p02": 0.9928736860858721,
+        "throttle_n": 12236,
+        "throttle_mae": 0.0028806336222741507,
+        "output_brake_fraction": 0.21660397844042034,
+        "teacher_brake_fraction": 0.21765093644577146
+      },
+      "by_speed_and_map": {
+        "2.0": {
+          "C": {
+            "n": 6039,
+            "mae": 0.0024378013685330676,
+            "rmse": 0.004671977199893823,
+            "brake_n": 1835,
+            "brake_mae": 0.0028066484955394932,
+            "brake_recall_at_0p02": 0.9896457765667575,
+            "throttle_n": 3705,
+            "throttle_mae": 0.002389982812707665,
+            "output_brake_fraction": 0.30071203841695643,
+            "teacher_brake_fraction": 0.3038582546779268
+          },
+          "S": {
+            "n": 3040,
+            "mae": 0.002627007098254892,
+            "rmse": 0.004901016328270226,
+            "brake_n": 921,
+            "brake_mae": 0.003185842031158774,
+            "brake_recall_at_0p02": 0.98914223669924,
+            "throttle_n": 1934,
+            "throttle_mae": 0.0025094669798428246,
+            "output_brake_fraction": 0.29967105263157895,
+            "teacher_brake_fraction": 0.30296052631578946
+          },
+          "X": {
+            "n": 2834,
+            "mae": 0.0025838217832243626,
+            "rmse": 0.005005462382903319,
+            "brake_n": 828,
+            "brake_mae": 0.003072761220352205,
+            "brake_recall_at_0p02": 0.9879227053140096,
+            "throttle_n": 1789,
+            "throttle_mae": 0.002482029518047453,
+            "output_brake_fraction": 0.2886379675370501,
+            "teacher_brake_fraction": 0.292166549047283
+          }
+        },
+        "3.0": {
+          "C": {
+            "n": 3876,
+            "mae": 0.0017090559709487642,
+            "rmse": 0.004411942630013739,
+            "brake_n": 479,
+            "brake_mae": 0.005071620135311728,
+            "brake_recall_at_0p02": 1.0,
+            "throttle_n": 1144,
+            "throttle_mae": 0.0033753276823404164,
+            "output_brake_fraction": 0.12435500515995872,
+            "teacher_brake_fraction": 0.12358101135190919
+          },
+          "S": {
+            "n": 2040,
+            "mae": 0.0021309362345227384,
+            "rmse": 0.004938880509871393,
+            "brake_n": 293,
+            "brake_mae": 0.005520496836184352,
+            "brake_recall_at_0p02": 1.0,
+            "throttle_n": 753,
+            "throttle_mae": 0.0034132106099760595,
+            "output_brake_fraction": 0.14607843137254903,
+            "teacher_brake_fraction": 0.14362745098039215
+          },
+          "X": {
+            "n": 1872,
+            "mae": 0.002018328082610253,
+            "rmse": 0.005141668529600461,
+            "brake_n": 249,
+            "brake_mae": 0.006025124479698033,
+            "brake_recall_at_0p02": 1.0,
+            "throttle_n": 668,
+            "throttle_mae": 0.0031311743467233063,
+            "output_brake_fraction": 0.13354700854700854,
+            "teacher_brake_fraction": 0.1330128205128205
+          }
+        },
+        "4.0": {
+          "C": {
+            "n": 3004,
+            "mae": 0.0017758121884699752,
+            "rmse": 0.0046839984263921525,
+            "brake_n": 479,
+            "brake_mae": 0.0028375195893887563,
+            "brake_recall_at_0p02": 0.9979123173277662,
+            "throttle_n": 964,
+            "throttle_mae": 0.0038401304139239994,
+            "output_brake_fraction": 0.15945406125166445,
+            "teacher_brake_fraction": 0.15945406125166445
+          },
+          "S": {
+            "n": 1585,
+            "mae": 0.0022227877666031242,
+            "rmse": 0.005283818280821466,
+            "brake_n": 265,
+            "brake_mae": 0.003972546065394605,
+            "brake_recall_at_0p02": 1.0,
+            "throttle_n": 630,
+            "throttle_mae": 0.0037662585246764167,
+            "output_brake_fraction": 0.16845425867507888,
+            "teacher_brake_fraction": 0.167192429022082
+          },
+          "X": {
+            "n": 1499,
+            "mae": 0.002549925119975249,
+            "rmse": 0.005149131230371019,
+            "brake_n": 264,
+            "brake_mae": 0.004025291262361077,
+            "brake_recall_at_0p02": 1.0,
+            "throttle_n": 649,
+            "throttle_mae": 0.003853792331544272,
+            "output_brake_fraction": 0.17678452301534356,
+            "teacher_brake_fraction": 0.1761174116077385
+          }
+        }
+      },
+      "clip_fraction": 0.013532901624723719
+    }
+  },
+  "limitations": [
+    "No traffic during collection or evaluation.",
+    "Target speed is supplied by the route speed planner, not learned.",
+    "IDM steering drives teacher collection; Student V3.5 steering drives evaluation.",
+    "Train and validation use only successful IDM episodes.",
+    "Offline loss alone does not prove the controller is stable."
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "status": "V35_MULTISPEED_OFFLINE_TEACHER_IMITATION",
+  "model_path": "agent4_v35_student.joblib",
+  "speeds_mps": [
+    2.0,
+    3.0,
+    4.0
+  ],
+  "metrics": {
+    "train": {
+      "original_pdd": {
+        "n": 54356,
+        "steering_mae": 0.020871222023545567,
+        "steering_rmse": 0.04589077125061177
+      },
+      "student_v35": {
+        "n": 54356,
+        "steering_mae": 0.004842064678221716,
+        "steering_rmse": 0.022323591341908304
+      },
+      "by_target_speed_and_map": {
+        "2.0": {
+          "C": {
+            "original_pdd": {
+              "n": 10146,
+              "steering_mae": 0.027429099614304585,
+              "steering_rmse": 0.04795534006502909
+            },
+            "student_v35": {
+              "n": 10146,
+              "steering_mae": 0.004661643935712792,
+              "steering_rmse": 0.01976266349330423
+            },
+            "improved_mae": true
+          },
+          "S": {
+            "original_pdd": {
+              "n": 6282,
+              "steering_mae": 0.008125191226861606,
+              "steering_rmse": 0.027688145709564262
+            },
+            "student_v35": {
+              "n": 6282,
+              "steering_mae": 0.0037589568351608623,
+              "steering_rmse": 0.022608804096540546
+            },
+            "improved_mae": true
+          },
+          "X": {
+            "original_pdd": {
+              "n": 7287,
+              "steering_mae": 0.02529843327330987,
+              "steering_rmse": 0.051182835414536644
+            },
+            "student_v35": {
+              "n": 7287,
+              "steering_mae": 0.004537096386813973,
+              "steering_rmse": 0.022687407922361628
+            },
+            "improved_mae": true
+          }
+        },
+        "3.0": {
+          "C": {
+            "original_pdd": {
+              "n": 7129,
+              "steering_mae": 0.023726067930823918,
+              "steering_rmse": 0.045010750934970416
+            },
+            "student_v35": {
+              "n": 7129,
+              "steering_mae": 0.005253260753654537,
+              "steering_rmse": 0.02175769400596976
+            },
+            "improved_mae": true
+          },
+          "S": {
+            "original_pdd": {
+              "n": 4548,
+              "steering_mae": 0.007008077096043842,
+              "steering_rmse": 0.03246989155423405
+            },
+            "student_v35": {
+              "n": 4548,
+              "steering_mae": 0.00439761001201197,
+              "steering_rmse": 0.023894360255418166
+            },
+            "improved_mae": true
+          },
+          "X": {
+            "original_pdd": {
+              "n": 5224,
+              "steering_mae": 0.023707218008855602,
+              "steering_rmse": 0.05379183016681725
+            },
+            "student_v35": {
+              "n": 5224,
+              "steering_mae": 0.00491656819909512,
+              "steering_rmse": 0.0235648710609722
+            },
+            "improved_mae": true
+          }
+        },
+        "4.0": {
+          "C": {
+            "original_pdd": {
+              "n": 5703,
+              "steering_mae": 0.025297969156155006,
+              "steering_rmse": 0.048087698309915494
+            },
+            "student_v35": {
+              "n": 5703,
+              "steering_mae": 0.006006320774328814,
+              "steering_rmse": 0.022598910117503306
+            },
+            "improved_mae": true
+          },
+          "S": {
+            "original_pdd": {
+              "n": 3764,
+              "steering_mae": 0.008211614198037365,
+              "steering_rmse": 0.036053906392239765
+            },
+            "student_v35": {
+              "n": 3764,
+              "steering_mae": 0.0047317977711276065,
+              "steering_rmse": 0.023266632778938444
+            },
+            "improved_mae": true
+          },
+          "X": {
+            "original_pdd": {
+              "n": 4273,
+              "steering_mae": 0.028257231768424398,
+              "steering_rmse": 0.05884974127844053
+            },
+            "student_v35": {
+              "n": 4273,
+              "steering_mae": 0.0056220752076891105,
+              "steering_rmse": 0.02340565925597676
+            },
+            "improved_mae": true
+          }
+        }
+      },
+      "n": 54356
+    },
+    "val": {
+      "original_pdd": {
+        "n": 17614,
+        "steering_mae": 0.02636323127044358,
+        "steering_rmse": 0.05299615534177479
+      },
+      "student_v35": {
+        "n": 17614,
+        "steering_mae": 0.006006156784284307,
+        "steering_rmse": 0.022353211099308847
+      },
+      "by_target_speed_and_map": {
+        "2.0": {
+          "C": {
+            "original_pdd": {
+              "n": 3244,
+              "steering_mae": 0.029312129630179058,
+              "steering_rmse": 0.04950348263321442
+            },
+            "student_v35": {
+              "n": 3244,
+              "steering_mae": 0.0055618678932617144,
+              "steering_rmse": 0.020723398904742903
+            },
+            "improved_mae": true
+          },
+          "S": {
+            "original_pdd": {
+              "n": 2095,
+              "steering_mae": 0.007267470874945471,
+              "steering_rmse": 0.022574183377108654
+            },
+            "student_v35": {
+              "n": 2095,
+              "steering_mae": 0.003284324025244561,
+              "steering_rmse": 0.018591902228626566
+            },
+            "improved_mae": true
+          },
+          "X": {
+            "original_pdd": {
+              "n": 2335,
+              "steering_mae": 0.04427959017585841,
+              "steering_rmse": 0.07397512862447127
+            },
+            "student_v35": {
+              "n": 2335,
+              "steering_mae": 0.006336480980782194,
+              "steering_rmse": 0.02243880006439713
+            },
+            "improved_mae": true
+          }
+        },
+        "3.0": {
+          "C": {
+            "original_pdd": {
+              "n": 2284,
+              "steering_mae": 0.02508571478921561,
+              "steering_rmse": 0.044826197649495664
+            },
+            "student_v35": {
+              "n": 2284,
+              "steering_mae": 0.006817394222643095,
+              "steering_rmse": 0.02354516215570122
+            },
+            "improved_mae": true
+          },
+          "S": {
+            "original_pdd": {
+              "n": 1515,
+              "steering_mae": 0.00527486317839635,
+              "steering_rmse": 0.02613337555650146
+            },
+            "student_v35": {
+              "n": 1515,
+              "steering_mae": 0.005054493881711746,
+              "steering_rmse": 0.020995906013216208
+            },
+            "improved_mae": true
+          },
+          "X": {
+            "original_pdd": {
+              "n": 1678,
+              "steering_mae": 0.041155404101984344,
+              "steering_rmse": 0.07341445653717917
+            },
+            "student_v35": {
+              "n": 1678,
+              "steering_mae": 0.006504703019002845,
+              "steering_rmse": 0.02355328122388242
+            },
+            "improved_mae": true
+          }
+        },
+        "4.0": {
+          "C": {
+            "original_pdd": {
+              "n": 1831,
+              "steering_mae": 0.02603408520974673,
+              "steering_rmse": 0.047075878340496896
+            },
+            "student_v35": {
+              "n": 1831,
+              "steering_mae": 0.007610443243618251,
+              "steering_rmse": 0.02545915844715698
+            },
+            "improved_mae": true
+          },
+          "S": {
+            "original_pdd": {
+              "n": 1254,
+              "steering_mae": 0.006191542053318424,
+              "steering_rmse": 0.028911308704780505
+            },
+            "student_v35": {
+              "n": 1254,
+              "steering_mae": 0.006046518492773851,
+              "steering_rmse": 0.022297232461602184
+            },
+            "improved_mae": true
+          },
+          "X": {
+            "original_pdd": {
+              "n": 1378,
+              "steering_mae": 0.044177540205207554,
+              "steering_rmse": 0.0757230609066775
+            },
+            "student_v35": {
+              "n": 1378,
+              "steering_mae": 0.007556582118598465,
+              "steering_rmse": 0.024585862719340833
+            },
+            "improved_mae": true
+          }
+        }
+      },
+      "n": 17614
+    }
+  },
+  "train_groups": 36,
+  "val_groups": 12,
+  "limitations": [
+    "Longitudinal still rule-based; no traffic; simulator privileged state.",
+    "IDM teacher labels and offline MAE are not closed-loop success.",
+    "Training includes only successful IDM teacher episodes.",
+    "Target_speed_mps is metadata, not a model input; observed speed_mps is the input."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 26,
+    "gender": "Male",
+    "occupation": "Product manager"
+  },
+  "driving_experience": "8 years",
+  "driving_frequency_per_week": "25 to 30 h",
+  "driving_purposes": [
+    "Business site visits",
+    "Night-shift commute"
+  ],
+  "driving_habits_preferences": [
+    "Keeps strong pace on familiar routes",
+    "Merges decisively when gaps are available",
+    "Balances brisk acceleration with stable control in traffic"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "Mild hypertension (controlled)",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Assertive",
+  "international_driving_experience": "None"
+}

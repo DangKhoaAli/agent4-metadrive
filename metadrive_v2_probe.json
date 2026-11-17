@@ -1,0 +1,683 @@
+{
+  "status": "METADRIVE_V2_ADAPTER_PROBE_NOT_CLOSED_LOOP_VALIDATION",
+  "python_simulator_version": "read from installed MetaDrive during user run",
+  "configuration": {
+    "use_render": false,
+    "traffic_density": 0.2,
+    "num_scenarios": 3,
+    "log_level": 40
+  },
+  "feature_order": [
+    "speed_mps",
+    "wp1_forward_m",
+    "wp1_right_m",
+    "wp2_forward_m",
+    "wp2_right_m",
+    "lane_width_m",
+    "front_vehicle_dist_m",
+    "front_vehicle_closing_speed_mps",
+    "left_vehicle_dist_m",
+    "right_vehicle_dist_m",
+    "front_pedestrian_dist_m",
+    "has_front_vehicle",
+    "has_left_vehicle",
+    "has_right_vehicle",
+    "has_front_pedestrian"
+  ],
+  "n_samples": 150,
+  "feature_stats_metadrive": {
+    "speed_mps": {
+      "min": 0.0,
+      "p10": 0.35298410058021756,
+      "median": 2.0996603965759424,
+      "p90": 3.8111212253577316,
+      "max": 4.324093341829404
+    },
+    "wp1_forward_m": {
+      "min": -0.010970234870910645,
+      "p10": 1.141500473022461,
+      "median": 4.5883893966674805,
+      "p90": 38.13737630844116,
+      "max": 39.732396602630615
+    },
+    "wp1_right_m": {
+      "min": -3.5000085830688477,
+      "p10": -3.4999996423721313,
+      "median": -3.4999966621398926,
+      "p90": 5.9604644775390625e-06,
+      "max": 4.172325134277344e-05
+    },
+    "wp2_forward_m": {
+      "min": 32.65310525894165,
+      "p10": 39.98842239379883,
+      "median": 44.104188680648804,
+      "p90": 48.46252799034119,
+      "max": 49.94797706604004
+    },
+    "wp2_right_m": {
+      "min": -37.864772975444794,
+      "p10": -13.499951362609863,
+      "median": -3.499975800514221,
+      "p90": 4.172325134277344e-05,
+      "max": 4.172325134277344e-05
+    },
+    "lane_width_m": {
+      "min": 3.5,
+      "p10": 3.5,
+      "median": 3.5,
+      "p90": 3.5,
+      "max": 3.5
+    },
+    "front_vehicle_dist_m": {
+      "min": 45.20536749165447,
+      "p10": 49.97339045176681,
+      "median": 60.0,
+      "p90": 60.0,
+      "max": 60.0
+    },
+    "front_vehicle_closing_speed_mps": {
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 2.8141043257429033,
+      "max": 3.8278184638815684
+    },
+    "left_vehicle_dist_m": {
+      "min": 37.95181970445508,
+      "p10": 60.0,
+      "median": 60.0,
+      "p90": 60.0,
+      "max": 60.0
+    },
+    "right_vehicle_dist_m": {
+      "min": 60.0,
+      "p10": 60.0,
+      "median": 60.0,
+      "p90": 60.0,
+      "max": 60.0
+    },
+    "front_pedestrian_dist_m": {
+      "min": 60.0,
+      "p10": 60.0,
+      "median": 60.0,
+      "p90": 60.0,
+      "max": 60.0
+    },
+    "has_front_vehicle": {
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 1.0,
+      "max": 1.0
+    },
+    "has_left_vehicle": {
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 1.0
+    },
+    "has_right_vehicle": {
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 0.0
+    },
+    "has_front_pedestrian": {
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 0.0
+    }
+  },
+  "first_samples": [
+    {
+      "seed": 0,
+      "step": 0,
+      "features": {
+        "speed_mps": 0.0,
+        "wp1_forward_m": 5.0000011920928955,
+        "wp1_right_m": -3.4999996423721313,
+        "wp2_forward_m": 44.999998807907104,
+        "wp2_right_m": -3.4999966621398926,
+        "lane_width_m": 3.5,
+        "front_vehicle_dist_m": 54.96392244009036,
+        "front_vehicle_closing_speed_mps": 0.0,
+        "left_vehicle_dist_m": 60.0,
+        "right_vehicle_dist_m": 60.0,
+        "front_pedestrian_dist_m": 60.0,
+        "has_front_vehicle": 1.0,
+        "has_left_vehicle": 0.0,
+        "has_right_vehicle": 0.0,
+        "has_front_pedestrian": 0.0
+      },
+      "diagnostics": {
+        "n_engine_objects": 26,
+        "n_other_vehicles": 25,
+        "n_pedestrians": 0,
+        "n_candidate_objects": 25,
+        "nav_distance_cap_m": 50.0,
+        "raw_nav_xy": [
+          0.550000011920929,
+          0.4650000035762787,
+          0.949999988079071,
+          0.4650000333786011
+        ],
+        "ego_position": [
+          5.0,
+          7.0
+        ],
+        "ego_heading_rad": 0.0,
+        "note": "MetaDrive traffic info here comes from simulator object states (privileged observation)."
+      }
+    },
+    {
+      "seed": 0,
+      "step": 1,
+      "features": {
+        "speed_mps": 0.08285059034824373,
+        "wp1_forward_m": 4.9980103969573975,
+        "wp1_right_m": -3.4999996423721313,
+        "wp2_forward_m": 44.998013973236084,
+        "wp2_right_m": -3.499993681907654,
+        "lane_width_m": 3.5,
+        "front_vehicle_dist_m": 54.96193509400141,
+        "front_vehicle_closing_speed_mps": 0.08285059034824373,
+        "left_vehicle_dist_m": 60.0,
+        "right_vehicle_dist_m": 60.0,
+        "front_pedestrian_dist_m": 60.0,
+        "has_front_vehicle": 1.0,
+        "has_left_vehicle": 0.0,
+        "has_right_vehicle": 0.0,
+        "has_front_pedestrian": 0.0
+      },
+      "diagnostics": {
+        "n_engine_objects": 26,
+        "n_other_vehicles": 25,
+        "n_pedestrians": 0,
+        "n_candidate_objects": 25,
+        "nav_distance_cap_m": 50.0,
+        "raw_nav_xy": [
+          0.549980103969574,
+          0.4650000035762787,
+          0.9499801397323608,
+          0.46500006318092346
+        ],
+        "ego_position": [
+          5.001988410949707,
+          7.0
+        ],
+        "ego_heading_rad": -1.331580543606492e-07,
+        "note": "MetaDrive traffic info here comes from simulator object states (privileged observation)."
+      }
+    },
+    {
+      "seed": 0,
+      "step": 2,
+      "features": {
+        "speed_mps": 0.1657011210918697,
+        "wp1_forward_m": 4.9880146980285645,
+        "wp1_right_m": -3.4999966621398926,
+        "wp2_forward_m": 44.98758316040039,
+        "wp2_right_m": -3.4999817609786987,
+        "lane_width_m": 3.5,
+        "front_vehicle_dist_m": 54.95124305802118,
+        "front_vehicle_closing_speed_mps": 0.15110618227919884,
+        "left_vehicle_dist_m": 60.0,
+        "right_vehicle_dist_m": 60.0,
+        "front_pedestrian_dist_m": 60.0,
+        "has_front_vehicle": 1.0,
+        "has_left_vehicle": 0.0,
+        "has_right_vehicle": 0.0,
+        "has_front_pedestrian": 0.0
+      },
+      "diagnostics": {
+        "n_engine_objects": 26,
+        "n_other_vehicles": 25,
+        "n_pedestrians": 0,
+        "n_candidate_objects": 25,
+        "nav_distance_cap_m": 50.0,
+        "raw_nav_xy": [
+          0.5498801469802856,
+          0.4650000333786011,
+          0.9498758316040039,
+          0.465000182390213
+        ],
+        "ego_position": [
+          5.011930465698242,
+          7.0
+        ],
+        "ego_heading_rad": -3.9947416397012603e-07,
+        "note": "MetaDrive traffic info here comes from simulator object states (privileged observation)."
+      }
+    },
+    {
+      "seed": 0,
+      "step": 3,
+      "features": {
+        "speed_mps": 0.24855157732965832,
+        "wp1_forward_m": 4.969519376754761,
+        "wp1_right_m": -3.4999966621398926,
+        "wp2_forward_m": 44.96692419052124,
+        "wp2_right_m": -3.499975800514221,
+        "lane_width_m": 3.5,
+        "front_vehicle_dist_m": 54.92846796918679,
+        "front_vehicle_closing_speed_mps": 0.21920416168504184,
+        "left_vehicle_dist_m": 60.0,
+        "right_vehicle_dist_m": 60.0,
+        "front_pedestrian_dist_m": 60.0,
+        "has_front_vehicle": 1.0,
+        "has_left_vehicle": 0.0,
+        "has_right_vehicle": 0.0,
+        "has_front_pedestrian": 0.0
+      },
+      "diagnostics": {
+        "n_engine_objects": 26,
+        "n_other_vehicles": 25,
+        "n_pedestrians": 0,
+        "n_candidate_objects": 25,
+        "nav_distance_cap_m": 50.0,
+        "raw_nav_xy": [
+          0.5496951937675476,
+          0.4650000333786011,
+          0.9496692419052124,
+          0.4650002419948578
+        ],
+        "ego_position": [
+          5.030157566070557,
+          7.0
+        ],
+        "ego_heading_rad": -5.326322183307752e-07,
+        "note": "MetaDrive traffic info here comes from simulator object states (privileged observation)."
+      }
+    },
+    {
+      "seed": 0,
+      "step": 4,
+      "features": {
+        "speed_mps": 0.33140203356745446,
+        "wp1_forward_m": 4.943084716796875,
+        "wp1_right_m": -3.4999966621398926,
+        "wp2_forward_m": 44.941067695617676,
+        "wp2_right_m": -3.499975800514221,
+        "lane_width_m": 3.5,
+        "front_vehicle_dist_m": 54.90068745143576,
+        "front_vehicle_closing_speed_mps": 0.3274161190379442,
+        "left_vehicle_dist_m": 60.0,
+        "right_vehicle_dist_m": 60.0,
+        "front_pedestrian_dist_m": 60.0,
+        "has_front_vehicle": 1.0,
+        "has_left_vehicle": 0.0,
+        "has_right_vehicle": 0.0,
+        "has_front_pedestrian": 0.0
+      },
+      "diagnostics": {
+        "n_engine_objects": 26,
+        "n_other_vehicles": 25,
+        "n_pedestrians": 0,
+        "n_candidate_objects": 25,
+        "nav_distance_cap_m": 50.0,
+        "raw_nav_xy": [
+          0.5494308471679688,
+          0.4650000333786011,
+          0.9494106769561768,
+          0.4650002419948578
+        ],
+        "ego_position": [
+          5.05666971206665,
+          7.0
+        ],
+        "ego_heading_rad": -5.326322183307752e-07,
+        "note": "MetaDrive traffic info here comes from simulator object states (privileged observation)."
+      }
+    },
+    {
+      "seed": 0,
+      "step": 5,
+      "features": {
+        "speed_mps": 0.41425248980525214,
+        "wp1_forward_m": 4.908424615859985,
+        "wp1_right_m": -3.4999966621398926,
+        "wp2_forward_m": 44.90750432014465,
+        "wp2_right_m": -3.4999817609786987,
+        "lane_width_m": 3.5,
+        "front_vehicle_dist_m": 54.86828325719918,
+        "front_vehicle_closing_speed_mps": 0.4006586102323741,
+        "left_vehicle_dist_m": 60.0,
+        "right_vehicle_dist_m": 60.0,
+        "front_pedestrian_dist_m": 60.0,
+        "has_front_vehicle": 1.0,
+        "has_left_vehicle": 0.0,
+        "has_right_vehicle": 0.0,
+        "has_front_pedestrian": 0.0
+      },
+      "diagnostics": {
+        "n_engine_objects": 26,
+        "n_other_vehicles": 25,
+        "n_pedestrians": 0,
+        "n_candidate_objects": 25,
+        "nav_distance_cap_m": 50.0,
+        "raw_nav_xy": [
+          0.5490842461585999,
+          0.4650000333786011,
+          0.9490750432014465,
+          0.465000182390213
+        ],
+        "ego_position": [
+          5.091466903686523,
+          7.0
+        ],
+        "ego_heading_rad": -3.9947416397012603e-07,
+        "note": "MetaDrive traffic info here comes from simulator object states (privileged observation)."
+      }
+    },
+    {
+      "seed": 0,
+      "step": 6,
+      "features": {
+        "speed_mps": 0.4971029460431317,
+        "wp1_forward_m": 4.865384101867676,
+        "wp1_right_m": -3.4999966621398926,
+        "wp2_forward_m": 44.864821434020996,
+        "wp2_right_m": -3.499966859817505,
+        "lane_width_m": 3.5,
+        "front_vehicle_dist_m": 54.827183507944966,
+        "front_vehicle_closing_speed_mps": 0.4862135587969775,
+        "left_vehicle_dist_m": 60.0,
+        "right_vehicle_dist_m": 60.0,
+        "front_pedestrian_dist_m": 60.0,
+        "has_front_vehicle": 1.0,
+        "has_left_vehicle": 0.0,
+        "has_right_vehicle": 0.0,
+        "has_front_pedestrian": 0.0
+      },
+      "diagnostics": {
+        "n_engine_objects": 26,
+        "n_other_vehicles": 25,
+        "n_pedestrians": 0,
+        "n_candidate_objects": 25,
+        "nav_distance_cap_m": 50.0,
+        "raw_nav_xy": [
+          0.5486538410186768,
+          0.4650000333786011,
+          0.94864821434021,
+          0.46500033140182495
+        ],
+        "ego_position": [
+          5.134549140930176,
+          7.0
+        ],
+        "ego_heading_rad": -7.989483270520736e-07,
+        "note": "MetaDrive traffic info here comes from simulator object states (privileged observation)."
+      }
+    },
+    {
+      "seed": 0,
+      "step": 7,
+      "features": {
+        "speed_mps": 0.5799534320832714,
+        "wp1_forward_m": 4.814016819000244,
+        "wp1_right_m": -3.4999966621398926,
+        "wp2_forward_m": 44.813472032547,
+        "wp2_right_m": -3.4999817609786987,
+        "lane_width_m": 3.5,
+        "front_vehicle_dist_m": 54.77635557315239,
+        "front_vehicle_closing_speed_mps": 0.5792391327027213,
+        "left_vehicle_dist_m": 60.0,
+        "right_vehicle_dist_m": 60.0,
+        "front_pedestrian_dist_m": 60.0,
+        "has_front_vehicle": 1.0,
+        "has_left_vehicle": 0.0,
+        "has_right_vehicle": 0.0,
+        "has_front_pedestrian": 0.0
+      },
+      "diagnostics": {
+        "n_engine_objects": 26,
+        "n_other_vehicles": 25,
+        "n_pedestrians": 0,
+        "n_candidate_objects": 25,
+        "nav_distance_cap_m": 50.0,
+        "raw_nav_xy": [
+          0.5481401681900024,
+          0.4650000333786011,
+          0.94813472032547,
+          0.465000182390213
+        ],
+        "ego_position": [
+          5.185916423797607,
+          7.0
+        ],
+        "ego_heading_rad": -3.9947416397012603e-07,
+        "note": "MetaDrive traffic info here comes from simulator object states (privileged observation)."
+      }
+    }
+  ],
+  "episodes": [
+    {
+      "seed": 0,
+      "steps": 50,
+      "last_step_info": {
+        "arrive_dest": false,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.03031887785823548
+      }
+    },
+    {
+      "seed": 1,
+      "steps": 50,
+      "last_step_info": {
+        "arrive_dest": false,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.06323984177690026
+      }
+    },
+    {
+      "seed": 2,
+      "steps": 50,
+      "last_step_info": {
+        "arrive_dest": false,
+        "out_of_road": false,
+        "crash": false,
+        "route_completion": 0.04338256048624397
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "wp1_forward_m: PDD vs MetaDrive median gap 21.75 > 20.00; revisit feature equivalence"
+  ],
+  "limitations": [
+    "Agent 4 model was NOT used in this probe.",
+    "Object data are privileged simulator state; not inferred from RGB camera.",
+    "Navigation checkpoints are clipped to 50m, may differ from CARLA route planner.",
+    "Nearby traffic may be absent in some sampled seeds/steps."
+  ],
+  "feature_stats_pdd": {
+    "speed_mps": {
+      "min": 0.0,
+      "p10": 0.17464283164705835,
+      "median": 5.059917598704287,
+      "p90": 10.478767845990967,
+      "max": 23.653820608102247
+    },
+    "wp1_forward_m": {
+      "min": 4.73584733600269,
+      "p10": 10.375464140261084,
+      "median": 26.338259504359932,
+      "p90": 49.80633905949422,
+      "max": 49.999999999997904
+    },
+    "wp1_right_m": {
+      "min": -38.43711175771341,
+      "p10": -1.91242523366711,
+      "median": 0.165965829866197,
+      "p90": 4.959051352129038,
+      "max": 46.95861388836459
+    },
+    "wp2_forward_m": {
+      "min": 4.211180923053639,
+      "p10": 16.921107700242906,
+      "median": 48.21445463161454,
+      "p90": 49.99972333687399,
+      "max": 49.99999999999994
+    },
+    "wp2_right_m": {
+      "min": -49.82234393556077,
+      "p10": -5.193830197176344,
+      "median": 0.29908948390486945,
+      "p90": 9.087418124724136,
+      "max": 49.42041522815746
+    },
+    "lane_width_m": {
+      "min": 1.6485642613843083,
+      "p10": 2.75,
+      "median": 3.25,
+      "p90": 3.5,
+      "max": 3.5
+    },
+    "front_vehicle_dist_m": {
+      "min": 1.9461882985428007,
+      "p10": 11.903968497834798,
+      "median": 34.550981535782434,
+      "p90": 60.0,
+      "max": 60.0
+    },
+    "front_vehicle_closing_speed_mps": {
+      "min": -19.62837621315791,
+      "p10": -3.486524371270205,
+      "median": 0.0,
+      "p90": 4.02028638989853,
+      "max": 20.92750140095114
+    },
+    "left_vehicle_dist_m": {
+      "min": 2.5311311419783804,
+      "p10": 3.9011708434089543,
+      "median": 17.78543116647633,
+      "p90": 60.0,
+      "max": 60.0
+    },
+    "right_vehicle_dist_m": {
+      "min": 2.566296420344813,
+      "p10": 9.719644343254533,
+      "median": 60.0,
+      "p90": 60.0,
+      "max": 60.0
+    },
+    "front_pedestrian_dist_m": {
+      "min": 5.537867093457256,
+      "p10": 60.0,
+      "median": 60.0,
+      "p90": 60.0,
+      "max": 60.0
+    },
+    "has_front_vehicle": {
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 1.0,
+      "p90": 1.0,
+      "max": 1.0
+    },
+    "has_left_vehicle": {
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 1.0,
+      "p90": 1.0,
+      "max": 1.0
+    },
+    "has_right_vehicle": {
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 1.0,
+      "max": 1.0
+    },
+    "has_front_pedestrian": {
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "max": 1.0
+    }
+  },
+  "distribution_median_gaps": {
+    "speed_mps": {
+      "pdd_median": 5.059917598704287,
+      "metadrive_median": 2.0996603965759424,
+      "absolute_median_gap": 2.960257202128344
+    },
+    "wp1_forward_m": {
+      "pdd_median": 26.338259504359932,
+      "metadrive_median": 4.5883893966674805,
+      "absolute_median_gap": 21.749870107692452
+    },
+    "wp1_right_m": {
+      "pdd_median": 0.165965829866197,
+      "metadrive_median": -3.4999966621398926,
+      "absolute_median_gap": 3.6659624920060896
+    },
+    "wp2_forward_m": {
+      "pdd_median": 48.21445463161454,
+      "metadrive_median": 44.104188680648804,
+      "absolute_median_gap": 4.110265950965733
+    },
+    "wp2_right_m": {
+      "pdd_median": 0.29908948390486945,
+      "metadrive_median": -3.499975800514221,
+      "absolute_median_gap": 3.7990652844190906
+    },
+    "lane_width_m": {
+      "pdd_median": 3.25,
+      "metadrive_median": 3.5,
+      "absolute_median_gap": 0.25
+    },
+    "front_vehicle_dist_m": {
+      "pdd_median": 34.550981535782434,
+      "metadrive_median": 60.0,
+      "absolute_median_gap": 25.449018464217566
+    },
+    "front_vehicle_closing_speed_mps": {
+      "pdd_median": 0.0,
+      "metadrive_median": 0.0,
+      "absolute_median_gap": 0.0
+    },
+    "left_vehicle_dist_m": {
+      "pdd_median": 17.78543116647633,
+      "metadrive_median": 60.0,
+      "absolute_median_gap": 42.21456883352367
+    },
+    "right_vehicle_dist_m": {
+      "pdd_median": 60.0,
+      "metadrive_median": 60.0,
+      "absolute_median_gap": 0.0
+    },
+    "front_pedestrian_dist_m": {
+      "pdd_median": 60.0,
+      "metadrive_median": 60.0,
+      "absolute_median_gap": 0.0
+    },
+    "has_front_vehicle": {
+      "pdd_median": 1.0,
+      "metadrive_median": 0.0,
+      "absolute_median_gap": 1.0
+    },
+    "has_left_vehicle": {
+      "pdd_median": 1.0,
+      "metadrive_median": 0.0,
+      "absolute_median_gap": 1.0
+    },
+    "has_right_vehicle": {
+      "pdd_median": 0.0,
+      "metadrive_median": 0.0,
+      "absolute_median_gap": 0.0
+    },
+    "has_front_pedestrian": {
+      "pdd_median": 0.0,
+      "metadrive_median": 0.0,
+      "absolute_median_gap": 0.0
+    }
+  }
+}

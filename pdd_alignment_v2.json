@@ -1,0 +1,5183 @@
+{
+  "important": "PDD image frame index may differ from simulator step. Index-based candidate mapping requires validation against original capture code or time metadata before training.",
+  "summary": {
+    "scenarios": 63,
+    "scenarios_with_read_errors": 0,
+    "images": 7875,
+    "proposed_triplets": 7875,
+    "all_coverage_100pct": true,
+    "telemetry_gap_distribution": {
+      "5": 63
+    },
+    "scenarios_with_nonuniform_telemetry_gaps": 0,
+    "scenarios_with_noncontiguous_image_names": 0
+  },
+  "scenarios": [
+    {
+      "driver": "driver_01",
+      "scenario": "Accident",
+      "images": 70,
+      "boxes": 70,
+      "telemetry_records": 70,
+      "control_records": 350,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        335,
+        340,
+        345
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 69
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 70,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.001027538758645831,
+          "target_point": [
+            51.00126253261876,
+            -0.0001632661702881677
+          ],
+          "steer": -0.0027618408203125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "35.jpg",
+          "box_file": "35.json.gz",
+          "telemetry_key": 175,
+          "control_step": 175,
+          "speed": 13.507306070266536,
+          "target_point": [
+            10.204350732771783,
+            2.807157505713077
+          ],
+          "steer": 0.011993408203125,
+          "throttle": 0.7241567969322205,
+          "brake": 0.0
+        },
+        {
+          "image_file": "69.jpg",
+          "box_file": "69.json.gz",
+          "telemetry_key": 345,
+          "control_step": 345,
+          "speed": 8.020747033577402,
+          "target_point": [
+            10.880095424681999,
+            -0.21908411345388012
+          ],
+          "steer": -0.0039215087890625,
+          "throttle": 0.39373353123664856,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "BlockedIntersection",
+      "images": 93,
+      "boxes": 93,
+      "telemetry_records": 93,
+      "control_records": 465,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        450,
+        455,
+        460
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 92
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 93,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0014966454322030691,
+          "target_point": [
+            42.33962317405325,
+            0.000813209308376972
+          ],
+          "steer": 0.001800537109375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "46.jpg",
+          "box_file": "46.json.gz",
+          "telemetry_key": 230,
+          "control_step": 230,
+          "speed": 2.900328888018424,
+          "target_point": [
+            28.683372016246445,
+            8.75568112282197
+          ],
+          "steer": 0.3095550537109375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "92.jpg",
+          "box_file": "92.json.gz",
+          "telemetry_key": 460,
+          "control_step": 460,
+          "speed": 13.903484397725151,
+          "target_point": [
+            11.639143643942973,
+            0.2206619090676831
+          ],
+          "steer": 0.0274505615234375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "ConstructionObstacle",
+      "images": 192,
+      "boxes": 192,
+      "telemetry_records": 192,
+      "control_records": 958,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        945,
+        950,
+        955
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 191
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 192,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.00020347914029765854,
+          "target_point": [
+            50.999163732959516,
+            -0.0003592170251114357
+          ],
+          "steer": -0.00177001953125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "96.jpg",
+          "box_file": "96.json.gz",
+          "telemetry_key": 480,
+          "control_step": 480,
+          "speed": 0.006246747994835442,
+          "target_point": [
+            24.258815726431827,
+            0.6359068182376878
+          ],
+          "steer": -0.002288818359375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "191.jpg",
+          "box_file": "191.json.gz",
+          "telemetry_key": 955,
+          "control_step": 955,
+          "speed": 16.31643394080669,
+          "target_point": [
+            10.073750686732394,
+            0.4159686880110678
+          ],
+          "steer": 0.0102081298828125,
+          "throttle": 1.0,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "ControlLoss",
+      "images": 75,
+      "boxes": 75,
+      "telemetry_records": 75,
+      "control_records": 373,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        360,
+        365,
+        370
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 74
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 75,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.004670684308253734,
+          "target_point": [
+            51.003867758440514,
+            0.00043697128916792005
+          ],
+          "steer": -0.00335693359375,
+          "throttle": 0.8418657779693604,
+          "brake": 0.0
+        },
+        {
+          "image_file": "37.jpg",
+          "box_file": "37.json.gz",
+          "telemetry_key": 185,
+          "control_step": 185,
+          "speed": 9.817248064680136,
+          "target_point": [
+            35.91671059418165,
+            -0.3559983629721419
+          ],
+          "steer": -0.0062713623046875,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "74.jpg",
+          "box_file": "74.json.gz",
+          "telemetry_key": 370,
+          "control_step": 370,
+          "speed": 9.486347895870269,
+          "target_point": [
+            10.319087048434879,
+            0.11824005533752782
+          ],
+          "steer": -0.00341796875,
+          "throttle": 0.7305781841278076,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "CrossingBicycleFlow",
+      "images": 52,
+      "boxes": 52,
+      "telemetry_records": 52,
+      "control_records": 256,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        245,
+        250,
+        255
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 51
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 52,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0017090691147348357,
+          "target_point": [
+            50.909595586098426,
+            1.4333059289982497
+          ],
+          "steer": 0.0017852783203125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "26.jpg",
+          "box_file": "26.json.gz",
+          "telemetry_key": 130,
+          "control_step": 130,
+          "speed": 16.864189122566707,
+          "target_point": [
+            44.297877005092175,
+            0.11990067964181783
+          ],
+          "steer": -0.0059356689453125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "51.jpg",
+          "box_file": "51.json.gz",
+          "telemetry_key": 255,
+          "control_step": 255,
+          "speed": 17.230676314753875,
+          "target_point": [
+            9.026632944220344,
+            0.26052553000304823
+          ],
+          "steer": 0.029144287109375,
+          "throttle": 0.6147305965423584,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "DynamicObjectCrossing",
+      "images": 85,
+      "boxes": 85,
+      "telemetry_records": 85,
+      "control_records": 424,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        410,
+        415,
+        420
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 84
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 85,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.001714877167345161,
+          "target_point": [
+            50.998127369606955,
+            -0.0009742708708486703
+          ],
+          "steer": -0.000640869140625,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "42.jpg",
+          "box_file": "42.json.gz",
+          "telemetry_key": 210,
+          "control_step": 210,
+          "speed": 5.807270281238772,
+          "target_point": [
+            40.77597036596284,
+            0.6159644567191895
+          ],
+          "steer": -0.005401611328125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.7639151811599731
+        },
+        {
+          "image_file": "84.jpg",
+          "box_file": "84.json.gz",
+          "telemetry_key": 420,
+          "control_step": 420,
+          "speed": 8.746407022544268,
+          "target_point": [
+            10.623157705935515,
+            0.4296053772049815
+          ],
+          "steer": 0.0045623779296875,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "EnterActorFlow",
+      "images": 79,
+      "boxes": 79,
+      "telemetry_records": 79,
+      "control_records": 395,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        380,
+        385,
+        390
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 78
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 79,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.011051342473682911,
+          "target_point": [
+            51.09031191740096,
+            -0.23226832206024817
+          ],
+          "steer": 0.0048828125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "39.jpg",
+          "box_file": "39.json.gz",
+          "telemetry_key": 195,
+          "control_step": 195,
+          "speed": 14.09243669897758,
+          "target_point": [
+            39.42427416904555,
+            7.135412300814841
+          ],
+          "steer": 0.0208892822265625,
+          "throttle": 0.6000788807868958,
+          "brake": 0.0
+        },
+        {
+          "image_file": "78.jpg",
+          "box_file": "78.json.gz",
+          "telemetry_key": 390,
+          "control_step": 390,
+          "speed": 16.63128806798214,
+          "target_point": [
+            12.036729745337722,
+            1.3738591061045216
+          ],
+          "steer": -0.02374267578125,
+          "throttle": 0.8247182369232178,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "HazardAtSideLane",
+      "images": 83,
+      "boxes": 83,
+      "telemetry_records": 83,
+      "control_records": 413,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        400,
+        405,
+        410
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 82
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 83,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.002945900550842912,
+          "target_point": [
+            51.607392304757404,
+            2.406470025820968
+          ],
+          "steer": 0.0041351318359375,
+          "throttle": 0.5068409442901611,
+          "brake": 0.0
+        },
+        {
+          "image_file": "41.jpg",
+          "box_file": "41.json.gz",
+          "telemetry_key": 205,
+          "control_step": 205,
+          "speed": 17.204372596569584,
+          "target_point": [
+            24.601301721069827,
+            1.1716160205221056
+          ],
+          "steer": -0.0074920654296875,
+          "throttle": 0.06211085617542267,
+          "brake": 0.0
+        },
+        {
+          "image_file": "82.jpg",
+          "box_file": "82.json.gz",
+          "telemetry_key": 410,
+          "control_step": 410,
+          "speed": 17.336653177175158,
+          "target_point": [
+            10.835185934491792,
+            0.2772775789591595
+          ],
+          "steer": -0.004791259765625,
+          "throttle": 0.5429335236549377,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "HighwayExit",
+      "images": 117,
+      "boxes": 117,
+      "telemetry_records": 117,
+      "control_records": 584,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        570,
+        575,
+        580
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 116
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 117,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0005585319539983117,
+          "target_point": [
+            51.00001073596663,
+            -0.002716394391142702
+          ],
+          "steer": 0.0008392333984375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "58.jpg",
+          "box_file": "58.json.gz",
+          "telemetry_key": 290,
+          "control_step": 290,
+          "speed": 8.187522193852462,
+          "target_point": [
+            7.239464605333083,
+            3.3092988255283715
+          ],
+          "steer": 0.0028228759765625,
+          "throttle": 0.7273731827735901,
+          "brake": 0.0
+        },
+        {
+          "image_file": "116.jpg",
+          "box_file": "116.json.gz",
+          "telemetry_key": 580,
+          "control_step": 580,
+          "speed": 15.082334702252844,
+          "target_point": [
+            10.920164415255101,
+            1.6320708092906173
+          ],
+          "steer": 0.01483154296875,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.9095722436904907
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "InterurbanActorFlow",
+      "images": 57,
+      "boxes": 57,
+      "telemetry_records": 57,
+      "control_records": 285,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        270,
+        275,
+        280
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 56
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 57,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0037499660736528247,
+          "target_point": [
+            29.996444230775708,
+            -0.00014984057484213054
+          ],
+          "steer": 0.0063934326171875,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "28.jpg",
+          "box_file": "28.json.gz",
+          "telemetry_key": 140,
+          "control_step": 140,
+          "speed": 16.362074169807904,
+          "target_point": [
+            19.991468398767097,
+            0.43198877748238473
+          ],
+          "steer": 0.004791259765625,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "56.jpg",
+          "box_file": "56.json.gz",
+          "telemetry_key": 280,
+          "control_step": 280,
+          "speed": 18.326689070319997,
+          "target_point": [
+            12.308987828052826,
+            -0.6799502711721601
+          ],
+          "steer": -0.0197296142578125,
+          "throttle": 0.5926636457443237,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "InvadingTurn",
+      "images": 68,
+      "boxes": 68,
+      "telemetry_records": 68,
+      "control_records": 337,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        325,
+        330,
+        335
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 67
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 68,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.00017767375634019088,
+          "target_point": [
+            21.8682906901693,
+            -0.000337573370119415
+          ],
+          "steer": -0.0104217529296875,
+          "throttle": 0.4563773274421692,
+          "brake": 0.0
+        },
+        {
+          "image_file": "34.jpg",
+          "box_file": "34.json.gz",
+          "telemetry_key": 170,
+          "control_step": 170,
+          "speed": 11.883697803931057,
+          "target_point": [
+            43.67761571009746,
+            -0.11641639247264735
+          ],
+          "steer": 0.005767822265625,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "67.jpg",
+          "box_file": "67.json.gz",
+          "telemetry_key": 335,
+          "control_step": 335,
+          "speed": 19.622430381352473,
+          "target_point": [
+            9.520313744907838,
+            -0.07607067949450519
+          ],
+          "steer": 0.0020599365234375,
+          "throttle": 0.39373353123664856,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "MergerIntoSlowTraffic",
+      "images": 151,
+      "boxes": 151,
+      "telemetry_records": 151,
+      "control_records": 751,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        740,
+        745,
+        750
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 150
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 151,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0032271633144779002,
+          "target_point": [
+            19.917511603053065,
+            -0.0001498596864542498
+          ],
+          "steer": 0.0005035400390625,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "75.jpg",
+          "box_file": "75.json.gz",
+          "telemetry_key": 375,
+          "control_step": 375,
+          "speed": 14.442890709644573,
+          "target_point": [
+            47.086129890320514,
+            -4.619939652563297
+          ],
+          "steer": -0.0022125244140625,
+          "throttle": 0.7241567969322205,
+          "brake": 0.0
+        },
+        {
+          "image_file": "150.jpg",
+          "box_file": "150.json.gz",
+          "telemetry_key": 750,
+          "control_step": 750,
+          "speed": 17.539029543534646,
+          "target_point": [
+            8.041959953845545,
+            3.4335236791228207
+          ],
+          "steer": -0.005767822265625,
+          "throttle": 0.6573216915130615,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "NonSignalizedJunctionLeftTurn",
+      "images": 62,
+      "boxes": 62,
+      "telemetry_records": 62,
+      "control_records": 309,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        295,
+        300,
+        305
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 61
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 62,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.003727949230443709,
+          "target_point": [
+            51.00204802531961,
+            0.0003441547921200633
+          ],
+          "steer": 0.001678466796875,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "31.jpg",
+          "box_file": "31.json.gz",
+          "telemetry_key": 155,
+          "control_step": 155,
+          "speed": 0.0027611980450396225,
+          "target_point": [
+            7.779264247580723,
+            -0.549214506810608
+          ],
+          "steer": 0.0030364990234375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.5108437538146973
+        },
+        {
+          "image_file": "61.jpg",
+          "box_file": "61.json.gz",
+          "telemetry_key": 305,
+          "control_step": 305,
+          "speed": 16.51467172448926,
+          "target_point": [
+            8.197862304505227,
+            -0.20225482872112754
+          ],
+          "steer": -0.0186004638671875,
+          "throttle": 0.36550766229629517,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "NonSignalizedJunctionRightTurn",
+      "images": 73,
+      "boxes": 73,
+      "telemetry_records": 73,
+      "control_records": 363,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        350,
+        355,
+        360
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 72
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 73,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0007561675536649523,
+          "target_point": [
+            51.00064176130918,
+            0.000626900168070349
+          ],
+          "steer": -9.1552734375e-05,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "36.jpg",
+          "box_file": "36.json.gz",
+          "telemetry_key": 180,
+          "control_step": 180,
+          "speed": 0.007530378715056082,
+          "target_point": [
+            11.714724595132116,
+            4.171512645132773
+          ],
+          "steer": -0.003326416015625,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.8722377419471741
+        },
+        {
+          "image_file": "72.jpg",
+          "box_file": "72.json.gz",
+          "telemetry_key": 360,
+          "control_step": 360,
+          "speed": 18.469007444870318,
+          "target_point": [
+            9.312463521745602,
+            0.01624323163965169
+          ],
+          "steer": 0.0070343017578125,
+          "throttle": 0.9047590494155884,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "ParkedObstacle",
+      "images": 42,
+      "boxes": 42,
+      "telemetry_records": 42,
+      "control_records": 208,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        195,
+        200,
+        205
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 41
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 42,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0007910284067396063,
+          "target_point": [
+            51.54336635730816,
+            0.03888316402752756
+          ],
+          "steer": 0.000244140625,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "21.jpg",
+          "box_file": "21.json.gz",
+          "telemetry_key": 105,
+          "control_step": 105,
+          "speed": 17.809911384067043,
+          "target_point": [
+            55.79250257507858,
+            -0.180169434199223
+          ],
+          "steer": -0.0040740966796875,
+          "throttle": 1.0,
+          "brake": 0.0
+        },
+        {
+          "image_file": "41.jpg",
+          "box_file": "41.json.gz",
+          "telemetry_key": 205,
+          "control_step": 205,
+          "speed": 20.442188189853656,
+          "target_point": [
+            9.94985362917068,
+            2.764845282145929
+          ],
+          "steer": 0.0054168701171875,
+          "throttle": 0.6219689846038818,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "ParkingCutIn",
+      "images": 81,
+      "boxes": 81,
+      "telemetry_records": 81,
+      "control_records": 405,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        390,
+        395,
+        400
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 80
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 81,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 8.757577312835486e-05,
+          "target_point": [
+            50.99990486621059,
+            3.604515088095894e-05
+          ],
+          "steer": -0.1788787841796875,
+          "throttle": 1.0,
+          "brake": 0.0
+        },
+        {
+          "image_file": "40.jpg",
+          "box_file": "40.json.gz",
+          "telemetry_key": 200,
+          "control_step": 200,
+          "speed": 7.547810648322387,
+          "target_point": [
+            52.36003993997151,
+            -1.0101253614525216
+          ],
+          "steer": 0.0037689208984375,
+          "throttle": 0.7176898717880249,
+          "brake": 0.0
+        },
+        {
+          "image_file": "80.jpg",
+          "box_file": "80.json.gz",
+          "telemetry_key": 400,
+          "control_step": 400,
+          "speed": 12.463089318120259,
+          "target_point": [
+            11.730187974934308,
+            0.0660621843886744
+          ],
+          "steer": -0.0004730224609375,
+          "throttle": 0.7924166321754456,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "SignalizedJunctionLeftTurn",
+      "images": 70,
+      "boxes": 70,
+      "telemetry_records": 70,
+      "control_records": 347,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        335,
+        340,
+        345
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 69
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 70,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0016246326983674316,
+          "target_point": [
+            50.89733907276566,
+            -5.517963906221281
+          ],
+          "steer": -0.0005035400390625,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "35.jpg",
+          "box_file": "35.json.gz",
+          "telemetry_key": 175,
+          "control_step": 175,
+          "speed": 0.27914560688789547,
+          "target_point": [
+            7.561677905779836,
+            0.017307002701834107
+          ],
+          "steer": -0.0102691650390625,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "69.jpg",
+          "box_file": "69.json.gz",
+          "telemetry_key": 345,
+          "control_step": 345,
+          "speed": 14.558847727837215,
+          "target_point": [
+            7.513498459380186,
+            -3.9796977679589887
+          ],
+          "steer": -0.009368896484375,
+          "throttle": 0.5546532273292542,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "SignalizedJunctionRightTurn",
+      "images": 73,
+      "boxes": 73,
+      "telemetry_records": 73,
+      "control_records": 362,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        350,
+        355,
+        360
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 72
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 73,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.001098210033126489,
+          "target_point": [
+            51.00059127716934,
+            0.00020226400001277511
+          ],
+          "steer": 0.0004425048828125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "36.jpg",
+          "box_file": "36.json.gz",
+          "telemetry_key": 180,
+          "control_step": 180,
+          "speed": 4.387108402487947,
+          "target_point": [
+            8.859150338187094,
+            0.13233878113723585
+          ],
+          "steer": 0.00518798828125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "72.jpg",
+          "box_file": "72.json.gz",
+          "telemetry_key": 360,
+          "control_step": 360,
+          "speed": 8.026466339680907,
+          "target_point": [
+            7.595461211915512,
+            0.38329854868003865
+          ],
+          "steer": 0.0034637451171875,
+          "throttle": 0.33143162727355957,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "StaticCutIn",
+      "images": 62,
+      "boxes": 62,
+      "telemetry_records": 62,
+      "control_records": 306,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        295,
+        300,
+        305
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 61
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 62,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0018149433159361347,
+          "target_point": [
+            51.0031694265222,
+            0.0002218598112762593
+          ],
+          "steer": 0.00714111328125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "31.jpg",
+          "box_file": "31.json.gz",
+          "telemetry_key": 155,
+          "control_step": 155,
+          "speed": 17.496870154965805,
+          "target_point": [
+            15.708907917153327,
+            0.09763344927987996
+          ],
+          "steer": -0.002227783203125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "61.jpg",
+          "box_file": "61.json.gz",
+          "telemetry_key": 305,
+          "control_step": 305,
+          "speed": 17.17032480023904,
+          "target_point": [
+            8.409916529402754,
+            -0.08182234287225267
+          ],
+          "steer": 0.0053253173828125,
+          "throttle": 1.0,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "VanillaNonSignalizedTurn",
+      "images": 37,
+      "boxes": 37,
+      "telemetry_records": 37,
+      "control_records": 182,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        170,
+        175,
+        180
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 36
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 37,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0018885307482499028,
+          "target_point": [
+            12.498050690228036,
+            4.024249921860852e-05
+          ],
+          "steer": 0.0029754638671875,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "18.jpg",
+          "box_file": "18.json.gz",
+          "telemetry_key": 90,
+          "control_step": 90,
+          "speed": 6.537950469765387,
+          "target_point": [
+            8.179033985893476,
+            3.0429865789555404
+          ],
+          "steer": 0.263153076171875,
+          "throttle": 0.48615336418151855,
+          "brake": 0.0
+        },
+        {
+          "image_file": "36.jpg",
+          "box_file": "36.json.gz",
+          "telemetry_key": 180,
+          "control_step": 180,
+          "speed": 11.092785140505365,
+          "target_point": [
+            8.767456473477393,
+            0.5024564451972673
+          ],
+          "steer": 0.014434814453125,
+          "throttle": 0.4075249135494232,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_01",
+      "scenario": "VehicleOpensDoorTwoWays",
+      "images": 62,
+      "boxes": 62,
+      "telemetry_records": 62,
+      "control_records": 306,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        295,
+        300,
+        305
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 61
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 62,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.00010321896238378258,
+          "target_point": [
+            50.9995931284083,
+            -0.00037728198577807737
+          ],
+          "steer": 0.0178070068359375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "31.jpg",
+          "box_file": "31.json.gz",
+          "telemetry_key": 155,
+          "control_step": 155,
+          "speed": 7.131391382298748,
+          "target_point": [
+            10.227783627636011,
+            0.24238016563815187
+          ],
+          "steer": 0.00225830078125,
+          "throttle": 0.7983755469322205,
+          "brake": 0.0
+        },
+        {
+          "image_file": "61.jpg",
+          "box_file": "61.json.gz",
+          "telemetry_key": 305,
+          "control_step": 305,
+          "speed": 8.578094660408839,
+          "target_point": [
+            9.549659138168735,
+            0.27982940811547097
+          ],
+          "steer": 0.00335693359375,
+          "throttle": 0.4120759665966034,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "Accident",
+      "images": 210,
+      "boxes": 210,
+      "telemetry_records": 210,
+      "control_records": 1048,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        1035,
+        1040,
+        1045
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 209
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 210,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0009794627115392862,
+          "target_point": [
+            51.00118453740702,
+            -0.0006452779191583602
+          ],
+          "steer": -0.01220703125,
+          "throttle": 0.5149860978126526,
+          "brake": 0.0
+        },
+        {
+          "image_file": "105.jpg",
+          "box_file": "105.json.gz",
+          "telemetry_key": 525,
+          "control_step": 525,
+          "speed": 0.495738847629503,
+          "target_point": [
+            50.899363863442055,
+            8.051238363895278
+          ],
+          "steer": 0.0181121826171875,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "209.jpg",
+          "box_file": "209.json.gz",
+          "telemetry_key": 1045,
+          "control_step": 1045,
+          "speed": 0.7373687908182075,
+          "target_point": [
+            9.96901526961064,
+            0.8507661250164644
+          ],
+          "steer": -0.004364013671875,
+          "throttle": 0.12646284699440002,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "BlockedIntersection",
+      "images": 281,
+      "boxes": 281,
+      "telemetry_records": 281,
+      "control_records": 1403,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        1390,
+        1395,
+        1400
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 280
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 281,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0014834486228047633,
+          "target_point": [
+            42.339622921119656,
+            0.00056906881439861
+          ],
+          "steer": 0.001861572265625,
+          "throttle": 0.36550766229629517,
+          "brake": 0.0
+        },
+        {
+          "image_file": "140.jpg",
+          "box_file": "140.json.gz",
+          "telemetry_key": 700,
+          "control_step": 700,
+          "speed": 0.0037824229226080495,
+          "target_point": [
+            9.557296030373376,
+            8.02914939117152
+          ],
+          "steer": 0.2079925537109375,
+          "throttle": 0.18656416237354279,
+          "brake": 0.0
+        },
+        {
+          "image_file": "280.jpg",
+          "box_file": "280.json.gz",
+          "telemetry_key": 1400,
+          "control_step": 1400,
+          "speed": 4.351442723651026,
+          "target_point": [
+            10.199937600208758,
+            0.16490320301563388
+          ],
+          "steer": 0.009735107421875,
+          "throttle": 0.35105955600738525,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "ConstructionObstacle",
+      "images": 210,
+      "boxes": 210,
+      "telemetry_records": 210,
+      "control_records": 1046,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        1035,
+        1040,
+        1045
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 209
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 210,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.00012386700408990888,
+          "target_point": [
+            50.99908553303124,
+            -0.00035967918485924066
+          ],
+          "steer": -0.004364013671875,
+          "throttle": 0.3559011220932007,
+          "brake": 0.0
+        },
+        {
+          "image_file": "105.jpg",
+          "box_file": "105.json.gz",
+          "telemetry_key": 525,
+          "control_step": 525,
+          "speed": 1.2267788466590246,
+          "target_point": [
+            51.7507841924907,
+            2.987640663040392
+          ],
+          "steer": -0.146514892578125,
+          "throttle": 0.39373353123664856,
+          "brake": 0.0
+        },
+        {
+          "image_file": "209.jpg",
+          "box_file": "209.json.gz",
+          "telemetry_key": 1045,
+          "control_step": 1045,
+          "speed": 7.701207956876031,
+          "target_point": [
+            9.52838923991857,
+            0.5931861910769537
+          ],
+          "steer": 0.0049591064453125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "ControlLoss",
+      "images": 107,
+      "boxes": 107,
+      "telemetry_records": 107,
+      "control_records": 535,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        520,
+        525,
+        530
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 106
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 107,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.004670684308253734,
+          "target_point": [
+            51.003867758440514,
+            0.00043697128916792005
+          ],
+          "steer": -0.000244140625,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "53.jpg",
+          "box_file": "53.json.gz",
+          "telemetry_key": 265,
+          "control_step": 265,
+          "speed": 7.657356579467439,
+          "target_point": [
+            48.52995503254416,
+            -0.8464670237841558
+          ],
+          "steer": 0.0085906982421875,
+          "throttle": 0.5926636457443237,
+          "brake": 0.0
+        },
+        {
+          "image_file": "106.jpg",
+          "box_file": "106.json.gz",
+          "telemetry_key": 530,
+          "control_step": 530,
+          "speed": 5.6697483796839805,
+          "target_point": [
+            10.673030362464663,
+            0.07686683623228202
+          ],
+          "steer": 0.0069427490234375,
+          "throttle": 0.4075249135494232,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "CrossingBicycleFlow",
+      "images": 132,
+      "boxes": 132,
+      "telemetry_records": 132,
+      "control_records": 659,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        645,
+        650,
+        655
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 131
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 132,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0017090691147348357,
+          "target_point": [
+            50.909595586098426,
+            1.4333059289982497
+          ],
+          "steer": 0.00201416015625,
+          "throttle": 0.29603010416030884,
+          "brake": 0.0
+        },
+        {
+          "image_file": "66.jpg",
+          "box_file": "66.json.gz",
+          "telemetry_key": 330,
+          "control_step": 330,
+          "speed": 5.528645779950586,
+          "target_point": [
+            18.543837410611797,
+            -0.18318553165427875
+          ],
+          "steer": 0.00201416015625,
+          "throttle": 0.21518933773040771,
+          "brake": 0.0
+        },
+        {
+          "image_file": "131.jpg",
+          "box_file": "131.json.gz",
+          "telemetry_key": 655,
+          "control_step": 655,
+          "speed": 4.379265013415126,
+          "target_point": [
+            10.368999515097626,
+            0.3848336394804296
+          ],
+          "steer": 0.0002288818359375,
+          "throttle": 0.36550766229629517,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "DynamicObjectCrossing",
+      "images": 123,
+      "boxes": 123,
+      "telemetry_records": 123,
+      "control_records": 615,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        600,
+        605,
+        610
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 122
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 123,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0017315509839590279,
+          "target_point": [
+            50.99800688193722,
+            -0.0009303629670114333
+          ],
+          "steer": 0.00335693359375,
+          "throttle": 0.4255942404270172,
+          "brake": 0.0
+        },
+        {
+          "image_file": "61.jpg",
+          "box_file": "61.json.gz",
+          "telemetry_key": 305,
+          "control_step": 305,
+          "speed": 5.036113517431178,
+          "target_point": [
+            45.71441158003569,
+            0.21286374780631778
+          ],
+          "steer": 0.0060577392578125,
+          "throttle": 0.3797300159931183,
+          "brake": 0.0
+        },
+        {
+          "image_file": "122.jpg",
+          "box_file": "122.json.gz",
+          "telemetry_key": 610,
+          "control_step": 610,
+          "speed": 6.02666067458833,
+          "target_point": [
+            10.581544573412808,
+            0.12183846442714441
+          ],
+          "steer": -0.0027923583984375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "EnterActorFlow",
+      "images": 151,
+      "boxes": 151,
+      "telemetry_records": 151,
+      "control_records": 753,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        740,
+        745,
+        750
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 150
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 151,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.010862943756216782,
+          "target_point": [
+            51.09049160326934,
+            -0.2322330998883917
+          ],
+          "steer": 0.0144805908203125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "75.jpg",
+          "box_file": "75.json.gz",
+          "telemetry_key": 375,
+          "control_step": 375,
+          "speed": 5.751091876117811,
+          "target_point": [
+            11.538352268501136,
+            0.06827159426954932
+          ],
+          "steer": -0.0077667236328125,
+          "throttle": 0.47774484753608704,
+          "brake": 0.0
+        },
+        {
+          "image_file": "150.jpg",
+          "box_file": "150.json.gz",
+          "telemetry_key": 750,
+          "control_step": 750,
+          "speed": 9.043351058057874,
+          "target_point": [
+            10.370917697234185,
+            0.17291455455493554
+          ],
+          "steer": 0.00421142578125,
+          "throttle": 0.4120759665966034,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "HazardAtSideLane",
+      "images": 295,
+      "boxes": 295,
+      "telemetry_records": 295,
+      "control_records": 1475,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        1460,
+        1465,
+        1470
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 294
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 295,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.002884450359548418,
+          "target_point": [
+            51.6073866056885,
+            2.4064092573183355
+          ],
+          "steer": 0.0025177001953125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "147.jpg",
+          "box_file": "147.json.gz",
+          "telemetry_key": 735,
+          "control_step": 735,
+          "speed": 3.9468987183031317,
+          "target_point": [
+            39.35895446325375,
+            9.320621614444713
+          ],
+          "steer": 0.0133056640625,
+          "throttle": 0.38908958435058594,
+          "brake": 0.0
+        },
+        {
+          "image_file": "294.jpg",
+          "box_file": "294.json.gz",
+          "telemetry_key": 1470,
+          "control_step": 1470,
+          "speed": 3.974912727541332,
+          "target_point": [
+            10.53541687838494,
+            0.03843992412597097
+          ],
+          "steer": -0.002349853515625,
+          "throttle": 0.4120759665966034,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "HighwayExit",
+      "images": 158,
+      "boxes": 158,
+      "telemetry_records": 158,
+      "control_records": 788,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        775,
+        780,
+        785
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 157
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 158,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0005585319539983117,
+          "target_point": [
+            51.00001073596663,
+            -0.002716394391142702
+          ],
+          "steer": 0.0012359619140625,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "79.jpg",
+          "box_file": "79.json.gz",
+          "telemetry_key": 395,
+          "control_step": 395,
+          "speed": 7.777629005657159,
+          "target_point": [
+            18.106885609508915,
+            -0.6677465970502956
+          ],
+          "steer": -0.0022125244140625,
+          "throttle": 0.48615336418151855,
+          "brake": 0.0
+        },
+        {
+          "image_file": "157.jpg",
+          "box_file": "157.json.gz",
+          "telemetry_key": 785,
+          "control_step": 785,
+          "speed": 9.171681787068756,
+          "target_point": [
+            10.177818443776927,
+            1.6777195018510485
+          ],
+          "steer": 0.017059326171875,
+          "throttle": 0.5270687937736511,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "InterurbanActorFlow",
+      "images": 115,
+      "boxes": 115,
+      "telemetry_records": 115,
+      "control_records": 572,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        560,
+        565,
+        570
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 114
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 115,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0037339804187434987,
+          "target_point": [
+            29.996444230775708,
+            -0.00014984057484035418
+          ],
+          "steer": -0.000946044921875,
+          "throttle": 0.833332359790802,
+          "brake": 0.0
+        },
+        {
+          "image_file": "57.jpg",
+          "box_file": "57.json.gz",
+          "telemetry_key": 285,
+          "control_step": 285,
+          "speed": 3.6620284208596243,
+          "target_point": [
+            22.993504818609395,
+            -13.47632362270348
+          ],
+          "steer": -0.0027923583984375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "114.jpg",
+          "box_file": "114.json.gz",
+          "telemetry_key": 570,
+          "control_step": 570,
+          "speed": 7.279151449671481,
+          "target_point": [
+            9.893512483628522,
+            0.4432241426430146
+          ],
+          "steer": 0.0024566650390625,
+          "throttle": 0.5963788032531738,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "InvadingTurn",
+      "images": 149,
+      "boxes": 149,
+      "telemetry_records": 149,
+      "control_records": 741,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        730,
+        735,
+        740
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 148
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 149,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 6.640314852636781e-05,
+          "target_point": [
+            21.86829069020938,
+            -0.0003349664667204877
+          ],
+          "steer": 0.0009002685546875,
+          "throttle": 0.2095358669757843,
+          "brake": 0.0
+        },
+        {
+          "image_file": "74.jpg",
+          "box_file": "74.json.gz",
+          "telemetry_key": 370,
+          "control_step": 370,
+          "speed": 6.424721832762107,
+          "target_point": [
+            12.227951411518857,
+            -0.24074487676434853
+          ],
+          "steer": 0.00482177734375,
+          "throttle": 0.5389931797981262,
+          "brake": 0.0
+        },
+        {
+          "image_file": "148.jpg",
+          "box_file": "148.json.gz",
+          "telemetry_key": 740,
+          "control_step": 740,
+          "speed": 6.730266826678109,
+          "target_point": [
+            9.337213809392342,
+            0.06890405193942134
+          ],
+          "steer": 0.00018310546875,
+          "throttle": 0.523059070110321,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "MergerIntoSlowTraffic",
+      "images": 172,
+      "boxes": 172,
+      "telemetry_records": 172,
+      "control_records": 856,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        845,
+        850,
+        855
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 171
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 172,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.33765838553183736,
+          "target_point": [
+            51.01628949780459,
+            -0.6590699326244209
+          ],
+          "steer": 0.000396728515625,
+          "throttle": 0.12646284699440002,
+          "brake": 0.0
+        },
+        {
+          "image_file": "86.jpg",
+          "box_file": "86.json.gz",
+          "telemetry_key": 430,
+          "control_step": 430,
+          "speed": 10.031654508288256,
+          "target_point": [
+            48.752485277674424,
+            -2.4405113678329
+          ],
+          "steer": -0.014892578125,
+          "throttle": 0.47774484753608704,
+          "brake": 0.0
+        },
+        {
+          "image_file": "171.jpg",
+          "box_file": "171.json.gz",
+          "telemetry_key": 855,
+          "control_step": 855,
+          "speed": 13.068234232898405,
+          "target_point": [
+            4.155055840962241,
+            -7.087531701025798
+          ],
+          "steer": 0.0010833740234375,
+          "throttle": 0.2319420874118805,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "NonSignalizedJunctionLeftTurn",
+      "images": 124,
+      "boxes": 124,
+      "telemetry_records": 124,
+      "control_records": 618,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        605,
+        610,
+        615
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 123
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 124,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0037288371684475923,
+          "target_point": [
+            51.0020479896419,
+            0.0019384826405456496
+          ],
+          "steer": -0.004364013671875,
+          "throttle": 0.5109226703643799,
+          "brake": 0.0
+        },
+        {
+          "image_file": "62.jpg",
+          "box_file": "62.json.gz",
+          "telemetry_key": 310,
+          "control_step": 310,
+          "speed": 5.198210972849018,
+          "target_point": [
+            5.935314975590522,
+            -11.038401504509245
+          ],
+          "steer": -0.1041259765625,
+          "throttle": 0.7954009771347046,
+          "brake": 0.0
+        },
+        {
+          "image_file": "123.jpg",
+          "box_file": "123.json.gz",
+          "telemetry_key": 615,
+          "control_step": 615,
+          "speed": 7.671278780732412,
+          "target_point": [
+            10.067056196059148,
+            -0.3033874583739495
+          ],
+          "steer": 0.0068359375,
+          "throttle": 0.5546532273292542,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "NonSignalizedJunctionRightTurn",
+      "images": 131,
+      "boxes": 131,
+      "telemetry_records": 131,
+      "control_records": 655,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        640,
+        645,
+        650
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 130
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 131,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0007561675536649523,
+          "target_point": [
+            51.000641761309176,
+            0.0006269001680703767
+          ],
+          "steer": 0.000946044921875,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "65.jpg",
+          "box_file": "65.json.gz",
+          "telemetry_key": 325,
+          "control_step": 325,
+          "speed": 1.7752276192543217,
+          "target_point": [
+            15.702085104463906,
+            4.092927609036785
+          ],
+          "steer": -0.0147247314453125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "130.jpg",
+          "box_file": "130.json.gz",
+          "telemetry_key": 650,
+          "control_step": 650,
+          "speed": 5.0954134770429915,
+          "target_point": [
+            9.511281947591497,
+            0.273466168175172
+          ],
+          "steer": 0.0009002685546875,
+          "throttle": 0.49862226843833923,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "ParkedObstacle",
+      "images": 133,
+      "boxes": 133,
+      "telemetry_records": 133,
+      "control_records": 661,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        650,
+        655,
+        660
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 132
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 133,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0008460456467628362,
+          "target_point": [
+            51.543366357308166,
+            0.038883164027527506
+          ],
+          "steer": 0.001495361328125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "66.jpg",
+          "box_file": "66.json.gz",
+          "telemetry_key": 330,
+          "control_step": 330,
+          "speed": 1.0119167021762439,
+          "target_point": [
+            26.00030213167999,
+            0.16270379186593129
+          ],
+          "steer": -0.0227813720703125,
+          "throttle": 0.30117255449295044,
+          "brake": 0.0
+        },
+        {
+          "image_file": "132.jpg",
+          "box_file": "132.json.gz",
+          "telemetry_key": 660,
+          "control_step": 660,
+          "speed": 9.122385990837255,
+          "target_point": [
+            9.110268943000756,
+            0.3710762922065346
+          ],
+          "steer": 0.003631591796875,
+          "throttle": 0.5507634282112122,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "ParkingCutIn",
+      "images": 107,
+      "boxes": 107,
+      "telemetry_records": 107,
+      "control_records": 534,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        520,
+        525,
+        530
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 106
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 107,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 8.757577312835486e-05,
+          "target_point": [
+            50.99990486621059,
+            3.604515088095894e-05
+          ],
+          "steer": -0.000274658203125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "53.jpg",
+          "box_file": "53.json.gz",
+          "telemetry_key": 265,
+          "control_step": 265,
+          "speed": 0.7022660023160716,
+          "target_point": [
+            55.87444965399195,
+            -0.5936679919694647
+          ],
+          "steer": 0.00048828125,
+          "throttle": 0.5926636457443237,
+          "brake": 0.0
+        },
+        {
+          "image_file": "106.jpg",
+          "box_file": "106.json.gz",
+          "telemetry_key": 530,
+          "control_step": 530,
+          "speed": 8.664393783134136,
+          "target_point": [
+            10.723762913048942,
+            0.3032134401868236
+          ],
+          "steer": -0.0007171630859375,
+          "throttle": 0.5662239193916321,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "SignalizedJunctionLeftTurn",
+      "images": 166,
+      "boxes": 166,
+      "telemetry_records": 166,
+      "control_records": 826,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        815,
+        820,
+        825
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 165
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 166,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0016084603858034984,
+          "target_point": [
+            50.8972663457528,
+            -5.5181875515716445
+          ],
+          "steer": 0.0004425048828125,
+          "throttle": 0.3559011220932007,
+          "brake": 0.0
+        },
+        {
+          "image_file": "83.jpg",
+          "box_file": "83.json.gz",
+          "telemetry_key": 415,
+          "control_step": 415,
+          "speed": 0.6899521170319575,
+          "target_point": [
+            11.34058171703569,
+            -9.490929508186346
+          ],
+          "steer": -0.0250396728515625,
+          "throttle": 0.16299767792224884,
+          "brake": 0.0
+        },
+        {
+          "image_file": "165.jpg",
+          "box_file": "165.json.gz",
+          "telemetry_key": 825,
+          "control_step": 825,
+          "speed": 5.1525351584961765,
+          "target_point": [
+            8.70956311248557,
+            0.46376314755744275
+          ],
+          "steer": 0.0050048828125,
+          "throttle": 0.6219689846038818,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "SignalizedJunctionRightTurn",
+      "images": 141,
+      "boxes": 141,
+      "telemetry_records": 141,
+      "control_records": 701,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        690,
+        695,
+        700
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 140
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 141,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0012077549333279864,
+          "target_point": [
+            51.001073237465526,
+            8.59522303535698e-05
+          ],
+          "steer": 0.0010223388671875,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "70.jpg",
+          "box_file": "70.json.gz",
+          "telemetry_key": 350,
+          "control_step": 350,
+          "speed": 2.761926315576881,
+          "target_point": [
+            13.20823152137601,
+            6.620421673133611
+          ],
+          "steer": -0.001068115234375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "140.jpg",
+          "box_file": "140.json.gz",
+          "telemetry_key": 700,
+          "control_step": 700,
+          "speed": 4.989020732924421,
+          "target_point": [
+            7.7109795110692225,
+            0.1904469313427457
+          ],
+          "steer": -0.004364013671875,
+          "throttle": 0.48615336418151855,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "StaticCutIn",
+      "images": 109,
+      "boxes": 109,
+      "telemetry_records": 109,
+      "control_records": 543,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        530,
+        535,
+        540
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 108
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 109,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0018025977391165834,
+          "target_point": [
+            51.00292528820881,
+            0.0002229222170615497
+          ],
+          "steer": -0.0004119873046875,
+          "throttle": 0.22080792486667633,
+          "brake": 0.0
+        },
+        {
+          "image_file": "54.jpg",
+          "box_file": "54.json.gz",
+          "telemetry_key": 270,
+          "control_step": 270,
+          "speed": 7.066261132805229,
+          "target_point": [
+            52.63106034934736,
+            0.06087327550436575
+          ],
+          "steer": -0.0083465576171875,
+          "throttle": 0.22080792486667633,
+          "brake": 0.0
+        },
+        {
+          "image_file": "108.jpg",
+          "box_file": "108.json.gz",
+          "telemetry_key": 540,
+          "control_step": 540,
+          "speed": 8.838185191033542,
+          "target_point": [
+            10.242349693806538,
+            -0.046607389120450225
+          ],
+          "steer": -0.0012359619140625,
+          "throttle": 0.4120759665966034,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "VanillaNonSignalizedTurn",
+      "images": 69,
+      "boxes": 69,
+      "telemetry_records": 69,
+      "control_records": 345,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        330,
+        335,
+        340
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 68
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 69,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0018981489438401945,
+          "target_point": [
+            12.498050690228036,
+            4.024249921860852e-05
+          ],
+          "steer": 0.002044677734375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "34.jpg",
+          "box_file": "34.json.gz",
+          "telemetry_key": 170,
+          "control_step": 170,
+          "speed": 3.7257754061906168,
+          "target_point": [
+            8.581094323252834,
+            6.708341465228411
+          ],
+          "steer": 0.3117523193359375,
+          "throttle": 0.2319420874118805,
+          "brake": 0.0
+        },
+        {
+          "image_file": "68.jpg",
+          "box_file": "68.json.gz",
+          "telemetry_key": 340,
+          "control_step": 340,
+          "speed": 4.463867680873554,
+          "target_point": [
+            9.582070724319507,
+            0.272495960000848
+          ],
+          "steer": -4.57763671875e-05,
+          "throttle": 0.35105955600738525,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_02",
+      "scenario": "VehicleOpensDoorTwoWays",
+      "images": 124,
+      "boxes": 124,
+      "telemetry_records": 124,
+      "control_records": 616,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        605,
+        610,
+        615
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 123
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 124,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.00015774596940065848,
+          "target_point": [
+            50.99959301889986,
+            -0.00043831704378873015
+          ],
+          "steer": -0.0032501220703125,
+          "throttle": 0.3559011220932007,
+          "brake": 0.0
+        },
+        {
+          "image_file": "62.jpg",
+          "box_file": "62.json.gz",
+          "telemetry_key": 310,
+          "control_step": 310,
+          "speed": 7.017127651864431,
+          "target_point": [
+            39.17716837414077,
+            0.48476565491000656
+          ],
+          "steer": 0.006378173828125,
+          "throttle": 0.26987290382385254,
+          "brake": 0.0
+        },
+        {
+          "image_file": "123.jpg",
+          "box_file": "123.json.gz",
+          "telemetry_key": 615,
+          "control_step": 615,
+          "speed": 4.634889799905595,
+          "target_point": [
+            9.746814592431107,
+            -0.3352480274352972
+          ],
+          "steer": -0.0354156494140625,
+          "throttle": 0.4029509723186493,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "Accident",
+      "images": 156,
+      "boxes": 156,
+      "telemetry_records": 156,
+      "control_records": 777,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        765,
+        770,
+        775
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 155
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 156,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.001027538758645831,
+          "target_point": [
+            51.00126253261876,
+            -0.0001632661702881677
+          ],
+          "steer": 0.005279541015625,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "78.jpg",
+          "box_file": "78.json.gz",
+          "telemetry_key": 390,
+          "control_step": 390,
+          "speed": 0.9318224204385144,
+          "target_point": [
+            57.50664125980235,
+            4.936349512878974
+          ],
+          "steer": -0.0216217041015625,
+          "throttle": 0.33637842535972595,
+          "brake": 0.0
+        },
+        {
+          "image_file": "155.jpg",
+          "box_file": "155.json.gz",
+          "telemetry_key": 775,
+          "control_step": 775,
+          "speed": 0.5717693987407344,
+          "target_point": [
+            9.993454707708542,
+            -0.09576722187791598
+          ],
+          "steer": -0.005126953125,
+          "throttle": 0.17485718429088593,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "BlockedIntersection",
+      "images": 136,
+      "boxes": 136,
+      "telemetry_records": 136,
+      "control_records": 676,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        665,
+        670,
+        675
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 135
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 136,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0014966454322030691,
+          "target_point": [
+            42.33962317405325,
+            0.000813209308376972
+          ],
+          "steer": 0.0004425048828125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "68.jpg",
+          "box_file": "68.json.gz",
+          "telemetry_key": 340,
+          "control_step": 340,
+          "speed": 1.2979070112089146,
+          "target_point": [
+            8.536077443877337,
+            7.181358167562358
+          ],
+          "steer": 0.2835693359375,
+          "throttle": 0.33637842535972595,
+          "brake": 0.0
+        },
+        {
+          "image_file": "135.jpg",
+          "box_file": "135.json.gz",
+          "telemetry_key": 675,
+          "control_step": 675,
+          "speed": 5.019676634500024,
+          "target_point": [
+            9.69928705882964,
+            -0.33017974659717814
+          ],
+          "steer": -0.00201416015625,
+          "throttle": 0.5738568305969238,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "ConstructionObstacle",
+      "images": 197,
+      "boxes": 197,
+      "telemetry_records": 197,
+      "control_records": 983,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        970,
+        975,
+        980
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 196
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 197,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.00020347914029765854,
+          "target_point": [
+            50.999163732959516,
+            -0.0003592170251114357
+          ],
+          "steer": -0.0008544921875,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "98.jpg",
+          "box_file": "98.json.gz",
+          "telemetry_key": 490,
+          "control_step": 490,
+          "speed": 3.883423989606802,
+          "target_point": [
+            29.024982503380325,
+            3.3512033083049615
+          ],
+          "steer": 0.028564453125,
+          "throttle": 0.8042957186698914,
+          "brake": 0.0
+        },
+        {
+          "image_file": "196.jpg",
+          "box_file": "196.json.gz",
+          "telemetry_key": 980,
+          "control_step": 980,
+          "speed": 10.380041857106733,
+          "target_point": [
+            10.115726197074132,
+            -0.2562078938334284
+          ],
+          "steer": 0.0066070556640625,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "ControlLoss",
+      "images": 123,
+      "boxes": 123,
+      "telemetry_records": 123,
+      "control_records": 615,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        600,
+        605,
+        610
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 122
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 123,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.004670684308253734,
+          "target_point": [
+            51.003867758440514,
+            0.00043697128916792005
+          ],
+          "steer": -0.0019378662109375,
+          "throttle": 0.3113710880279541,
+          "brake": 0.0
+        },
+        {
+          "image_file": "61.jpg",
+          "box_file": "61.json.gz",
+          "telemetry_key": 305,
+          "control_step": 305,
+          "speed": 5.189340665442105,
+          "target_point": [
+            40.09254813581723,
+            -0.033749563484960055
+          ],
+          "steer": 0.0023956298828125,
+          "throttle": 0.46498462557792664,
+          "brake": 0.0
+        },
+        {
+          "image_file": "122.jpg",
+          "box_file": "122.json.gz",
+          "telemetry_key": 610,
+          "control_step": 610,
+          "speed": 5.164611986993778,
+          "target_point": [
+            10.727365589607187,
+            0.3715156716079151
+          ],
+          "steer": 0.0024261474609375,
+          "throttle": 0.48195880651474,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "CrossingBicycleFlow",
+      "images": 98,
+      "boxes": 98,
+      "telemetry_records": 98,
+      "control_records": 488,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        475,
+        480,
+        485
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 97
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 98,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0017090691147348357,
+          "target_point": [
+            50.909595586098426,
+            1.4333059289982497
+          ],
+          "steer": 0.0019989013671875,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "49.jpg",
+          "box_file": "49.json.gz",
+          "telemetry_key": 245,
+          "control_step": 245,
+          "speed": 8.637640561710748,
+          "target_point": [
+            27.551737068854365,
+            0.15484968509775943
+          ],
+          "steer": 0.0052947998046875,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "97.jpg",
+          "box_file": "97.json.gz",
+          "telemetry_key": 485,
+          "control_step": 485,
+          "speed": 7.067729248093985,
+          "target_point": [
+            9.99993753683633,
+            -0.3185569276568448
+          ],
+          "steer": -0.0092315673828125,
+          "throttle": 0.603763997554779,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "DynamicObjectCrossing",
+      "images": 147,
+      "boxes": 147,
+      "telemetry_records": 147,
+      "control_records": 731,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        720,
+        725,
+        730
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 146
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 147,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.001714877167345161,
+          "target_point": [
+            50.998127369606955,
+            -0.0009742708708486703
+          ],
+          "steer": -0.0012664794921875,
+          "throttle": 0.2374585121870041,
+          "brake": 0.0
+        },
+        {
+          "image_file": "73.jpg",
+          "box_file": "73.json.gz",
+          "telemetry_key": 365,
+          "control_step": 365,
+          "speed": 0.9450600272935508,
+          "target_point": [
+            36.5199066618858,
+            0.10898988659235709
+          ],
+          "steer": 3.0517578125e-05,
+          "throttle": 0.43005606532096863,
+          "brake": 0.0
+        },
+        {
+          "image_file": "146.jpg",
+          "box_file": "146.json.gz",
+          "telemetry_key": 730,
+          "control_step": 730,
+          "speed": 2.4821743574491606,
+          "target_point": [
+            9.806012958540249,
+            -0.17242412681884067
+          ],
+          "steer": 0.0002288818359375,
+          "throttle": 0.5429335236549377,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "EnterActorFlow",
+      "images": 150,
+      "boxes": 150,
+      "telemetry_records": 150,
+      "control_records": 746,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        735,
+        740,
+        745
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 149
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 150,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.011051342473682911,
+          "target_point": [
+            51.09031191740096,
+            -0.23226832206024817
+          ],
+          "steer": 0.00079345703125,
+          "throttle": 0.9709863662719727,
+          "brake": 0.0
+        },
+        {
+          "image_file": "75.jpg",
+          "box_file": "75.json.gz",
+          "telemetry_key": 375,
+          "control_step": 375,
+          "speed": 7.0536960856330015,
+          "target_point": [
+            40.508375259262905,
+            8.51907848708143
+          ],
+          "steer": 0.01312255859375,
+          "throttle": 0.523059070110321,
+          "brake": 0.0
+        },
+        {
+          "image_file": "149.jpg",
+          "box_file": "149.json.gz",
+          "telemetry_key": 745,
+          "control_step": 745,
+          "speed": 8.302863663946736,
+          "target_point": [
+            9.365920771682203,
+            0.32432890281823124
+          ],
+          "steer": 0.0014190673828125,
+          "throttle": 0.48195880651474,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "HazardAtSideLane",
+      "images": 171,
+      "boxes": 171,
+      "telemetry_records": 171,
+      "control_records": 855,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        840,
+        845,
+        850
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 170
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 171,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.002945900550842912,
+          "target_point": [
+            51.607392304757404,
+            2.406470025820968
+          ],
+          "steer": 3.0517578125e-05,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "85.jpg",
+          "box_file": "85.json.gz",
+          "telemetry_key": 425,
+          "control_step": 425,
+          "speed": 7.306724645436374,
+          "target_point": [
+            11.083495819639667,
+            1.214840393840556
+          ],
+          "steer": 0.0043487548828125,
+          "throttle": 0.523059070110321,
+          "brake": 0.0
+        },
+        {
+          "image_file": "170.jpg",
+          "box_file": "170.json.gz",
+          "telemetry_key": 850,
+          "control_step": 850,
+          "speed": 8.878969678561424,
+          "target_point": [
+            10.978363685203039,
+            -0.17368832773788312
+          ],
+          "steer": 0.0041351318359375,
+          "throttle": 0.5068409442901611,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "HighwayExit",
+      "images": 212,
+      "boxes": 212,
+      "telemetry_records": 212,
+      "control_records": 1058,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        1045,
+        1050,
+        1055
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 211
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 212,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0005585319539983117,
+          "target_point": [
+            51.00001073596663,
+            -0.002716394391142702
+          ],
+          "steer": -0.0017547607421875,
+          "throttle": 0.5310609936714172,
+          "brake": 0.0
+        },
+        {
+          "image_file": "106.jpg",
+          "box_file": "106.json.gz",
+          "telemetry_key": 530,
+          "control_step": 530,
+          "speed": 5.151543282836332,
+          "target_point": [
+            37.458487854805014,
+            -3.690921937502145
+          ],
+          "steer": -0.044708251953125,
+          "throttle": 0.5623833537101746,
+          "brake": 0.0
+        },
+        {
+          "image_file": "211.jpg",
+          "box_file": "211.json.gz",
+          "telemetry_key": 1055,
+          "control_step": 1055,
+          "speed": 6.199506680081394,
+          "target_point": [
+            10.215024697442484,
+            0.5773456641211832
+          ],
+          "steer": 0.0188140869140625,
+          "throttle": 0.49448490142822266,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "InterurbanActorFlow",
+      "images": 125,
+      "boxes": 125,
+      "telemetry_records": 125,
+      "control_records": 625,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        610,
+        615,
+        620
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 124
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 125,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0037499660736528247,
+          "target_point": [
+            29.996444230775708,
+            -0.00014984057484213054
+          ],
+          "steer": 0.005157470703125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "62.jpg",
+          "box_file": "62.json.gz",
+          "telemetry_key": 310,
+          "control_step": 310,
+          "speed": 4.987294899321507,
+          "target_point": [
+            8.112789840946341,
+            -0.1491540281225352
+          ],
+          "steer": -0.0070037841796875,
+          "throttle": 0.08189860731363297,
+          "brake": 0.0
+        },
+        {
+          "image_file": "124.jpg",
+          "box_file": "124.json.gz",
+          "telemetry_key": 620,
+          "control_step": 620,
+          "speed": 6.801181982539055,
+          "target_point": [
+            10.706747477612957,
+            0.015289689065546952
+          ],
+          "steer": 0.00506591796875,
+          "throttle": 0.5507634282112122,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "InvadingTurn",
+      "images": 124,
+      "boxes": 124,
+      "telemetry_records": 124,
+      "control_records": 617,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        605,
+        610,
+        615
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 123
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 124,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.00017767375634019088,
+          "target_point": [
+            21.8682906901693,
+            -0.000337573370119415
+          ],
+          "steer": -0.0016937255859375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "62.jpg",
+          "box_file": "62.json.gz",
+          "telemetry_key": 310,
+          "control_step": 310,
+          "speed": 7.867863918672424,
+          "target_point": [
+            28.11011454911854,
+            0.5753956211102675
+          ],
+          "steer": 0.001068115234375,
+          "throttle": 0.5700483918190002,
+          "brake": 0.0
+        },
+        {
+          "image_file": "123.jpg",
+          "box_file": "123.json.gz",
+          "telemetry_key": 615,
+          "control_step": 615,
+          "speed": 7.400011962107456,
+          "target_point": [
+            9.923190904110632,
+            -0.20659499534585776
+          ],
+          "steer": -0.02105712890625,
+          "throttle": 0.49862226843833923,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "MergerIntoSlowTraffic",
+      "images": 276,
+      "boxes": 276,
+      "telemetry_records": 276,
+      "control_records": 1377,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        1365,
+        1370,
+        1375
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 275
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 276,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0032271633144779002,
+          "target_point": [
+            19.917511603053065,
+            -0.0001498596864542498
+          ],
+          "steer": -0.000152587890625,
+          "throttle": 0.28042614459991455,
+          "brake": 0.0
+        },
+        {
+          "image_file": "138.jpg",
+          "box_file": "138.json.gz",
+          "telemetry_key": 690,
+          "control_step": 690,
+          "speed": 5.257994209190469,
+          "target_point": [
+            8.436327011300218,
+            -0.09665146907320157
+          ],
+          "steer": -0.008880615234375,
+          "throttle": 0.5662239193916321,
+          "brake": 0.0
+        },
+        {
+          "image_file": "275.jpg",
+          "box_file": "275.json.gz",
+          "telemetry_key": 1375,
+          "control_step": 1375,
+          "speed": 9.644604669941376,
+          "target_point": [
+            9.604100819562724,
+            0.6868662561429885
+          ],
+          "steer": 0.0126190185546875,
+          "throttle": 0.4211104214191437,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "NonSignalizedJunctionLeftTurn",
+      "images": 136,
+      "boxes": 136,
+      "telemetry_records": 136,
+      "control_records": 676,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        665,
+        670,
+        675
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 135
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 136,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.003727949230443709,
+          "target_point": [
+            51.00204802531961,
+            0.0003441547921200633
+          ],
+          "steer": -0.002471923828125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "68.jpg",
+          "box_file": "68.json.gz",
+          "telemetry_key": 340,
+          "control_step": 340,
+          "speed": 2.521585099912603,
+          "target_point": [
+            9.500055908367129,
+            -11.342126770764196
+          ],
+          "steer": -0.0052490234375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "135.jpg",
+          "box_file": "135.json.gz",
+          "telemetry_key": 675,
+          "control_step": 675,
+          "speed": 8.831833170721842,
+          "target_point": [
+            9.29666762648062,
+            0.04305396207900991
+          ],
+          "steer": -0.001220703125,
+          "throttle": 0.5468568801879883,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "NonSignalizedJunctionRightTurn",
+      "images": 117,
+      "boxes": 117,
+      "telemetry_records": 117,
+      "control_records": 584,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        570,
+        575,
+        580
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 116
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 117,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0007561675536649523,
+          "target_point": [
+            51.00064176130918,
+            0.000626900168070349
+          ],
+          "steer": 0.0030059814453125,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "58.jpg",
+          "box_file": "58.json.gz",
+          "telemetry_key": 290,
+          "control_step": 290,
+          "speed": 0.042407534779253235,
+          "target_point": [
+            16.359167693341618,
+            4.595090931676374
+          ],
+          "steer": -0.0021820068359375,
+          "throttle": 0.5350357294082642,
+          "brake": 0.0
+        },
+        {
+          "image_file": "116.jpg",
+          "box_file": "116.json.gz",
+          "telemetry_key": 580,
+          "control_step": 580,
+          "speed": 8.370478724127722,
+          "target_point": [
+            9.7945239656909,
+            0.3640807533441439
+          ],
+          "steer": -0.0059051513671875,
+          "throttle": 0.5585265159606934,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "ParkedObstacle",
+      "images": 93,
+      "boxes": 93,
+      "telemetry_records": 93,
+      "control_records": 462,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        450,
+        455,
+        460
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 92
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 93,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0007910284067396063,
+          "target_point": [
+            51.54336635730816,
+            0.03888316402752756
+          ],
+          "steer": 0.00189208984375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "46.jpg",
+          "box_file": "46.json.gz",
+          "telemetry_key": 230,
+          "control_step": 230,
+          "speed": 2.8606330909130753,
+          "target_point": [
+            29.41961682746882,
+            -0.25801726611723996
+          ],
+          "steer": -0.022796630859375,
+          "throttle": 0.5700483918190002,
+          "brake": 0.0
+        },
+        {
+          "image_file": "92.jpg",
+          "box_file": "92.json.gz",
+          "telemetry_key": 460,
+          "control_step": 460,
+          "speed": 8.355423510051201,
+          "target_point": [
+            9.679731042958979,
+            0.06786466990076204
+          ],
+          "steer": -0.0028839111328125,
+          "throttle": 0.7144390940666199,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "ParkingCutIn",
+      "images": 145,
+      "boxes": 145,
+      "telemetry_records": 145,
+      "control_records": 722,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        710,
+        715,
+        720
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 144
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 145,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 8.757577312835486e-05,
+          "target_point": [
+            50.99990486621059,
+            3.604515088095894e-05
+          ],
+          "steer": -0.001708984375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "72.jpg",
+          "box_file": "72.json.gz",
+          "telemetry_key": 360,
+          "control_step": 360,
+          "speed": 4.455155975244561,
+          "target_point": [
+            48.07314571853769,
+            1.107243897072964
+          ],
+          "steer": 0.0080108642578125,
+          "throttle": 0.4166043996810913,
+          "brake": 0.0
+        },
+        {
+          "image_file": "144.jpg",
+          "box_file": "144.json.gz",
+          "telemetry_key": 720,
+          "control_step": 720,
+          "speed": 3.8286424185288963,
+          "target_point": [
+            9.939782510268556,
+            0.5822413536727968
+          ],
+          "steer": 0.0024261474609375,
+          "throttle": 0.4344961643218994,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "SignalizedJunctionLeftTurn",
+      "images": 127,
+      "boxes": 127,
+      "telemetry_records": 127,
+      "control_records": 631,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        620,
+        625,
+        630
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 126
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 127,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0016246326983674316,
+          "target_point": [
+            50.89733907276566,
+            -5.517963906221281
+          ],
+          "steer": -0.0035400390625,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "63.jpg",
+          "box_file": "63.json.gz",
+          "telemetry_key": 315,
+          "control_step": 315,
+          "speed": 1.886524247588682,
+          "target_point": [
+            12.350637228489203,
+            -9.599568008516732
+          ],
+          "steer": -0.0329132080078125,
+          "throttle": 0.6183570027351379,
+          "brake": 0.0
+        },
+        {
+          "image_file": "126.jpg",
+          "box_file": "126.json.gz",
+          "telemetry_key": 630,
+          "control_step": 630,
+          "speed": 8.529522253864483,
+          "target_point": [
+            7.824611174244941,
+            -3.1749397544937605
+          ],
+          "steer": -0.0009765625,
+          "throttle": 0.6110897064208984,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "SignalizedJunctionRightTurn",
+      "images": 126,
+      "boxes": 126,
+      "telemetry_records": 126,
+      "control_records": 627,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        615,
+        620,
+        625
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 125
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 126,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.001098210033126489,
+          "target_point": [
+            51.00059127716934,
+            0.00020226400001277511
+          ],
+          "steer": 0.0024261474609375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "63.jpg",
+          "box_file": "63.json.gz",
+          "telemetry_key": 315,
+          "control_step": 315,
+          "speed": 1.4929013455477305,
+          "target_point": [
+            10.719775387276247,
+            6.476187581089963
+          ],
+          "steer": 0.0449981689453125,
+          "throttle": 0.26987290382385254,
+          "brake": 0.0
+        },
+        {
+          "image_file": "125.jpg",
+          "box_file": "125.json.gz",
+          "telemetry_key": 625,
+          "control_step": 625,
+          "speed": 4.74353509273594,
+          "target_point": [
+            7.996402390522275,
+            0.18099249546109242
+          ],
+          "steer": 0.002471923828125,
+          "throttle": 0.3983539342880249,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "StaticCutIn",
+      "images": 116,
+      "boxes": 116,
+      "telemetry_records": 116,
+      "control_records": 580,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        565,
+        570,
+        575
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 115
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 116,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0018149433159361347,
+          "target_point": [
+            51.0031694265222,
+            0.0002218598112762593
+          ],
+          "steer": -0.00457763671875,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "58.jpg",
+          "box_file": "58.json.gz",
+          "telemetry_key": 290,
+          "control_step": 290,
+          "speed": 4.496802421246028,
+          "target_point": [
+            9.670144756733714,
+            0.10189150183796361
+          ],
+          "steer": -0.0009307861328125,
+          "throttle": 0.3797300159931183,
+          "brake": 0.0
+        },
+        {
+          "image_file": "115.jpg",
+          "box_file": "115.json.gz",
+          "telemetry_key": 575,
+          "control_step": 575,
+          "speed": 9.020746489287037,
+          "target_point": [
+            10.975142462376374,
+            -0.14608578589331506
+          ],
+          "steer": 0.0029296875,
+          "throttle": 0.4166043996810913,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "VanillaNonSignalizedTurn",
+      "images": 84,
+      "boxes": 84,
+      "telemetry_records": 84,
+      "control_records": 417,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        405,
+        410,
+        415
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 83
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 84,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.0018885307482499028,
+          "target_point": [
+            12.498050690228036,
+            4.024249921860852e-05
+          ],
+          "steer": 0.0004730224609375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "42.jpg",
+          "box_file": "42.json.gz",
+          "telemetry_key": 210,
+          "control_step": 210,
+          "speed": 3.172810198850477,
+          "target_point": [
+            34.49701541694761,
+            13.920968898944066
+          ],
+          "steer": 0.2294921875,
+          "throttle": 0.3113710880279541,
+          "brake": 0.0
+        },
+        {
+          "image_file": "83.jpg",
+          "box_file": "83.json.gz",
+          "telemetry_key": 415,
+          "control_step": 415,
+          "speed": 2.838974997977023,
+          "target_point": [
+            8.932451322197375,
+            0.30928437056437763
+          ],
+          "steer": 0.00189208984375,
+          "throttle": 0.43005606532096863,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    },
+    {
+      "driver": "driver_03",
+      "scenario": "VehicleOpensDoorTwoWays",
+      "images": 125,
+      "boxes": 125,
+      "telemetry_records": 125,
+      "control_records": 623,
+      "image_ids_start_at_zero_and_contiguous": true,
+      "telemetry_first_keys": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "telemetry_last_keys": [
+        610,
+        615,
+        620
+      ],
+      "most_common_telemetry_step_gap": 5,
+      "telemetry_gap_counts": {
+        "5": 124
+      },
+      "telemetry_gaps_uniform": true,
+      "control_duplicate_steps": 0,
+      "proposed_image_telemetry_control_triplets": 125,
+      "proposed_triplet_coverage": 1.0,
+      "missing_control_for_telemetry": [],
+      "examples": [
+        {
+          "image_file": "0.jpg",
+          "box_file": "0.json.gz",
+          "telemetry_key": 0,
+          "control_step": 0,
+          "speed": 0.00023135166412494495,
+          "target_point": [
+            50.9995931284083,
+            -0.00037728198577807737
+          ],
+          "steer": -0.002532958984375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        },
+        {
+          "image_file": "62.jpg",
+          "box_file": "62.json.gz",
+          "telemetry_key": 310,
+          "control_step": 310,
+          "speed": 6.719738593687738,
+          "target_point": [
+            43.33840500673554,
+            0.706017135260795
+          ],
+          "steer": -0.0004119873046875,
+          "throttle": 0.3702731728553772,
+          "brake": 0.0
+        },
+        {
+          "image_file": "124.jpg",
+          "box_file": "124.json.gz",
+          "telemetry_key": 620,
+          "control_step": 620,
+          "speed": 2.0584870897456344,
+          "target_point": [
+            10.028458826005387,
+            0.38131113462185606
+          ],
+          "steer": -0.0026702880859375,
+          "throttle": 2.777787267405074e-05,
+          "brake": 0.0
+        }
+      ],
+      "status": "CANDIDATE_ONLY_not_timestamp_verified"
+    }
+  ]
+}

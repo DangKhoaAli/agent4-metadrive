@@ -1,0 +1,140 @@
+{
+  "status": "V33_TEACHER_IMITATION_METRICS_NOT_CLOSED_LOOP",
+  "model_path": "agent4_v33_student.joblib",
+  "supervision": "MetaDrive IDM steering at 3 m/s, NOT original CARLA/PDD labels",
+  "features": [
+    "speed_mps",
+    "wp1_forward_m",
+    "wp1_right_m",
+    "wp2_forward_m",
+    "wp2_right_m",
+    "lane_width_m",
+    "front_vehicle_dist_m",
+    "front_vehicle_closing_speed_mps",
+    "left_vehicle_dist_m",
+    "right_vehicle_dist_m",
+    "front_pedestrian_dist_m",
+    "has_front_vehicle",
+    "has_left_vehicle",
+    "has_right_vehicle",
+    "has_front_pedestrian",
+    "base_pdd_steer_md",
+    "planned_lateral_right_m",
+    "heading_error_rad",
+    "adaptive_lookahead"
+  ],
+  "metrics": {
+    "train": {
+      "baseline_pdd": {
+        "n": 29424,
+        "steering_mae": 0.018746090931553976,
+        "steering_rmse": 0.043220270954095655
+      },
+      "learned_student": {
+        "n": 29424,
+        "steering_mae": 0.004420855142116523,
+        "steering_rmse": 0.02009072199616738
+      },
+      "student_better_mae": true,
+      "n_episodes": 60,
+      "by_map": {
+        "C": {
+          "baseline_pdd": {
+            "n": 13152,
+            "steering_mae": 0.021863680080954285,
+            "steering_rmse": 0.039242128462776464
+          },
+          "learned_student": {
+            "n": 13152,
+            "steering_mae": 0.004450099059591878,
+            "steering_rmse": 0.018744358450163895
+          }
+        },
+        "S": {
+          "baseline_pdd": {
+            "n": 7849,
+            "steering_mae": 0.006318644249074861,
+            "steering_rmse": 0.026759000393193233
+          },
+          "learned_student": {
+            "n": 7849,
+            "steering_mae": 0.00356807788377872,
+            "steering_rmse": 0.019109814792464822
+          }
+        },
+        "X": {
+          "baseline_pdd": {
+            "n": 8423,
+            "steering_mae": 0.025458722596977904,
+            "steering_rmse": 0.058767879692277904
+          },
+          "learned_student": {
+            "n": 8423,
+            "steering_mae": 0.005169855818604415,
+            "steering_rmse": 0.02282784315818071
+          }
+        }
+      }
+    },
+    "val": {
+      "baseline_pdd": {
+        "n": 5923,
+        "steering_mae": 0.01960319725573854,
+        "steering_rmse": 0.044991639503986255
+      },
+      "learned_student": {
+        "n": 5923,
+        "steering_mae": 0.005662205184806176,
+        "steering_rmse": 0.022645255336149153
+      },
+      "student_better_mae": true,
+      "n_episodes": 12,
+      "by_map": {
+        "C": {
+          "baseline_pdd": {
+            "n": 2642,
+            "steering_mae": 0.020402735472496453,
+            "steering_rmse": 0.03885238901368289
+          },
+          "learned_student": {
+            "n": 2642,
+            "steering_mae": 0.0053401913527636865,
+            "steering_rmse": 0.021127033501903068
+          }
+        },
+        "S": {
+          "baseline_pdd": {
+            "n": 1566,
+            "steering_mae": 0.0067786254158748145,
+            "steering_rmse": 0.029805085909588
+          },
+          "learned_student": {
+            "n": 1566,
+            "steering_mae": 0.005054402979687813,
+            "steering_rmse": 0.02248778131798996
+          }
+        },
+        "X": {
+          "baseline_pdd": {
+            "n": 1715,
+            "steering_mae": 0.030081855875302512,
+            "steering_rmse": 0.06208408120125907
+          },
+          "learned_student": {
+            "n": 1715,
+            "steering_mae": 0.006713271539017028,
+            "steering_rmse": 0.024933402689318578
+          }
+        }
+      }
+    }
+  },
+  "train_episodes": 60,
+  "val_episodes": 12,
+  "limits": [
+    "Teacher imitation MAE is not closed-loop task success.",
+    "MetaDrive privileged geometry features; traffic-free simulation only.",
+    "Training from near-expert trajectories does not guarantee recovery from large errors.",
+    "Original PDD longitudinal model is not deployed."
+  ]
+}

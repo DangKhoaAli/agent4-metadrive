@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 29,
+    "gender": "Male",
+    "occupation": "Photographer"
+  },
+  "driving_experience": "10 years",
+  "driving_frequency_per_week": "5 to 8 h",
+  "driving_purposes": [
+    "Night-shift commute",
+    "Photography gigs and client travel"
+  ],
+  "driving_habits_preferences": [
+    "Drives noticeably slower in rain or fog",
+    "Keeps a larger following distance than surrounding traffic",
+    "Prefers smooth, low-acceleration driving over quick maneuvers"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "None",
+    "accidents_last_5_years": "One side scrape"
+  },
+  "driving_style": "Cautious",
+  "international_driving_experience": "Road trips in Canada"
+}

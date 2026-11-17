@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 38,
+    "gender": "Male",
+    "occupation": "Renewable energy engineer"
+  },
+  "driving_experience": "15 years",
+  "driving_frequency_per_week": "8 to 12 h",
+  "driving_purposes": [
+    "Commuting to research lab",
+    "Weekend hiking trips"
+  ],
+  "driving_habits_preferences": [
+    "Prefers efficient driving that keeps steady progress",
+    "Will pass slower vehicles instead of waiting behind them",
+    "Uses brisk but controlled acceleration while avoiding harsh braking"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "None",
+    "accidents_last_5_years": "None"
+  },
+  "driving_style": "Assertive",
+  "international_driving_experience": "Extensive driving across Norway, Sweden, and Finland"
+}

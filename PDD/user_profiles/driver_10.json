@@ -1,0 +1,24 @@
+{
+  "basic_information": {
+    "age": 47,
+    "gender": "Male",
+    "occupation": "Civil engineer"
+  },
+  "driving_experience": "25 years",
+  "driving_frequency_per_week": "25 to 30 h",
+  "driving_purposes": [
+    "Supervising construction sites across cities",
+    "Long family trips across emirates"
+  ],
+  "driving_habits_preferences": [
+    "Drives confidently at highway speeds for long stretches",
+    "Accelerates strongly when merging or overtaking",
+    "Keeps progress-oriented pace rather than settling behind slower vehicles"
+  ],
+  "health_and_driving_records": {
+    "health_conditions": "None",
+    "accidents_last_5_years": "Minor rear-end collision"
+  },
+  "driving_style": "Aggressive",
+  "international_driving_experience": "Driven across GCC countries (UAE, Oman, Saudi Arabia)"
+}
